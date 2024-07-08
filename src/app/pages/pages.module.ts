@@ -18,6 +18,7 @@ import { InfoAvancadoComponent } from './main/info/info-avancado/info-avancado.c
 import { MecBasicoComponent } from './main/mec/mec-basico/mec-basico.component';
 import { MecIntermediarioComponent } from './main/mec/mec-intermediario/mec-intermediario.component';
 import { MecAvancadoComponent } from './main/mec/mec-avancado/mec-avancado.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 
 
@@ -36,7 +37,8 @@ import { MecAvancadoComponent } from './main/mec/mec-avancado/mec-avancado.compo
     MecBasicoComponent,
     MecIntermediarioComponent,
     MecAvancadoComponent,
-    MenuComponent
+    MenuComponent,
+    QuizComponent
 
   ],
   imports: [
