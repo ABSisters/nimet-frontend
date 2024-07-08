@@ -5,6 +5,7 @@ import { EmailComponent } from './pages/email/email.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { InfoBasicoComponent } from './pages/main/info/info-basico/info-basico.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
 
 export const routes: Routes = [
   {path: '' , component: LoginComponent},
@@ -13,6 +14,7 @@ export const routes: Routes = [
   {path: 'main' , component: InfoBasicoComponent},
   {path: 'perfil' , component: PerfilComponent},
   {path: 'menu' , component: MenuComponent},
+  {path: 'quiz', component: QuizComponent}
 
 
 
