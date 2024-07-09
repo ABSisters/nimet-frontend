@@ -20,6 +20,19 @@ export class UsuarioService {
 
   constructor(private httpClient: HttpClient ) { }
 
+  getUsuario(): UsuarioResponse {
+    const usuarioString = localStorage.getItem('usuario');
+    return usuarioString ? JSON.parse(usuarioString) : null;
+  }
+
+  setUsuario(usuario: UsuarioResponse): void {
+    localStorage.setItem('usuario', JSON.stringify(usuario));
+  }
+
+  clearUsuario(): void {
+    localStorage.removeItem('usuario');
+  }
+
 
   alterarPerfil(user: UsuarioResponse): Observable<UsuarioResponse> {
     return this.httpClient.put(`${env.baseApiUrl}/${urlConfig.alterarPerfil}`, user, this.httpOptions).pipe(
