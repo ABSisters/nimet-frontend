@@ -1,6 +1,8 @@
+import { UsuarioService } from './../../service/usuario.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
+import { UsuarioResponse } from '../../model/usuarioResponse';
 
 @Component({
   selector: 'app-quiz',
@@ -20,13 +22,15 @@ export class QuizComponent implements OnInit{
   timer = interval(1000);
   subscription: Subscription [] = [];
   correctAnswerCount: number = 0;
+  usuario!: UsuarioResponse;
 
-
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private usuarioService:UsuarioService) {
   }
 
   ngOnInit(): void {
     this.loadQuestions();
+    this.usuario = this.usuarioService.getUsuario();
+
   }
   loadQuestions() {
     this.http.get("assets/questions.json").subscribe((res:any)=>{

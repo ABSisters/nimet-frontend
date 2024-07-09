@@ -22,7 +22,7 @@ export class PerfilComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.user = this.userService.user;
+    this.user = this.userService.getUsuario();
   }
 
   excluirPerfil(user: UsuarioResponse) {
