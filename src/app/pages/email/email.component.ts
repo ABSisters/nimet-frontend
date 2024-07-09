@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CadastroService } from '../../service/cadastro.service';
-import { VerificacaoEmailRequest } from '../../model/verificacaoEmailRequest';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -22,7 +21,7 @@ export class EmailComponent implements OnInit {
 
   ){}
 
-  token!:VerificacaoEmailRequest;
+  token!:String;
 
   ngOnInit(): void {
   }
