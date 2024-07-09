@@ -4,7 +4,6 @@ import { environment as env } from '../../environments/enviroment';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { urlConfig } from '../../assets/config/urlConfig';
-import { UsuarioPutRequest } from '../model/usuarioPutRequest';
 import { UsuarioPutSenhaRequest } from '../model/usuarioPutSenhaRequest';
 
 @Injectable({

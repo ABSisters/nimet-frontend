@@ -5,7 +5,6 @@ import { environment as env } from '../../environments/enviroment';
 import { urlConfig } from '../../assets/config/urlConfig';
 import { UsuarioRequest } from '../model/usuarioRequest';
 import { UsuarioResponse } from '../model/usuarioResponse';
-import { VerificacaoEmailRequest } from '../model/verificacaoEmailRequest';
 import { LoginRequest } from '../model/loginRequest';
 
 @Injectable({
@@ -29,13 +28,12 @@ export class CadastroService {
 
 
   logar(request:LoginRequest): Observable<UsuarioResponse> {
-    return this.httpClient.post<any>(env.baseApiUrl + '/' + urlConfig.logar+'?login='+request.login+'&senha='+request.password, request).pipe(
+    return this.httpClient.post<any>(env.baseApiUrl + '/' + urlConfig.logar+'?login='+request.login+'&senha='+request.password, null).pipe(
       map((res:any) => res)
     )
   }
 
-  verficarEmail(token:VerificacaoEmailRequest): Observable<any> {
-
+  verficarEmail(token:String): Observable<any> {
     return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.verificarEmail,token, this.httpOptions).pipe(
       map((res:any) => res)
     )
