@@ -8,6 +8,9 @@ import { InfoBasicoComponent } from './pages/main/info/info-basico/info-basico.c
 import { QuizComponent } from './pages/quiz/quiz.component';
 import { UsuarioAutenticadoGuard } from './service/guards/usuario-autenticado.guard';
 import { UsuarioNaoAutenticadoGuard } from './service/guards/usuario-nao-autenticado.guard';
+import { ForumComponent } from './pages/forum/forum/forum.component';
+import { AdicionarPerguntaComponent } from './pages/forum/adicionar-pergunta/adicionar-pergunta.component';
+import { RespostaComponent } from './pages/forum/resposta/resposta.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, canActivate: [UsuarioNaoAutenticadoGuard] },
@@ -17,5 +20,8 @@ export const routes: Routes = [
   { path: 'perfil', component: PerfilComponent, canActivate: [UsuarioAutenticadoGuard] },
   { path: 'menu', component: MenuComponent, canActivate: [UsuarioAutenticadoGuard] },
   { path: 'quiz', component: QuizComponent, canActivate: [UsuarioAutenticadoGuard] },
+  { path: 'forum', component: ForumComponent, canActivate: [UsuarioAutenticadoGuard]},
+  { path: 'adicionar-pergunta', component: AdicionarPerguntaComponent, canActivate: [UsuarioAutenticadoGuard]},
+  { path: 'resposta', component: RespostaComponent, canActivate: [UsuarioAutenticadoGuard]},
   { path: '**', redirectTo: '' }  // Redireciona qualquer rota não encontrada para a página de login
 ];

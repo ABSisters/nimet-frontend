@@ -1,0 +1,201 @@
+.cadastro {
+  flex: 5;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.conteiner {
+  display: flex;
+}
+
+ /* ---------------------- CORES, POSIÇÕES E TAMANHOS DOS TÍTULOS ---------------------------------------------- */
+
+.tela-perfil{
+  margin-top: 899px;
+  margin-right: 150px;
+  margin-left: 210px;
+  padding: 20px;
+  text-align: left;
+}
+
+
+span{
+  color: #4F1964;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+
+h6{
+  font-family: 'Roboto', sans-serif;
+  color: #4F1964;
+  /* cor da palavra perfil*/
+  margin-top: -2400px;
+  margin-left: 190px;
+  font-size: 1em;
+}
+
+h5 {
+  color: #4F1964;
+  /* cor da palavra */
+  margin-top: -800px;
+  margin-left: -50px;
+  font-size: 0.9em;
+}
+
+h3{
+  color: #4F1964;
+  margin-top: -776px;
+  margin-left: -20px;
+  font-size: 0.9em;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  /* tipo da letra do titulo */
+  font-size: 3em;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  margin-top: 700px;
+}
+
+
+.conteiner{
+  margin-top: 1700px;
+}
+
+
+ /* ------------------------ DIV'S DO TÍTULO E DA DESCRÇÃO --------------------------------------------*/
+
+.quiz{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.borda-quiz {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: hsl(283, 48%, 37%);
+  background-color: #d19bec40;
+  padding: 120px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1100px; /* Comprimento da borda */
+  height: 25px;/* Tamanho da caixa */
+  position: absolute;
+  top: 119px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.caixa-a{
+  margin-top: 733px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -110px;
+}
+
+.caixa{
+  background-color: rgb(255, 255, 255);
+  padding: 70px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1030px; /* Comprimento da borda */
+  height: 5px;/* Tamanho da caixa */
+  position: absolute;
+  top: 55px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+
+.quiz-a {
+  margin-top: -8px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -200px;
+}
+
+.borda-quiz-a {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: #73328d;
+  background-color:#d19bec40;
+  padding: 97px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1100px; /* Comprimento da borda */
+  height: 480px;/* Tamanho da caixa */
+  position: absolute;
+  top: 390px; /* ajuste conforme necessário */
+}
+
+.caixa-b{
+  margin-top: 733px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -85px;
+}
+
+.caixa-c{
+  background-color: rgb(255, 255, 255);
+  padding: 184px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1030px; /* Comprimento da borda */
+  height: 70px;/* Tamanho da caixa */
+  position: absolute;
+  top: 62px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+
+}
+
+
+/* ----------------------- BOTÃO DE POSTAR E TELA DE TAGS ----------------------------------------- */
+
+.quiz-button{
+  margin-top: -110px; /* Altura do botão */
+  margin-right: 100px;
+  margin-left: 1620px;
+}
+
+.button-a{
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: #ffffff;
+  width: 10rem;
+  height: 2.5rem;
+  margin-left: 0.1rem;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+
+
+.tela-perfil{
+  margin-top: -1825px;
+  margin-right: 100px;
+  margin-left: 1325px;
+}
+
+.borda {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: #73328d;
+  padding: 33px;
+  margin: 20px;
+  width: 420px;/* Comprimento da borda */
+  margin-top: 159px;
+  height: 748px;/* Tamanho da caixa */
+}
+
+
+.lupa{
+  margin-left: 20px;
+}
+
+.selecao{
+  margin-top: 50px;
+}

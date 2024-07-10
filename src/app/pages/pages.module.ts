@@ -19,6 +19,9 @@ import { MecBasicoComponent } from './main/mec/mec-basico/mec-basico.component';
 import { MecIntermediarioComponent } from './main/mec/mec-intermediario/mec-intermediario.component';
 import { MecAvancadoComponent } from './main/mec/mec-avancado/mec-avancado.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { ForumComponent } from './forum/forum/forum.component';
+import { AdicionarPerguntaComponent } from './forum/adicionar-pergunta/adicionar-pergunta.component';
+import { RespostaComponent } from './forum/resposta/resposta.component';
 
 
 
@@ -38,7 +41,10 @@ import { QuizComponent } from './quiz/quiz.component';
     MecIntermediarioComponent,
     MecAvancadoComponent,
     MenuComponent,
-    QuizComponent
+    QuizComponent,
+    ForumComponent,
+    AdicionarPerguntaComponent,
+    RespostaComponent
 
   ],
   imports: [

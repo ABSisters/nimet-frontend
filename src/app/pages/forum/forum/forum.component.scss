@@ -1,0 +1,119 @@
+.cadastro {
+  flex: 5;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.conteiner {
+  display: flex;
+}
+
+/* ----------------------- COR, TAMANHO E POSIÇÃO DO TÍTULO ------------------------------------ */
+
+
+.tela-perfil{
+  margin-top: 40px;
+  margin-right: 150px;
+  margin-left: 200px;
+}
+
+h5 {
+  color: #4F1964;
+  font-size: 3em;
+  /* cor da palavra perfil*/
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  /* tipo da letra do titulo */
+  font-weight: 300;
+}
+
+
+ /* ------------------ DIV DO FÓRUM COM BOTÕES DE ADICIONAR PERGUNTA E TEGS ----------------------------------------------- */
+
+
+.quiz{
+  margin-top: -790px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 15px;
+}
+
+.borda-quiz {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: hsl(283, 48%, 37%);
+  background-color: #d19bec40;
+  padding: 100px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1520px; /* Comprimento da borda */
+  height: 680px;/* Tamanho da caixa */
+  position: absolute;
+  top: 140px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+.forum-button{
+  margin-top: -25px; /* Altura do botão */
+  margin-right: 100px;
+  margin-left: 1400px;
+}
+
+.button-a{
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: white;
+  width: 16rem;
+  height: 2.5rem;
+  margin-left: 0.1rem;
+  margin-top: -1310px;
+  font-size: 1.5em;
+}
+
+
+.tags-button{
+  margin-top: -25px; /* Altura do botão */
+  margin-right: 150px;
+  margin-left: 300px;
+}
+
+.button-b{
+  border-radius: 20px;
+  background-color: white;
+  border-color: #4F1964;
+  color: #4F1964;
+  width: 13rem; /* comprimento da caixa */
+  height: 2.4rem; /* Tamanho da caixa */
+  margin-left: 0.1rem;
+  margin-top: 860px;
+  font-size: 1.5em;
+}
+
+
+
+.conteiner-a{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -90px;
+}
+
+.conteiner{
+  background-color: rgb(255, 255, 255);
+  padding: 100px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 1455px; /* Comprimento da borda */
+  height: 534px;/* Tamanho da caixa */
+  position: absolute;
+  top: 90px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
