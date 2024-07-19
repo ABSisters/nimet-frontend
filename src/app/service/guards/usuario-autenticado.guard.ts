@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { CadastroService } from '../cadastro.service';
+import { CadastroService } from '../usuario/cadastro/cadastro.service';
 
 @Injectable({
   providedIn: 'root'

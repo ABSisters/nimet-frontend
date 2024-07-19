@@ -1,9 +1,9 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-import { UsuarioResponse } from '../../model/usuarioResponse';
-import { UsuarioService } from '../../service/usuario.service';
 import { MessageService } from 'primeng/api';
-import { UsuarioPutSenhaRequest } from '../../model/usuarioPutSenhaRequest';
+import { UsuarioPutSenhaRequest } from '../../model/request/usuarioPutSenhaRequest';
 import { Sidebar } from 'primeng/sidebar';
+import { UsuarioService } from '../../service/usuario/usuario.service';
+import { UsuarioResponse } from '../../model/response/usuarioResponse';
 // import {questions} from '../../../assets/'
 
 @Component({

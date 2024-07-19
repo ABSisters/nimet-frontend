@@ -1,5 +1,5 @@
-import { Curso } from './curso';
-import { TipoUsuario } from './tipoUsuario';
+import { Curso } from "../enum/curso";
+import { TipoUsuario } from "../enum/tipoUsuario";
 
 
 export class UsuarioResponse {

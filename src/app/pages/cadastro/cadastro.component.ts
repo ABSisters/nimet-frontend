@@ -1,11 +1,11 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CadastroService } from '../../service/cadastro.service';
 import { Router } from '@angular/router';
 import { criarSenhaForte } from '../../validators/password';
 import { MessageService } from 'primeng/api';
 import { ConfirmPasswordService } from '../../validators/confirm-password.service';
-import { UsuarioRequest } from '../../model/usuarioRequest';
+import { UsuarioRequest } from '../../model/request/usuarioRequest';
+import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -27,6 +27,8 @@ constructor (
  private routeador: Router,
  private request: UsuarioRequest
 ){}
+
+// tirar o request do constructor e testar para ver se vai dar erro
 
 ngOnInit(): void {
     this.initForm();

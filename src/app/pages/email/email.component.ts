@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CadastroService } from '../../service/cadastro.service';
 import { MessageService } from 'primeng/api';
+import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
 
 @Component({
   selector: 'app-email',
@@ -13,13 +13,9 @@ import { MessageService } from 'primeng/api';
 
 export class EmailComponent implements OnInit {
 
-  constructor (
-    private service: CadastroService,
+  constructor (private service: CadastroService,
     private message: MessageService,
-    private routeador: Router
-
-
-  ){}
+    private routeador: Router) {}
 
   token!:String;
 

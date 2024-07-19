@@ -1,8 +1,15 @@
 export const urlConfig = {
-  cadastrarUsuario : 'api/usuarios/cadastrar',
-  verificarEmail: 'api/email/verificacao',
-  logar: 'api/usuarios/logar',
-  alterarPerfil: 'api/usuarios/mudar',
-  alterarSenha: 'api/usuarios/mudar/senha',
-  deletar: 'api/usuarios/deletar'
+  cadastrarUsuario : 'usuarios/cadastrar',
+  verificarEmail: 'aemail/verificacao',
+  logar: 'usuarios/logar',
+  alterarPerfil: 'usuarios/mudar',
+  alterarSenha: 'usuarios/mudar/senha',
+  deletar: 'usuarios/deletar',
+  adicionarPergunta: 'perguntas/adicionar',
+  perguntasCurso: 'perguntas/curso',
+  adicionarResposta: 'respostas/adicionar',
+  getRespostasUsuario: 'respostas/usuario',
+  getRespostas: 'respostas/perguntas'
+
+
 }

@@ -2,13 +2,13 @@ import { Router } from '@angular/router';
 // import { CadastroService } from '../../service/cadastro.service';
 import { PagesModule } from './../pages.module';
 import { Component, OnInit } from '@angular/core';
-import { UsuarioRequest } from '../../model/usuarioRequest';
+import { UsuarioRequest } from '../../model/request/usuarioRequest';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CadastroService } from '../../service/cadastro.service';
 import { criarSenhaForte } from '../../validators/password';
 import { MessageService } from 'primeng/api';
-import { UsuarioResponse } from '../../model/usuarioResponse';
-import { UsuarioService } from '../../service/usuario.service';
+import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
+import { UsuarioService } from '../../service/usuario/usuario.service';
+import { UsuarioResponse } from '../../model/response/usuarioResponse';
 
 
 @Component({

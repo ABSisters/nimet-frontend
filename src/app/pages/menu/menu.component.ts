@@ -1,9 +1,9 @@
-import { CadastroService } from './../../service/cadastro.service';
 import { Component, OnInit, ViewChild  } from '@angular/core';
 import { Sidebar } from 'primeng/sidebar';
-import { UsuarioService } from '../../service/usuario.service';
-import { UsuarioResponse } from '../../model/usuarioResponse';
 import { Router } from '@angular/router';
+import { UsuarioService } from '../../service/usuario/usuario.service';
+import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
+import { UsuarioResponse } from '../../model/response/usuarioResponse';
 
 @Component({
   selector: 'app-menu',

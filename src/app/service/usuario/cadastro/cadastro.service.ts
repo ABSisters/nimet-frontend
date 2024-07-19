@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { environment as env } from '../../environments/enviroment';
-import { urlConfig } from '../../assets/config/urlConfig';
-import { UsuarioRequest } from '../model/usuarioRequest';
-import { UsuarioResponse } from '../model/usuarioResponse';
-import { LoginRequest } from '../model/loginRequest';
+import {environment as env } from '../../../../environments/enviroment';
 import { Router } from '@angular/router';
+import { urlConfig } from '../../../../assets/config/urlConfig';
+import { LoginRequest } from '../../../model/request/loginRequest';
+import { UsuarioRequest } from '../../../model/request/usuarioRequest';
+import { UsuarioResponse } from '../../../model/response/usuarioResponse';
 
 @Injectable({
   providedIn: 'root'

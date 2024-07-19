@@ -1,10 +1,10 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { UsuarioResponse } from './../model/usuarioResponse';
-import { environment as env } from '../../environments/enviroment';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { urlConfig } from '../../assets/config/urlConfig';
-import { UsuarioPutSenhaRequest } from '../model/usuarioPutSenhaRequest';
+import { urlConfig } from '../../../assets/config/urlConfig';
+import { UsuarioPutSenhaRequest } from '../../model/request/usuarioPutSenhaRequest';
+import {environment as env } from '../../../environments/enviroment';
+import { UsuarioResponse } from '../../model/response/usuarioResponse';
 
 @Injectable({
   providedIn: 'root'
@@ -54,3 +54,4 @@ export class UsuarioService {
 
 
 }
+

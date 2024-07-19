@@ -1,8 +1,8 @@
-import { UsuarioService } from './../../service/usuario.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
-import { UsuarioResponse } from '../../model/usuarioResponse';
+import { UsuarioService } from '../../service/usuario/usuario.service';
+import { UsuarioResponse } from '../../model/response/usuarioResponse';
 
 @Component({
   selector: 'app-quiz',
