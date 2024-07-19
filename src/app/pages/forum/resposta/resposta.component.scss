@@ -70,7 +70,7 @@ h4{
 .quiz{
   margin-top: 663px; /* Altura da borda */
   margin-right: 200px;
-  margin-left: 200px;
+  margin-left: 160px;
 }
 
 .borda-quiz {
@@ -79,7 +79,7 @@ h4{
   border-color: hsl(283, 48%, 37%);
   padding: 100px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1560px; /* Comprimento da borda */
+  width: 1525px; /* Comprimento da borda */
   height: 800px;/* Tamanho da caixa */
   position: absolute;
   top: 570px; /* ajuste conforme necessário */
@@ -110,7 +110,8 @@ input {
   /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   border: 1px solid #000000;
-  width: 1439px;
+  width: 1419px;
+  padding: 25px;
 }
 
 .input-box {
@@ -145,7 +146,7 @@ input {
 .postar-button{
   margin-top: -110px; /* Altura do botão */
   margin-right: 100px;
-  margin-left: 1620px;
+  margin-left: 1550px;
 }
 
 .button-a{
@@ -155,7 +156,7 @@ input {
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: -365px;
+  margin-top: -347px;
   font-size: 1.5em;
 }
 
@@ -172,18 +173,18 @@ h2{
 }
 
 
-h6{
+/* h6{
   color: rgb(75, 75, 76);
   font-size: 2em;
   margin-top: 200px;
   margin-left: -40px;
-}
+}*/
 
 
 .deletar-button{
   margin-top: -30px; /* Altura do botão */
   margin-right: 100px;
-  margin-left: 330px;
+  margin-left: 290px;
 }
 
 .button-b{
@@ -193,6 +194,36 @@ h6{
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: 80px;
+  margin-top: 28px;
   font-size: 1.5em;
+}
+
+
+.forum{
+  padding: 20px;
+}
+
+.forum-a{
+  flex: 1em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 250px;
+  width: 1410px;
+  padding: 50px;
+}
+
+
+.forum-b{
+  flex: 1em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 19px;
+  margin-top: 70px;
+  width: 1520px;
+  padding: 100px;
 }

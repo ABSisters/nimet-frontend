@@ -17,9 +17,9 @@ export class QuizComponent implements OnInit{
   questionsList: any[]= [];
   currentQuestionNo: number = 0;
 
-  remainingTime:number = 10;
+  //remainingTime:number = 10;
 
-  timer = interval(1000);
+  //timer = interval(1000);
   subscription: Subscription [] = [];
   correctAnswerCount: number = 0;
   usuario!: UsuarioResponse;
@@ -79,16 +79,16 @@ export class QuizComponent implements OnInit{
   startQuiz() {
     this.showWarning = false;
     this.isQuizStarted = true;
-   this.subscription.push(this.timer.subscribe(res=> {
-      console.log(res);
-      if(this.remainingTime != 0) {
-        this.remainingTime --;
+   //this.subscription.push(this.timer.subscribe(res=> {
+      //console.log(res);
+      //if(this.remainingTime != 0) {
+        //this.remainingTime --;
       }
-      if(this.remainingTime == 0) {
-        this.nextQuestion();
-        this.remainingTime = 10;
-      }
-    })
-   )
-  }
+      //if(this.remainingTime == 0) {
+        //this.nextQuestion();
+        //this.remainingTime = 10;
+      //}
+   // })
+   //)
+  //}
 }

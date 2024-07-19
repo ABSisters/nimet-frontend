@@ -1,27 +1,27 @@
 <app-menu></app-menu>
-<div class="start_btn"><button (click)="showWarningPopup()">Start Quiz</button></div>
+<div class="start_btn"><button (click)="showWarningPopup()">Iniciar Quiz</button></div>
 
 <div class="info_box" [ngClass]="showWarning ? 'activeInfo':''">
 
-    <div class="info-title"><span>Some Rules of this Quiz</span></div>
+    <div class="info-title"><span>Informações Importantes!</span></div>
 
     <div class="info-list">
 
-        <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+        <div class="info">1. As questões <span>não possuem tempo</span>, faça-as com calma.</div>
 
-        <div class="info">2. Once you select your answer, it can't be undone.</div>
+        <div class="info">2. Depois de Selecionar sua resposta, ela <span>não poderá ser mudada</span>.</div>
 
-        <div class="info">3. You can't select any option once time goes off.</div>
+        <div class="info">3. Não saia do Quiz antes de finaliza-lo.</div>
 
-        <div class="info">4. You can't exit from the Quiz Once Started.</div>
+        <div class="info">4. Todas as questões estão associadas ao que você aprendeu.</div>
 
     </div>
 
     <div class="buttons">
 
-        <button class="quit">Exit Quiz</button>
+        <button class="quit">Voltar</button>
 
-        <button class="restart" (click)="startQuiz()">Continue</button>
+        <button class="restart" (click)="startQuiz()">Continar</button>
 
     </div>
 
@@ -34,13 +34,13 @@
 
     <header>
 
-        <div class="title">Awesome Quiz Application</div>
+        <div class="title">INFORMÁTICA QUIZ - BÁSICO</div>
 
         <div class="timer">
 
-            <div class="time_left_txt">Time Off</div>
+            <!--<div class="time_left_txt">Time Off</div>-->
 
-            <div class="timer_sec">{{remainingTime}}</div>
+            <div class="timer_sec"><!--{{remainingTime}}-->NIMET</div> <!-- Se desejar por o tempo novamente colocar: {{remainingTime}}-->
 
         </div>
 
@@ -48,9 +48,12 @@
 
     </header>
 
+
     <section *ngIf="isQuizStarted">
 
         <div class="que_text"><span>{{currentQuestionNo+1}}. {{questionsList[currentQuestionNo].question}} </span></div>
+
+      <div class="bolinha"></div>
 
         <div class="option_list">
 
@@ -69,19 +72,17 @@
     </section>
 
 
-
-
     <footer>
 
         <div class="total_que"><span>
 
-                <p>{{currentQuestionNo+1}}</p> of <p>{{questionsList.length}}</p> Questions
+                <p>{{currentQuestionNo+1}}</p> de <p>{{questionsList.length}}</p> Questões
 
             </span></div>
 
-        <button *ngIf="currentQuestionNo+1 == questionsList.length" class="next_btn show" (click)="finish()">Finish</button>
+        <button *ngIf="currentQuestionNo+1 == questionsList.length" class="next_btn show" (click)="finish()">Finalizar</button>
 
-        <button *ngIf="currentQuestionNo+1 !== questionsList.length" class="next_btn show" (click)="nextQuestion()">Next Que</button>
+        <button *ngIf="currentQuestionNo+1 !== questionsList.length" class="next_btn show" (click)="nextQuestion()">Avançar</button>
 
     </footer>
 
@@ -101,19 +102,19 @@
 
     </div>
 
-    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="complete_text">Você completou o Quiz!</div>
 
     <div class="score_text">
 
-        <span>and congrats! 🎉, You got <p>{{correctAnswerCount}}</p> out of <p>{{questionsList.length}}</p></span>'
+        <span>Parabéns! 🎉 você acertou <p>{{correctAnswerCount}}</p> de <p>{{questionsList.length}}</p></span>
 
     </div>
 
     <div class="buttons">
 
-        <button class="restart">Replay Quiz</button>
+        <button class="restart">Refazer o Quiz</button>
 
-        <button class="quit" (click)="start()">Quit Quiz</button>
+        <button class="quit" (click)="start()">Sair do Quiz</button>
 
     </div>
 
