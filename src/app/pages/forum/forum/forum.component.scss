@@ -117,3 +117,36 @@ header {
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
+
+
+.custom-hr{
+  height: 2px;
+  height: 4px;
+  margin-top: -370px;
+  margin-left: -2px;
+  width: 1400px;
+  background-color: #4F1964;
+
+  position: absolute;
+}
+
+.status{
+  font-size: 1.5em;
+  margin-top: -450px;
+  margin-left: -290px;
+  color: #4F1964;
+}
+
+.pergunta{
+  font-size: 1.5em;
+  margin-top: -450px;
+  margin-left: 100px;
+  color: #4F1964;
+}
+
+.postar{
+  font-size: 1.5em;
+  margin-top: -450px;
+  margin-left: 400px;
+  color: #4F1964;
+}

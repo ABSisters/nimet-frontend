@@ -73,6 +73,7 @@ cadastrar(){
     error: (erro) => {
       this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel fazer o cadastro' })
       console.log(erro);
+      console.log(this.request)
     }
   })
 }

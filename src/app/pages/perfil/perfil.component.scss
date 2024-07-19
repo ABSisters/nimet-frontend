@@ -13,9 +13,13 @@
   height: 220vh; /* Altura de 100% da viewport */
 }
 
+/*::selection{
+  color: #000000;
+  background:  #ebc9f8;
+}
 
 
-/* ------------------------------------------- */
+/* -------------- DIV DO PERFIL - INFORMAÇÕES DO USUÁRIO ----------------------------- */
 
 
 .tela-perfil{
@@ -75,7 +79,7 @@ input {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
-  padding: 33px;
+  padding: 38px;
   margin: 20px;
   width: 313px;
 }
@@ -102,6 +106,16 @@ button span {
 }
 
 
+/* ------------------------- DIV DO RESULTADO DO QUIZ -----------------------------------------------------  */
+
+
+h3{
+  color: #4F1964;
+  font-size: 1.2em;
+  margin-left: -70px;
+  margin-top: -80px;
+}
+
 
 .quiz{
   margin-top: -763px; /* Altura da borda */
@@ -117,10 +131,135 @@ button span {
   padding: 97px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 237px;/* Tamanho da caixa */
+  height: 238px;/* Tamanho da caixa */
   position: absolute;
-  top: 53px; /* ajuste conforme necessário */
+  top: 60px; /* ajuste conforme necessário */
 }
+
+.conteiner-a{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 365px;
+}
+
+.conteiner{
+  background-color:white;
+  padding: 60px; /* Tamanho da caixa */
+  margin: 20px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  border-radius: 10px;
+  width: 390px; /* Comprimento da borda */
+  height: 100px;/* Tamanho da caixa */
+  position: absolute;
+  top: 120px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.conteiner-b{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 773px;
+}
+
+.conteiner-c{
+  background-color: white;
+  padding: 60px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 10px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  width: 390px; /* Comprimento da borda */
+  height: 100px;/* Tamanho da caixa */
+  position: absolute;
+  top: 120px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.conteiner-d{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 365px;
+}
+
+.conteiner-e{
+  background-color: white;
+  padding: 10px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 10px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  width: 390px; /* Comprimento da borda */
+  height: 35px;/* Tamanho da caixa */
+  position: absolute;
+  top: 251px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.conteiner-f{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 773px;
+}
+
+.conteiner-g{
+  background-color: white;
+  padding: 10px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 10px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  width: 390px; /* Comprimento da borda */
+  height: 35px;/* Tamanho da caixa */
+  position: absolute;
+  top: 251px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.caixa{
+  background-color: #73328d;
+  padding: 10px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 5px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  width: 370px; /* Comprimento da borda */
+  height: 30px;/* Tamanho da caixa */
+  position: absolute;
+  top: -13px; /* ajuste conforme necessário */
+  margin-right: 200px;
+  margin-left: -52px;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.caixa-a{
+  background-color: #73328d;
+  padding: 10px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 5px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  width: 370px; /* Comprimento da borda */
+  height: 18px;/* Tamanho da caixa */
+  position: absolute;
+  top: -15.7px; /* ajuste conforme necessário */
+  margin-right: 200px;
+  margin-left: -2px;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+/* --------------------- DIV DE PERGUNTAS DO FORÚM ---------------------------------------- */
 
 
 .quiz-a {
@@ -137,10 +276,57 @@ button span {
   padding: 97px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 237px;/* Tamanho da caixa */
+  height: 245px;/* Tamanho da caixa */
   position: absolute;
-  top: 304px; /* ajuste conforme necessário */
+  top: 313px; /* ajuste conforme necessário */
 }
+
+.conteiner-h{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -90px;
+}
+
+.conteiner-i{
+  background-color:white;
+  padding: 36px; /* Tamanho da caixa */
+  margin: 20px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  border-radius: 10px;
+  width: 790px; /* Comprimento da borda */
+  height: 50px;/* Tamanho da caixa */
+  position: absolute;
+  top: 43px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.conteiner-j{
+  margin-top: 200px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -90px;
+}
+
+.conteiner-k{
+  background-color:white;
+  padding: 36px; /* Tamanho da caixa */
+  margin: 20px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  border-radius: 10px;
+  width: 790px; /* Comprimento da borda */
+  height: 50px;/* Tamanho da caixa */
+  position: absolute;
+  top: 132px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+/* ---------------------- DIV DE RESPOSTAS DO FORÚM --------------------------------------------------------*/
 
 
 .quiz-b {
@@ -157,18 +343,58 @@ button span {
   padding: 99px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 239px;/* Tamanho da caixa */
+  height: 245px;/* Tamanho da caixa */
   position: absolute;
-  top: 556px; /* ajuste conforme necessário */
+  top: 573px; /* ajuste conforme necessário */
 }
 
+.conteiner-l{
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -90px;
+}
+
+.conteiner-m{
+  background-color:white;
+  padding: 60px; /* Tamanho da caixa */
+  margin: 20px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color:  #73328d;
+  border-radius: 10px;
+  width: 790px; /* Comprimento da borda */
+  height: 163px;/* Tamanho da caixa */
+  position: absolute;
+  top: 43px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.caixa-b{
+  background-color: #73328d;
+  padding: 10px; /* Tamanho da caixa */
+  margin: 20px;
+  border-radius: 5px;
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  width: 770px; /* Comprimento da borda */
+  height: 60px;/* Tamanho da caixa */
+  position: absolute;
+  top: -13px; /* ajuste conforme necessário */
+  margin-right: 200px;
+  margin-left: -52px;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+/* ------------------------ BOTÕES DO PERFIL --------------------------------------------  */
 
 .quiz-button{
   margin-top: -826px; /* Altura do botão */
   margin-right: 100px;
   margin-left: 750px;
 }
-
 
 .button-a{
   border-radius: 20px;
@@ -177,25 +403,223 @@ button span {
   width: 10rem;
   height: 2rem;
   margin-left: 0.1rem;
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 
-.h2{
-  color: #636363;
-  /* cor dos titulos das div's em roxo*/
-  padding: -10px;
-  margin: 10px;
+/* -----------------------------------------------------------------------------  */
 
-  top: 10px; /* Ajuste conforme necessário */
-  right: 40px; /* Ajuste conforme necessário */
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  color: #ffffff;
+  padding: 5px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -56px;
+  width: 245px;
+  border-radius: 10px;
+  justify-items: center;
+  align-items: center;
+}
 
-  text-align: right;
-  display: table;
-  margin: 0 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2em
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  padding: 5px;
+  position: absolute;
+  margin-left: 125px;
+  margin-top: -8px;
+  width: 245px;
+  border-radius: 10px;
+  justify-items: center;
+  align-items: center;
+}
 
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+a{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 135px;
+}
+
+nav{
+  font-size: 1.3em;
+  margin-top: -25px;
+  margin-left: 40px;
+
+  nav{
+    font-size: 1em;
+    margin-top: -30px;
+    margin-left: 187px;
+  }
+}
+
+
+h1{
+  color: #4F1964;
+  font-size: 14px;
+  margin-top: -36px;
+  margin-left: -55px;
+}
+
+.data-a{
+  color: #4F1964;
+  font-size: 1em;
+  margin-top: 12px;
+  margin-left: -26px;
+}
+
+.data-b{
+  color: #4F1964;
+  font-size: 1em;
+  margin-top: 73px;
+  margin-left: -50px;
+}
+
+.forum-c{
+  flex: 1.6em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 22px;
+  margin-top: 58px;
+  width: 370px;
+
+
+  background-color: #73328d;
+  color: #ffffff;
+}
+
+
+.forum-d{
+  flex: 0.1em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 22px;
+  margin-top: 55px;
+  padding: 0.1px;
+  width: 370px;
+
+
+  background-color: #73328d;
+  color: #ffffff;
+}
+
+
+.forum-e{
+  flex: 2em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 48px;
+  width: 35px;
+  padding: 2px;
+}
+
+
+.forum-f{
+  flex: 2em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: -5px;
+  width: 35px;
+  padding: 2px;
+}
+
+/* ------------------------------- CAIXAS DE TEXTO ---------------------------------------------------  */
+
+
+.input{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  width: 1000px;
+}
+
+.input-texto-a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -68px;
+  margin-left: -33px;
+}
+
+.input-texto-a input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-texto-a input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-texto-a label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-texto-a input::placeholder {
+  color: #000000be;
+}
+
+
+
+.forum{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: -17px;
+  margin-top: -10px;
+  width: 766px;
+  padding: 15px;
+}
+
+
+.forum-a{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-top: 2px;
+  width: 766px;
+  padding: 10px;
+}
+
+
+.forum-b{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 22px;
+  margin-top: 57px;
+  width: 769px;
+  padding: 17px;
+
+  background-color: #73328d;
+  color: #ffffff;
 }
