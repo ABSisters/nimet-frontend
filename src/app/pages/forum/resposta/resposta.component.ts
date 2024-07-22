@@ -1,9 +1,11 @@
+import { PerguntaResponse } from './../../../model/response/perguntaResponse';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { ForumService } from '../../../service/forum/forum.service';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { RepostaPostRequest } from '../../../model/request/respostaPostRequest';
+import { RespostaResponse } from '../../../model/response/respostaResponse';
 
 @Component({
   selector: 'app-resposta',
@@ -13,14 +15,16 @@ import { RepostaPostRequest } from '../../../model/request/respostaPostRequest';
 })
 export class RespostaComponent implements OnInit{
 
-  constructor(private forumService: ForumService, private userService: UsuarioService, private message: MessageService,
-    private fb: FormBuilder){}
-
+  constructor(private forumService: ForumService, private userService: UsuarioService, private message: MessageService){}
+    pergunta!: PerguntaResponse;
     resposta: RepostaPostRequest = new RepostaPostRequest;
+    retornoRespostas: RespostaResponse[] = [];
 
   ngOnInit() {
     this.resposta.usuarioId = this.userService.getUsuario().usuarioId;
-    // this.resposta.perguntaId = vai vir da onde??
+    // this.pergunta = this.forumService.getPerguntaId();
+    this.pergunta = this.forumService.getPerguntaId();
+    this.getRespostas(this.pergunta); // deixar mocado por enquanto...
 
   }
 
@@ -37,6 +41,19 @@ export class RespostaComponent implements OnInit{
     })
   }
 
-
+  getRespostas(request: PerguntaResponse){
+    this.forumService.getRespostasDeUmaPergunta(request.perguntaId).subscribe({
+      next: (result) =>{
+        this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Respotas recuperadas com sucesso' })
+        console.log(result);
+        this.retornoRespostas = result;
+        this.forumService.clear();
+      },
+      error:(erro) => {
+        this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel recuperar as respostas' })
+        console.log(erro);
+      }
+    })
+  }
 
 }

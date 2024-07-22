@@ -1,11 +1,11 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, forwardRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EmailComponent } from './email/email.component';
 import { SharedModule } from '../shared/shared.module';
 import { ToastModule } from 'primeng/toast';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
 import { PerfilComponent } from './perfil/perfil.component';
 import { MenuComponent } from './menu/menu.component';
@@ -44,7 +44,8 @@ import { RespostaComponent } from './forum/resposta/resposta.component';
     QuizComponent,
     ForumComponent,
     AdicionarPerguntaComponent,
-    RespostaComponent
+    RespostaComponent,
+    ForumComponent
 
   ],
   imports: [
@@ -57,8 +58,15 @@ import { RespostaComponent } from './forum/resposta/resposta.component';
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     exports: [
-      MenuComponent 
-    ]
+      MenuComponent
+    ],
+    // providers: [
+    //   {
+    //     provide: NG_VALUE_ACCESSOR,
+    //     useExisting: forwardRef(() => MyInputField),
+    //     multi: true,
+    //   }
+    // ]
 
 })
 export class PagesModule { }

@@ -61,8 +61,6 @@ logar(){
       this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel fazer o login' })
       console.log("A requisição não teve sucesso", JSON.stringify(erro));
       console.log(erro);
-
-
     }
   })
 }

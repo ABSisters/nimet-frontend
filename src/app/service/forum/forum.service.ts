@@ -23,8 +23,17 @@ export class ForumService {
 
   constructor(private httpClient:HttpClient) { }
 
+  getPerguntaId(): PerguntaResponse {
+    const pergunta = localStorage.getItem('pergunta');
+    return pergunta ? JSON.parse(pergunta) : null;
+  }
+
+  clear(): void {
+    localStorage.removeItem('pergunta');
+  }
+
   adicionarPergunta(pergunta: PerguntaPostRequest): Observable<PerguntaResponse>{
-    return this.httpClient.post<PerguntaResponse>(env.baseApiUrl + '/' + urlConfig.adicionarPergunta, pergunta).pipe(
+    return this.httpClient.post<PerguntaResponse>( env.baseApiUrl + '/' + urlConfig.adicionarPergunta, pergunta, this.httpOptions).pipe(
       map((res:any) => res)
     )
   }
@@ -37,7 +46,7 @@ export class ForumService {
 
 
   getPerguntasCurso(curso: Curso): Observable<PerguntaResponse[]>{
-    return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.perguntasCurso + '?curso='+ curso).pipe(
+    return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.perguntasCurso + '/'+ curso).pipe(
       map((res:any) => res)
     )
   }
@@ -61,7 +70,7 @@ export class ForumService {
   }
 
   getRespostasDeUmaPergunta(perguntaId: String): Observable<RespostaResponse[]>{
-    return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.getRespostas + '/' + '?perguntaId=' + perguntaId).pipe(
+    return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.getRespostas + '/' + perguntaId).pipe(
       map((res:any) => res)
     )
   }

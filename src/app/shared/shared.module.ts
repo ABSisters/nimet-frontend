@@ -8,15 +8,13 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { ToastModule } from 'primeng/toast';
 import { ListboxModule } from 'primeng/listbox';
 import { TableModule } from 'primeng/table';
-
-
-
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { AvatarModule } from 'primeng/avatar';
 import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 
 
@@ -38,6 +36,7 @@ import { Sidebar } from 'primeng/sidebar';
     RippleModule,
     AvatarModule,
     StyleClassModule,
+    RadioButtonModule
 
   ],
   exports: [
@@ -57,6 +56,8 @@ import { Sidebar } from 'primeng/sidebar';
     AvatarModule,
     StyleClassModule,
     Sidebar,
+    RadioButtonModule
+
 
   ]
 })
