@@ -63,9 +63,9 @@ header {
 
 
 .forum-button{
-  margin-top: -25px; /* Altura do botão */
+  margin-top: 810px; /* Altura do botão */
   margin-right: 100px;
-  margin-left: 1400px;
+  margin-left: 1420px;
 }
 
 .button-a{
@@ -75,7 +75,7 @@ header {
   width: 16rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: -1310px;
+  margin-top: -1000px;
   font-size: 1.5em;
 }
 
@@ -86,18 +86,22 @@ header {
   margin-left: 300px;
 }
 
-.button-b{
+/*.button-b{
   border-radius: 20px;
   background-color: white;
   border-color: #4F1964;
   color: #4F1964;
   width: 13rem; /* comprimento da caixa */
-  height: 2.4rem; /* Tamanho da caixa */
-  margin-left: 0.1rem;
+  /*height: 2.4rem; / Tamanho da caixa */
+  /*margin-left: 0.1rem;
   margin-top: 860px;
   font-size: 1.5em;
-}
+}*/
 
+
+
+
+/* --------------------------ITENS DENTRO DA DIV BRANCA------------------------------------------------------ */
 
 
 .conteiner-a{
@@ -133,20 +137,113 @@ header {
 .status{
   font-size: 1.5em;
   margin-top: -450px;
-  margin-left: -290px;
+  margin-left: -220px;
   color: #4F1964;
 }
 
 .pergunta{
   font-size: 1.5em;
   margin-top: -450px;
-  margin-left: 100px;
+  margin-left: 50px;
   color: #4F1964;
 }
 
 .postar{
   font-size: 1.5em;
-  margin-top: -450px;
-  margin-left: 400px;
+  margin-top: -245px;
+  margin-left: 200px;
   color: #4F1964;
+}
+
+.tag-c{
+  margin-left: 750px;
+}
+
+
+.status-condicao{
+  margin-top: -210px;
+  margin-left: -1290px;
+  color: #23903c;
+  background: #d4edda;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+h2{
+  background-color: #f4e3fc;
+  margin: 1px;
+  font-size: 1.5em;
+  padding: 10px;
+  position: absolute;
+  margin-left: 1180px;
+  margin-top: -220px;
+  border-radius: 15px;
+}
+
+
+.custom-hr-b{
+  height: 2px;
+  height: 4px;
+  margin-top: -50px;
+  margin-left: -2px;
+  width: 1400px;
+  background-color: #4F1964;
+
+  position: absolute;
+}
+
+
+/*---------------------- CAIXA DE TEXTO --------------------------------------------------------  */
+
+
+.input{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 1030px;
+  padding: 100px;
+}
+
+.input-box-a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -182px;
+  margin-left: -185px;
+}
+
+.input-box-a input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box-a input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-box-a label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box-a input::placeholder {
+  color: #000000be;
+}
+
+
+.forum-b{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  border-radius: 5px;
+  margin-left: 235px;
+  margin-top: 1px;
+  width: 1000px;
+  padding: 18px;
 }

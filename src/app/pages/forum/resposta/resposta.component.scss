@@ -103,16 +103,7 @@ span {
 }
 
 
-input {
-  flex: 2.4em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
-  border-radius: 5px;
-  border: 1px solid #000000;
-  width: 1419px;
-  padding: 25px;
-}
+
 
 .input-box {
   display: flex;
@@ -144,7 +135,7 @@ input {
 
 
 .postar-button{
-  margin-top: 20px; /* Altura do botão */
+  margin-top: -0px; /* Altura do botão */
   margin-right: 100px;
   margin-left: 1550px;
 }
@@ -156,12 +147,12 @@ input {
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: -347px;
+  margin-top: -380px;
   font-size: 1.5em;
 }
 
 
-h2{
+.informacoes-usuario{
   font-family: 'Roboto', sans-serif;
   background-color: #f4e3fc;
   margin: 1px;
@@ -201,7 +192,11 @@ h2{
 
 .forum{
   padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 1415px;
 }
+
 
 .forum-a{
   flex: 1em;
@@ -221,7 +216,9 @@ h2{
   margin-right: 15px;
   border-radius: 5px;
   margin-left: 19px;
-  margin-top: 70px;
+  margin-top: 75px;
+  border-radius: 5px;
+  border: 1px solid #000000;
   width: 1520px;
-  padding: 100px;
+  padding: 175px;
 }

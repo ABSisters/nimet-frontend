@@ -6,6 +6,11 @@ import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 
+interface City {
+  name: string,
+  code: string
+}
+
 @Component({
   selector: 'app-forum',
   templateUrl: './forum.component.html',
@@ -14,11 +19,24 @@ import { MessageService } from 'primeng/api';
 })
 export class ForumComponent implements OnInit {
 
+  cities!: City[];
+
+  selectedCities!: City[];
+
   constructor(private forumService: ForumService, private userService: UsuarioService, private routes: Router,
     private message:MessageService) { }
 
   ngOnInit() {
     this.loadPerguntasCurso(this.userService.getUsuario().curso);
+
+    
+    this.cities = [
+      {name: 'New York', code: 'NY'},
+      {name: 'Rome', code: 'RM'},
+      {name: 'London', code: 'LDN'},
+      {name: 'Istanbul', code: 'IST'},
+      {name: 'Paris', code: 'PRS'}
+  ];
   }
 
 
@@ -61,5 +79,8 @@ export class ForumComponent implements OnInit {
       this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel recuperar o ID da pergunta selecionada' })
     }
  }
+
+
+
 
 }

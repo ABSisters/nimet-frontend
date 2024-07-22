@@ -5,47 +5,74 @@
 
   <div class="cadastro">
 
+    </div>
   </div>
-</div>
 
 
-<div class="tela-perfil">
-  <header>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-    <h5>Fórum</h5>
-  </header>
+  <div class="tela-perfil">
+    <header>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Fórum</h5>
+    </header>
 
 
   <div class="quiz">
     <div class="borda-quiz">
-      <h2></h2>
+
 
       <div class="conteiner-a">
-        <div class="conteiner">
+      <div class="conteiner">
 
-          <div class="status">Status</div>
-          <div class="pergunta">Pergunta</div>
-          <div class="postar">Postado Por</div>
-          <hr class="custom-hr">
+        <div class="status">Status</div>
+
+        <div class="pergunta">Pergunta</div>
+
+        <div class="tag-c">
+        <div class="postar">Postado Por:</div>
+       </div>
+
+        <hr class="custom-hr">
+
+        <div class="status-condicao">
+          <i class="pi pi-check" style="font-size: 2.5rem"></i>
+          </div>
+
+        <div class="input-box-a">
+          <span>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+          </span>
+          <input id="adicionar uma resposta"  class="forum-b" type="adicionar uma resposta" name="firstname"
+            placeholder="" required  />
         </div>
-      </div>
 
-      
+        <h2>Seu Username<br>00/00/0000 - 00:00</h2>
+
+        <hr class="custom-hr-b">
+
+      </div>
+    </div>
 
     </div>
-  </div>
+    </div>
+
 </div>
 
 
 <div class="tags-button">
   <div class="input-box">
-    <button class="button-b"><span>Tags</span></button>
+    <!--<button class="button-b">-->
+      <div class="card flex justify-content-center" [style]="{color: '#2a1261', top:'840px', width:'200px', borderColor: '#73328d', borderRadius: 'var(--border-radius)'}">
+        <p-multiSelect
+            [options]="cities"
+            [(ngModel)]="selectedCities"
+            optionLabel="name"
+            placeholder="TAGS"/>
+      </div><!--</button>-->
   </div>
 </div>
 
 
 <div class="forum-button">
-  <div class="input-box">
-    <button class="button-a"><span>Adicionar Pergunta</span></button>
-  </div>
+    <div class="input-box">
+      <button class="button-a"><span>Adicionar Pergunta</span></button>
+    </div>
 </div>
