@@ -15,7 +15,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
 import { RadioButtonModule } from 'primeng/radiobutton';
-
+import { MultiSelectModule } from 'primeng/multiselect';
 
 
 @NgModule({
@@ -36,7 +36,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     RippleModule,
     AvatarModule,
     StyleClassModule,
-    RadioButtonModule
+    RadioButtonModule,
+    MultiSelectModule
 
   ],
   exports: [
@@ -56,7 +57,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     AvatarModule,
     StyleClassModule,
     Sidebar,
-    RadioButtonModule
+    RadioButtonModule,
+    MultiSelectModule 
 
 
   ]
