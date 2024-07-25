@@ -16,13 +16,13 @@
 /* ----------------------- COR, TAMANHO E POSIÇÃO DO TÍTULO ------------------------------------ */
 
 
-.tela-perfil{
+.tela-forum{
   margin-top: 40px;
   margin-right: 150px;
   margin-left: 200px;
 }
 
-h5 {
+.cor-nome {
   color: #4F1964;
   font-size: 3em;
   /* cor da palavra perfil*/
@@ -40,13 +40,13 @@ header {
  /* ------------------ DIV DO FÓRUM COM BOTÕES DE ADICIONAR PERGUNTA E TEGS ----------------------------------------------- */
 
 
-.quiz{
+.forum{
   margin-top: -790px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 15px;
 }
 
-.borda-quiz {
+.borda-forum {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
@@ -62,7 +62,7 @@ header {
 }
 
 
-.forum-button{
+.adicionar-button{
   margin-top: 810px; /* Altura do botão */
   margin-right: 100px;
   margin-left: 1420px;
@@ -86,6 +86,10 @@ header {
   margin-left: 300px;
 }
 
+.custom-multiselect {
+  width: 100px;
+}
+
 /*.button-b{
   border-radius: 20px;
   background-color: white;
@@ -100,8 +104,7 @@ header {
 
 
 
-
-/* --------------------------ITENS DENTRO DA DIV BRANCA------------------------------------------------------ */
+/* -------------------------- ITENS DENTRO DA DIV BRANCA ------------------------------------------------------ */
 
 
 .conteiner-a{
@@ -123,16 +126,16 @@ header {
 }
 
 
-.custom-hr{
+.custom-hr{ /* linhas de separação delimitação */
   height: 2px;
   height: 4px;
   margin-top: -370px;
   margin-left: -2px;
   width: 1400px;
   background-color: #4F1964;
-
   position: absolute;
 }
+
 
 .status{
   font-size: 1.5em;
@@ -170,7 +173,7 @@ header {
 }
 
 
-h2{
+.dados-usuario{
   background-color: #f4e3fc;
   margin: 1px;
   font-size: 1.5em;
@@ -189,7 +192,6 @@ h2{
   margin-left: -2px;
   width: 1400px;
   background-color: #4F1964;
-
   position: absolute;
 }
 
@@ -236,7 +238,7 @@ h2{
 }
 
 
-.forum-b{
+.caixa-texto{
   flex: 2.4em;
   /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;

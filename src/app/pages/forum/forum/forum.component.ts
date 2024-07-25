@@ -29,13 +29,12 @@ export class ForumComponent implements OnInit {
   ngOnInit() {
     this.loadPerguntasCurso(this.userService.getUsuario().curso);
 
-    
+
     this.cities = [
-      {name: 'New York', code: 'NY'},
-      {name: 'Rome', code: 'RM'},
-      {name: 'London', code: 'LDN'},
-      {name: 'Istanbul', code: 'IST'},
-      {name: 'Paris', code: 'PRS'}
+      {name: 'LOGICA_DE_PROGRAMACAO', code: 'LG'},
+      {name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'RDI'},
+      {name: 'APLICACOES_PARA_WEB', code: 'AW'},
+      {name: 'SISTEMAS_COMPUTACIONAIS', code: 'STC'},
   ];
   }
 

@@ -9,38 +9,23 @@
 }
 
 
-.conteiner {
+/*.conteiner {
   display: flex;
-}
+}*/
 
  /* ---------------------- CORES, POSIÇÕES E TAMANHOS DOS TÍTULOS ---------------------------------------------- */
 
-.tela-perfil{
-  margin-top: 899px;
-  margin-right: 150px;
-  margin-left: 210px;
-  padding: 20px;
-  text-align: left;
-}
 
-
-span{
-  color: #4F1964;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-}
-
-
-h6{
+.titulo-principal{
   font-family: 'Roboto', sans-serif;
   color: #4F1964;
   /* cor da palavra perfil*/
-  margin-top: -2400px;
-  margin-left: 190px;
+  margin-top: -1700px;
+  margin-left: 150px;
   font-size: 1em;
 }
 
-h5 {
+.titulo {
   color: #4F1964;
   /* cor da palavra */
   margin-top: -800px;
@@ -48,7 +33,7 @@ h5 {
   font-size: 0.9em;
 }
 
-h3{
+.descricao{
   color: #4F1964;
   margin-top: -776px;
   margin-left: -20px;
@@ -65,21 +50,26 @@ header {
   margin-top: 700px;
 }
 
-
 .conteiner{
   margin-top: 1700px;
+}
+
+.titulo-tags{
+  color: #4F1964;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 }
 
 
  /* ------------------------ DIV'S DO TÍTULO E DA DESCRÇÃO --------------------------------------------*/
 
-.quiz{
+.adicionar-pergunta-titulo{
   margin-top: -763px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 200px;
 }
 
-.borda-quiz {
+.borda-adicionar-pergunta {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
@@ -94,13 +84,13 @@ header {
   align-items: center; /* centraliza verticalmente */
 }
 
-.caixa-a{
+.caixa-texto-titulo{
   margin-top: 733px; /* Altura da borda */
   margin-right: 200px;
   margin-left: -110px;
 }
 
-.caixa{
+.caixa-titulo{
   background-color: rgb(255, 255, 255);
   padding: 70px; /* Tamanho da caixa */
   margin: 20px;
@@ -114,13 +104,13 @@ header {
 
 
 
-.quiz-a {
+.adicionar-pergunta-descricao {
   margin-top: -8px; /* Altura da borda */
   margin-right: 200px;
-  margin-left: -200px;
+  margin-left: 200px;
 }
 
-.borda-quiz-a {
+.borda-pergunta-descricao {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
@@ -133,13 +123,13 @@ header {
   top: 390px; /* ajuste conforme necessário */
 }
 
-.caixa-b{
+.caixa-texto-descricao{
   margin-top: 733px; /* Altura da borda */
   margin-right: 200px;
   margin-left: -85px;
 }
 
-.caixa-c{
+.caixa-descricao{
   background-color: rgb(255, 255, 255);
   padding: 184px; /* Tamanho da caixa */
   margin: 20px;
@@ -153,51 +143,91 @@ header {
 }
 
 
-/* ----------------------- BOTÃO DE POSTAR E TELA DE TAGS ----------------------------------------- */
+/* ----------------------- BOTÃO DE POSTAR ----------------------------------------- */
 
-.quiz-button{
-  margin-top: -110px; /* Altura do botão */
+.postar-button{
+  margin-top: -76px; /* Altura do botão */
   margin-right: 100px;
-  margin-left: 1620px;
+  margin-left: 1720px;
 }
 
-.button-a{
+.button-postar{
   border-radius: 20px;
   background-color: #4F1964;
   color: #ffffff;
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 1.5em;
 }
 
 
+/* ------------------------------------- DIV DAS TAGS ------------------------------------------- */
 
-.tela-perfil{
-  margin-top: -1825px;
+
+.tela-tags{
+  margin-top: 899px;
+  margin-right: 150px;
+  margin-left: 210px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tela-tags{
+  margin-top: 725px;
   margin-right: 100px;
   margin-left: 1325px;
 }
 
-.borda {
+.borda-tags {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
   padding: 33px;
   margin: 20px;
   width: 420px;/* Comprimento da borda */
-  margin-top: 159px;
+  margin-top: -917px;
   height: 748px;/* Tamanho da caixa */
 }
 
 
-.lupa{
+/*lupa{
   margin-left: 20px;
-}
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: x-large;
+}*/
 
 .selecao{
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.field-checkbox{
+ margin-top: 10px;
+}
+
+.ml-2{
+  margin-top: -10px;
+}
+
+
+.barra-pesquisa{
+ padding: 7px;
+ margin-top: 10px;
+ width: 380px;
+}
+
+.card input[pInputText] {
+  width: calc(100% - 32px); /* largura para descontar o ícone */
+  padding-left: 32px; /* Espaço à esquerda para acomodar o ícone */
+}
+
+.card .p-input-icon-left .pi {
+  left: -30px;
+  top: 50%;
+  transform: translateY(-70%);
 }
 
 
@@ -244,7 +274,7 @@ input {
 
 
 
-.input-a{
+.input-descricao{
   flex: 2.4em;
   /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;
@@ -255,7 +285,7 @@ input {
   padding: 1500px;
 }
 
-.input-box-a {
+.input-box-descricao {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -263,27 +293,27 @@ input {
   margin-left: -185px;
 }
 
-.input-box-a input:hover {
+.input-box-descricao input:hover {
   background-color: #eeeeee75;
 }
 
-.input-box-a input:focus-visible {
+.input-box-descricao input:focus-visible {
   outline: 1px solid #3e37c0;
 }
 
-.input-box-a label,
+.input-box-descricao label,
 .gender-title h6 {
   font-size: 0.75rem;
   font-weight: 600;
   color: #000000c0;
 }
 
-.input-box-a input::placeholder {
+.input-box-descricao input::placeholder {
   color: #000000be;
 }
 
 
-.forum-b{
+.forum-descricao{
   flex: 2.4em;
   /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;

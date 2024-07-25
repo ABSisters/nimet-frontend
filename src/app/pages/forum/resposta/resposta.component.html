@@ -1,55 +1,46 @@
 <app-menu></app-menu>
 
-<div class="tela">
-  <div class="roxo"></div>
-  <div class="cadastro"></div>
-</div>
+<!---------------------------------------------------------------------------------------------------------->
 
 <div>
   <header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-    <h5>{{ pergunta.titulo }}<br></h5>
+    <h5 class="cor-titulo-descricao">{{ pergunta.titulo }}<br></h5>
   </header>
 </div>
 
 <div>
-  <a>Por: {{ pergunta.usuario.nome }} <p>{{ pergunta.dataCriado }}</p>
+  <a class="estilo-nome">Por: {{ pergunta.usuario.nome }} <p class="estilo-data">{{ pergunta.dataCriado }}</p>
     <hr class="custom-hr">
   </a>
-  <article>
-    <h4>
+
       <div class="input-box">
         <span>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
         </span>
-        <h3 class="forum-b">{{ pergunta.detalhes }}</h3>
+        <h3 class="caixa-b">{{ pergunta.detalhes }}</h3>
       </div>
-    </h4>
-  </article>
 </div>
 
 <div class="conteiner">
-  <div class="quiz">
-    <div class="borda-quiz">
+  <div class="caixa-adicionar-respostas">
+    <div class="borda-adicionar-respostas">
+
       <div class="input-box">
-        <span>
+        <span class="estilo-palavra">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-          <h1>Respostas</h1>
+          <h1 class="cor">Respostas</h1>
         </span>
         <input id="adicionar uma resposta" textarea class="forum" name="firstname" placeholder="lalal" required />
       </div>
 
-
-      <!-- <article> -->
-        <!-- <h6> -->
           <div *ngFor="let resposta of retornoRespostas">
             <div class="input-box">
               <h2 class="informacoes-usuario"> {{ resposta.usuario.nome }} - {{ resposta.dataCriado }}</h2>
               <h3 class="forum">{{ resposta.resposta }}</h3>
             </div>
           </div>
-        <!-- </h6> -->
-      <!-- </article> -->
+
     </div>
   </div>
 </div>

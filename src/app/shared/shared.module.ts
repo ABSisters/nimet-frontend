@@ -16,7 +16,10 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { MultiSelectModule } from 'primeng/multiselect';
-
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [],
@@ -37,8 +40,11 @@ import { MultiSelectModule } from 'primeng/multiselect';
     AvatarModule,
     StyleClassModule,
     RadioButtonModule,
-    MultiSelectModule
-
+    MultiSelectModule,
+    PanelMenuModule,
+    IconFieldModule,
+    InputIconModule,
+    InputTextModule
   ],
   exports: [
     CommonModule,
@@ -58,7 +64,11 @@ import { MultiSelectModule } from 'primeng/multiselect';
     StyleClassModule,
     Sidebar,
     RadioButtonModule,
-    MultiSelectModule 
+    MultiSelectModule,
+    PanelMenuModule,
+    IconFieldModule,
+    InputIconModule,
+    InputTextModule
 
 
   ]
