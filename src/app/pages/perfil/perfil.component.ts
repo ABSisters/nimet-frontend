@@ -15,6 +15,7 @@ import { UsuarioResponse } from '../../model/response/usuarioResponse';
 })
 export class PerfilComponent implements OnInit {
   user!: UsuarioResponse;
+  edit: boolean = true;
 
   constructor(
     private userService: UsuarioService,
@@ -43,7 +44,8 @@ export class PerfilComponent implements OnInit {
       next: (usuario) => {
         console.log(usuario);
         this.message.add({ severity: 'sucess', summary: 'Sucess', detail: 'Perfil alterado com sucesso' })
-
+        this.edit = true;
+        this.userService.setUsuario(usuario);
       },
       error: (erro) => {
         console.log(erro);
@@ -51,6 +53,11 @@ export class PerfilComponent implements OnInit {
       }
     })
   }
+
+  allowEdit(){
+    this.edit = false ;
+  }
+
 
   // alterarSenha(user: UsuarioResponse, userSenha: UsuarioPutSenhaRequest) {
   //   this.userService.alterarSenha(userSenha).subscribe({

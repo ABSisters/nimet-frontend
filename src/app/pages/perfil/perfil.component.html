@@ -14,7 +14,7 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Nome</h5>
         </header>
         <input id="nome"  class="form-control" type="nome" name="firstname"
-          placeholder="Nome" [(ngModel)]="user.nome"  required />
+          placeholder="Nome" [(ngModel)]="user.nome" [disabled]="edit"  />
       </div>
 
 
@@ -23,7 +23,7 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Username</h5>
         </header>
         <input id="Username"  class="form-control" type="Username" name="Username"
-        placeholder="Username"  [(ngModel)]="user.username" required />
+        placeholder="Username"  [(ngModel)]="user.username" [disabled]="edit"  />
      </div>
 
       <div class="input-box">
@@ -31,7 +31,7 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Email</h5>
         </header>
         <input id="email"  type="email" name="email" placeholder="Email"
-        class="form-control"  [(ngModel)]="user.email"  required />
+        class="form-control"  [(ngModel)]="user.email" [disabled]="edit"  />
      </div>
 
       <div class="input-box">
@@ -48,7 +48,7 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Curso</h5>
         </header>
         <input id="confirmcourse"  type="curso" name="confirmcourse" list="cursos"
-            placeholder="Curso" class="form-control" [(ngModel)]="user.curso" required />
+            placeholder="Curso" class="form-control" [(ngModel)]="user.curso"  [disabled]="edit"  />
       </div>
 
       <div class="input-box">
@@ -56,12 +56,13 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h5>Data de Nascimento</h5>
         </header>
         <input id="nome" class="form-control" type="nome" name="firstname"
-          placeholder="Digite seu nome" [(ngModel)]="user.dataNascimento" required />
+          placeholder="Digite seu nome" [(ngModel)]="user.dataNascimento"  [disabled]="edit"  />
       </div>
 
 
         <div class="input-box">
-          <button class="button-editar" (click)="alterarPerfil(user)">Editar Perfil</button>
+          <button class="button" *ngIf="edit" (click)="allowEdit()">Editar Perfil</button>
+          <button class="button" *ngIf="!edit" (click)="alterarPerfil(user)">Salvar</button>
         </div>
 
   </div>

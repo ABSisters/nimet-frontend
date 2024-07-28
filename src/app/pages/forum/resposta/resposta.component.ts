@@ -1,11 +1,12 @@
 import { PerguntaResponse } from './../../../model/response/perguntaResponse';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { MessageService } from 'primeng/api';
 import { ForumService } from '../../../service/forum/forum.service';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { RepostaPostRequest } from '../../../model/request/respostaPostRequest';
 import { RespostaResponse } from '../../../model/response/respostaResponse';
+import { MessageService } from 'primeng/api';
+
 
 @Component({
   selector: 'app-resposta',
