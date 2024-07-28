@@ -1,32 +1,23 @@
 
-.sidenav{
-  width: 200px;
-  /* Ocupa 100% da largura do viewport */
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: linear-gradient(to bottom, #73328d, #c185de);
-}
-
-.gradient-background {
-  background: linear-gradient(to bottom, #ffffff,  #73328d);
-  height: 220vh; /* Altura de 100% da viewport */
-}
-
-/*::selection{
-  color: #000000;
-  background:  #ebc9f8;
-}
-
-
 /* -------------- DIV DO PERFIL - INFORMAÇÕES DO USUÁRIO ----------------------------- */
 
 
 .tela-perfil{
   margin-top: -24px;
-  margin-right: 100px;
-  margin-left: 110px;
+  margin-left: 135px;
+  width: 90vw;
+  height: 130vh;
+  // background-image: url(../../../assets/images/Nimet.svg);
+  // background-size: cover;  /* Ajusta a imagem para cobrir toda a área */
+  // background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
+
+// o idela é criar um div para cercar borda e resultado quiz
+.card{
+
+}
+
+
 
 .titulo-principal{
   font-size: 1.2em;
@@ -92,16 +83,7 @@ input {
  /* ------------------------------ BOTÕES DA DIV DO PERFIL ------------------------------------------------ */
 
 
-.button-alterar {
-  border-radius: 20px;
-  background-color: #4F1964;
-  color: white;
-  width: 15rem;
-  height: 2rem;
-  margin-left: 0.1rem;
-}
-
-.button-editar {
+.button {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
@@ -132,9 +114,9 @@ button span {
 
 
 .resultado-quiz{
-  margin-top: -763px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 340px;
+
 }
 
 .borda-resultado-quiz {
@@ -147,13 +129,11 @@ button span {
   width: 850px; /* Comprimento da borda */
   height: 238px;/* Tamanho da caixa */
   position: absolute;
-  top: 60px; /* ajuste conforme necessário */
+  top: 70px; /* ajuste conforme necessário */
 }
 
 
 .conteiner-resultado-quiz-esquerda{
-  margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: 365px;
 }
 
@@ -168,15 +148,13 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 100px;/* Tamanho da caixa */
   position: absolute;
-  top: 120px; /* ajuste conforme necessário */
+  top: 125px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
 
 
 .conteiner-resultado-quiz-direita{
-  margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: 773px;
 }
 
@@ -191,7 +169,7 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 100px;/* Tamanho da caixa */
   position: absolute;
-  top: 120px; /* ajuste conforme necessário */
+  top: 125px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -213,7 +191,7 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 35px;/* Tamanho da caixa */
   position: absolute;
-  top: 251px; /* ajuste conforme necessário */
+  top: 255px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -235,7 +213,7 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 35px;/* Tamanho da caixa de texto*/
   position: absolute;
-  top: 251px;
+  top: 255px;
   justify-content: center;
   align-items: center;
 }
@@ -303,52 +281,30 @@ button span {
   width: 850px; /* Comprimento da borda */
   height: 245px;/* Tamanho da caixa */
   position: absolute;
-  top: 313px; /* ajuste conforme necessário */
+  max-height: 245px; /* Altura máxima ajustada */
+  overflow-y: auto;  /* Barra de rolagem vertical */
+  top: 325px; /* ajuste conforme necessário */
 }
 
 .conteiner-perguntas-forum-emcima{
-  margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: -90px;
 }
 
 .conteiner-perguntas-emcima{
   background-color:white;
   padding: 36px; /* Tamanho da caixa */
-  margin: 20px;
+  margin: 10px;
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color:  #73328d;
   border-radius: 10px;
   width: 790px; /* Comprimento da borda */
   height: 50px;/* Tamanho da caixa */
-  position: absolute;
-  top: 43px; /* ajuste conforme necessário */
+  position: relative;
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
 
-.conteiner-perguntas-forum-embaixo{
-  margin-top: 200px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: -90px;
-}
-
-.conteiner-perguntas-embaixo{
-  background-color:white;
-  padding: 36px; /* Tamanho da caixa */
-  margin: 20px;
-  border-width: 2px;   /* Largura da borda */
-  border-style: solid; /* Estilo da borda */
-  border-color:  #73328d;
-  border-radius: 10px;
-  width: 790px; /* Comprimento da borda */
-  height: 50px;/* Tamanho da caixa */
-  position: absolute;
-  top: 132px; /* ajuste conforme necessário */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
-}
 
 
 /* ---------------------- DIV DE RESPOSTAS DO FORÚM --------------------------------------------------------*/
@@ -361,7 +317,6 @@ button span {
 }
 
 .respostas-forum {
-  margin-top: -7px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 340px;
 }
@@ -376,27 +331,25 @@ button span {
   width: 850px; /* Comprimento da borda */
   height: 245px;/* Tamanho da caixa */
   position: absolute;
-  top: 573px; /* ajuste conforme necessário */
+  overflow-y: auto;  /* Barra de rolagem vertical */
+  top: 588px; /* ajuste conforme necessário */
 }
 
 .conteiner-respostas-forum-embaixo{
-  margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: -90px;
 }
 
 .conteiner-respostas-embaixo{
   background-color:white;
   padding: 60px; /* Tamanho da caixa */
-  margin: 20px;
+  margin: 15px;
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color:  #73328d;
   border-radius: 10px;
   width: 790px; /* Comprimento da borda */
   height: 163px;/* Tamanho da caixa */
-  position: absolute;
-  top: 43px; /* ajuste conforme necessário */
+  position: relative;
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -411,7 +364,7 @@ button span {
   width: 770px; /* Comprimento da borda */
   height: 60px;/* Tamanho da caixa de texto*/
   position: absolute;
-  top: -13px;
+  top: -12px;
   margin-right: 200px;
   margin-left: -52px;
   justify-content: center; /* centraliza horizontalmente */
@@ -539,20 +492,20 @@ nav{
   margin-left: 22px;
   margin-top: 58px;
   width: 370px;
+  text-align: center;
   background-color: #73328d;
   color: #ffffff;
 }
 
 .caixas-nome-quiz-embaixo{
   flex: 0.1em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   margin-left: 22px;
   margin-top: 55px;
   padding: 0.1px;
   width: 370px;
+  text-align: center;
   background-color: #73328d;
   color: #ffffff;
 }

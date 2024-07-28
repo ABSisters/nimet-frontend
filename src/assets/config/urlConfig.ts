@@ -7,6 +7,8 @@ export const urlConfig = {
   deletar: 'usuarios/deletar',
   adicionarPergunta: 'perguntas/adicionar',
   perguntasCurso: 'perguntas/curso',
+  perguntasUsuario:'perguntas/usuario',
+  pergunta: 'perguntas',
   adicionarResposta: 'respostas/adicionar',
   getRespostasUsuario: 'respostas/usuario',
   getRespostas: 'respostas/perguntas'

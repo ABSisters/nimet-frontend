@@ -18,7 +18,10 @@
 
 
 .font-bold{ /* tamnho da fonte do nome do usuário */
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .mt-auto{
@@ -48,7 +51,7 @@
  /*padding-inline-start: 30px;
   padding-right: 30px;
   padding-left: 30px;*/
-  padding-inline: 50px;
+  // padding-inline: 50px;
 }
 
 .font-medium:active {

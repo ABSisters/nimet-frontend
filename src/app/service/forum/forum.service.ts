@@ -38,11 +38,11 @@ export class ForumService {
     )
   }
 
-  // getPerguntasdoUsuario(pergunta: PerguntaPostRequest): Observable<PerguntaResponse>{
-  //   return this.httpClient.post<PerguntaResponse>(env.baseApiUrl + '/' + urlConfig.adicionarPergunta, pergunta).pipe(
-  //     map((res:any) => res)
-  //   )
-  // }
+  getPerguntasdoUsuario(id: String): Observable<PerguntaResponse[]>{
+    return this.httpClient.get<PerguntaResponse[]>(env.baseApiUrl + '/' + urlConfig.perguntasUsuario +  '/' + id).pipe(
+      map((res:any) => res)
+    )
+  }
 
 
   getPerguntasCurso(curso: Curso): Observable<PerguntaResponse[]>{
@@ -63,8 +63,8 @@ export class ForumService {
     )
   }
 
-  getRespostasDoUsuario(usuarioId: String): Observable<RepostaPostRequest[]>{
-    return this.httpClient.get(env.baseApiUrl+ '/' + urlConfig.getRespostasUsuario + '/' + '?usuarioId=' + usuarioId).pipe(
+  getRespostasDoUsuario(usuarioId: String): Observable<RespostaResponse[]>{
+    return this.httpClient.get(env.baseApiUrl+ '/' + urlConfig.getRespostasUsuario + '/'  + usuarioId).pipe(
       map((res:any) => res)
     )
   }
