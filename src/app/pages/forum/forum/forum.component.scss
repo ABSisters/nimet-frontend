@@ -1,71 +1,124 @@
-
-/* ----------------------- COR, TAMANHO E POSIÇÃO DO TÍTULO ------------------------------------ */
-
-
-.tela{
-  width: 98vw; /* Ocupa 100% da largura do viewport */
-  height: 110vh; /* Ocupa 100% da altura do viewport */
-}
-
-.titulo {
-  color: #4F1964;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 10rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
- /* ------------------ DIV DO FÓRUM COM BOTÕES DE ADICIONAR PERGUNTA E TEGS ----------------------------------------------- */
-
-
-.quiz{
+.cadastro {
+  flex: 5;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 0px 0px 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.borda-quiz {
 
+.conteiner {
+  display: flex;
+}
+
+/* ----------------------- COR, TAMANHO E POSIÇÃO DO TÍTULO ------------------------------------ */
+
+
+.tela-forum{
+  margin-top: 40px;
+  margin-right: 150px;
+  margin-left: 200px;
+}
+
+.cor-nome {
+  color: #4F1964;
+  font-size: 3em;
+  /* cor da palavra perfil*/
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  /* tipo da letra do titulo */
+  font-weight: 300;
+}
+
+
+ /* ------------------ DIV DO FÓRUM COM BOTÕES DE ADICIONAR PERGUNTA E TEGS ----------------------------------------------- */
+
+
+.forum{
+  margin-top: -790px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: 15px;
+}
+
+.borda-forum {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
   background-color: #d19bec40;
   padding: 100px; /* Tamanho da caixa */
-  width: 87rem; /* Comprimento da borda */
-  height: 40rem;/* Tamanho da caixa */
+  margin: 20px;
+  width: 1520px; /* Comprimento da borda */
+  height: 680px;/* Tamanho da caixa */
   position: absolute;
   top: 140px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
 }
 
 
-.botao {
+.adicionar-button{
+  margin-top: 810px; /* Altura do botão */
+  margin-right: 100px;
+  margin-left: 1420px;
+}
+
+.button-a{
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
+  width: 16rem;
   height: 2.5rem;
-  margin-left: 63rem;
-  margin-top: 2rem;
-  font-size: 1em;
-  width: 10rem;
-  margin-top: -120px;
+  margin-left: 0.1rem;
+  margin-top: -1000px;
+  font-size: 1.5em;
 }
 
 
-/* --------------------------ITENS DENTRO DA DIV BRANCA------------------------------------------------------ */
+.tags-button{
+  margin-top: -25px; /* Altura do botão */
+  margin-right: 150px;
+  margin-left: 300px;
+}
+
+.custom-multiselect {
+  width: 100px;
+}
+
+/*.button-b{
+  border-radius: 20px;
+  background-color: white;
+  border-color: #4F1964;
+  color: #4F1964;
+  width: 13rem; /* comprimento da caixa */
+  /*height: 2.4rem; / Tamanho da caixa */
+  /*margin-left: 0.1rem;
+  margin-top: 860px;
+  font-size: 1.5em;
+}*/
+
+
+
+/* -------------------------- ITENS DENTRO DA DIV BRANCA ------------------------------------------------------ */
 
 
 .conteiner-a{
- display: flex;
- justify-content: center;
+  margin-top: -763px; /* Altura da borda */
+  margin-right: 200px;
+  margin-left: -90px;
 }
 
 .conteiner{
-  display: flex;
   background-color: rgb(255, 255, 255);
   padding: 100px; /* Tamanho da caixa */
-  width: 80rem; /* Comprimento da borda */
-  height: 30rem;/* Tamanho da caixa */
+  margin: 20px;
+  width: 1455px; /* Comprimento da borda */
+  height: 534px;/* Tamanho da caixa */
   position: absolute;
   top: 90px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
@@ -73,72 +126,74 @@
 }
 
 
-.custom-hr{
+.custom-hr{ /* linhas de separação delimitação */
+  height: 2px;
   height: 4px;
-  margin-bottom: 23rem;
-  width: 79.7rem;
+  margin-top: -370px;
+  margin-left: -2px;
+  width: 1400px;
   background-color: #4F1964;
   position: absolute;
 }
 
-.custom-hr-b{
-  height: 4px;
-  margin-bottom: 10rem;
-  width: 79.7rem;
-  background-color: #4F1964;
-  position: absolute;
-}
-
-.linha{
-  
-}
 
 .status{
   font-size: 1.5em;
-  margin-top: -400px;
-  margin-left: 65px;
+  margin-top: -450px;
+  margin-left: -220px;
   color: #4F1964;
 }
 
 .pergunta{
   font-size: 1.5em;
-  margin-top: -400px;
-  margin-left:4rem;
+  margin-top: -450px;
+  margin-left: 50px;
   color: #4F1964;
 }
 
 .postar{
   font-size: 1.5em;
-  margin-top: -400px;
-  margin-left: 50rem;
+  margin-top: -245px;
+  margin-left: 200px;
   color: #4F1964;
 }
 
-
-
-.status-condicao{
-  margin-left: -50rem;
-  color: #23903c;
-  background: #d4edda;
-  border-radius: 50%;
-  padding: 0.6rem;
+.tag-c{
+  margin-left: 750px;
 }
 
 
-.user{
-  display: flex;
-  justify-content: end;
+.status-condicao{
+  margin-top: -210px;
+  margin-left: -1290px;
+  color: #23903c;
+  background: #d4edda;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+.dados-usuario{
   background-color: #f4e3fc;
-  width: 10rem;
-  height: 5.5rem;
-  font-size: 1em;
+  margin: 1px;
+  font-size: 1.5em;
+  padding: 10px;
   position: absolute;
-  margin-right: -58rem;
-  margin-top: -235px;
+  margin-left: 1180px;
+  margin-top: -220px;
   border-radius: 15px;
 }
 
 
+.custom-hr-b{
+  height: 2px;
+  height: 4px;
+  margin-top: -50px;
+  margin-left: -2px;
+  width: 1400px;
+  background-color: #4F1964;
+  position: absolute;
+}
 
 
 /*---------------------- CAIXA DE TEXTO --------------------------------------------------------  */
@@ -146,6 +201,9 @@
 
 .input{
   flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   border: 1px solid #000000;
   width: 1030px;
@@ -155,6 +213,9 @@
 .input-box-a {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -182px;
+  margin-left: -185px;
 }
 
 .input-box-a input:hover {
@@ -177,10 +238,14 @@
 }
 
 
-.forum-b{
+.caixa-texto{
   flex: 2.4em;
-  margin-left: 10rem;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 15px;
+  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
-  width: 50rem;
-  padding: 1rem;
+  margin-left: 235px;
+  margin-top: 1px;
+  width: 1000px;
+  padding: 18px;
 }

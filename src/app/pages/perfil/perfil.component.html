@@ -1,8 +1,10 @@
 <app-menu></app-menu>
 
+<!----------- TELA DE PERFIL DO USUÁRIO ------------------------------------------------------------------------------------------>
+
   <div class="tela-perfil">
     <header>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/><h5>Perfil</h5>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/><h5 class="titulo-principal">Perfil</h5>
     </header>
 
      <!-- first column -->
@@ -38,7 +40,7 @@
         </header>
               <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
 
-        <button class="button">Alterar Senha</button>
+        <button class="button-alterar">Alterar Senha</button>
       </div>
 
       <div class="input-box">
@@ -66,50 +68,49 @@
   </div>
 
 
-   <!-- ------------------------------------------------------------------------------ -->
-
+<!------------------- RESULTADO DO QUIZ ------------------------------------------------------->
 
   <div>
-  <div class="quiz">
+  <div class="resultado-quiz">
 
-    <div class="quiz-button">
+    <div class="excluir-button">
         <div class="input-box">
-          <button class="button-a">Excluir Perfil</button>
+          <button class="button-excluir">Excluir Perfil</button>
         </div>
     </div>
 
-    <div class="borda-quiz">
+    <div class="borda-resultado-quiz">
 
       <header>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h3>Resultado do Quiz</h3>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/><h3 class="titulo-resultado">Resultado do Quiz</h3>
       </header>
 
     </div>
     </div>
 
-    <div class="conteiner-a">
-      <div class="conteiner">
+    <div class="conteiner-resultado-quiz-esquerda">
+      <div class="conteiner-resultado-esquerda">
 
-        <div class="caixa">
+        <div class="caixa-resultado-quiz-esquerda-direita-emcima">
         <div class="input-texto-a">
           <span>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
           </span>
-          <input id="adicionar uma resposta"  class="forum-c" type="adicionar uma resposta" name="firstname"
+          <input id="adicionar uma resposta"  class="caixas-nome-quiz-emcima" type="adicionar uma resposta" name="firstname"
             placeholder="" required/>
         </div>
         </div>
 
         <!--<h4> Nome do Quiz</h4>-->
-        <p>Acertos
-        <a>Erros</a></p>
+        <p class="acertos">Acertos
+        <a class="erros">Erros</a></p>
 
         <nav> <!-- 0 -->
           <div class="input-texto-a">
           <span>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
           </span>
-          <input id="adicionar uma resposta"  class="forum-e" type="adicionar uma resposta" name="firstname"
+          <input id="adicionar uma resposta"  class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
             placeholder="" required/>
         </div>
         <nav>
@@ -120,40 +121,40 @@
             <span>
               <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
             </span>
-            <input id="adicionar uma resposta"  class="forum-f" type="adicionar uma resposta" name="firstname"
+            <input id="adicionar uma resposta"  class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
               placeholder="" required/>
           </div>
         </nav></nav>
 
-        <h1>00/00/0000</h1>
+        <h1 class="data-resultado-quiz">00/00/0000</h1>
       </div>
     </div>
 
 
-    <div class="conteiner-b">
-      <div class="conteiner-c">
+    <div class="conteiner-resultado-quiz-direita">
+      <div class="conteiner-resultado-direita">
 
-        <div class="caixa">
+        <div class="caixa-resultado-quiz-esquerda-direita-emcima">
           <div class="input-texto-a">
             <span>
               <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
             </span>
-            <input id="adicionar uma resposta"  class="forum-c" type="adicionar uma resposta" name="firstname"
+            <input id="adicionar uma resposta"  class="caixas-nome-quiz-emcima" type="adicionar uma resposta" name="firstname"
               placeholder="" required/>
           </div>
         </div>
 
         <!--<h4> Nome do Quiz</h4>-->
 
-        <p>Acertos
-          <a>Erros</a></p>
+        <p class="acertos">Acertos
+        <a class="erros">Erros</a></p>
 
           <nav><!--0-->
             <div class="input-texto-a">
               <span>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
               </span>
-              <input id="adicionar uma resposta"  class="forum-e" type="adicionar uma resposta" name="firstname"
+              <input id="adicionar uma resposta"  class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
                 placeholder="" required/>
             </div>
              <nav>
@@ -163,25 +164,25 @@
               <span>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
               </span>
-              <input id="adicionar uma resposta"  class="forum-f" type="adicionar uma resposta" name="firstname"
+              <input id="adicionar uma resposta"  class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
                 placeholder="" required/>
             </div>
           </nav></nav>
 
-          <h1>00/00/0000</h1>
+          <h1 class="data-resultado-quiz">00/00/0000</h1>
       </div>
     </div>
 
 
-    <div class="conteiner-d">
-      <div class="conteiner-e">
+    <div class="conteiner-nome-embaixo-esquerda">
+      <div class="conteiner-embaixo-esquerda">
 
-        <div class="caixa-a">
+        <div class="caixa-resultado-quiz-esquerda-direita-embaixo">
           <div class="input-texto-a">
             <span>
               <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
             </span>
-            <input id="adicionar uma resposta"  class="forum-d" type="adicionar uma resposta" name="firstname"
+            <input id="adicionar uma resposta"  class="caixas-nome-quiz-embaixo" type="adicionar uma resposta" name="firstname"
               placeholder="" required/>
           </div>
         </div>
@@ -190,15 +191,15 @@
       </div>
     </div>
 
-    <div class="conteiner-f">
-      <div class="conteiner-g">
+    <div class="conteiner-nome-embaixo-direita">
+      <div class="conteiner-embaixo-direita">
 
-        <div class="caixa-a">
+        <div class="caixa-resultado-quiz-esquerda-direita-embaixo">
           <div class="input-texto-a">
             <span>
               <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
             </span>
-            <input id="adicionar uma resposta"  class="forum-d" type="adicionar uma resposta" name="firstname"
+            <input id="adicionar uma resposta"  class="caixas-nome-quiz-embaixo" type="adicionar uma resposta" name="firstname"
               placeholder="" required/>
           </div>
         </div>
@@ -207,24 +208,25 @@
       </div>
     </div>
 
-    <!----------------------------------------------------------------------------------->
 
-    <div class="quiz-a">
-      <div class="borda-quiz-a">
+<!----------------- PERGUNTAS DO FÓRUM -------------------------------------------------------------------------------------------------------------->
+
+    <div class="perguntas-forum">
+      <div class="borda-perguntas-forum">
 
         <header>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h3>Perguntas no Fórum</h3>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h3 class="titulo-perguntas">Perguntas no Fórum</h3>
         </header>
 
-        <div class="conteiner-h">
-          <div class="conteiner-i">
-            <div class="data-a">00/00/0000</div>
+        <div class="conteiner-perguntas-forum-emcima">
+          <div class="conteiner-perguntas-emcima">
+            <div class="data-perguntas-forum-a">00/00/0000</div>
 
             <div class="input-texto-a">
               <span>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
               </span>
-              <input id="adicionar uma resposta"  class="forum-a" type="adicionar uma resposta" name="firstname"
+              <input id="adicionar uma resposta"  class="caixas-perguntas" type="adicionar uma resposta" name="firstname"
                 placeholder="" required  />
             </div>
 
@@ -232,15 +234,15 @@
         </div>
 
 
-        <div class="conteiner-j">
-          <div class="conteiner-k">
-            <div class="data-a">00/00/0000</div>
+        <div class="conteiner-perguntas-forum-embaixo">
+          <div class="conteiner-perguntas-embaixo">
+            <div class="data-perguntas-forum-b">00/00/0000</div>
 
             <div class="input-texto-a">
               <span>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
               </span>
-              <input id="adicionar uma resposta"  class="forum-a" type="adicionar uma resposta" name="firstname"
+              <input id="adicionar uma resposta"  class="caixas-perguntas" type="adicionar uma resposta" name="firstname"
                 placeholder="" required  />
             </div>
 
@@ -250,35 +252,36 @@
       </div>
       </div>
 
-      <!--------------------------------------------------------------------------------------------->
 
-      <div class="quiz-b">
-        <div class="borda-quiz-b">
+<!--------- RESPOSTAS DO FÓRUM --------------------------------------------------------------------------------------------------------------------------->
+
+      <div class="respostas-forum">
+        <div class="borda-respostas-forum">
 
           <header>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h3>Respostas no Fórum</h3>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><h3 class="titulo-respostas">Respostas no Fórum</h3>
           </header>
 
-          <div class="conteiner-l">
-            <div class="conteiner-m">
+          <div class="conteiner-respostas-forum-embaixo">
+            <div class="conteiner-respostas-embaixo">
 
-              <div class="caixa-b">
+              <div class="caixa-respostas-forum-emcima">
                 <div class="input-texto-a">
                   <span>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
                   </span>
-                  <input id="adicionar uma resposta"  class="forum-b" type="adicionar uma resposta" name="firstname"
+                  <input id="adicionar uma resposta"  class="caixa-respostas-emcima" type="adicionar uma resposta" name="firstname"
                     placeholder="" required/>
                 </div>
               </div>
 
-             <div class="data-b">00/00/0000</div>
+             <div class="data-respostas-forum">00/00/0000</div>
 
              <div class="input-texto-a">
               <span>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
               </span>
-              <input id="adicionar uma resposta"  class="forum" type="adicionar uma resposta" name="firstname"
+              <input id="adicionar uma resposta"  class="caixa-respostas-embaixo" type="adicionar uma resposta" name="firstname"
                 placeholder="" required/>
             </div>
 

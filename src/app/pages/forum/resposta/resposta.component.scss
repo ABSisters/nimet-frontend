@@ -14,7 +14,7 @@
 
 /* ---------------- USERNAME - DATA - HORARIO ------------------------------------- */
 
-a{
+.estilo-nome{
   color: #4F1964;
   /* cor da palavra */
   margin-left: 260px;
@@ -22,7 +22,7 @@ a{
   font-size: 2.3em;
 }
 
-p{
+.estilo-data{
   background-color: #f4e3fc;
   margin: 1px;
   padding: 5px;
@@ -40,7 +40,7 @@ p{
   border: none;
 }
 
-h5 {
+.cor-titulo-descricao {
   color: #4F1964;
   /* cor da palavra perfil*/
   margin-left: 220px;
@@ -56,24 +56,30 @@ header {
 }
 
 
-h4{
-  color: rgb(75, 75, 76);
-  font-size: 2em;
-  margin-top: 50px;
-  margin-left: 210px;
+.caixa-b{
+  flex: 1em;
+  border-width: 4px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-radius: 5px;
+  margin-left: 230px;
+  margin-right: 15px;
+  margin-top: 110px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 1520px;
+  padding: 175px;
 }
-
 
 /* ------------------- DIV QUE SEPARA A POSTAGEM DAS RESPOSTAS --------------------------------------  */
 
 
-.quiz{
+.caixa-adicionar-respostas{
   margin-top: 663px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 160px;
 }
 
-.borda-quiz {
+.borda-adicionar-respostas {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
@@ -90,19 +96,16 @@ h4{
 
 /* ------------------- CAIXA PARA ADICIONAR UMA RESPOSTA ------------------------------  */
 
-h1{
+.cor{ /* titulo: respostas */
   color: #4F1964;
   margin-top: 10px;
 }
 
-span {
+.estilo-palavra { /* titulo: respostas */
   font-family: 'Roboto', sans-serif;
-  /* tipo da letra do titulo */
   font-size: 0.9em;
   font-weight: 100;
 }
-
-
 
 
 .input-box {
@@ -133,6 +136,23 @@ span {
 }
 
 
+/* ------------------------ NOME DO USUARIO DATA DE CRIAÇÃO DO COMENTÁRIO -------------------------------------------------------------------------------- */
+
+
+.informacoes-usuario{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4e3fc;
+  margin: 1px;
+  padding: 20px;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 65px;
+  border-radius: 15px;
+}
+
+
+/* ------------------------------- BOTÕES DE POSTAR E DELETAR ------------------------------------------------------- */
+
 
 .postar-button{
   margin-top: -0px; /* Altura do botão */
@@ -152,26 +172,6 @@ span {
 }
 
 
-.informacoes-usuario{
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4e3fc;
-  margin: 1px;
-  padding: 20px;
-  position: absolute;
-  margin-left: -40px;
-  margin-top: 65px;
-  border-radius: 15px;
-}
-
-
-/* h6{
-  color: rgb(75, 75, 76);
-  font-size: 2em;
-  margin-top: 200px;
-  margin-left: -40px;
-}*/
-
-
 .deletar-button{
   margin-top: -30px; /* Altura do botão */
   margin-right: 100px;
@@ -189,6 +189,7 @@ span {
   font-size: 1.5em;
 }
 
+/* ----------------------------- CAIXA PRINCIPAL PARA ADICIONAR RESPOSTA ------------------------------------------------------  */
 
 .forum{
   padding: 20px;
@@ -197,28 +198,3 @@ span {
   width: 1415px;
 }
 
-
-.forum-a{
-  flex: 1em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
-  border-radius: 5px;
-  margin-left: 5px;
-  margin-top: 250px;
-  width: 1410px;
-  padding: 50px;
-}
-
-
-.forum-b{
-  flex: 1em;
-  margin-right: 15px;
-  border-radius: 5px;
-  margin-left: 19px;
-  margin-top: 75px;
-  border-radius: 5px;
-  border: 1px solid #000000;
-  width: 1520px;
-  padding: 175px;
-}
