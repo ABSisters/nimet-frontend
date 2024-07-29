@@ -49,7 +49,7 @@ export const routes: Routes = [
         children: [
           { path: 'basic', component: InfoBasicoComponent },
           { path: 'inter', component:InfoIntermediarioComponent  },
-          { path: 'advanced', component: InfoAvancadoComponent },
+          { path: 'advanced', component: InfoAvancadoComponent }
         ],
       },
       {path: 'ele',

@@ -13,27 +13,39 @@
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />Vamos
             finalizar o cadastro e se tornar parte do
             <b><span>nimet</span></b>?
-
           </header>
+
+            <!-- <h3 class="titulo-posicao">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" /><header>VAMOS FINALIZAR SEU CADASTRO PARA FAZER PARTE DO
+            <b><span>NIMET</span></b>? -->
+          <div class="chapeu">
+            <div class="pi pi-graduation-cap mr-2" style="font-size: 2.5rem"></div>
+          </div>
         </h3>
+
 
         <!-- <p>Olá, {}! Seja bem vindo à sua jornada de estudos com o nimet!</p> -->
 
-        <div class="input-box">
-          <label for="token" class="form-label"></label>
-          <input [(ngModel)]="token" class="form-control" type="text" name="token"
-            placeholder="Insira o código recebido por email" class="form-control" required />
-        </div>
+          <!--<div class="cadeado">
+          <div class="pi pi-lock mr-2" style="font-size: 2.5rem"></div>
+          </div>-->
+          <div class="input-box">
+            <label for="token" class="form-label"></label>
+            <input [(ngModel)]="token" class="form-control" type="text" name="token" placeholder="Insira o Código:"
+              class="form-control" required />
+          </div>
 
-        <h2>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />Para
-          confirmar o email, por favor clique no botão abaixo
-        </h2>
+          <h2 class="texto">
+            Ao clicar no botão a baixo, você recebera um código pelo e-mail cadastrado.
+          </h2>
 
-        <button class="button" (click)="verificar()">
-          <span>Confirmar email</span>
-        </button>
-      </body>
+          <button class="button" (click)="verificar()">
+            <span>Confirmar e-mail</span>
+          </button>
+        </body>
     </div>
   </div>
 </div>
+
+
+<img src="../../../assets/images/cadastro-semfundo.png" alt="imagem ilustrativa do login" class="image" />
