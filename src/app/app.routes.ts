@@ -48,7 +48,7 @@ export const routes: Routes = [
         children: [
           { path: 'basic', component: InfoBasicoComponent },
           { path: 'inter', component:InfoIntermediarioComponent  },
-          { path: 'advanced', component: InfoBasicoComponent },
+          { path: 'advanced',component: InfoAvancadoComponent },
         ],
       },
       {path: 'ele',

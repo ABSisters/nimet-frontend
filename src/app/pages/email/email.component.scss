@@ -12,12 +12,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 170%;
-  margin-top: 250px;
-  padding: 30px;
+  width: 670px;
+  margin-top: 120px;
+  padding: 50px;
   border-radius: 4%;
-  box-shadow: 5px 5px 1px;
-
+  border-color: #4F1964;
 }
 
 .conteiner {
@@ -46,32 +45,45 @@ span {
 
 
 header {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3em;
-  font-weight: 300;
-  color: rgb(42, 41, 41)
+  font-weight: 400px;
+  font-size: 1.5em;
+  font-weight: 300px;
 }
 
 h3 {
   position: absolute;
-  top: 25%;
-  left: 60%;
+  top: 105px;
+  left: 1100px;
   transform: translate(-106.5%, -50%);
   /* Centralizando o titulo horizontalmente e verticalmente */
-  width: 55rem;
-  border-bottom: 5px dashed black;
-  /* tracejado do titulo*/
+  width: 60rem;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
+
+.texto {
   /* tipo da letra do testo de explicação */
-  font-size: 1.4em;
-  font-weight: 100;
-  color: rgb(42, 41, 41)
+  font-size: 1.5em;
+  font-weight: 100px;
+  margin-left: 10px;
+  color: rgb(42, 41, 41);
+  display: flex;
+  text-align: center;
 }
+
+.chapeu{
+  margin-left: 13em;
+  margin-top: -36px;
+}
+
+/*
+.cadeado{
+  margin-left: 270px;
+  margin-top: -20px;
+  color:#4F1964
+}*/
+
+
+ /* ------------------- CAIXA DE TEXTO ----------------------------------------------------------- */
 
 
 input {
@@ -79,7 +91,7 @@ input {
   /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 50px;
   /* Adiciona espaçamento entre as caixas de texto */
-  margin-left: 90px;
+  margin-left: 100px;
   border-radius: 5px;
   border: 1px solid #000000;
   width: 370px;
@@ -111,12 +123,15 @@ input {
 }
 
 
+ /* -------------- BOTÃO DE CONFIRMAÇÃO ------------------------------------------------------------- */
+
+
 .button {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
   margin-top: 1rem;
-  margin-left: 10rem;
+  margin-left: 11rem;
   width: 14rem;
   height: 2rem;
   align-items: center;
@@ -127,11 +142,13 @@ button span {
 }
 
 
+/* -------------- IMAGEM ------------------------------------------------------------- */
+
 .image {
   position: absolute;
-  top: 22%;
-  left: 100%;
+  top: 50%;
+  left: 50%;
   transform: translate(-106.5%, -50%);
   /* Centralizando a imagem horizontalmente e verticalmente */
-  width: 40rem;
+  width: 55rem;
 }

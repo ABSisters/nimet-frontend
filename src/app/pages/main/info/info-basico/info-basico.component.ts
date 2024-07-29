@@ -16,12 +16,12 @@ export class InfoBasicoComponent {
       const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
 
       this.basicData = {
-          labels: ['Logica de Programacao', 'Aplicacoes web', 'Linguagem de programacao', 'Rede de computadores'],
+          labels: ['Lógica de Programação', 'Sistemas Computacionais', 'Linguagem de Programação', 'Rede de Computadores e Internet'],
           datasets: [
               {
                   data: [70, 55, 40, 35],
                   label: 'Materias',
-                  backgroundColor: ['rgb(198, 44, 255, 0.4)', 'rgba(198, 64, 255, 0.4)', 'rgba(198, 64, 255, 0.3)','rgba(198, 74, 255, 0.2)'],
+                  backgroundColor: ['rgb(198, 24, 255, 0.4)', 'rgba(198, 64, 255, 0.4)', 'rgba(198, 74, 255, 0.3)','rgba(198, 84, 255, 0.2)'],
                   borderColor: ['rgb(186, 70, 232)', 'rgb(186, 79, 218)', 'rgb(163, 81, 195)', 'rgb(198, 54, 255)'],
                   pointBorderColor: 'rgba(153, 102, 255, 1)',
                   borderWidth: 1,
