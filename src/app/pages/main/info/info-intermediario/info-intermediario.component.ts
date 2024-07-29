@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info-intermediario',
@@ -10,6 +11,8 @@ export class InfoIntermediarioComponent {
   basicData: any;
 
   basicOptions: any;
+
+  constructor(private router: Router){}
 
   ngOnInit() {
       const documentStyle = getComputedStyle(document.documentElement);
@@ -55,6 +58,21 @@ export class InfoIntermediarioComponent {
               }
           }
       };
+  }
+
+  forum() {
+    this.router.navigate(['forum']);
+  }
+  quiz() {
+    this.router.navigate(['quiz']);
+  }
+
+  basico(){
+    this.router.navigate(['main/info/basic'])
+  }
+
+  avancado(){
+    this.router.navigate(['main/info/advanced'])
   }
 
 }

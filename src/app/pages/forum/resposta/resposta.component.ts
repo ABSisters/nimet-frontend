@@ -25,6 +25,7 @@ export class RespostaComponent implements OnInit{
     this.resposta.usuarioId = this.userService.getUsuario().usuarioId;
     // this.pergunta = this.forumService.getPerguntaId();
     this.pergunta = this.forumService.perguntaSelecionada;
+    this.resposta.perguntaId = this.pergunta.perguntaId
     this.getRespostas(this.pergunta); // deixar mocado por enquanto...
 
   }
@@ -33,7 +34,7 @@ export class RespostaComponent implements OnInit{
     this.forumService.adicionarResposta(this.resposta).subscribe({
       next:(result) => {
         this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Pergunta postada com sucesso' })
-        console.log(result)
+        this.getRespostas(result.pergunta);
       },
       error:(erro) => {
         this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel fazer adicionar a pergunta' })

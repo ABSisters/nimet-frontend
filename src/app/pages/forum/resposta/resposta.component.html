@@ -16,7 +16,11 @@
   <hr class="custom-hr">
 
   <div class="conteiner">
-    <h3 class="caixa-b">{{ pergunta.detalhes }}</h3>
+    <div class="caixa-b">
+      <h2>{{ pergunta.detalhes }}</h2>
+     <!-- <p class="cor" style="font-weight: 400px;">#{{pergunta.tags[0]}}</p> -->
+     <div *ngFor="let tag of pergunta.tags" class="cor">#{{ tag }}</div>
+    </div>
   </div>
 
   <div class="conteiner">
@@ -26,21 +30,21 @@
         <span class="estilo-palavra">
           <h1 class="cor">Respostas</h1>
         </span>
-        <input id="adicionar uma resposta" textarea class="forum" style="font-size: 3em;" placeholder="Insira sua resposta" required />
+        <textarea rows="2" [(ngModel)]="resposta.resposta" class="adicionar" placeholder="Insira sua resposta"></textarea>
         <div class="postar-button">
             <div class="input-box">
-              <button class="button-a">Postar</button>
+              <button class="button-a" (click)="adicionarResposta()">Postar</button>
             </div>
           </div>
       </div>
 
       <div *ngFor="let resposta of retornoRespostas">
-        <br><br>
+        <br>
         <div class="d-flex justify-content-between informacoes-usuario">
           <p style="font-size: 1em;"> {{ resposta.usuario.nome }}</p>
           <p> {{ resposta.dataCriado | date : 'dd/MM/yyyy - HH:mm'}}</p>
         </div>
-        <textarea class="forum" [(ngModel)]="resposta.resposta" disabled="" class="forum"></textarea>
+        <textarea [(ngModel)]="resposta.resposta" disabled class="forum">{{ resposta.usuario.nome }}</textarea>
       </div>
     </div>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info-basico',
@@ -9,6 +10,9 @@ export class InfoBasicoComponent {
   basicData: any;
 
   basicOptions: any;
+
+  constructor(private router: Router){}
+
 
   ngOnInit() {
       const documentStyle = getComputedStyle(document.documentElement);
@@ -54,6 +58,21 @@ export class InfoBasicoComponent {
               }
           }
       };
+  }
+
+  forum() {
+    this.router.navigate(['forum']);
+  }
+  quiz() {
+    this.router.navigate(['quiz']);
+  }
+
+  intermediario(){
+    this.router.navigate(['main/info/inter'])
+  }
+
+  avancado(){
+    this.router.navigate(['main/info/advanced'])
   }
 
 }
