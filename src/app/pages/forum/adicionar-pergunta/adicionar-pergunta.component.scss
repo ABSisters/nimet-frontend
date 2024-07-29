@@ -1,28 +1,20 @@
-.cadastro {
-  flex: 5;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px 0px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/*.conteiner {
-  display: flex;
-}*/
-
  /* ---------------------- CORES, POSIÇÕES E TAMANHOS DOS TÍTULOS ---------------------------------------------- */
 
+
+ .tela{
+  width: 98vw; /* Ocupa 100% da largura do viewport */
+  height: 98vh; /* Ocupa 100% da altura do viewport */
+  // display: flex;
+ }
 
 .titulo-principal{
   font-family: 'Roboto', sans-serif;
   color: #4F1964;
-  /* cor da palavra perfil*/
+  display: flex;
+  align-items: center;
   margin-top: -1700px;
-  margin-left: 150px;
   font-size: 1em;
+  justify-content: center;
 }
 
 .titulo {
@@ -65,8 +57,7 @@ header {
 
 .adicionar-pergunta-titulo{
   margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-left: 90px;
 }
 
 .borda-adicionar-pergunta {
@@ -76,7 +67,7 @@ header {
   background-color: #d19bec40;
   padding: 120px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1100px; /* Comprimento da borda */
+  width: 960px; /* Comprimento da borda */
   height: 25px;/* Tamanho da caixa */
   position: absolute;
   top: 119px; /* ajuste conforme necessário */
@@ -85,8 +76,6 @@ header {
 }
 
 .caixa-texto-titulo{
-  margin-top: 733px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: -110px;
 }
 
@@ -94,7 +83,7 @@ header {
   background-color: rgb(255, 255, 255);
   padding: 70px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1030px; /* Comprimento da borda */
+  width: 910px; /* Comprimento da borda */
   height: 5px;/* Tamanho da caixa */
   position: absolute;
   top: 55px; /* ajuste conforme necessário */
@@ -106,8 +95,7 @@ header {
 
 .adicionar-pergunta-descricao {
   margin-top: -8px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-left: 90px;
 }
 
 .borda-pergunta-descricao {
@@ -117,7 +105,7 @@ header {
   background-color:#d19bec40;
   padding: 97px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1100px; /* Comprimento da borda */
+  width: 960px; /* Comprimento da borda */
   height: 480px;/* Tamanho da caixa */
   position: absolute;
   top: 390px; /* ajuste conforme necessário */
@@ -125,7 +113,6 @@ header {
 
 .caixa-texto-descricao{
   margin-top: 733px; /* Altura da borda */
-  margin-right: 200px;
   margin-left: -85px;
 }
 
@@ -133,7 +120,7 @@ header {
   background-color: rgb(255, 255, 255);
   padding: 184px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1030px; /* Comprimento da borda */
+  width: 910px; /* Comprimento da borda */
   height: 70px;/* Tamanho da caixa */
   position: absolute;
   top: 62px; /* ajuste conforme necessário */
@@ -146,9 +133,8 @@ header {
 /* ----------------------- BOTÃO DE POSTAR ----------------------------------------- */
 
 .postar-button{
-  margin-top: -76px; /* Altura do botão */
-  margin-right: 100px;
-  margin-left: 1720px;
+  margin-top: -16px; /* Altura do botão */
+  margin-left: 1370px;
 }
 
 .button-postar{
@@ -167,17 +153,9 @@ header {
 
 
 .tela-tags{
-  margin-top: 899px;
-  margin-right: 150px;
-  margin-left: 210px;
-  padding: 20px;
+  margin-left: 1050px;
   text-align: left;
-}
-
-.tela-tags{
-  margin-top: 725px;
-  margin-right: 100px;
-  margin-left: 1325px;
+  padding: 20px;
 }
 
 .borda-tags {
@@ -186,8 +164,8 @@ header {
   border-color: #73328d;
   padding: 33px;
   margin: 20px;
-  width: 420px;/* Comprimento da borda */
-  margin-top: -917px;
+  width: 400px;/* Comprimento da borda */
+  margin-top: -925px;
   height: 748px;/* Tamanho da caixa */
 }
 
@@ -237,11 +215,9 @@ header {
 input {
   flex: 2.4em;
   /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   border: 1px solid #000000;
-  width: 1030px;
+  width: 910px;
   padding: 56px;
 }
 
@@ -277,12 +253,10 @@ input {
 .input-descricao{
   flex: 2.4em;
   /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   border: 1px solid #000000;
-  width: 1030px;
-  padding: 1500px;
+  width: 950px;
+  padding: 1000px;
 }
 
 .input-box-descricao {
@@ -314,13 +288,25 @@ input {
 
 
 .forum-descricao{
-  flex: 2.4em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  margin-left: 3px;
-  margin-top: 1px;
-  width: 1025px;
-  padding: 168px;
+  width: 910px;
+  height: 370px;/* Tamanho da caixa */
+  padding: 40px;
+  overflow-y: hidden;
+  font-size: 1.3em;
+}
+
+.forum-pergunta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 910px;
+  height: 150px;
+  padding: 40px;
+  overflow-y: hidden;
+  font-size: 1.3em;
 }

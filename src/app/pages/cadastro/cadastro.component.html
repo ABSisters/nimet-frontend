@@ -1,12 +1,13 @@
+<p-toast></p-toast>
 <div class="tela">
   <div class="roxo"></div>
 
   <div class="cadastro">
     <header>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />CRIE SUA
-      CONTA NO <b><span>NIMET</span></b>
+      CONTA NO <span>NIMET</span>
     </header>
-    <p>Já tem uma conta?<a style="cursor: pointer" (click)="login()"> <span> Login</span></a></p>
+    <p style="font-size: 1.8em;">Já tem uma conta?<a style="cursor: pointer;" (click)="login()"> <span> Login</span></a></p>
 
     <form [formGroup]="cadastroForm">
       <div class="conteiner p-5">
@@ -15,14 +16,15 @@
         <div class="mx-2">
           <div class="input-box">
             <label for="nome" class="form-label">Nome</label>
-            <input id="nome" formControlName="nome" class="form-control" type="nome" name="firstname"
+            <input id="nome" formControlName="nome" class="password" type="nome" name="firstname"
               placeholder="Digite seu nome" required />
           </div>
 
           <div class="input-box">
             <label for="Username" class="form-label">Username</label>
-            <input id="Username" formControlName="username" class="form-control" type="Username" name="Username"
+            <input id="Username" formControlName="username" class="password" type="Username" name="Username"
               placeholder="Digite seu nome de usuário" required />
+
           </div>
 
           <div class="input-box">
@@ -37,34 +39,35 @@
           <div class="input-box">
             <label for="email" class="form-label">Email</label>
             <input id="email" formControlName="email" type="email" name="email" placeholder="Digite seu email"
-              class="form-control" required />
+            class="password" required />
           </div>
 
           <div class="password-container">
             <div class="input-box">
               <label for="password" class="form-label">Senha</label>
               <p-password formControlName="password" [toggleMask]="true" inputStyleClass="password" weakLabel="Fraco"
-                mediumLabel="Simples" strongLabel="Dentro dos parâmetros">
+                mediumLabel="Simples" strongLabel="Dentro dos parâmetros" placeholder="Crie uma senha">
                 <ng-template pTemplate="header">
                   <h6>Requisitos</h6>
                 </ng-template>
                 <ng-template pTemplate="footer">
-                  <ul class="pl-2 ml-2 mt-0" style="line-height: 1.3">
+                  <ul class="pl-2 ml-2 mt-0" style="line-height: 1.6">
                     <li>Deve conter caracteres especiais, minúsculos, maiúsculos e números</li>
                     <li>Mínimo de 8 caracteres</li>
                   </ul>
                 </ng-template>
               </p-password>
-              <div *ngIf="f['password'].invalid && (f['password'].dirty || f['password'].touched)">
-                <small class="text-danger" *ngIf="f['password'].errors?.['senhaForte']">Senha inválida.</small>
-              </div>
             </div>
           </div>
 
 
           <div class="input-box">
             <label for="confirmPassword" class="form-label">Confirmação de Senha</label>
-            <p-password [toggleMask]="true" inputStyleClass="password" [feedback]="false"  formControlName="confirm_password"></p-password>
+            <p-password [toggleMask]="true" inputStyleClass="password" [feedback]="false" placeholder="Confirme sua senha" formControlName="confirm_password"></p-password>
+
+            <div class="error-container" *ngIf="f['password'].invalid && (f['password'].dirty || f['password'].touched)">
+              <small class="text-danger" *ngIf="f['password'].errors?.['senhaForte']">Senha inválida.</small>
+            </div>
             <div *ngIf="f['confirm_password'].invalid && (f['confirm_password'].dirty || f['confirm_password'])">
               <small class="text-danger" *ngIf="f['confirm_password'].errors?.['not_matching']">As senhas não coincidem.</small>
             </div>
@@ -77,9 +80,9 @@
         <input id="confirmcourse" formControlName="curso" type="curso" name="confirmcourse" list="cursos"
           placeholder="Selecione seu curso" class="form-control" required />
         <datalist id="cursos">
-          <option value="INFORMATICA"></option>
-          <option value="MECANICA"></option>
-          <option value="ELETRONICA"></option>
+          <option value="INFORMÁTICA"></option>
+          <option value="MECÂNICA"></option>
+          <option value="ELETRÔNICA"></option>
         </datalist>
       </div>
 

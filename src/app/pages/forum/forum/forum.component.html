@@ -1,79 +1,51 @@
 <app-menu></app-menu>
-
-<div class="tela">
-  <div class="roxo"></div>
-
-  <div class="cadastro">
-
-    </div>
-  </div>
-
-
-  <div class="tela-forum">
-    <header>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/><h5 class="cor-nome">Fórum</h5>
-    </header>
-
+<p-toast></p-toast>
+<div class="tela-forum">
+  <header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+    <h5 class="cor-nome">FÓRUM -INFORMÁTICA</h5>
+  </header>
 
   <div class="forum">
     <div class="borda-forum">
 
-
-      <div class="conteiner-a">
-      <div class="conteiner">
-
-        <div class="status">Status</div>
-
-        <div class="pergunta">Pergunta</div>
-
-        <div class="tag-c">
-        <div class="postar">Postado Por:</div>
-       </div>
-
-        <hr class="custom-hr">
-
-        <div class="status-condicao">
-          <i class="pi pi-check" style="font-size: 2.5rem"></i>
-          </div>
-
-        <div class="input-box-a">
-          <span>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-          </span>
-          <input id="adicionar uma resposta" class="caixa-texto" type="adicionar uma resposta" name="firstname"
-            placeholder="" required  />
+      <div class="d-flex justify-content-between linha">
+        <div class="card flex justify-content-center"
+          [style]="{color: '#2a1261', top:'2px', width:'80px', borderRadius: 'var(--border-radius)'}">
+          <p-multiSelect class="custom-multiselect" [options]="cities" [(ngModel)]="selectedCities" optionLabel="name"
+            placeholder="TAGS"></p-multiSelect>
         </div>
 
-        <h2 class="dados-usuario">Seu Username<br>00/00/0000 - 00:00</h2>
+        <div class="adicionar-button">
+          <button class="button-a" (click)="adicionar()">Adicionar Pergunta</button>
+        </div>
+      </div>
 
-        <hr class="custom-hr-b">
+      <div class="conteiner-a">
+        <div class="header-row">
+          <div class="status">Status</div>
+          <div class="pergunta">Pergunta</div>
+          <div class="postar">Postado Por:</div>
+        </div>
+        <hr class="custom-hr">
 
+        <div *ngFor="let pergunta of perguntasForum" class="pergunta-item">
+          <div class="status-condicao">
+            <i class="pi pi-check" style="font-size: 3rem"></i>
+          </div>
+          <div class="input-box-a">
+            <input class="caixa-texto" required [(ngModel)]="pergunta.titulo"
+            readonly (click)="registrarPergunta(pergunta)"/>
+          </div>
+          <div class="dados-usuario">
+            <p>  {{pergunta.usuario.nome }}</p>
+            {{ pergunta.dataCriado| date : 'dd/MM/yyyy - HH:mm'}}
+          </div>
+          <hr class="custom-hr">
+        </div>
       </div>
     </div>
-
-    </div>
-    </div>
-
-</div>
-
-
-<div class="tags-button">
-  <div class="input-box">
-    <!--<button class="button-b">-->
-      <div class="card flex justify-content-center" [style]="{color: '#2a1261', top:'840px', width:'80px', borderRadius: 'var(--border-radius)'}">
-        <p-multiSelect
-            class="custom-multiselect"
-            [options]="cities"
-            [(ngModel)]="selectedCities"
-            optionLabel="name"
-            placeholder="TAGS"/>
-      </div><!--</button>-->
   </div>
-</div>
 
 
-<div class="adicionar-button">
-    <div class="input-box">
-      <button class="button-a"><span>Adicionar Pergunta</span></button>
-    </div>
 </div>

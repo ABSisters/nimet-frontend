@@ -22,6 +22,7 @@ export class PerfilComponent implements OnInit {
   respostas! : RespostaResponse[];
   perguntas! : PerguntaResponse[];
 
+
   constructor(
     private userService: UsuarioService,
     private message: MessageService,

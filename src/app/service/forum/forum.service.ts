@@ -1,3 +1,4 @@
+import { PerguntaResponse } from './../../model/response/perguntaResponse';
 import {environment as env } from '../../../environments/enviroment';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -5,7 +6,6 @@ import { Observable, map } from 'rxjs';
 import { urlConfig } from '../../../assets/config/urlConfig';
 import { Curso } from '../../model/enum/curso';
 import { PerguntaPostRequest } from '../../model/request/perguntaPostRequest';
-import { PerguntaResponse } from '../../model/response/perguntaResponse';
 import { RepostaPostRequest } from '../../model/request/respostaPostRequest';
 import { RespostaResponse } from '../../model/response/respostaResponse';
 
@@ -14,6 +14,7 @@ import { RespostaResponse } from '../../model/response/respostaResponse';
 })
 export class ForumService {
 
+  perguntaSelecionada!: PerguntaResponse;
 
   httpOptions = {
     headers: new HttpHeaders({

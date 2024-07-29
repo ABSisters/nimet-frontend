@@ -13,7 +13,7 @@ export class UsuarioAutenticadoGuard implements CanActivate {
     if (this.cadastroService.logado) {
       return true;
     }
-    this.router.navigate(['']);
+    this.router.navigate(['main/info']);
     return false;
   }
 }

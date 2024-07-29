@@ -1,7 +1,8 @@
+import { PerguntaResponse } from './../../../model/response/perguntaResponse';
+import { PerguntaPostRequest } from './../../../model/request/perguntaPostRequest';
 import { Component, OnInit } from '@angular/core';
 import { Curso } from '../../../model/enum/curso';
 import { ForumService } from '../../../service/forum/forum.service';
-import { PerguntaResponse } from '../../../model/response/perguntaResponse';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
@@ -24,61 +25,59 @@ export class ForumComponent implements OnInit {
 
   selectedCities!: City[];
 
-  constructor(private forumService: ForumService, private userService: UsuarioService, private routes: Router) { }
+  perguntasForum!: PerguntaResponse[];
+
+
+  constructor(private forumService: ForumService, private userService: UsuarioService,
+    private routes: Router, private message: MessageService) { }
 
   ngOnInit() {
     this.loadPerguntasCurso(this.userService.getUsuario().curso);
 
 
     this.cities = [
-      {name: 'LOGICA_DE_PROGRAMACAO', code: 'LG'},
-      {name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'RDI'},
-      {name: 'APLICACOES_PARA_WEB', code: 'AW'},
-      {name: 'SISTEMAS_COMPUTACIONAIS', code: 'STC'},
-  ];
+      { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
+      { name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'REDES_DE_COMPUTADORES_E_INTERNET' },
+      { name: 'APLICACOES_PARA_WEB', code: 'APLICACOES_PARA_WEB' },
+      { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' },
+    ];
   }
 
 
   loadPerguntasCurso(curso: Curso): void {
     this.forumService.getPerguntasCurso(curso).subscribe({
       next: (perguntas: PerguntaResponse[]) => {
-        // Armazena as perguntas no localStorage
-        // localStorage.setItem('perguntasCurso', JSON.stringify(perguntas));
-
-        // deletar depois, teste unico para carregar a tela
-        if (perguntas.length > 0) {
-          const pergunta = perguntas[0];
-          const mappedPergunta = {
-            perguntaId: pergunta.perguntaId,
-            titulo: pergunta.titulo,
-            detalhes: pergunta.detalhes,
-            usuario: pergunta.usuario,
-            curso: pergunta.curso,
-            dataCriado: pergunta.dataCriado,
-            tags: pergunta.tags,
-            status: pergunta.status
-          };
-          // Armazena a pergunta transformada no localStorage
-          localStorage.setItem('pergunta', JSON.stringify(mappedPergunta));
-          console.log('Primeira pergunta armazenada no localStorage:', mappedPergunta);
-        }
+        localStorage.setItem('perguntasCurso', JSON.stringify(perguntas));
+        this.perguntasForum = perguntas
       },
       error: (error) => {
         console.error('Erro ao carregar perguntas do curso:', error);
+        this.message.add({ severity: 'error', summary: 'Erro', detail: 'Nenhum dos campos pode estar vazio' });
+
       }
     })
- }
+  }
 
- //encontrar uma forma de passar apenas uma pergunta response, quando clicado
- direcionarRespostas(pergunta:PerguntaResponse){
-  if(pergunta != null){
+
+  registrarPergunta(pergunta: PerguntaResponse) {
+    localStorage.setItem('perguntaSelecionada', JSON.stringify(pergunta));
+    this.direcionarRespostas(pergunta);
+    console.log('Pergunta registrada:', pergunta);
+  }
+  direcionarRespostas(pergunta: PerguntaResponse) {
+    if (pergunta != null) {
+      this.forumService.perguntaSelecionada = pergunta;
       localStorage.setItem('pergunta', JSON.stringify(pergunta));
       this.routes.navigate(['/resposta']);
-    } else{
-      // this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel recuperar o ID da pergunta selecionada' })
+    } else {
+      this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel recuperar o ID da pergunta selecionada' })
       console.log('erro');
     }
- }
+  }
+
+  adicionar() {
+    this.routes.navigate(['/adicionar-pergunta'])
+  }
 
 
 

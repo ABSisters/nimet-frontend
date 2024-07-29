@@ -1,112 +1,222 @@
 [
   {
     "questionId": 1,
-    "question": "Which of the following is correct about TypeScript?",
+    "question": "Qual protocolo é usado para enviar e-mails?",
     "options": [
-        {
-            "answer": "Angular is based on TypeScript",
-            "isCorrect": false
-        },
-        {
-            "answer": "This is a superset of JavaScript.",
-            "isCorrect": false
-        },
-        {
-            "answer": "TypeScript is maintained by Microsoft.",
-            "isCorrect": false
-        },
-        {
-            "answer": "All of the above.",
-            "isCorrect": true
-        }
+      {
+        "answer": "HTTP",
+        "isCorrect": false
+      },
+      {
+        "answer": "SMTP",
+        "isCorrect": true
+      },
+      {
+        "answer": "FTP",
+        "isCorrect": false
+      },
+      {
+        "answer": "IMAP",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 2,
-    "question": "What does AOT stand for?",
+    "question": "Qual é a função do roteador em uma rede de computadores?",
     "options": [
-        {
-            "answer": "ahead-of-time compilation",
-            "isCorrect": true
-        },
-        {
-            "answer": "Angular Object Templates",
-            "isCorrect": false
-        },
-        {
-            "answer": "Both",
-            "isCorrect": false
-        },
-        {
-            "answer": "None",
-            "isCorrect": false
-        }
+      {
+        "answer": "Conectar dispositivos a uma rede local",
+        "isCorrect": false
+      },
+      {
+        "answer": "Gerenciar endereços IP",
+        "isCorrect": false
+      },
+      {
+        "answer": "Direcionar pacotes de dados entre redes diferentes",
+        "isCorrect": true
+      },
+      {
+        "answer": "Proteger a rede contra ataques",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 3,
-    "question": "Which of the following is not a hook application life cycle?",
+    "question": "Qual das seguintes é uma linguagem de marcação usada para criar páginas web?",
     "options": [
-        {
-            "answer": "ngOnChanges",
-            "isCorrect": false
-        },
-        {
-            "answer": "ngViewStart",
-            "isCorrect": true
-        },
-        {
-            "answer": "ngOnInit",
-            "isCorrect": false
-        },
-        {
-            "answer": "None of above",
-            "isCorrect": false
-        }
+      {
+        "answer": "CSS",
+        "isCorrect": false
+      },
+      {
+        "answer": "JavaScript",
+        "isCorrect": false
+      },
+      {
+        "answer": "HTML",
+        "isCorrect": true
+      },
+      {
+        "answer": "PHP",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 4,
-    "question": "What is the decorator used for configuring your module class",
+    "question": "Qual propriedade CSS é usada para alterar a cor do texto?",
     "options": [
-        {
-            "answer": "@NgApp",
-            "isCorrect": false
-        },
-        {
-            "answer": "@NgModule",
-            "isCorrect": true
-        },
-        {
-            "answer": "Both",
-            "isCorrect": false
-        },
-        {
-            "answer": "None of above",
-            "isCorrect": false
-        }
+      {
+        "answer": "font-color",
+        "isCorrect": false
+      },
+      {
+        "answer": "text-color",
+        "isCorrect": false
+      },
+      {
+        "answer": "color",
+        "isCorrect": true
+      },
+      {
+        "answer": "background-color",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 5,
-    "question": "Router is part of which of the following module",
+    "question": "Qual palavra-chave é usada para criar uma nova instância de um objeto em Java?",
     "options": [
-        {
-            "answer": "@angular/core",
-            "isCorrect": false
-        },
-        {
-            "answer": "@angular/router",
-            "isCorrect": true
-        },
-        {
-            "answer": "Both",
-            "isCorrect": false
-        },
-        {
-            "answer": "None of above",
-            "isCorrect": false
-        }
+      {
+        "answer": "create",
+        "isCorrect": false
+      },
+      {
+        "answer": "new",
+        "isCorrect": true
+      },
+      {
+        "answer": "instantiate",
+        "isCorrect": false
+      },
+      {
+        "answer": "object",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 6,
+    "question": "Qual das seguintes opções é um tipo primitivo em Java?",
+    "options": [
+      {
+        "answer": "String",
+        "isCorrect": false
+      },
+      {
+        "answer": "boolean",
+        "isCorrect": true
+      },
+      {
+        "answer": "Date",
+        "isCorrect": false
+      },
+      {
+        "answer": "ArrayList",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 7,
+    "question": "Qual é a função do sistema operacional?",
+    "options": [
+      {
+        "answer": "Gerenciar hardware e software",
+        "isCorrect": true
+      },
+      {
+        "answer": "Criar programas de software",
+        "isCorrect": false
+      },
+      {
+        "answer": "Conectar computadores em uma rede",
+        "isCorrect": false
+      },
+      {
+        "answer": "Proteger contra vírus",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 8,
+    "question": "Qual das seguintes é uma técnica de segurança de rede?",
+    "options": [
+      {
+        "answer": "Firewalls",
+        "isCorrect": true
+      },
+      {
+        "answer": "Routers",
+        "isCorrect": false
+      },
+      {
+        "answer": "Switches",
+        "isCorrect": false
+      },
+      {
+        "answer": "Modems",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 9,
+    "question": "Qual das seguintes tags HTML é usada para criar um link?",
+    "options": [
+      {
+        "answer": "<link>",
+        "isCorrect": false
+      },
+      {
+        "answer": "<a>",
+        "isCorrect": true
+      },
+      {
+        "answer": "<href>",
+        "isCorrect": false
+      },
+      {
+        "answer": "<url>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 10,
+    "question": "Qual das seguintes opções é usada para criar um comentário em HTML?",
+    "options": [
+      {
+        "answer": "// comentário",
+        "isCorrect": false
+      },
+      {
+        "answer": "/* comentário */",
+        "isCorrect": false
+      },
+      {
+        "answer": "<!-- comentário -->",
+        "isCorrect": true
+      },
+      {
+        "answer": "# comentário",
+        "isCorrect": false
+      }
     ]
   }
 ]

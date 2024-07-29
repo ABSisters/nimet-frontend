@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { EleMedioComponent } from './pages/main/ele/ele-medio/ele-medio.component';
 import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
@@ -43,12 +44,12 @@ export const routes: Routes = [
           { path: 'advanced', component: MecAvancadoComponent },
         ],
       },
-      {path: 'info',
+      {path: 'info', component: InfoBasicoComponent,
         canActivate: [UsuarioAutenticadoGuard],
         children: [
           { path: 'basic', component: InfoBasicoComponent },
           { path: 'inter', component:InfoIntermediarioComponent  },
-          { path: 'advanced', component: InfoBasicoComponent },
+          { path: 'advanced', component: InfoAvancadoComponent },
         ],
       },
       {path: 'ele',

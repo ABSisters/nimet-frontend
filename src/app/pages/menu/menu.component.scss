@@ -21,7 +21,6 @@
   font-size: 1.2em;
   text-align: center;
   justify-content: center;
-  display: flex;
 }
 
 .mt-auto{
@@ -48,6 +47,7 @@
 
 .font-medium:hover {
   background-color: #f5d6fe !important;
+  border-radius: 10px;
  /*padding-inline-start: 30px;
   padding-right: 30px;
   padding-left: 30px;*/

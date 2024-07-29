@@ -7,6 +7,10 @@
   background-image: linear-gradient(to bottom, #73328d, #c185de);
 }
 
+.form-label {
+  font-size: 1rem !important; /* Força a aplicação do tamanho da fonte */
+}
+
 
 .cadastro {
   flex: 5;
@@ -26,6 +30,7 @@
 
 span {
   color: #4F1964;
+  font-weight: 500;
   /* cor da palavra NIMET*/
 }
 
@@ -41,14 +46,16 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-106.5%, -50%);
+  transform: translate(-99.2%, -50%);
   /* Centralizando a imagem horizontalmente e verticalmente */
-  width: 55rem;
+  width: 60rem;
 }
 
 
 .conteiner {
   display: flex;
+  flex-wrap: wrap; /* Garante que os itens se ajustem ao layout */
+
 }
 
 
@@ -70,11 +77,25 @@ input {
   margin-top: -20px;
 }
 
+.error-container {
+  margin-top: 0.25rem; /* Ajuste conforme necessário */
+  display: flex;
+  align-items: flex-start; /* Alinha a mensagem de erro com o topo do campo */
+}
+
+
+
+/* Alinha a mensagem de erro com o campo acima */
+.input-box .text-danger {
+  margin-top: 0.25rem; /* Ajuste conforme necessário */
+  color: #dc3545; /* Cor da mensagem de erro */
+}
+
 
 .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .input-box input:hover {
@@ -117,7 +138,7 @@ button span {
 }
 
 .p-calendar input {
-  width: 150px; /* Ajusta a largura do campo de entrada */
+  width: 100px; /* Ajusta a largura do campo de entrada */
   padding: 5px; /* Ajusta o preenchimento interno do campo de entrada */
   font-size: 12px; /* Ajusta o tamanho da fonte do campo de entrada */
 }

@@ -1,11 +1,16 @@
 <app-menu></app-menu>
 
+<!-- adicionar quebra de linha aqui  -->
+
+<p-toast></p-toast>
+<div class="tela">
   <div class="conteiner"></div>
 
 <form [formGroup]="perguntaForm" class="form">
   <div>
     <header>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/><h6 class="titulo-principal">Adicionar Pergunta</h6>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"/>
+      <h6 class="titulo-principal">ADICIONAR PERGUNTA</h6>
     </header>
   </div>
 
@@ -19,12 +24,13 @@
     <div class="adicionar-pergunta-titulo">
       <div class="borda-adicionar-pergunta">
         <header>
-          <h5 class="titulo">TÍTULO</h5>
+          <h5 class="titulo">Título</h5>
         </header>
         <div class="caixa-texto-titulo">
           <div class="caixa-titulo">
             <div class="input-box">
-              <input id="adicionar-uma-resposta" class="form-contr" type="text" name="titulo" placeholder="" required formControlName="titulo"/>
+              <textarea rows="4" class="input" id="adicionar-uma-resposta"  name="titulo" placeholder="Titulo da pergunta" maxlength="200"
+               required formControlName="titulo" class="forum-pergunta"></textarea>
             </div>
           </div>
         </div>
@@ -34,12 +40,13 @@
     <div class="adicionar-pergunta-descricao">
       <div class="borda-pergunta-descricao">
         <header>
-          <h3 class="descricao">DESCRIÇÃO</h3>
+          <h3 class="descricao">Descrição</h3>
         </header>
         <div class="caixa-texto-descricao">
           <div class="caixa-descricao">
             <div class="input-box-descricao">
-              <input id="adicionar-uma-resposta" class="forum-descricao" type="text" formControlName="detalhes" placeholder="" required />
+              <textarea id="adicionar-uma-resposta" class="forum-descricao" type="text" formControlName="detalhes"
+              maxlength="200" placeholder="Descrição da pergunta" required></textarea>
             </div>
           </div>
         </div>
@@ -70,3 +77,4 @@
     </div>
   </div>
 </form>
+</div>

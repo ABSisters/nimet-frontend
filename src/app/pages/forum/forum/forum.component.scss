@@ -1,221 +1,141 @@
-.cadastro {
-  flex: 5;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px 0px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.conteiner-a {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 97%;
+  height: 80%;
+  overflow-y: scroll;
+  border: 2px;
+}
+
+.caixa-texto {
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+.caixa-texto:hover {
+  color: #2a1261;
+  ;
+  text-decoration: underline;
+
 }
 
 
-.conteiner {
-  display: flex;
+.header-row, .pergunta-item {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-/* ----------------------- COR, TAMANHO E POSIÇÃO DO TÍTULO ------------------------------------ */
-
-
-.tela-forum{
-  margin-top: 40px;
-  margin-right: 150px;
-  margin-left: 200px;
+.tela-forum {
+  height: 110vh;
+  width: 98vw;
 }
 
 .cor-nome {
   color: #4F1964;
   font-size: 3em;
-  /* cor da palavra perfil*/
-  margin-top: -20px;
-  margin-left: -30px;
+  text-align:center;
 }
 
 header {
   font-family: 'Roboto', sans-serif;
-  /* tipo da letra do titulo */
   font-weight: 300;
 }
 
+.linha{
+  margin: 25px;
+}
 
- /* ------------------ DIV DO FÓRUM COM BOTÕES DE ADICIONAR PERGUNTA E TEGS ----------------------------------------------- */
-
-
-.forum{
-  margin-top: -790px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: 15px;
+.forum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .borda-forum {
-  border-width: 2px;   /* Largura da borda */
-  border-style: solid; /* Estilo da borda */
+  border-width: 3px;
+  border-style: solid;
   border-color: hsl(283, 48%, 37%);
   background-color: #d19bec40;
-  padding: 100px; /* Tamanho da caixa */
+  padding: 15px;
   margin: 20px;
-  width: 1520px; /* Comprimento da borda */
-  height: 680px;/* Tamanho da caixa */
-  position: absolute;
-  top: 140px; /* ajuste conforme necessário */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
+  margin-left: 10px;
+  width: 1450px;
+  height: 650px;
+  // overflow-y: scroll;
 }
 
-
-.adicionar-button{
-  margin-top: 810px; /* Altura do botão */
-  margin-right: 100px;
-  margin-left: 1420px;
+.conteiner-a::-webkit-scrollbar {
+  width: 8px;
 }
 
-.button-a{
+.conteiner-a::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.conteiner-a::-webkit-scrollbar-thumb {
+  background: rgba(123, 76, 159, 0.7);
+  border-radius: 4px;
+}
+
+.conteiner-a::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 76, 159, 0.9);
+}
+
+.adicionar-button {
+  text-align: right;
+}
+
+.button-a {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
   width: 16rem;
   height: 2.5rem;
-  margin-left: 0.1rem;
-  margin-top: -1000px;
   font-size: 1.5em;
-}
-
-
-.tags-button{
-  margin-top: -25px; /* Altura do botão */
-  margin-right: 150px;
-  margin-left: 300px;
 }
 
 .custom-multiselect {
   width: 100px;
 }
 
-/*.button-b{
-  border-radius: 20px;
-  background-color: white;
-  border-color: #4F1964;
-  color: #4F1964;
-  width: 13rem; /* comprimento da caixa */
-  /*height: 2.4rem; / Tamanho da caixa */
-  /*margin-left: 0.1rem;
-  margin-top: 860px;
-  font-size: 1.5em;
-}*/
-
-
-
-/* -------------------------- ITENS DENTRO DA DIV BRANCA ------------------------------------------------------ */
-
-
-.conteiner-a{
-  margin-top: -763px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: -90px;
-}
-
-.conteiner{
-  background-color: rgb(255, 255, 255);
-  padding: 100px; /* Tamanho da caixa */
-  margin: 20px;
-  width: 1455px; /* Comprimento da borda */
-  height: 534px;/* Tamanho da caixa */
-  position: absolute;
-  top: 90px; /* ajuste conforme necessário */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
-}
-
-
-.custom-hr{ /* linhas de separação delimitação */
-  height: 2px;
-  height: 4px;
-  margin-top: -370px;
-  margin-left: -2px;
-  width: 1400px;
+.custom-hr-b, .custom-hr {
+  height: 3px;
   background-color: #4F1964;
-  position: absolute;
 }
 
-
-.status{
+.status, .pergunta, .postar {
   font-size: 1.5em;
-  margin-top: -450px;
-  margin-left: -220px;
   color: #4F1964;
 }
 
-.pergunta{
-  font-size: 1.5em;
-  margin-top: -450px;
-  margin-left: 50px;
-  color: #4F1964;
-}
-
-.postar{
-  font-size: 1.5em;
-  margin-top: -245px;
-  margin-left: 200px;
-  color: #4F1964;
-}
-
-.tag-c{
-  margin-left: 750px;
-}
-
-
-.status-condicao{
-  margin-top: -210px;
-  margin-left: -1290px;
+.status-condicao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #23903c;
   background: #d4edda;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 80px;
+  padding: 5px;
+  margin-top: 10px;
+  height: 70%;
+  width: 70%;
 }
 
-
-.dados-usuario{
+.dados-usuario {
   background-color: #f4e3fc;
-  margin: 1px;
-  font-size: 1.5em;
-  padding: 10px;
-  position: absolute;
-  margin-left: 1180px;
-  margin-top: -220px;
+  font-size: 1.3em;
+  padding: 7px;
   border-radius: 15px;
-}
-
-
-.custom-hr-b{
-  height: 2px;
-  height: 4px;
-  margin-top: -50px;
-  margin-left: -2px;
-  width: 1400px;
-  background-color: #4F1964;
-  position: absolute;
-}
-
-
-/*---------------------- CAIXA DE TEXTO --------------------------------------------------------  */
-
-
-.input{
-  flex: 2.4em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
-  border-radius: 5px;
-  border: 1px solid #000000;
-  width: 1030px;
-  padding: 100px;
+  margin: 10px;
 }
 
 .input-box-a {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  margin-top: -182px;
-  margin-left: -185px;
+  width: 100%;
 }
 
 .input-box-a input:hover {
@@ -237,15 +157,9 @@ header {
   color: #000000be;
 }
 
-
-.caixa-texto{
-  flex: 2.4em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
+.caixa-texto {
   border-radius: 5px;
-  margin-left: 235px;
-  margin-top: 1px;
-  width: 1000px;
-  padding: 18px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
 }

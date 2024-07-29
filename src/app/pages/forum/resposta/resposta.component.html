@@ -1,58 +1,55 @@
 <app-menu></app-menu>
 
 <!---------------------------------------------------------------------------------------------------------->
-
-<div>
-  <header>
+<p-toast></p-toast>
+<div class="tela">
+  <header d-flex justify-content-center>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-    <h5 class="cor-titulo-descricao">{{ pergunta.titulo }}<br></h5>
+    <h4 class="cor-titulo-descricao">{{ pergunta.titulo }}<br></h4>
   </header>
-</div>
 
-<div>
-  <a class="estilo-nome">Por: {{ pergunta.usuario.nome }} <p class="estilo-data">{{ pergunta.dataCriado }}</p>
-    <hr class="custom-hr">
-  </a>
+  <div class="d-flex justify-content-around">
+    <p class="estilo-nome"> Por: {{ pergunta.usuario.nome }}</p>
+    <p class="estilo-data ">{{ pergunta.dataCriado|date:'dd/MM/yyyy - HH:mm'}}</p>
+  </div>
 
-      <div class="input-box">
-        <span>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-        </span>
-        <h3 class="caixa-b">{{ pergunta.detalhes }}</h3>
-      </div>
-</div>
+  <hr class="custom-hr">
 
-<div class="conteiner">
-  <div class="caixa-adicionar-respostas">
+  <div class="conteiner">
+    <h3 class="caixa-b">{{ pergunta.detalhes }}</h3>
+  </div>
+
+  <div class="conteiner">
     <div class="borda-adicionar-respostas">
 
       <div class="input-box">
         <span class="estilo-palavra">
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
           <h1 class="cor">Respostas</h1>
         </span>
-        <input id="adicionar uma resposta" textarea class="forum" name="firstname" placeholder="lalal" required />
-      </div>
-
-          <div *ngFor="let resposta of retornoRespostas">
+        <input id="adicionar uma resposta" textarea class="forum" style="font-size: 3em;" placeholder="Insira sua resposta" required />
+        <div class="postar-button">
             <div class="input-box">
-              <h2 class="informacoes-usuario"> {{ resposta.usuario.nome }} - {{ resposta.dataCriado }}</h2>
-              <h3 class="forum">{{ resposta.resposta }}</h3>
+              <button class="button-a">Postar</button>
             </div>
           </div>
+      </div>
 
+      <div *ngFor="let resposta of retornoRespostas">
+        <br><br>
+        <div class="d-flex justify-content-between informacoes-usuario">
+          <p style="font-size: 1em;"> {{ resposta.usuario.nome }}</p>
+          <p> {{ resposta.dataCriado | date : 'dd/MM/yyyy - HH:mm'}}</p>
+        </div>
+        <textarea class="forum" [(ngModel)]="resposta.resposta" disabled="" class="forum"></textarea>
+      </div>
     </div>
+
   </div>
 </div>
 
-<div class="postar-button">
-  <div class="input-box">
-    <button class="button-a">Postar</button>
-  </div>
-</div>
 
-<div class="deletar-button">
-  <div class="input-box">
-    <button class="button-b">Deletar</button>
-  </div>
-</div>
+  <!-- <div class="deletar-button">
+    <div class="input-box">
+      <button class="button-b">Deletar</button>
+    </div>
+  </div> -->

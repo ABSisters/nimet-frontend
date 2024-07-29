@@ -1,15 +1,13 @@
-.cadastro {
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px 0px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
+.tela{
+  width: 96vw; /* Ocupa 100% da largura do viewport */
+  height: 98vh; /* Ocupa 100% da altura do viewport */
+ }
 
 .conteiner {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------- USERNAME - DATA - HORARIO ------------------------------------- */
@@ -17,80 +15,82 @@
 .estilo-nome{
   color: #4F1964;
   /* cor da palavra */
-  margin-left: 260px;
-  margin-top: -500px;
-  font-size: 2.3em;
+  align-items: center;
+  margin: 1px;
+  padding: 10px;
+  font-size: 1.7em;
 }
 
 .estilo-data{
   background-color: #f4e3fc;
   margin: 1px;
-  padding: 5px;
-  position: absolute;
-  margin-left: 1300px;
-  margin-top: -60px;
+  padding: 10px;
   border-radius: 15px;
+  font-size: 1.7em;
 }
 
 .custom-hr{
-  height: 2px;
-  margin-top: -30;
-  width: 1520px;
+  height: 3px;
+  margin-top: 60px;
+  margin: 5px;
+  width: 98vw;
   background-color: #4F1964;
   border: none;
 }
 
 .cor-titulo-descricao {
+  display: flex;
+  justify-content: center;
   color: #4F1964;
   /* cor da palavra perfil*/
-  margin-left: 220px;
+  text-align:center;
   margin-top: 5px;
   font-size: 1em;
+  word-wrap: break-word; /* Quebra as palavras longas para caber na largura */
 }
 
 header {
   font-family: 'Roboto', sans-serif;
-  /* tipo da letra do titulo */
   font-size: 3em;
   font-weight: 100;
+  margin-bottom: 30px;
+  text-align: center; /* Centraliza o texto no cabeçalho */
+  width: 80%; /* Define a largura do cabeçalho para 80% da tela */
+  max-width: 1200px; /* Define uma largura máxima, opcional */
+  margin: 0 auto; /* Centraliza o cabeçalho horizontalmente */
+
 }
 
 
 .caixa-b{
-  flex: 1em;
   border-width: 4px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-radius: 5px;
-  margin-left: 230px;
-  margin-right: 15px;
-  margin-top: 110px;
   border-radius: 5px;
   border: 1px solid #000000;
-  width: 1520px;
-  padding: 175px;
+  width: 1200px;
+  padding: 25px;
+  margin: 10px;
 }
 
 /* ------------------- DIV QUE SEPARA A POSTAGEM DAS RESPOSTAS --------------------------------------  */
 
 
 .caixa-adicionar-respostas{
-  margin-top: 663px; /* Altura da borda */
-  margin-right: 200px;
-  margin-left: 160px;
 }
 
 .borda-adicionar-respostas {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  overflow-y: auto;
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
-  padding: 100px; /* Tamanho da caixa */
+  padding: 40px; /* Tamanho da caixa */
   margin: 20px;
-  width: 1525px; /* Comprimento da borda */
-  height: 800px;/* Tamanho da caixa */
-  position: absolute;
-  top: 570px; /* ajuste conforme necessário */
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
+  width: 1200px; /* Comprimento da borda */
+  height: 450px;/* Tamanho da caixa */
 }
 
 
@@ -98,22 +98,18 @@ header {
 
 .cor{ /* titulo: respostas */
   color: #4F1964;
-  margin-top: 10px;
 }
 
 .estilo-palavra { /* titulo: respostas */
   font-family: 'Roboto', sans-serif;
   font-size: 0.9em;
-  font-weight: 100;
+  font-weight: 90;
 }
 
 
 .input-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  margin-top: -90px;
-  margin-left: -50px;
+  font-size: 0.5em;
+  width: 990px;
 }
 
 .input-box input:hover {
@@ -141,13 +137,11 @@ header {
 
 .informacoes-usuario{
   font-family: 'Roboto', sans-serif;
-  background-color: #f4e3fc;
-  margin: 1px;
-  padding: 20px;
-  position: absolute;
-  margin-left: -40px;
-  margin-top: 65px;
+  margin-top: 20px;
   border-radius: 15px;
+  font-size: 1.3em;
+  color: #4F1964;
+  font-weight: 500 ;
 }
 
 
@@ -156,8 +150,7 @@ header {
 
 .postar-button{
   margin-top: -0px; /* Altura do botão */
-  margin-right: 100px;
-  margin-left: 1550px;
+  margin-left: 890px;
 }
 
 .button-a{
@@ -167,8 +160,8 @@ header {
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: -380px;
-  font-size: 1.5em;
+  margin-top: 30px;
+  font-size: 5em;
 }
 
 
@@ -192,9 +185,10 @@ header {
 /* ----------------------------- CAIXA PRINCIPAL PARA ADICIONAR RESPOSTA ------------------------------------------------------  */
 
 .forum{
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  margin-top: 20px;
-  width: 1415px;
+  width: 1100px;
+  height: 90px;
+  font-size: 1.5em;
 }
 

@@ -24,7 +24,7 @@ export class RespostaComponent implements OnInit{
   ngOnInit() {
     this.resposta.usuarioId = this.userService.getUsuario().usuarioId;
     // this.pergunta = this.forumService.getPerguntaId();
-    this.pergunta = this.forumService.getPerguntaId();
+    this.pergunta = this.forumService.perguntaSelecionada;
     this.getRespostas(this.pergunta); // deixar mocado por enquanto...
 
   }

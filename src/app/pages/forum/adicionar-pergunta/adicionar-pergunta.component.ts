@@ -25,7 +25,7 @@ export class AdicionarPerguntaComponent implements OnInit {
   constructor(
     private forumService: ForumService,
     private userService: UsuarioService,
-    private messageService: MessageService,
+    private message: MessageService,
     private fb: FormBuilder
   ) {}
 
@@ -33,19 +33,25 @@ export class AdicionarPerguntaComponent implements OnInit {
     this.perguntaForm = this.fb.group({
       titulo: ['', [Validators.required]],
       detalhes: ['', [Validators.required]],
-      tags: [[]] // Inicializa como um array vazio para as tags
+      tags: [[], [Validators.required, this.validateTagsNotEmpty]] // Adiciona validação customizada para tags
     });
   }
 
+  validateTagsNotEmpty(control: any) {
+    return control.value && control.value.length > 0 ? null : { required: true };
+  }
+
   montarRequest(): void {
+    if (this.perguntaForm.invalid) {
+      this.message.add({severity: 'error', summary: 'Erro', detail: 'Nenhum dos campos pode estar vazio'});
+      return; // Retorna imediatamente se a validação falhar
+    }
+
     const form = this.perguntaForm.getRawValue();
     const tagsArray = Array.isArray(form.tags) ? form.tags : [form.tags];
-
-
-    // Criando o objeto de request
     const request: PerguntaPostRequest = {
-      detalhes: form.detalhes || null,
-      titulo: form.titulo || null,
+      detalhes: form.detalhes,
+      titulo: form.titulo,
       usuarioId: this.userService.getUsuario().usuarioId,
       tags: tagsArray
     };
@@ -57,11 +63,11 @@ export class AdicionarPerguntaComponent implements OnInit {
   postar(request: PerguntaPostRequest): void {
     this.forumService.adicionarPergunta(request).subscribe({
       next: (result) => {
-        this.messageService.add({ severity: 'success', summary: 'Sucesso', detail: 'Pergunta postada com sucesso' });
+        this.message.add({severity: 'success', summary: 'Sucesso', detail: 'Pergunta postada com sucesso' })
         console.log(result);
       },
       error: (erro) => {
-        this.messageService.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possível adicionar a pergunta' });
+        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel inserir a pergunta' })
         console.error(erro);
       }
     });

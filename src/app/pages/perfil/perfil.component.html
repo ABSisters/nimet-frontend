@@ -196,19 +196,32 @@
         <h3 class="titulo-perguntas">Perguntas no Fórum</h3>
       </header>
 
-      <div *ngFor="let pergunta of perguntas">
+      <div *ngIf="perguntas.length > 0">
+        <div *ngFor="let pergunta of perguntas">
 
-        <div class="conteiner-perguntas-forum-emcima">
-          <div class="conteiner-perguntas-emcima">
-
-            <div class="data-perguntas-forum-a">{{pergunta.dataCriado| date : 'dd/MM/yyyy HH:mm'}}</div>
-            <div class="input-texto-a">
-              <input id="pergunta" class="caixas-perguntas" [(ngModel)]="pergunta.titulo" disabled>
+          <div class="conteiner-perguntas-forum-emcima">
+            <div class="conteiner-perguntas-emcima">
+              <div class="data-perguntas-forum-a">{{pergunta.dataCriado| date : 'dd/MM/yyyy HH:mm'}}</div>
+              <div class="input-texto-a">
+                <input id="pergunta" class="caixas-perguntas" [(ngModel)]="pergunta.titulo" disabled>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Caso o usuário não tenha colocado perguntas no fórum -->
+      <div *ngIf="perguntas.length == 0">
+        <div class="conteiner-perguntas-forum-emcima">
+          <div class="conteiner-perguntas-emcima">
+
+            <div class="data-perguntas-forum-a">dd/MM/yyyy HH:mm</div>
+            <div class="input-texto-a">
+              <input id="pergunta" class="caixas-perguntas" placeholder="Você não colocou perguntas no Fórum" disabled>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -224,28 +237,39 @@
         <h3 class="titulo-respostas">Respostas no Fórum</h3>
       </header>
 
-      <div *ngFor="let resposta of respostas">
-        <div class="conteiner-respostas-forum-embaixo">
-          <div class="conteiner-respostas-embaixo">
 
-            <div class="caixa-respostas-forum-emcima">
-              <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">{{
-                resposta.pergunta.titulo}}</p>
+      <div *ngIf="perguntas.length > 0">
+        <div *ngFor="let resposta of respostas">
+          <div class="conteiner-respostas-forum-embaixo">
+            <div class="conteiner-respostas-embaixo">
+
+              <div class="caixa-respostas-forum-emcima">
+                <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">{{
+                  resposta.pergunta.titulo}}</p>
+              </div>
+              <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
+              <div class="input-texto-a">
+                <p id="resposta" class="caixas-respostas">{{ resposta.resposta }}</p>
+              </div>
 
             </div>
-            <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
-            <div class="input-texto-a">
-              <p id="resposta" class="caixas-respostas">{{ resposta.resposta }}</p>
-
-            </div>
-
           </div>
+        </div>
+      </div>
 
+      <!-- Caso o usuario nao tem respostas no forum -->
+      <div *ngIf="perguntas.length == 0">
+        <div class="caixa-respostas-forum-emcima">
+          <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;"></p>
+
+        </div>
+        <div class="data-respostas-forum">dd/MM/yyyy HH:mm</div>
+        <div class="input-texto-a">
+          <p id="resposta" class="caixas-respostas">Você ainda não postou respostas no forum</p>
         </div>
       </div>
 
     </div>
   </div>
-
 
 </div>

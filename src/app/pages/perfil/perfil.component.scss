@@ -4,9 +4,9 @@
 
 .tela-perfil{
   margin-top: -24px;
-  margin-left: 135px;
-  width: 90vw;
-  height: 130vh;
+  margin-left: 150px;
+  width: 88vw;
+  height: 120vh;
   // background-image: url(../../../assets/images/Nimet.svg);
   // background-size: cover;  /* Ajusta a imagem para cobrir toda a área */
   // background-repeat: no-repeat; /* Evita a repetição da imagem */
@@ -286,6 +286,28 @@ button span {
   top: 325px; /* ajuste conforme necessário */
 }
 
+// .borda-perguntas-forum::-webkit-scrollbar,
+// .borda-respostas-forum::-webkit-scrollbar {
+//   width: 8px;
+//   height: 50px;
+// }
+
+// .borda-perguntas-forum::-webkit-scrollbar-track,
+// .borda-respostas-forum::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// .borda-perguntas-forum::-webkit-scrollbar-thumb,
+// .borda-respostas-forum::-webkit-scrollbar-thumb {
+//   background: rgba(123, 76, 159, 0.7);
+//   border-radius: 4px;
+// }
+
+// .borda-perguntas-forum::-webkit-scrollbar-thumb:hover,
+// .borda-respostas-forum::-webkit-scrollbar-thumb:hover {
+//   background: rgba(123, 76, 159, 0.9);
+// }
+
 .conteiner-perguntas-forum-emcima{
   margin-left: -90px;
 }
@@ -377,7 +399,7 @@ button span {
 .excluir-button{
   margin-top: -826px; /* Altura do botão */
   margin-right: 100px;
-  margin-left: 750px;
+  margin-left: 700px;
 }
 
 .button-excluir{
