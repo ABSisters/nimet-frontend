@@ -15,9 +15,7 @@
 
 .caixa-texto:hover {
   color: #2a1261;
-  ;
   text-decoration: underline;
-
 }
 
 
@@ -29,8 +27,9 @@
 }
 
 .tela-forum {
-  height: 110vh;
-  width: 98vw;
+  height: 130vh;
+  width: 99.2vw;
+  background-color: rgba(209, 155, 236, 0.1);
 }
 
 .cor-nome {
@@ -62,7 +61,7 @@ header {
   background-color: #d19bec40;
   padding: 15px;
   margin: 20px;
-  margin-left: 10px;
+  margin-left: 23px;
   width: 1350px;
   height: 700px;
   // overflow-y: scroll;

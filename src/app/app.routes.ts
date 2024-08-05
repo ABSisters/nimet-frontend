@@ -45,7 +45,7 @@ export const routes: Routes = [
           { path: 'advanced', component: MecAvancadoComponent },
         ],
       },
-      {path: 'info', component: InfoBasicoComponent,
+      {path: 'info',
         canActivate: [UsuarioAutenticadoGuard],
         children: [
           { path: 'basic', component: InfoBasicoComponent },
