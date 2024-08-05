@@ -20,6 +20,7 @@ import { MecIntermediarioComponent } from './pages/main/mec/mec-intermediario/me
 import { MecAvancadoComponent } from './pages/main/mec/mec-avancado/mec-avancado.component';
 import { EleBasicoComponent } from './pages/main/ele/ele-basico/ele-basico.component';
 import { EleAvancadoComponent } from './pages/main/ele/ele-avancado/ele-avancado.component';
+import { SenhaComponent } from './pages/senha/senha.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent, canActivate: [UsuarioNaoAutenticadoGuard] },
@@ -68,5 +69,6 @@ export const routes: Routes = [
   { path: 'forum', component: ForumComponent, canActivate: [UsuarioAutenticadoGuard]},
   { path: 'adicionar-pergunta', component: AdicionarPerguntaComponent, canActivate: [UsuarioAutenticadoGuard]},
   { path: 'resposta', component: RespostaComponent, canActivate: [UsuarioAutenticadoGuard]},
+  { path: 'senha', component: SenhaComponent, canActivate: [UsuarioAutenticadoGuard]},
   { path: '**', redirectTo: '/main' }  // Redireciona qualquer rota não encontrada para a página de login
 ];

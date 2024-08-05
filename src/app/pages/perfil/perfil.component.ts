@@ -1,3 +1,4 @@
+import { routes } from './../../app.routes';
 import { ForumService } from './../../service/forum/forum.service';
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { MessageService } from 'primeng/api';
@@ -7,6 +8,7 @@ import { UsuarioService } from '../../service/usuario/usuario.service';
 import { UsuarioResponse } from '../../model/response/usuarioResponse';
 import { RespostaResponse } from '../../model/response/respostaResponse';
 import { PerguntaResponse } from '../../model/response/perguntaResponse';
+import { Router } from '@angular/router';
 // import {questions} from '../../../assets/'
 
 @Component({
@@ -26,7 +28,8 @@ export class PerfilComponent implements OnInit {
   constructor(
     private userService: UsuarioService,
     private message: MessageService,
-    private forumService: ForumService
+    private forumService: ForumService,
+    private routes: Router
   ) { }
 
   ngOnInit(): void {
@@ -39,7 +42,8 @@ export class PerfilComponent implements OnInit {
     this.userService.deletar(user.usuarioId).subscribe({
       next: (result) => {
         console.log(result)
-        this.message.add({ severity: 'sucess', summary: 'Sucess', detail: 'Perfil deletado com sucesso' })
+        this.message.add({ severity: 'sucess', summary: 'Sucess', detail: 'Perfil deletado com sucesso' });
+        this.userService.clearUsuario();
       },
       error: (erro) => {
         console.log(erro);
@@ -93,22 +97,9 @@ export class PerfilComponent implements OnInit {
     this.edit = false ;
   }
 
-
-  // alterarSenha(user: UsuarioResponse, userSenha: UsuarioPutSenhaRequest) {
-  //   this.userService.alterarSenha(userSenha).subscribe({
-  //     next: (usuario) => {
-  //       console.log(usuario);
-  //       this.message.add({ severity: 'sucess', summary: 'sucess', detail: 'Senha alterada com sucesso' })
-  //     },
-  //     error: (erro) => {
-  //       console.log(erro);
-  //       this.message.add({ severity: 'error', summary: 'Erro', detail: erro.erro.message })
-  //     }
-  //   })
-  // }
-
-
-
+  senha(){
+    this.routes.navigate(['senha']);
+  }
 
   @ViewChild('sidebarRef') sidebarRef!: Sidebar;
 

@@ -1,0 +1,44 @@
+<p-toast></p-toast>
+<div class="tela">
+  <app-menu></app-menu>
+  <div class="roxo"></div>
+
+  <div class="card">
+    <div class="conteiner p-5">
+
+      <body>
+        <h3>
+          <header style="text-align: center;">
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />Você deseja trocar a senha do
+            <b><span>nimet</span></b>?
+          </header>
+        </h3>
+
+          <h2 class="texto" style="text-align: center;">
+            Abaixo insira a sua nova senha.
+          </h2>
+
+          <div class="input-box">
+            <label for="token" class="form-label"></label>
+            <input [(ngModel)]="userSenha.senhaAtual" class="form-control" type="text" name="token" placeholder="Insira a senha atual:"
+              class="form-control" required />
+          </div>
+          <div class="input-box">
+            <label for="token" class="form-label"></label>
+            <input [(ngModel)]="userSenha.senhanova" class="form-control" type="text" name="token" placeholder="Insira a senha nova:"
+              class="form-control" required />
+          </div>
+
+
+          <button class="button" (click)="trocarSenha()">
+            <span>Trocar senha</span>
+          </button>
+        </body>
+    </div>
+  </div>
+</div>
+
+
+<img src="../../../assets/images/cadastro-semfundo.png" alt="imagem ilustrativa do login" class="image" />

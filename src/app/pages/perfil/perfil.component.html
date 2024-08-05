@@ -41,7 +41,7 @@
       </header>
       <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
 
-      <button class="button">Alterar Senha</button>
+      <button class="button" (click)="senha()">Alterar Senha</button>
     </div>
 
     <div class="input-box">
@@ -75,7 +75,7 @@
 
     <div class="excluir-button">
       <div class="input-box">
-        <button class="button-excluir">Excluir Perfil</button>
+        <button class="button-excluir" (click)="excluirPerfil(user)">Excluir Perfil</button>
       </div>
     </div>
 
@@ -244,13 +244,13 @@
             <div class="conteiner-respostas-embaixo">
 
               <div class="caixa-respostas-forum-emcima">
-                <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">{{
-                  resposta.pergunta.titulo}}</p>
-              </div>
-              <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
-              <div class="input-texto-a">
-                <p id="resposta" class="caixas-respostas">{{ resposta.resposta }}</p>
-              </div>
+                <p id="pergunta" class="titulo-principal" style="color: white;">
+                  {{resposta.pergunta.titulo}}</p>
+                </div>
+                <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
+                <div class="input-texto-a">
+                  <p id="resposta" class="caixas-respostas">{{ resposta.resposta }}</p>
+                </div>
 
             </div>
           </div>
