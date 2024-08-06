@@ -22,6 +22,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { ForumComponent } from './forum/forum/forum.component';
 import { AdicionarPerguntaComponent } from './forum/adicionar-pergunta/adicionar-pergunta.component';
 import { RespostaComponent } from './forum/resposta/resposta.component';
+import { SenhaComponent } from './senha/senha.component';
 
 
 
@@ -45,7 +46,8 @@ import { RespostaComponent } from './forum/resposta/resposta.component';
     ForumComponent,
     AdicionarPerguntaComponent,
     RespostaComponent,
-    ForumComponent
+    ForumComponent,
+    SenhaComponent
 
   ],
   imports: [

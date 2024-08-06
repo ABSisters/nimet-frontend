@@ -41,7 +41,7 @@
       </header>
       <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
 
-      <button class="button">Alterar Senha</button>
+      <button class="button" (click)="senha()">Alterar Senha</button>
     </div>
 
     <div class="input-box">
@@ -50,6 +50,7 @@
       </header>
       <input id="confirmcourse" type="curso" name="confirmcourse" list="cursos" placeholder="Curso" class="form-control"
         [(ngModel)]="user.curso" [disabled]="edit" />
+
     </div>
 
     <div class="input-box">
@@ -75,7 +76,7 @@
 
     <div class="excluir-button">
       <div class="input-box">
-        <button class="button-excluir">Excluir Perfil</button>
+        <button class="button-excluir" (click)="excluirPerfil(user)">Excluir Perfil</button>
       </div>
     </div>
 
@@ -215,7 +216,7 @@
         <div class="conteiner-perguntas-forum-emcima">
           <div class="conteiner-perguntas-emcima">
 
-            <div class="data-perguntas-forum-a">dd/MM/yyyy HH:mm</div>
+            <div class="data-perguntas-forum-a">Data de postagem:</div>
             <div class="input-texto-a">
               <input id="pergunta" class="caixas-perguntas" placeholder="Você não colocou perguntas no Fórum" disabled>
             </div>
@@ -244,8 +245,8 @@
             <div class="conteiner-respostas-embaixo">
 
               <div class="caixa-respostas-forum-emcima">
-                <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">{{
-                  resposta.pergunta.titulo}}</p>
+                <p id="pergunta" class="titulo-principal" style="color: white;">
+                  {{resposta.pergunta.titulo}}</p>
               </div>
               <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
               <div class="input-texto-a">
@@ -259,17 +260,19 @@
 
       <!-- Caso o usuario nao tem respostas no forum -->
       <div *ngIf="perguntas.length == 0">
-        <div class="caixa-respostas-forum-emcima">
-          <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;"></p>
+        <div class="conteiner-respostas-forum-embaixo">
+          <div class="conteiner-respostas-embaixo">
+            <div class="caixa-respostas-forum-emcima">
+              <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">Não há respostas suas neste fórum.</p>
 
-        </div>
-        <div class="data-respostas-forum">dd/MM/yyyy HH:mm</div>
-        <div class="input-texto-a">
-          <p id="resposta" class="caixas-respostas">Você ainda não postou respostas no forum</p>
+            </div>
+            <div class="data-respostas-forum">Data de postagem:</div>
+            <div class="input-texto-a">
+              <p id="resposta" class="caixas-respostas" style="color:gray ;">Sem respostas vinculadas às perguntas.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
-  </div>
-
-</div>

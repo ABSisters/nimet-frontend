@@ -53,7 +53,7 @@ header {
 h3 {
   position: absolute;
   top: 105px;
-  left: 1140px;
+  left: 1100px;
   transform: translate(-106.5%, -50%);
   /* Centralizando o titulo horizontalmente e verticalmente */
   width: 60rem;
@@ -64,14 +64,13 @@ h3 {
   /* tipo da letra do testo de explicação */
   font-size: 1.5em;
   font-weight: 100px;
-  margin-left: 10px;
   color: rgb(42, 41, 41);
   display: flex;
   text-align: center;
 }
 
 .chapeu{
-  margin-left: 5em;
+  margin-left: 13em;
   margin-top: -36px;
 }
 
@@ -148,7 +147,7 @@ button span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-106.5%, -50%);
+  transform: translate(-99.5%, -50%);
   /* Centralizando a imagem horizontalmente e verticalmente */
   width: 55rem;
 }

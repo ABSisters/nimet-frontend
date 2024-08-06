@@ -1,4 +1,5 @@
 export class UsuarioPutSenhaRequest{
-  id!: string
-  senha !: string
+  usuarioId!: string;
+  senhaAtual!: string;
+  senhanova!: string;
 }

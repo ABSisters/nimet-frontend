@@ -54,7 +54,7 @@ logar(){
       if(usuario && usuario.usuarioId != null){
         this.userService.user = usuario;
         console.log(this.userService.user);
-        this.routeador.navigate(['/main/info']);
+        this.routeador.navigate(['/main/info/basic']);
       }
     },
     error: (erro) => {

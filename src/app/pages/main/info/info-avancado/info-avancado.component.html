@@ -2,7 +2,7 @@
 
 <div class="col-12 tela">
 
-  <div class="title"> INFORMÁTICA - AVAÇADO</div>
+  <div class="title"> INFORMÁTICA - AVANÇADO</div>
 
   <div class="chart">
     <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
@@ -10,7 +10,7 @@
 
   <div class="info">
     <h2>Sobre o Nível Avançado</h2>
-    O nível avançado em informática é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da informática.
+    O <span><b>nível avançado</b></span> de informática é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da informática.
     Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas. As principais matérias são:<br><br>
 
     <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
@@ -22,16 +22,14 @@
     <li><span><b>Desenvolvimento de Sistemas:</b></span> Aplicação de técnicas e ferramentas avançadas para o desenvolvimento de sistemas complexos e de grande escala.</li>
   </div>
 
-  <button class="button-quiz">Quiz - Avançado</button>
-
-  <button class="button-forum">Fórum</button>
 
   <button class="button-quiz" (click)="quiz()">Quiz - Avançado </button>
 
   <button class="button-forum" (click)="forum()">Fórum</button>
 
+  <button class="button-intermediario" (click)="intermediario()">Nivel - Intermediário </button>
+
   <button class="button-basico" (click)="basico()">Nivel - Básico</button>
 
-  <button class="button-intermediario" (click)="intermediario()">Nivel - Intermediário </button>
 
 </div>

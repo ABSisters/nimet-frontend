@@ -41,13 +41,13 @@ export class UsuarioService {
   }
 
   alterarSenha(userSenha: UsuarioPutSenhaRequest): Observable<UsuarioResponse> {
-    return this.httpClient.put(`${env.baseApiUrl}/${urlConfig.alterarSenha}`,userSenha, this.httpOptions).pipe(
+    return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.alterarSenha ,userSenha, this.httpOptions).pipe(
       map((res:any) => res)
     )
   }
 
   deletar(id: String): Observable<any> {
-    return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.deletar,id, this.httpOptions).pipe(
+    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.deletar + '/' + id, this.httpOptions).pipe(
       map((res:any) => res)
     )
   }
