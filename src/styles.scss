@@ -1,1 +1,202 @@
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  height: calc(30rem + 30px) !important;
+  margin-bottom: 0.3rem;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
 /* You can add global styles to this file, and also import other style files */
+.password {
+  display: block  !important;
+  width: 14.2rem  !important;
+  height: calc(2.15rem + 2px)  !important;
+  padding: 0.375rem 0.75rem  !important;
+  font-size: 1rem  !important;
+  line-height: 1.5  !important;
+  color: #495057  !important;
+  background-color: #fff  !important;
+  background-clip: padding-box  !important;
+  border: 1.6px solid #0000007a  !important;
+  border-radius: 0.25rem  !important;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container .p-password-panel {
+  position: absolute;
+  z-index: 1000; /* Garante que o modal esteja na parte superior */
+  background-color:  #cda7df; /* Cor de fundo do modal */
+  border: 1px solid #ccc; /* Borda do modal */
+  border-radius: 5px; /* Borda arredondada */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 10px; /* Espaçamento interno */
+}
+
+
+.card-titulo {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000;
+}
+
+.label-erro {
+  display: block;
+  font-size: 12px;
+  color: #B71213;
+}
+
+.fundo-padrao {
+  background: #4F1964 !important;
+  color: #fff !important;
+}
+
+.cor-breadcrump {
+  background: #d4fff0 !important;
+}
+
+.cor-padrao {
+  color: #4F1964 !important;
+}
+
+.cor-sucesso {
+  color: #2ecc71 !important;
+}
+
+.cor-info {
+  color: #3598DC !important;
+}
+
+.cor-avio {
+  color: #e67e22 !important;
+}
+
+.cor-erro {
+  color: #E84C3D !important;
+}
+
+.texto-branco {
+  color: #fff !important;
+}
+
+
+
+.label-form {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.p-fieldset .p-fieldset-legend {
+  background: #f5f5f5;
+  border-radius: 2rem;
+  border: 1px;
+  padding: 15px !important;
+}
+
+.p-dialog {
+  background: #ffffff;
+}
+
+.p-dialog .p-dialog-header {
+  background: #4F1964;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 1.0rem;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: #ffffff;
+}
+
+.p-dialog .p-dialog-content {
+  margin-top: 15px;
+}
+
+.p-fieldset .p-fieldset-legend {
+  background: #f5f5f5;
+  border-radius: 2rem;
+  border: 1px;
+  padding: 15px !important;
+}
+
+.p-inputgroup p-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-disabled,
+.p-component:disabled {
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  opacity: 1;
+  background: rgb(247, 247, 247);
+}
+
+p-dropdown .p-disabled {
+  background: rgb(247, 247, 247);
+}
+
+
+.form-control-custom:disabled {
+  background-color: #E8F0FE;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+.btn-purple {
+  color: #ffffff;
+  background: #4F1964;
+  border: 1px solid #4F1964;
+  padding: 0.643rem 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  border-radius: 4px;
+}
+
+.btn-primary-custom {
+  background: #4F1964;
+  border: 1px solid #4F1964;
+}
+
+.body {
+  background: #ECECEC;
+}
+
+/* Estilos globais para barras de rolagem */
+::-webkit-scrollbar {
+  width: 11px; /* Largura da barra de rolagem vertical */
+  height: 30px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 76, 159, 0.9); /* Cor do "polegar" da barra de rolagem */
+  border-radius: 3px; /* Arredondamento das bordas do "polegar" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 76, 159); /* Cor do "polegar" quando hover */
+}
+
+
+

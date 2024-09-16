@@ -49,19 +49,22 @@
   height: 2rem;
 }
 
-
-
 .logo {
   margin-bottom: 10rem;
-  width: 250px;
+  width: 270px;
 }
 
 
-.custom-input {
+.custom {
   border-bottom: 3px solid purple !important;
-  width: 300px !important;
+  width: 17rem !important;
   padding: 0.5rem;
   box-sizing: border-box;
+}
+
+.custom:focus {
+  outline: none; /* Remove o destaque preto do input */
+  box-shadow: none;
 }
 
 span{
@@ -70,5 +73,20 @@ span{
 
 .form-label {
   margin-bottom: 0.5rem; /* Ajuste conforme necessário */
+}
+
+:host ::ng-deep .p-password input {
+  border: 0 !important;
+  border-bottom: 3px solid purple !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+:host ::ng-deep .p-password {
+  width: 17rem !important;
+}
+
+:host ::ng-deep .p-password .p-inputtext {
+  font-size: 1rem !important;  // Ajuste o tamanho da fonte conforme necessário
 }
 

@@ -1,0 +1,164 @@
+.conteiner-a {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 97%;
+  height: 80%;
+  overflow-y: scroll;
+  border: 2px;
+}
+
+.caixa-texto {
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+.caixa-texto:hover {
+  color: #2a1261;
+  text-decoration: underline;
+}
+
+
+.header-row, .pergunta-item {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tela-forum {
+  height: 130vh;
+  width: 99.2vw;
+  background-color: rgba(209, 155, 236, 0.1);
+}
+
+.cor-nome {
+  color: #4F1964;
+  font-size: 3em;
+  text-align:center;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.linha{
+  margin: 25px;
+}
+
+.forum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.borda-forum {
+  border-width: 3px;
+  border-style: solid;
+  border-color: hsl(283, 48%, 37%);
+  background-color: #d19bec40;
+  padding: 15px;
+  margin: 20px;
+  margin-left: 23px;
+  width: 1350px;
+  height: 700px;
+  // overflow-y: scroll;
+}
+
+.conteiner-a::-webkit-scrollbar {
+  width: 8px;
+}
+
+.conteiner-a::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.conteiner-a::-webkit-scrollbar-thumb {
+  background: rgba(123, 76, 159, 0.7);
+  border-radius: 4px;
+}
+
+.conteiner-a::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 76, 159, 0.9);
+}
+
+.adicionar-button {
+  text-align: right;
+}
+
+.button-a {
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: white;
+  width: 16rem;
+  height: 2.5rem;
+  font-size: 1.5em;
+}
+
+.custom-multiselect {
+  width: 100px;
+}
+
+.custom-hr-b, .custom-hr {
+  height: 3px;
+  background-color: #4F1964;
+}
+
+.status, .pergunta, .postar {
+  font-size: 1.5em;
+  color: #4F1964;
+}
+
+.status-condicao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #23903c;
+  background: #d4edda;
+  border-radius: 80px;
+  padding: 5px;
+  margin-top: 10px;
+  height: 70%;
+  width: 70%;
+}
+
+.dados-usuario {
+  background-color: #f4e3fc;
+  font-size: 1.3em;
+  padding: 7px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.input-box-a {
+  display: flex;
+  width: 100%;
+}
+
+.input-box-a input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box-a input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-box-a label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box-a input::placeholder {
+  color: #000000be;
+}
+
+.caixa-texto {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}

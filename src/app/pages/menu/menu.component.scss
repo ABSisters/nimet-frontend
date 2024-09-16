@@ -1,0 +1,83 @@
+
+.sidenav{
+  width: 200px;
+  /* Ocupa 100% da largura do viewport */
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #73328d, #c185de);
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom, #ffffff,  #73328d);
+  height: 220vh; /* Altura de 100% da viewport */
+}
+
+
+/* ---------------- OPÇÕES DENTRO DO MENU ---------------------------------------------- */
+
+
+.font-bold{ /* tamnho da fonte do nome do usuário */
+  font-size: 1.2em;
+  text-align: center;
+  justify-content: center;
+}
+
+.mt-auto{
+  height: 30px;
+}
+
+.font-medium{ /* tira o fundo dos botões do menu */
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: x-large;
+  padding: 5px;
+  position: relative;
+  top: -10px;
+}
+
+.font-medium-a{ /* tira o fundo dos botões do menu */
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.font-medium:hover {
+  background-color: #f5d6fe !important;
+  border-radius: 10px;
+ /*padding-inline-start: 30px;
+  padding-right: 30px;
+  padding-left: 30px;*/
+  // padding-inline: 50px;
+}
+
+.font-medium:active {
+  background-color: transparent !important;
+}
+
+/* ------------- LISTA ------------------------------------------------- */
+
+ul {
+  list-style-type: none;
+  padding-left: 0; /* Remove o recurço padrão o estilo padrão dos elementos de lista */
+}
+
+li {
+  list-style-type: none;
+}
+
+/* ---------------- ICONIS ---------------------------------------------- */
+
+i{
+  font-size: x-large;
+  margin-left: -8%;
+  position: relative;
+  top: -10px;
+}
+
+p{ /* Iconi do nome do curso */
+  font-size: x-large;
+}

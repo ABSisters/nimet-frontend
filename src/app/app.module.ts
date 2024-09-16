@@ -1,30 +1,67 @@
-import { PrimengModule } from '../assets/shared/primeng.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { PagesModule } from './pages/pages.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'; // Importe CUSTOM_ELEMENTS_SCHEMA
-import { CadastroService } from './service/cadastro.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importe BrowserAnimationsModule
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, MAT_NATIVE_DATE_FORMATS, NativeDateAdapter } from '@angular/material/core';
+import { ChartModule } from 'primeng/chart';
+import { MenuComponent } from './pages/menu/menu.component';
+import { CadastroService } from './service/usuario/cadastro/cadastro.service';
+import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
 
 
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+
+  "bgsColor": "#3d3434",
+  "bgsOpacity": 0.5,
+  "bgsPosition": "bottom-right",
+  "bgsSize": 60,
+  "bgsType": "ball-spin-clockwise",
+  "blur": 5,
+  "delay": 0,
+  "fastFadeOut": true,
+  "fgsColor": "#4f1964",
+  "fgsPosition": "center-center",
+  "fgsSize": 60,
+  "fgsType": "double-bounce",
+  "gap": 24,
+  "logoPosition": "center-center",
+  "logoSize": 120,
+  "logoUrl": "",
+  "masterLoaderId": "master",
+  "overlayBorderRadius": "0",
+  "overlayColor": "rgba(40, 40, 40, 0.8)",
+  "pbColor": "red",
+  "pbDirection": "ltr",
+  "pbThickness": 3,
+  "hasProgressBar": true,
+  "text": "",
+  "textColor": "#FFFFFF",
+  "textPosition": "center-center",
+  "maxTime": -1,
+  "minTime": 300
+}
 
 
 @NgModule({
   declarations: [
 
+
+
   ],
   imports: [
     CommonModule,
-    PagesModule,
-    PrimengModule,
     AppComponent,
+    PagesModule,
     HttpClientModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartModule,
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    NgxUiLoaderRouterModule
 
 
   ],

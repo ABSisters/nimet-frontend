@@ -1,0 +1,312 @@
+ /* ---------------------- CORES, POSIÇÕES E TAMANHOS DOS TÍTULOS ---------------------------------------------- */
+
+
+ .tela{
+  width: 98vw; /* Ocupa 100% da largura do viewport */
+  height: 98vh; /* Ocupa 100% da altura do viewport */
+  // display: flex;
+ }
+
+.titulo-principal{
+  font-family: 'Roboto', sans-serif;
+  color: #4F1964;
+  display: flex;
+  align-items: center;
+  margin-top: -1700px;
+  font-size: 1em;
+  justify-content: center;
+}
+
+.titulo {
+  color: #4F1964;
+  /* cor da palavra */
+  margin-top: -800px;
+  margin-left: -50px;
+  font-size: 0.9em;
+}
+
+.descricao{
+  color: #4F1964;
+  margin-top: -776px;
+  margin-left: -20px;
+  font-size: 0.9em;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  /* tipo da letra do titulo */
+  font-size: 3em;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  margin-top: 700px;
+}
+
+.conteiner{
+  margin-top: 1700px;
+}
+
+.titulo-tags{
+  color: #4F1964;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+
+ /* ------------------------ DIV'S DO TÍTULO E DA DESCRÇÃO --------------------------------------------*/
+
+.adicionar-pergunta-titulo{
+  margin-top: -763px; /* Altura da borda */
+  margin-left: 90px;
+}
+
+.borda-adicionar-pergunta {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: hsl(283, 48%, 37%);
+  background-color: #d19bec40;
+  padding: 120px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 960px; /* Comprimento da borda */
+  height: 25px;/* Tamanho da caixa */
+  position: absolute;
+  top: 119px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.caixa-texto-titulo{
+  margin-left: -110px;
+}
+
+.caixa-titulo{
+  background-color: rgb(255, 255, 255);
+  padding: 70px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 910px; /* Comprimento da borda */
+  height: 5px;/* Tamanho da caixa */
+  position: absolute;
+  top: 55px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+
+.adicionar-pergunta-descricao {
+  margin-top: -8px; /* Altura da borda */
+  margin-left: 90px;
+}
+
+.borda-pergunta-descricao {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: #73328d;
+  background-color:#d19bec40;
+  padding: 97px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 960px; /* Comprimento da borda */
+  height: 480px;/* Tamanho da caixa */
+  position: absolute;
+  top: 390px; /* ajuste conforme necessário */
+}
+
+.caixa-texto-descricao{
+  margin-top: 733px; /* Altura da borda */
+  margin-left: -85px;
+}
+
+.caixa-descricao{
+  background-color: rgb(255, 255, 255);
+  padding: 184px; /* Tamanho da caixa */
+  margin: 20px;
+  width: 910px; /* Comprimento da borda */
+  height: 70px;/* Tamanho da caixa */
+  position: absolute;
+  top: 62px; /* ajuste conforme necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+
+}
+
+
+/* ----------------------- BOTÃO DE POSTAR ----------------------------------------- */
+
+.postar-button{
+  margin-top: -16px; /* Altura do botão */
+  margin-left: 1370px;
+}
+
+.button-postar{
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: #ffffff;
+  width: 10rem;
+  height: 2.5rem;
+  margin-left: 0.1rem;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+
+/* ------------------------------------- DIV DAS TAGS ------------------------------------------- */
+
+
+.tela-tags{
+  margin-left: 1050px;
+  text-align: left;
+  padding: 20px;
+}
+
+.borda-tags {
+  border-width: 2px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: #73328d;
+  padding: 33px;
+  margin: 20px;
+  width: 400px;/* Comprimento da borda */
+  margin-top: -925px;
+  height: 748px;/* Tamanho da caixa */
+}
+
+
+/*lupa{
+  margin-left: 20px;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: x-large;
+}*/
+
+.selecao{
+  margin-top: 40px;
+}
+
+.field-checkbox{
+ margin-top: 10px;
+}
+
+.ml-2{
+  margin-top: -10px;
+}
+
+
+.barra-pesquisa{
+ padding: 7px;
+ margin-top: 10px;
+ width: 380px;
+}
+
+.card input[pInputText] {
+  width: calc(100% - 32px); /* largura para descontar o ícone */
+  padding-left: 32px; /* Espaço à esquerda para acomodar o ícone */
+}
+
+.card .p-input-icon-left .pi {
+  left: -30px;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+
+/* ----------------------------- CAIXAS DE TEXTOS -------------------------------------------*/
+
+
+input {
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 910px;
+  padding: 56px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -68px;
+  margin-left: -70px;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+
+
+.input-descricao{
+  flex: 2.4em;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 950px;
+  padding: 1000px;
+}
+
+.input-box-descricao {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -182px;
+  margin-left: -185px;
+}
+
+.input-box-descricao input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box-descricao input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-box-descricao label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box-descricao input::placeholder {
+  color: #000000be;
+}
+
+
+.forum-descricao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 910px;
+  height: 370px;/* Tamanho da caixa */
+  padding: 40px;
+  overflow-y: hidden;
+  font-size: 1.3em;
+}
+
+.forum-pergunta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 910px;
+  height: 150px;
+  padding: 40px;
+  overflow-y: hidden;
+  font-size: 1.3em;
+}

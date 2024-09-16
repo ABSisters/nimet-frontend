@@ -1,0 +1,28 @@
+.tela{
+  width: 98vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size:3rem;
+  margin-bottom: 1rem;
+  color:#4f1964;
+}
+
+.chart{
+  height: 87vh;
+  width: 80vw;
+  border: 2px solid #4f1964;
+  margin-bottom: 2rem;
+}
+
+.ele{
+  height: 30vh;
+  width: 80vw;
+  background-color: rgba(131, 85, 151, 0.3);
+  padding: 1rem;
+}
