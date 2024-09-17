@@ -1,0 +1,152 @@
+<app-menu></app-menu>
+
+<div class="col-12 tela">
+
+  <div *ngIf="user.curso === Curso.INFORMATICA">
+    <div class="title"> INFORMÁTICA - BÁSICO </div>
+
+    <div class="chart">
+      <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
+    </div>
+
+    <div class="info">
+      <h2>Sobre o Nível Básico</h2>
+      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
+      seu aprendizado no campo da tecnologia da informação.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      As principais matérias abordadas no nível básico são:<br><br>
+
+      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
+        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+
+      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
+        computadores, incluindo hardware e software.<br></li>
+
+      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
+        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+
+      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
+        funcionamento da internet.</li>
+
+    </div>
+
+    <br>
+
+    <div class="button-container row">
+
+      <div class="col text-center">
+        <button class="btn" (click)="quiz()">Quiz - Básico</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="forum()">Fórum</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="avancado()">Nível - Avançado</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="intermediario()">Nível - Intermediário</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div *ngIf="user.curso === Curso.MECANICA">
+    <div class="title"> MECANICA - BÁSICO </div>
+
+    <div class="chart">
+      <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
+    </div>
+
+    <div class="info">
+      <h2>Sobre o Nível Básico</h2>
+      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
+      seu aprendizado no campo da tecnologia da informação.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      As principais matérias abordadas no nível básico são:<br><br>
+
+      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
+        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+
+      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
+        computadores, incluindo hardware e software.<br></li>
+
+      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
+        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+
+      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
+        funcionamento da internet.</li>
+      </div>
+      <br>
+
+      <div class="button-container row">
+
+        <div class="col text-center">
+          <button class="btn" (click)="quiz()">Quiz - Básico</button>
+        </div>
+        <div class="col text-center">
+          <button class="btn" (click)="forum()">Fórum</button>
+        </div>
+        <div class="col text-center">
+          <button class="btn" (click)="avancado()">Nível - Avançado</button>
+        </div>
+        <div class="col text-center">
+          <button class="btn" (click)="intermediario()">Nível - Intermediário</button>
+        </div>
+
+      </div>
+
+  </div>
+
+
+  <div *ngIf="user.curso === Curso.ELETRONICA">
+    <div class="title"> ELETRONICA - BÁSICO </div>
+
+    <div class="chart">
+      <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
+    </div>
+
+    <div class="info">
+      <h2>Sobre o Nível Básico</h2>
+      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão
+      iniciando
+      seu aprendizado no campo da tecnologia da informação.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      As principais matérias abordadas no nível básico são:<br><br>
+
+      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
+        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+
+      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
+        computadores, incluindo hardware e software.<br></li>
+
+      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
+        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+
+      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
+        funcionamento da internet.</li>
+
+    </div>
+    <br>
+    <div class="button-container row">
+
+      <div class="col text-center">
+        <button class="btn" (click)="quiz()">Quiz - Básico</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="forum()">Fórum</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="avancado()">Nível - Avançado</button>
+      </div>
+      <div class="col text-center">
+        <button class="btn" (click)="intermediario()">Nível - Intermediário</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>

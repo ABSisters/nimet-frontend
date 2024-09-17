@@ -5,12 +5,13 @@ import { urlConfig } from '../../../assets/config/urlConfig';
 import { UsuarioPutSenhaRequest } from '../../model/request/usuarioPutSenhaRequest';
 import {environment as env } from '../../../environments/enviroment';
 import { UsuarioResponse } from '../../model/response/usuarioResponse';
+import { DenunciaPostRequest } from '../../model/request/denunciaPostRequest';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsuarioService {
-  user!: UsuarioResponse
+  // user!: UsuarioResponse
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -52,6 +53,11 @@ export class UsuarioService {
     )
   }
 
+  denunciar(denuncia:  DenunciaPostRequest):Observable<any>{
+    return this.httpClient.post<any>(env.baseApiUrl + '/' + urlConfig.denunciar, denuncia).pipe(
+      map((res:any) => res)
+    )
+  }
 
 }
 

@@ -6,6 +6,7 @@ import { ForumService } from '../../../service/forum/forum.service';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { UsuarioResponse } from '../../../model/response/usuarioResponse';
 
 
 interface City {
@@ -27,11 +28,14 @@ export class ForumComponent implements OnInit {
 
   perguntasForum!: PerguntaResponse[];
 
+  user!: UsuarioResponse
+
 
   constructor(private forumService: ForumService, private userService: UsuarioService,
     private routes: Router, private message: MessageService) { }
 
   ngOnInit() {
+    this.user = this.userService.getUsuario();
     this.loadPerguntasCurso(this.userService.getUsuario().curso);
 
 

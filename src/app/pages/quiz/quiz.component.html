@@ -34,7 +34,7 @@
 
     <header>
 
-        <div class="title">INFORMÁTICA QUIZ - BÁSICO</div>
+        <div class="title"> {{user.curso}} QUIZ - ?? </div>
 
         <div class="timer">
 
@@ -102,11 +102,11 @@
 
     </div>
 
-    <div class="complete_text">Você completou o Quiz!</div>
+    <div class="complete_text">{{user.nome}}, você completou o Quiz! </div>
 
     <div class="score_text">
 
-        <span>Parabéns! 🎉 você acertou <p>{{correctAnswerCount}}</p> de <p>{{questionsList.length}}</p></span>
+        <span>Parabéns 🎉! você acertou <p>{{correctAnswerCount}}</p> de <p>{{questionsList.length}}</p></span>
 
     </div>
 

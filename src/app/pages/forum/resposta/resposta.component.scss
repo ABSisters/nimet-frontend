@@ -83,6 +83,7 @@ header {
   // align-items: center;
   // justify-content: center;
   overflow-y: auto;
+  overflow-x: hidden;
   border-width: 3px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: hsl(283, 48%, 37%);
@@ -196,7 +197,7 @@ header {
 .adicionar{
   padding: 15px;
   border-radius: 10px;
-  width: 1100px;
+  width: 900px;
   height: 90px;
   font-size: 3em;
   border: 2px #4F1964;

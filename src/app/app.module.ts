@@ -10,6 +10,7 @@ import { ChartModule } from 'primeng/chart';
 import { MenuComponent } from './pages/menu/menu.component';
 import { CadastroService } from './service/usuario/cadastro/cadastro.service';
 import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+// import { CriptHttpInterceptorTsComponent } from './interceptor/cript-http.interceptor.ts/cript-http.interceptor.ts.component';
 
 
 
@@ -48,9 +49,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
 
 @NgModule({
   declarations: [
-
-
-
+    // CriptHttpInterceptorTsComponent
   ],
   imports: [
     CommonModule,

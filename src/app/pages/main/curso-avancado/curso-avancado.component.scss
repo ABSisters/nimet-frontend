@@ -1,0 +1,44 @@
+.tela{
+  width: 98vw;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size:3rem;
+  margin-bottom: 1rem;
+  color:#4f1964;
+  text-align: center;
+}
+
+.chart{
+  height: 89vh;
+  width: 80vw;
+  border: 2px solid #4f1964;
+  margin-bottom: 2rem;
+}
+
+.info{
+  height: 44vh;
+  width: 80vw;
+  background-color: rgba(131, 85, 151, 0.3);
+  padding: 1rem;
+}
+
+
+span{
+  color: #4f1964;
+}
+
+.btn{
+  border-radius: 15px;
+  background-color: #4F1964;
+  color: white;
+  padding: 10px;
+  height: 3rem;
+  width: 10.5rem;
+  align-items: center;
+}
