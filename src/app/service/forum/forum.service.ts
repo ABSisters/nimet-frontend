@@ -8,6 +8,7 @@ import { Curso } from '../../model/enum/curso';
 import { PerguntaPostRequest } from '../../model/request/perguntaPostRequest';
 import { RepostaPostRequest } from '../../model/request/respostaPostRequest';
 import { RespostaResponse } from '../../model/response/respostaResponse';
+import { Tags } from '../../model/enum/Tags';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,8 @@ export class ForumService {
   clear(): void {
     localStorage.removeItem('pergunta');
   }
+
+  // PERGUNTAS
 
   adicionarPergunta(pergunta: PerguntaPostRequest): Observable<PerguntaResponse>{
     return this.httpClient.post<PerguntaResponse>( env.baseApiUrl + '/' + urlConfig.adicionarPergunta, pergunta, this.httpOptions).pipe(
@@ -58,6 +61,28 @@ export class ForumService {
     )
   }
 
+  getTags(tag: Tags): Observable<PerguntaResponse>{
+    return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.perguntaTag + '/'  + tag).pipe(
+      map((res:any) => res)
+    )
+  }
+
+  fecharPergunta(perguntaId: String, usuarioId: String): Observable<PerguntaResponse> {
+    return this.httpClient.put(`${env.baseApiUrl}/${urlConfig.perguntaFechar}/${perguntaId}/${usuarioId}`, {}).pipe(
+        map((res: any) => res)
+    );
+}
+
+
+  deletarPergunta(perguntaId: String, usuarioId: String): Observable<any>{
+    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.perguntaDeletar + '/' + perguntaId + '/' + usuarioId + this.httpOptions).pipe(
+      map((res:any) => res)
+    )
+  }
+
+
+  // RESPOSTAS
+
   adicionarResposta(resposta: RepostaPostRequest): Observable<RespostaResponse>{
     return this.httpClient.post<RespostaResponse>(env.baseApiUrl + '/' + urlConfig.adicionarResposta, resposta).pipe(
       map((res:any) => res)
@@ -72,6 +97,12 @@ export class ForumService {
 
   getRespostasDeUmaPergunta(perguntaId: String): Observable<RespostaResponse[]>{
     return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.getRespostas + '/' + perguntaId).pipe(
+      map((res:any) => res)
+    )
+  }
+
+  deletarResposta(respostaId: String, usuarioId: String): Observable<any>{
+    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.respostasDeletar + '/' + respostaId + '/' + usuarioId + this.httpOptions).pipe(
       map((res:any) => res)
     )
   }

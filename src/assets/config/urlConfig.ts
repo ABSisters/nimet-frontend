@@ -14,11 +14,15 @@ export const urlConfig = {
   perguntasCurso: 'perguntas/curso',
   perguntasUsuario:'perguntas/usuario',
   pergunta: 'perguntas',
+  perguntaDeletar: 'perguntas/deletar',
+  perguntaFechar: 'perguntas/fechar',
+  perguntaTag: 'perguntas/tag',
 
   // respostas
   adicionarResposta: 'respostas/adicionar',
   getRespostasUsuario: 'respostas/usuario',
   getRespostas: 'respostas/perguntas',
+  respostasDeletar: 'respostas/deletar',
 
   // quiz
   responderQuiz: 'quiz/responder',

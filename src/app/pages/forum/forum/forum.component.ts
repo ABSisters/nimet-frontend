@@ -9,7 +9,7 @@ import { MessageService } from 'primeng/api';
 import { UsuarioResponse } from '../../../model/response/usuarioResponse';
 
 
-interface City {
+interface Tag {
   name: string,
   code: string
 }
@@ -22,9 +22,9 @@ interface City {
 })
 export class ForumComponent implements OnInit {
 
-  cities!: City[];
+  tags!: Tag[];
 
-  selectedCities!: City[];
+  selectedCities!: Tag[];
 
   perguntasForum!: PerguntaResponse[];
 
@@ -37,15 +37,46 @@ export class ForumComponent implements OnInit {
   ngOnInit() {
     this.user = this.userService.getUsuario();
     this.loadPerguntasCurso(this.userService.getUsuario().curso);
+    this.loadTagsPorCurso(this.user.curso); // Carrega tags específicas com base no curso
 
-
-    this.cities = [
-      { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
-      { name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'REDES_DE_COMPUTADORES_E_INTERNET' },
-      { name: 'APLICACOES_PARA_WEB', code: 'APLICACOES_PARA_WEB' },
-      { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' },
-    ];
+    // this.cities = [
+    //   { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
+    //   { name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'REDES_DE_COMPUTADORES_E_INTERNET' },
+    //   { name: 'APLICACOES_PARA_WEB', code: 'APLICACOES_PARA_WEB' },
+    //   { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' },
+    // ];
   }
+
+  loadTagsPorCurso(curso: Curso) {
+    switch (curso) {
+      case 'MECANICA':
+        this.tags = [
+          { name: 'CONHECIMENTOS_BASICOS', code: 'CONHECIMENTOS_BASICOS' },
+          { name: 'FISICA', code: 'FISICA' },
+          { name: 'MECANICA_AVANCADA', code: 'MECANICA_AVANCADA' }
+        ];
+        break;
+      case 'INFORMATICA':
+        this.tags = [
+          { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
+          { name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'REDES_DE_COMPUTADORES_E_INTERNET' },
+          { name: 'APLICACOES_PARA_WEB', code: 'APLICACOES_PARA_WEB' },
+          { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' }
+        ];
+        break;
+        case 'ELETRONICA':
+        this.tags = [
+          { name: 'ELETRONICA', code: 'ELETRONICA' },
+          { name: 'EXEMPLO', code: 'EXEMPLO' },
+          { name: 'EXEMPLO', code: 'EXEMPLO' }
+        ];
+        break;
+      default:
+        this.tags = []; // Caso não haja tags específicas para o curso
+        break;
+    }
+  }
+
 
 
   loadPerguntasCurso(curso: Curso): void {
@@ -62,12 +93,12 @@ export class ForumComponent implements OnInit {
     })
   }
 
-
   registrarPergunta(pergunta: PerguntaResponse) {
     localStorage.setItem('perguntaSelecionada', JSON.stringify(pergunta));
     this.direcionarRespostas(pergunta);
     console.log('Pergunta registrada:', pergunta);
   }
+
   direcionarRespostas(pergunta: PerguntaResponse) {
     if (pergunta != null) {
       this.forumService.perguntaSelecionada = pergunta;

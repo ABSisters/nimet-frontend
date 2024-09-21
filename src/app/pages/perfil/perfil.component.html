@@ -18,7 +18,6 @@
         [disabled]="edit" />
     </div>
 
-
     <div class="input-box">
       <header>
         <h5>Username</h5>
@@ -26,6 +25,7 @@
       <input id="Username" class="form-control" type="Username" name="Username" placeholder="Username"
         [(ngModel)]="user.username" [disabled]="edit" />
     </div>
+
 
     <div class="input-box">
       <header>
@@ -35,14 +35,6 @@
         [disabled]="edit" />
     </div>
 
-    <div class="input-box">
-      <header>
-        <h5>Senha</h5>
-      </header>
-      <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
-
-      <button class="button" (click)="senha()">Alterar Senha</button>
-    </div>
 
     <div class="input-box">
       <header>
@@ -50,21 +42,35 @@
       </header>
       <input id="confirmcourse" type="curso" name="confirmcourse" list="cursos" placeholder="Curso" class="form-control"
         [(ngModel)]="user.curso" [disabled]="edit" />
-
     </div>
 
     <div class="input-box">
+      <header>
+        <h5>Senha</h5>
+      </header>
+      <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
+      <br>
+      <button class="button"
+        (click)="senha()">Alterar Senha</button>
+    </div>
+      <!-- <button class="form-control" style="border: 1px solid #73328d; background-color:hsl(283, 48%, 90%);"
+        (click)="senha()">Alterar Senha</button>
+    </div> -->
+
+
+    <!-- <div class="input-box">
       <header>
         <h5>Data de Nascimento</h5>
       </header>
       <input id="nome" class="form-control" type="nome" name="firstname" placeholder="Digite seu nome"
         [(ngModel)]="user.dataNascimento" [disabled]="edit" />
-    </div>
+    </div> -->
 
+    <br>
 
     <div class="input-box">
-      <button class="button" *ngIf="edit" (click)="allowEdit()">Editar Perfil</button>
-      <button class="button" *ngIf="!edit" (click)="alterarPerfil(user)">Salvar</button>
+      <button class="button" *ngIf="edit" (click)="allowEdit()">Editar campos do perfil</button>
+      <button class="button" *ngIf="!edit" (click)="alterarPerfil(user)">Salvar alterações</button>
     </div>
 
   </div>
@@ -84,6 +90,7 @@
 
       <header>
         <h3 class="titulo-resultado">Resultado do Quiz</h3>
+        <br>
       </header>
     </div>
   </div>
@@ -94,6 +101,7 @@
       <div class="caixa-resultado-quiz-esquerda-direita-emcima">
         <div class="input-texto-a">
           <p class="caixas-nome-quiz-emcima">Nome do quiz</p>
+          <!-- <p class="caixas-nome-quiz-emcima">{{quiz[0]?.nivel}} -{{quiz[0]?.curso}}</p> -->
         </div>
       </div>
 
@@ -104,7 +112,9 @@
 
       <nav> <!-- 0 -->
         <div class="input-texto-a">
-          <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
+          <!-- <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
+            placeholder="" [(ngModel)]="quiz[0].acertos" /> -->
+            <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
             placeholder="" required />
         </div>
         <nav>
@@ -112,13 +122,17 @@
           <!--0-->
 
           <div class="input-texto-a">
-            <input id="adicionar uma resposta" class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
+            <!-- <input id="adicionar uma resposta" class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
+              placeholder="" [(ngModel)]="quiz[0].erros" /> -->
+              <input id="adicionar uma resposta" class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
               placeholder="" required />
           </div>
         </nav>
       </nav>
 
+      <!-- <h1 class="data-resultado-quiz">">{{quiz[0]?.dataCriado}}</h1> -->
       <h1 class="data-resultado-quiz">00/00/0000</h1>
+
     </div>
   </div>
 
@@ -128,6 +142,7 @@
 
       <div class="caixa-resultado-quiz-esquerda-direita-emcima">
         <div class="input-texto-a">
+          <!-- <p class="caixas-nome-quiz-emcima">{{quiz[1]?.nivel}} -{{quiz[1]?.curso}}</p> -->
           <p class="caixas-nome-quiz-emcima">Nome do quiz</p>
 
         </div>
@@ -141,7 +156,9 @@
 
       <nav><!--0-->
         <div class="input-texto-a">
-          <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
+          <!-- <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
+            placeholder="" [(ngModel)]="quiz[1].acertos" /> -->
+            <input id="adicionar uma resposta" class="caixa-num-acertos" type="adicionar uma resposta" name="firstname"
             placeholder="" required />
         </div>
         <nav>
@@ -149,17 +166,21 @@
           <!--0-->
           <div class="input-texto-a">
             <input id="adicionar uma resposta" class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
-              placeholder="" required />
+            placeholder="" required />
+            <!-- <input id="adicionar uma resposta" class="caixa-num-erros" type="adicionar uma resposta" name="firstname"
+              placeholder="" [(ngModel)]="quiz[1].erros" /> -->
           </div>
         </nav>
       </nav>
 
+      <!-- <h1 class="data-resultado-quiz">{{quiz[1]?.dataCriado}}</h1> -->
       <h1 class="data-resultado-quiz">00/00/0000</h1>
+
     </div>
   </div>
 
 
-  <div class="conteiner-nome-embaixo-esquerda">
+  <!-- <div class="conteiner-nome-embaixo-esquerda">
     <div class="conteiner-embaixo-esquerda">
 
       <div class="caixa-resultado-quiz-esquerda-direita-embaixo">
@@ -169,11 +190,10 @@
         </div>
       </div>
 
-      <!-- <h2> Nome do Quiz</h2> -->
     </div>
-  </div>
+  </div> -->
 
-  <div class="conteiner-nome-embaixo-direita">
+  <!-- <div class="conteiner-nome-embaixo-direita">
     <div class="conteiner-embaixo-direita">
 
       <div class="caixa-resultado-quiz-esquerda-direita-embaixo">
@@ -183,9 +203,8 @@
         </div>
       </div>
 
-      <!--<h2> Nome do Quiz</h2>-->
     </div>
-  </div>
+  </div> -->
 
 
   <!----------------- PERGUNTAS DO FÓRUM -------------------------------------------------------------------------------------------------------------->
@@ -194,6 +213,7 @@
     <div class="borda-perguntas-forum">
 
       <header>
+        <!-- <h3 >Perguntas no Fórum</h3> -->
         <h3 class="titulo-perguntas">Perguntas no Fórum</h3>
       </header>
 
@@ -245,11 +265,11 @@
             <div class="conteiner-respostas-embaixo">
 
               <div class="caixa-respostas-forum-emcima">
-                <p id="pergunta" class="titulo-principal" style="color: white;">
+                <p id="pergunta" class="titulo-principal" style="color: white; margin: botton -10px;">
                   {{resposta.pergunta.titulo}}</p>
               </div>
               <div class="data-respostas-forum">{{resposta.dataCriado | date : 'dd/MM/yyyy HH:mm'}}</div>
-              <div class="input-texto-a">
+              <div class="input-texto-b">
                 <p id="resposta" class="caixas-respostas">{{ resposta.resposta }}</p>
               </div>
 
@@ -263,7 +283,8 @@
         <div class="conteiner-respostas-forum-embaixo">
           <div class="conteiner-respostas-embaixo">
             <div class="caixa-respostas-forum-emcima">
-              <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">Não há respostas suas neste fórum.</p>
+              <p id="pergunta" class="caixas-respostas titulo-principal" style="color: white;">Não há respostas suas
+                neste fórum.</p>
 
             </div>
             <div class="data-respostas-forum">Data de postagem:</div>

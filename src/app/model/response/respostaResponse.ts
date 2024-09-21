@@ -8,5 +8,4 @@ export class RespostaResponse{
  resposta!: String;
  dataCriado!: Date;
 
-
 }
