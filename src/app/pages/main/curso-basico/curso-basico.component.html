@@ -1,7 +1,7 @@
 <div class="card full-screen-card">
   <p-menubar [model]="items" [style]="{ 'background-color': '#8355974d',
   color: '#4F1964', borderColor: '#73328d',
-  display: 'flex', width: '1525px', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
+  display: 'flex', width: '100%', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
 <app-menu></app-menu>
 
 </div>
@@ -17,9 +17,6 @@
       seu aprendizado no campo da tecnologia da informação.
       Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
       As principais matérias abordadas no nível básico são:<br><br>
-
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
 
       <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
         computadores, incluindo hardware e software.<br></li>
@@ -37,45 +34,6 @@
     </div>
 
     <div class="painel">
-      <div class="card flex justify-content-center background">
-        <p-panel header="Lógica de Programação:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=kpSINeZ_78TCUDSU&amp;list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=3nVeCcI-mW4xBGUy&amp;list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=7ueFxqXk_RJub9mh&amp;list=PLucm8g_ezqNp_ubuH4XraJRwvUJogsyiF"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </p-scrollPanel>
-        </p-panel>
-      </div>
-    </div>
-
-
-    <div class="painel-2">
       <div class="card flex justify-content-center">
         <p-panel header="Sistemas Computacionais:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
@@ -114,7 +72,7 @@
     </div>
 
 
-    <div class="painel-3">
+    <div class="painel-2">
       <div class="card flex justify-content-center">
         <p-panel header="Linguagem de Programação:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
@@ -153,7 +111,7 @@
     </div>
 
 
-    <div class="painel-4">
+    <div class="painel-3">
       <div class="card flex justify-content-center">
         <p-panel header="Rede de Computadores e Internet:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
@@ -202,56 +160,42 @@
 
     <div class="info">
       <h2>Sobre o Nível Básico</h2>
-      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
-      seu aprendizado no campo da tecnologia da informação.
-      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      O <span><b>nível básico</b></span> em mecânica é fundamental para estudantes que estão iniciando seu aprendizado nesta área.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em mecânica. 
       As principais matérias abordadas no nível básico são:<br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Mecânica Geral</b></span> Introduz os princípios fundamentais da mecânica, como leis do movimento, forças e equilíbrio, essenciais para a compreensão do comportamento de sistemas mecânicos.<br></li>
 
-      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
-        computadores, incluindo hardware e software.<br></li>
+      <li><span><b>Desenho Técnico:</b></span> Os alunos aprendem a interpretar e criar desenhos técnicos, que são vitais para a comunicação de ideias e projetos na engenharia mecânica.<br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Materiais e Processos de Fabricação:</b></span> Estudo dos diferentes materiais utilizados na mecânica e os processos de fabricação, incluindo técnicas de usinagem, soldagem e montagem, que são cruciais para a produção de peças e componentes.<br></li>
 
-      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
-        funcionamento da internet.</li>
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Mecânica - Frente A:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Mecânica Geral:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    src="https://www.youtube.com/embed/B-wJPnt6W3c?list=PLc91aY2V2t-BdkC56P0Mq_C5M1XuH0EeT"
+                    title="Mecânica Geral - Aula 01 - Introdução e Revisão de Vetores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
                     gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/QMq9cJMSnMc?list=PLxI8Can9yAHe7Jf955wLUQ2rG9DNA1hkX" title="Mecânica Geral - Referencial inercial, força centrífuga e força de Coriolis - Parte 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/wsSMvecdH7M?list=PLqB8WEz2ao3gnW7y3Tf8LGz4xxEC4hUmW" title="AULA 1 - VETORES (MECÂNICA GERAL)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -263,34 +207,22 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Mecânica - Frente B:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Desenho Técnico:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/gBoZZ33Lips?list=PL8e8sIdSsWv_M8VpQahd1oaOkKReAHZSC" title="Desenho técnico - Padronização, materiais e tipos de linhas | Aula 01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/OXatpPhPrtw" title="Desenho Técnico Mecânico: Tudo o que você precisa saber | SENAI Play" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/oY2tZwqnlVI" title="APRENDA LEITURA E INTERPRETAÇÃO DE DESENHO TÉCNICO MECÂNICO FÁCIL E RÁPIDO!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -302,73 +234,22 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Mecânica - Frente C:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Materiais e Processos de Fabricação:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/2P04oNGkkGA?list=PLxI8Can9yAHehQ1_ohulH3GaY62t1zYCz" title="Materiais e Processos de Fabricação para Engenharia de Produção - Materiais para Engenharia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/LK_PVcRsYyg?list=PLj82FY2PcASWWLs0gOlJnbwocWe33WyXj" title="PROCESSOS DE FABRICAÇÃO MECÂNICA: uma introdução" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </p-scrollPanel>
-        </p-panel>
-      </div>
-    </div>
-
-
-    <div class="painel-4">
-      <div class="card flex justify-content-center">
-        <p-panel header="Mecânica - Frente D:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                  <iframe width="400" height="285" src="https://www.youtube.com/embed/iI8kSpzO6DE?list=PLzSIt-N3z8RJ6cRt4zayW5-F_nswT2wcZ" title="CADA APLICAÇÃO, UM MATERIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -388,23 +269,17 @@
 
     <div class="info">
       <h2>Sobre o Nível Básico</h2>
-      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão
-      iniciando
-      seu aprendizado no campo da tecnologia da informação.
-      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      O <span><b>nível básico</b></span> em eletrônica é fundamental para estudantes que estão iniciando seu aprendizado nesta área.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em eletrônica.
       As principais matérias abordadas no nível básico são:<br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Fundamentos da Eletrônica:</b></span> Introduz os princípios básicos da eletricidade e eletrônica, incluindo circuitos, componentes eletrônicos e suas funções.<br></li>
 
-      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
-        computadores, incluindo hardware e software.<br></li>
+      <li><span><b>Desenho de Circuitos:</b></span> Os alunos aprendem a interpretar e criar esquemas elétricos e diagramas de circuitos, habilidades essenciais para o desenvolvimento e análise de projetos eletrônicos.<br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Componentes Eletrônicos:</b></span> Estudo detalhado de componentes como resistores, capacitores, diodos e transistores, permitindo que os alunos compreendam como cada um contribui para o funcionamento dos circuitos.<br></li>
 
-      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
-        funcionamento da internet.</li>
+      <li><span><b>Sistemas Digitais:</b></span> Introdução aos conceitos de lógica digital, incluindo portas lógicas, flip-flops e circuitos combinatórios, fundamentais para a criação de sistemas eletrônicos modernos.</li>
 
     </div>
 

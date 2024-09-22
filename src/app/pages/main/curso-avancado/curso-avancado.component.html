@@ -1,7 +1,7 @@
 <div class="card full-screen-card">
   <p-menubar [model]="items" [style]="{ 'background-color': '#8355974d',
   color: '#4F1964', borderColor: '#73328d',
-  display: 'flex', width: '1525px', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
+  display: 'flex', width: '100%', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
 
   <app-menu></app-menu>
 </div>
@@ -24,9 +24,6 @@
       <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
         entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
-
       <li><span><b>Segurança da Informação:</b></span> Estudo de práticas e tecnologias para proteger sistemas de
         informação contra ameaças e ataques cibernéticos.<br></li>
 
@@ -40,7 +37,7 @@
     <div class="painel">
       <div class="card flex justify-content-center background">
         <p-panel header="Lógica de Programação:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
@@ -153,45 +150,6 @@
       </div>
     </div>
 
-
-    <div class="painel-4">
-      <div class="card flex justify-content-center">
-        <p-panel header="Rede de Computadores e Internet:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=JnDRvByN9ephi283&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=zGi7Y0l71WWeRPMi&amp;list=PLvHXLbw-JSPfKp65psX5C9tyNLHHC4uoR"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=YX3ALlyEZ1G7mdKe&amp;list=PLF9vK2NfbRJtROPfTFQcJcB47STXDfYeX"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </p-scrollPanel>
-        </p-panel>
-      </div>
-    </div>
-
   </div>
 
 
@@ -203,23 +161,17 @@
 
     <div class="info">
       <h2>Sobre o Nível Avançado</h2>
-      O <span><b>nível avançado</b></span> de informática é destinado a estudantes que já possuem uma compreensão
-      aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da
-      informática.
+      O <span><b>nível avançado</b></span> em mecânica é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da mecânica.
       Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas.
       As principais matérias são:<br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Mecânica dos Materiais:</b></span> Estudo detalhado das propriedades dos materiais e seu comportamento sob diferentes cargas, fundamental para a análise e projeto de estruturas e componentes mecânicos.<br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Dinâmica dos Sistemas:</b></span> Análise do movimento e das forças atuantes em sistemas mecânicos, incluindo o estudo de vibrações e impactos, que é crucial para o design de máquinas e equipamentos.<br></li>
 
-      <li><span><b>Segurança da Informação:</b></span> Estudo de práticas e tecnologias para proteger sistemas de
-        informação contra ameaças e ataques cibernéticos.<br></li>
+      <li><span><b>Termodinâmica Avançada:</b></span> Exploração dos princípios da termodinâmica e suas aplicações em ciclos termodinâmicos, essencial para o desenvolvimento de motores e sistemas de refrigeração.<br></li>
 
-      <li><span><b>Desenvolvimento de Sistemas:</b></span> Aplicação de técnicas e ferramentas avançadas para o
-        desenvolvimento de sistemas complexos e de grande escala.</li>
+      <li><span><b>Projetos de Máquinas e Equipamentos:</b></span> Aplicação de técnicas avançadas de projeto, utilizando softwares de modelagem e simulação para otimizar o desempenho e a eficiência de máquinas e dispositivos mecânicos.</li>
     </div>
 
     <div class="col-12 tela"></div>
@@ -392,23 +344,17 @@
 
     <div class="info">
       <h2>Sobre o Nível Avançado</h2>
-      O <span><b>nível avançado</b></span> de informática é destinado a estudantes que já possuem uma compreensão
-      aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da
-      informática.
+      O <span><b>nível avançado</b></span> em eletrônica é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da eletrônica.
       Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas.
       As principais matérias são:<br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Eletrônica Analógica Avançada:</b></span> Estudo aprofundado de circuitos analógicos, incluindo amplificadores, filtros e osciladores, permitindo a análise e o projeto de sistemas eletrônicos complexos.<br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Sistemas Digitais Avançados:</b></span> Análise e projeto de circuitos digitais, incluindo lógica sequencial e combinatória, além do uso de dispositivos programáveis como FPGAs e microcontroladores.<br></li>
 
-      <li><span><b>Segurança da Informação:</b></span> Estudo de práticas e tecnologias para proteger sistemas de
-        informação contra ameaças e ataques cibernéticos.<br></li>
+      <li><span><b>Comunicações Eletrônicas:</b></span> Estudo dos princípios de comunicação, incluindo modulação, demodulação e técnicas de transmissão de dados, fundamentais para o desenvolvimento de sistemas de comunicação modernos.<br></li>
 
-      <li><span><b>Desenvolvimento de Sistemas:</b></span> Aplicação de técnicas e ferramentas avançadas para o
-        desenvolvimento de sistemas complexos e de grande escala.</li>
+      <li><span><b>Instrumentação Eletrônica Avançada:</b></span> Aplicação de técnicas de medição e teste em circuitos eletrônicos, utilizando equipamentos sofisticados para diagnósticos e análise de desempenho.</li>
     </div>
 
     <div class="col-12 tela"></div>

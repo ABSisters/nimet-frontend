@@ -38,7 +38,7 @@ export class CadastroService {
   }
 
   verficarEmail(token: String): Observable<any> {
-    return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.verificarEmail, token, this.httpOptions).pipe(
+    return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.verificarEmail + '?token=' + token, this.httpOptions).pipe(
       map((res: any) => res)
     )
   }
