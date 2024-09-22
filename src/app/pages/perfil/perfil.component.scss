@@ -71,12 +71,15 @@ input {
 }
 
 .borda {
-  border-width: 2px;   /* Largura da borda */
-  border-style: solid; /* Estilo da borda */
+  border-width: 2px;
+  border-style: solid;
   border-color: #73328d;
-  padding: 38px;
+  align-items: center;
+  padding: 3%;
   margin: 20px;
   width: 313px;
+  //height: 84%;
+  border-radius: 8px;
 }
 
 
@@ -87,7 +90,7 @@ input {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
-  width: 15rem;
+  width: 14rem;
   height: 2rem;
   margin-left: 0.1rem;
 }
@@ -109,7 +112,7 @@ button span {
   color: #4F1964;
   font-size: 1.2em;
   margin-left: -70px;
-  margin-top: -80px;
+  margin-top: -90px;
 }
 
 
@@ -123,11 +126,12 @@ button span {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
+  border-radius: 7px;
   background-color: #d19bec40;
   padding: 97px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 238px;/* Tamanho da caixa */
+  height: 200px;/* Tamanho da caixa */
   position: absolute;
   top: 70px; /* ajuste conforme necessário */
 }
@@ -148,7 +152,7 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 100px;/* Tamanho da caixa */
   position: absolute;
-  top: 125px; /* ajuste conforme necessário */
+  top: 130px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -169,7 +173,7 @@ button span {
   width: 390px; /* Comprimento da borda */
   height: 100px;/* Tamanho da caixa */
   position: absolute;
-  top: 125px; /* ajuste conforme necessário */
+  top: 130px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -261,12 +265,9 @@ button span {
 .titulo-perguntas{
   color: #4F1964;
   font-size: 1.2em;
-  margin-left: -70px;
-  margin-top: -80px;
 }
 
 .perguntas-forum {
-  margin-top: -8px; /* Altura da borda */
   margin-right: 200px;
   margin-left: 340px;
 }
@@ -275,40 +276,21 @@ button span {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
+  border-radius: 7px;
   background-color: #d19bec40;
-  padding: 97px; /* Tamanho da caixa */
+  padding: 15px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 245px;/* Tamanho da caixa */
+  height: 233px;/* Tamanho da caixa */
   position: absolute;
   max-height: 245px; /* Altura máxima ajustada */
   overflow-y: auto;  /* Barra de rolagem vertical */
-  top: 325px; /* ajuste conforme necessário */
+  overflow-x: hidden;
+  top: 288px; /* ajuste conforme necessário */
 }
 
 
-.borda-perguntas-forum::-webkit-scrollbar,
-.borda-respostas-forum::-webkit-scrollbar {
-  width: 8px;
-  height: 50px;
-}
-
-.borda-perguntas-forum::-webkit-scrollbar-track,
-.borda-respostas-forum::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.borda-perguntas-forum::-webkit-scrollbar-thumb,
-.borda-respostas-forum::-webkit-scrollbar-thumb {
-  background: rgba(123, 76, 159, 0.9);
-  border-radius: 3px;
-}
-
-.borda-perguntas-forum::-webkit-scrollbar-thumb:hover,
-.borda-respostas-forum::-webkit-scrollbar-thumb:hover {
-  background: rgba(123, 76, 159);
-}
-
+w
 .conteiner-perguntas-forum-emcima{
   margin-left: -90px;
 }
@@ -322,7 +304,7 @@ button span {
   border-color:  #73328d;
   border-radius: 10px;
   width: 790px; /* Comprimento da borda */
-  height: 50px;/* Tamanho da caixa */
+  height: 40px;/* Tamanho da caixa */
   position: relative;
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
@@ -336,7 +318,7 @@ button span {
   color: #4F1964;
   font-size: 1.2em;
   margin-left: -70px;
-  margin-top: -80px;
+  margin-top: -90px;
 }
 
 .respostas-forum {
@@ -348,14 +330,16 @@ button span {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
+  border-radius: 7px;
   background-color: #d19bec40;
-  padding: 99px; /* Tamanho da caixa */
+  padding-left: 99px; /* Tamanho da caixa */
+  padding-top: 99px; /* Tamanho da caixa */
   margin: 20px;
   width: 850px; /* Comprimento da borda */
-  height: 245px;/* Tamanho da caixa */
+  height: 230px;/* Tamanho da caixa */
   position: absolute;
   overflow-y: auto;  /* Barra de rolagem vertical */
-  top: 588px; /* ajuste conforme necessário */
+  top: 538px; /* ajuste conforme necessário */
 }
 
 .conteiner-respostas-forum-embaixo{
@@ -371,7 +355,7 @@ button span {
   border-color:  #73328d;
   border-radius: 10px;
   width: 790px; /* Comprimento da borda */
-  height: 163px;/* Tamanho da caixa */
+  height: 155px;/* Tamanho da caixa */
   position: relative;
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
@@ -398,7 +382,7 @@ button span {
 /* ------------------------ BOTÕES DE EXCLUIR PERFIL --------------------------------------------  */
 
 .excluir-button{
-  margin-top: -826px; /* Altura do botão */
+  //margin-top: -775px; /* Altura do botão */
   margin-right: 100px;
   margin-left: 700px;
 }
@@ -498,7 +482,7 @@ nav{
 .data-respostas-forum{
   color: #4F1964;
   font-size: 1em;
-  margin-top: 73px;
+  margin-top: 55px;
   margin-left: -50px;
 }
 
@@ -581,7 +565,7 @@ nav{
   margin-right: 15px;
   /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
-  margin-left: 22px;
+  margin-left: 2px;
   margin-top: 57px;
   width: 769px;
   padding: 17px;
@@ -596,9 +580,9 @@ nav{
   /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   margin-left: -17px;
-  margin-top: -10px;
+  margin-top: -5px;
   width: 766px;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* ------------------------------- CAIXAS DE TEXTO ---------------------------------------------------  */
@@ -610,7 +594,7 @@ nav{
   margin-right: 15px;
   /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
-  width: 1000px;
+  width: 1140px;
 }
 
 .input-texto-a {
@@ -619,6 +603,15 @@ nav{
   margin-bottom: 2rem;
   margin-top: -68px;
   margin-left: -33px;
+}
+
+
+.input-texto-b {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: -68px;
+  margin-left: -43px;
 }
 
 .input-texto-a input:hover {

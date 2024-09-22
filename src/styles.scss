@@ -1,34 +1,32 @@
-.form-control {
-  border: 1px solid rgba(0, 0, 0, 0.38);
-  height: calc(30rem + 30px) !important;
-  margin-bottom: 0.3rem;
-  display: block;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+// .form-control {
+//   border: 1px solid rgba(0, 0, 0, 0.38);
+//   height: calc(30rem + 30px) !important;
+//   margin-bottom: 0.3rem;
+//   display: block;
+//   padding: 0.375rem 0.75rem;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   line-height: 1.5;
+//   border-bottom: 1.6px #495057;
+//   background-color: #fff;
+//   background-clip: padding-box;
+//   border-radius: 0.25rem;
+//   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+// }
 
 
 
 /* You can add global styles to this file, and also import other style files */
 .password {
-  display: block  !important;
-  width: 14.2rem  !important;
-  height: calc(2.15rem + 2px)  !important;
-  padding: 0.375rem 0.75rem  !important;
-  font-size: 1rem  !important;
-  line-height: 1.5  !important;
-  color: #495057  !important;
-  background-color: #fff  !important;
-  background-clip: padding-box  !important;
-  border: 1.6px solid #0000007a  !important;
-  border-radius: 0.25rem  !important;
+  display: block ;
+  width: 14.2rem ;
+  height: calc(2.10rem + 2px) ;
+  font-size: 1rem  ;
+  line-height: 1.5 ;
+  color: #495057  ;
+  background-clip: padding-box  ;
+  border: 1.6px solid #0000007a ;
+  border-radius: 0.35rem ;
 }
 
 .password-container {
@@ -95,94 +93,97 @@
 
 
 
-.label-form {
-  margin-bottom: 5px;
-  font-weight: 900;
+// .label-form {
+//   margin-bottom: 5px;
+//   font-weight: 900;
+// }
+
+// .p-fieldset .p-fieldset-legend {
+//   background: #f5f5f5;
+//   border-radius: 2rem;
+//   border: 1px;
+//   padding: 15px !important;
+// }
+
+// .p-dialog {
+//   background: #ffffff;
+// }
+
+// .p-dialog .p-dialog-header {
+//   background: #4F1964;
+//   font-weight: 600;
+//   color: #ffffff;
+//   padding: 1.0rem;
+//   border-top-right-radius: 4px;
+//   border-top-left-radius: 4px;
+// }
+
+// .p-dialog .p-dialog-header .p-dialog-header-icon {
+//   color: #ffffff;
+// }
+
+// .p-dialog .p-dialog-content {
+//   margin-top: 15px;
+// }
+
+// .p-fieldset .p-fieldset-legend {
+//   background: #f5f5f5;
+//   border-radius: 2rem;
+//   border: 1px;
+//   padding: 15px !important;
+// }
+
+// .p-inputgroup p-dropdown {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .p-disabled,
+// .p-component:disabled {
+//   color: rgba(0, 0, 0, 0.87);
+//   border: 1px solid rgba(0, 0, 0, 0.18);
+//   opacity: 1;
+//   background: rgb(247, 247, 247);
+// }
+
+// p-dropdown .p-disabled {
+//   background: rgb(247, 247, 247);
+// }
+
+
+// .form-control-custom:disabled {
+//   background-color: #dcb4ec;
+//   background-clip: padding-box;
+//   border: 1px solid rgba(0, 0, 0, 0.38);
+// }
+
+// .btn-purple {
+//   color: #ffffff;
+//   background: #4F1964;
+//   border: 1px solid #4F1964;
+//   padding: 0.643rem 0.75rem;
+//   font-size: 1rem;
+//   transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+//   border-radius: 4px;
+// }
+
+// .btn-primary-custom {
+//   background: #4F1964;
+//   border: 1px solid #4F1964;
+// }
+
+body {
+  background-color: rgba(223, 203, 233, 0.1) !important;
 }
 
-.p-fieldset .p-fieldset-legend {
-  background: #f5f5f5;
-  border-radius: 2rem;
-  border: 1px;
-  padding: 15px !important;
-}
-
-.p-dialog {
-  background: #ffffff;
-}
-
-.p-dialog .p-dialog-header {
-  background: #4F1964;
-  font-weight: 600;
-  color: #ffffff;
-  padding: 1.0rem;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.p-dialog .p-dialog-header .p-dialog-header-icon {
-  color: #ffffff;
-}
-
-.p-dialog .p-dialog-content {
-  margin-top: 15px;
-}
-
-.p-fieldset .p-fieldset-legend {
-  background: #f5f5f5;
-  border-radius: 2rem;
-  border: 1px;
-  padding: 15px !important;
-}
-
-.p-inputgroup p-dropdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-disabled,
-.p-component:disabled {
-  color: rgba(0, 0, 0, 0.87);
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  opacity: 1;
-  background: rgb(247, 247, 247);
-}
-
-p-dropdown .p-disabled {
-  background: rgb(247, 247, 247);
-}
-
-
-.form-control-custom:disabled {
-  background-color: #E8F0FE;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.38);
-}
-
-.btn-purple {
-  color: #ffffff;
-  background: #4F1964;
-  border: 1px solid #4F1964;
-  padding: 0.643rem 0.75rem;
-  font-size: 1rem;
-  transition: background-color 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s, background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
-  border-radius: 4px;
-}
-
-.btn-primary-custom {
-  background: #4F1964;
-  border: 1px solid #4F1964;
-}
-
-.body {
-  background: #ECECEC;
-}
 
 /* Estilos globais para barras de rolagem */
 ::-webkit-scrollbar {
-  width: 11px; /* Largura da barra de rolagem vertical */
+  width: 11px  !important; /* Largura da barra de rolagem vertical */
   height: 30px; /* Altura da barra de rolagem horizontal */
+  overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar-track {
@@ -200,3 +201,28 @@ p-dropdown .p-disabled {
 
 
 
+// /* Estilizando o cabeçalho (header) do p-panel */
+// .p-panel.custom-panel .p-panel-header {
+//   background-color: #73328d !important; /* Cor de fundo do cabeçalho */
+//   color: white !important; /* Cor do texto do cabeçalho */
+//   padding: 15px; /* Ajuste de padding se necessário */
+// }
+
+// /* Estilizando o conteúdo do p-panel */
+// .p-panel.custom-panel .p-panel-content {
+//   background-color: #8355974d !important; /* Cor de fundo do conteúdo */
+//   color: #2a1261 !important; /* Cor do texto */
+//   padding: 15px; /* Ajuste de padding */
+// }
+
+// /* Se precisar estilizar a borda do painel */
+// .p-panel.custom-panel {
+//   border: 1px solid #73328d !important; /* Cor da borda */
+// }
+
+
+// .p-menubar .model{
+//   display: flex;
+//   justify-content: flex-end; /* Move os itens para a direita */
+//   margin-left: 90px;
+// }

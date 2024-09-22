@@ -9,20 +9,14 @@ import { FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/fo
 import { ChartModule } from 'primeng/chart';
 import { PerfilComponent } from './perfil/perfil.component';
 import { MenuComponent } from './menu/menu.component';
-import { EleBasicoComponent } from './main/ele/ele-basico/ele-basico.component';
-import { EleMedioComponent } from './main/ele/ele-medio/ele-medio.component';
-import { EleAvancadoComponent } from './main/ele/ele-avancado/ele-avancado.component';
-import { InfoBasicoComponent } from './main/info/info-basico/info-basico.component';
-import { InfoIntermediarioComponent } from './main/info/info-intermediario/info-intermediario.component';
-import { InfoAvancadoComponent } from './main/info/info-avancado/info-avancado.component';
-import { MecBasicoComponent } from './main/mec/mec-basico/mec-basico.component';
-import { MecIntermediarioComponent } from './main/mec/mec-intermediario/mec-intermediario.component';
-import { MecAvancadoComponent } from './main/mec/mec-avancado/mec-avancado.component';
+import { CursoIntermediarioComponent } from './main/curso-intermediario/curso-intermediario.component';
+import { CursoAvancadoComponent } from './main/curso-avancado/curso-avancado.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ForumComponent } from './forum/forum/forum.component';
 import { AdicionarPerguntaComponent } from './forum/adicionar-pergunta/adicionar-pergunta.component';
 import { RespostaComponent } from './forum/resposta/resposta.component';
 import { SenhaComponent } from './senha/senha.component';
+import { CursoBasicoComponent } from './main/curso-basico/curso-basico.component';
 
 
 
@@ -32,15 +26,9 @@ import { SenhaComponent } from './senha/senha.component';
     CadastroComponent,
     EmailComponent,
     PerfilComponent,
-    EleBasicoComponent,
-    EleMedioComponent,
-    EleAvancadoComponent,
-    InfoBasicoComponent,
-    InfoIntermediarioComponent,
-    InfoAvancadoComponent,
-    MecBasicoComponent,
-    MecIntermediarioComponent,
-    MecAvancadoComponent,
+    CursoBasicoComponent,
+    CursoIntermediarioComponent,
+    CursoAvancadoComponent,
     MenuComponent,
     QuizComponent,
     ForumComponent,

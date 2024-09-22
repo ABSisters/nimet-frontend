@@ -1,3 +1,4 @@
+import { QuizResponse } from './../../model/response/quizResponse';
 import { routes } from './../../app.routes';
 import { ForumService } from './../../service/forum/forum.service';
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -9,6 +10,7 @@ import { UsuarioResponse } from '../../model/response/usuarioResponse';
 import { RespostaResponse } from '../../model/response/respostaResponse';
 import { PerguntaResponse } from '../../model/response/perguntaResponse';
 import { Router } from '@angular/router';
+import { QuizService } from '../../service/quiz/quiz.service';
 // import {questions} from '../../../assets/'
 
 @Component({
@@ -23,12 +25,14 @@ export class PerfilComponent implements OnInit {
   edit: boolean = true;
   respostas! : RespostaResponse[];
   perguntas! : PerguntaResponse[];
+  quiz!:QuizResponse[];
 
 
   constructor(
     private userService: UsuarioService,
     private message: MessageService,
     private forumService: ForumService,
+    private quizService: QuizService,
     private routes: Router
   ) { }
 
@@ -36,6 +40,7 @@ export class PerfilComponent implements OnInit {
     this.user = this.userService.getUsuario();
     this.respostasUsuario();
     this.perguntaUsuario();
+    // this.resultadoQuiz();
   }
 
   excluirPerfil(user: UsuarioResponse) {
@@ -91,6 +96,17 @@ export class PerfilComponent implements OnInit {
     })
   }
 
+  // resultadoQuiz(){
+  //   this.quizService.getQuizUsuario(this.user.usuarioId).subscribe({
+  //     next: (retorno) => {
+  //       console.log(retorno);
+  //       this.quiz = retorno;
+  //     },
+  //     error: (erro) => {
+  //       console.log(erro);
+  //     }
+  //   })
+  // }
 
 
   allowEdit(){

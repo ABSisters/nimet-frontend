@@ -7,9 +7,10 @@
             <div class="mt-auto">
               <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
               <a pRipple class="m-3 flex align-items-center cursor-pointer p-7 gap-1 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                <p-avatar icon="pi pi-user" styleClass="mr-2" size="large" [style]="{ 'background-color': '#ece9fc', color: '#2a1261', borderColor: '#73328d'}" shape="circle"></p-avatar>
-                <span class="font-bold">{{user.nome}}</span>
+                <p-avatar icon="pi pi-user" styleClass="mr-2" size="normal" [style]="{ 'background-color': '#ece9fc', color: '#2a1261', borderColor: '#73328d'}" shape="circle"></p-avatar>
+                <button class="fm"  (click)="perfil()" >{{user.nome}}</button>
               </a>
+              <br>
               <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
             </div>
           </span>
@@ -30,10 +31,9 @@
                 leaveActiveClass="slideup"
                 class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer p-ripple"
               >
-              <br><br>
                <p class="pi pi-home mr-2"></p>
                <!--<div class="curso">-->
-               <button class="font-medium-a " (click)="curso()">{{user.curso}}</button>
+               <button class="fm" (click)="curso()">{{user.curso}}</button>
               <!--</div>-->
                 <!--<i class="pi pi-chevron-down"></i>-->
                 <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
@@ -41,7 +41,7 @@
               <ul class="list-none p-4 m-0 overflow-hidden">
                 <li>
                   <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                    <i class="iconi" class="pi pi-user mr-2"></i>
+                    <i class="iconi" class="pi pi-user mr-1"></i>
                     <button class="font-medium" (click)="perfil()">Perfil</button>
                   </a>
                 </li>
