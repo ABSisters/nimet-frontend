@@ -92,4 +92,15 @@ export class QuizComponent implements OnInit{
    // })
    //)
   //}
+
+  display: boolean = false;
+
+  showDialog() {
+    this.display = true;
+  }
+
+  closeDialog() {
+    this.display = false;
+  }
+
 }

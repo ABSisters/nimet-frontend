@@ -21,6 +21,11 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { Router } from '@angular/router';
+import { ToolbarModule } from 'primeng/toolbar';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelModule } from 'primeng/panel';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 @NgModule({
   declarations: [],
@@ -45,7 +50,11 @@ import { Router } from '@angular/router';
     PanelMenuModule,
     IconFieldModule,
     InputIconModule,
-    InputTextModule
+    InputTextModule,
+    ToolbarModule,
+    SplitButtonModule,
+    MenubarModule,
+    PanelModule
   ],
   exports: [
     CommonModule,
@@ -69,9 +78,12 @@ import { Router } from '@angular/router';
     PanelMenuModule,
     IconFieldModule,
     InputIconModule,
-    InputTextModule
-
-
+    InputTextModule,
+    ToolbarModule,
+    SplitButtonModule,
+    MenubarModule,
+    PanelModule,
+    ScrollPanelModule
   ]
 })
 export class SharedModule {

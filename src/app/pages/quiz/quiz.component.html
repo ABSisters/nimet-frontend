@@ -1,5 +1,25 @@
 <app-menu></app-menu>
-<div class="start_btn"><button (click)="showWarningPopup()">Iniciar Quiz</button></div>
+
+<header>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+  <h5 class="cor-nome">QUIZ - INFORMÁTICA</h5>
+</header>
+<h3 class="texto">Com base no seu aprendizado, escolha o nivel que você deseja jogar!</h3>
+
+<!---<hr class="custom-hr">--->
+
+<div class="button_container1">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Básico</button></div>
+</div>
+
+<div class="button_container2">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Intermediário</button></div>
+</div>
+
+<div class="button_container3">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Avançado</button></div>
+</div>
+
 
 <div class="info_box" [ngClass]="showWarning ? 'activeInfo':''">
 

@@ -16,7 +16,14 @@ body{
     background:  #ebc9f8;
 } */
 
-.start_btn,
+.start_btn{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .info_box,
 .quiz_box,
 .result_box{
@@ -38,6 +45,40 @@ body{
 }
 
 
+/* ----------------------- TITULO DO QUIZ  ------------------------ */
+
+
+.cor-nome {
+  color: #4F1964;
+  background-color: #f4e3fc;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 543px;
+
+  font-size: 3em;
+  text-align:center;
+  margin-top: -10px;
+  margin-left: 440px;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/*.custom-hr-b, .custom-hr {
+  height: 3px;
+  background-color: #4F1964;
+}*/
+
+.texto{
+font-size:25px;
+color:#000000;
+margin-left: 270px;
+margin-top: 20px;
+}
+
 /* ----------------------- BOTÃO INICIAL ------------------------ */
 
 .start_btn button{
@@ -51,6 +92,38 @@ body{
     background: #fff;
     cursor: pointer;
 }
+
+.button_container1 {
+  margin-left: -440px;
+  margin-top: 130px;
+  display: flex;        /* Alinha os botões na horizontal */
+  justify-content: center;
+  justify-items: center;
+}
+
+.button_container2 {
+  margin-left: 685px;
+  margin-top: -68px;
+  display: flex;        /* Alinha os botões na horizontal */
+  gap: 1320px;            /* Espaçamento entre os botões */
+}
+
+.button_container3 {
+  margin-left: 1000px;
+  margin-top: -67px;
+  display: flex;        /* Alinha os botões na horizontal */
+  gap: 1320px;            /* Espaçamento entre os botões */
+
+}
+
+.start_btn {
+  margin-bottom: 20px; /* Adiciona espaçamento entre os botões */
+}
+
+.start_btn:last-child {
+  margin-bottom: 0; /* Remove o espaçamento do último botão */
+}
+
 
 /* -------------------------------------------------------------------------- */
 

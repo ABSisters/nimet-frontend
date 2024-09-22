@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { UsuarioResponse } from '../../../model/response/usuarioResponse';
 import { Curso } from '../../../model/enum/curso';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-curso-avancado',
@@ -15,6 +16,7 @@ export class CursoAvancadoComponent {
   basicOptions: any;
 
   public Curso = Curso;
+items: MenuItem[]|undefined;
 
 
   constructor(private router: Router,private usuarioService: UsuarioService){}
@@ -22,50 +24,45 @@ export class CursoAvancadoComponent {
 
   ngOnInit() {
     this.user = this.usuarioService.getUsuario();
+    console.log(this.user);
 
-      const documentStyle = getComputedStyle(document.documentElement);
-      const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
-      const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-
-      this.basicData = {
-          labels: ['Logica de Programação', 'Linguagem de programacao', 'Segurança da Informação', 'Desenvolvimento de Sistemas'],
-          datasets: [
-              {
-                  data: [70, 55, 40, 35],
-                  label: 'Materias',
-                  backgroundColor: ['rgb(198, 24, 255, 0.4)', 'rgba(198, 64, 255, 0.4)', 'rgba(198, 74, 255, 0.3)','rgba(198, 84, 255, 0.2)'],
-                  borderColor: ['rgb(186, 70, 232)', 'rgb(186, 79, 218)', 'rgb(163, 81, 195)', 'rgb(198, 54, 255)'],
-                  pointBorderColor: 'rgba(153, 102, 255, 1)',
-                  borderWidth: 1,
-                  barThickness: 120,
-                  // maxBarThickness: 30 // Defina um limite máximo para a espessura das barras
-              }
-          ]
-      };
-
-      this.basicOptions = {
-          scales: {
-              y: {
-                  beginAtZero: true,
-                  ticks: {
-                      color: textColorSecondary
-                  },
-                  grid: {
-                      color: surfaceBorder,
-                      drawBorder: false
-                  }
+    this.items = [
+            {
+                label: 'Forum',
+                icon: 'pi pi-comments',
+                command: () => {
+                  this.router.navigate(['forum']);
               },
-              x: {
-                  ticks: {
-                      color: textColorSecondary
+              styleClass: 'menucus'
+           },
+            {
+                label: 'Quiz',
+                icon: 'pi pi-stopwatch',
+                command: () => {
+                  this.router.navigate(['quiz']);
+              },
+              styleClass: 'menucus'
+            },
+            {
+              label: 'Nivel Básico',
+              icon: 'pi pi-angle-right',
+              styleClass: 'menucus',
+              items: [
+                  {
+                      label: 'Nivel Intermediário',
+                      command: () => {
+                        this.router.navigate(['curso/intermediario']);
+                    },
                   },
-                  grid: {
-                      color: surfaceBorder,
-                      drawBorder: false
-                  }
+                  {
+                      label: 'Nivel Básico',
+                      command: () => {
+                        this.router.navigate(['curso/basico']);
+                    },
+                  },
+                ]
               }
-          }
-      };
+    ]
   }
 
   forum() {
