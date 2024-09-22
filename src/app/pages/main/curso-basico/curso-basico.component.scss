@@ -7,6 +7,11 @@
   justify-content: center;
 }
 
+.curso{
+  width: 99vw;
+  height: 300vh;
+}
+
 .title{
   font-size:3rem;
   margin-bottom: 1rem;
@@ -60,27 +65,28 @@ span{
 
 
 .painel{
-  margin-top: -1040px;
+  margin-top: -1120px;
   width: 1300px;
-  margin-left: 60px;
+  margin-left: 6.7rem;
 }
 
 .painel-2{
   margin-top: 50px;
   width: 1300px;
-  margin-left: 60px;
+  margin-left: 6.7rem;
 }
 
 .painel-3{
   margin-top: 50px;
   width: 1300px;
-  margin-left: 60px;
+  margin-left: 6.7rem;
 }
 
 .painel-4{
   margin-top: 50px;
   width: 1300px;
-  margin-left: 60px;
+  margin-left: 6.7rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -129,7 +135,15 @@ app-menu{
    color: white !important; /* Cor do texto do cabeçalho */
 }
 ::ng-deep .menucus{
- margin-left: 100px !important;
+  display: flex;
+ margin-left: 15rem !important;
+ margin-top: 20px;
+ border-radius: 15px;
+ background-color: #ccadd8;
+ color: white;
+}
+::ng-deep .menucu{
+ margin-left: 15rem !important;
  margin-top: 20px;
  border-radius: 15px;
  background-color: #ccadd8;
@@ -137,7 +151,7 @@ app-menu{
 }
 
 ::ng-deep .menucus2{
-  margin-left: 10px !important;
+  margin-left: 50rem !important;
  }
 
 

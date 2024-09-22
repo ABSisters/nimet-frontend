@@ -180,8 +180,10 @@ body {
 
 /* Estilos globais para barras de rolagem */
 ::-webkit-scrollbar {
-  width: 11px; /* Largura da barra de rolagem vertical */
+  width: 11px  !important; /* Largura da barra de rolagem vertical */
   height: 30px; /* Altura da barra de rolagem horizontal */
+  overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar-track {

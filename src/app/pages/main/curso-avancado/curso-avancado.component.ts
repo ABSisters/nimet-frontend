@@ -36,17 +36,9 @@ items: MenuItem[]|undefined;
               styleClass: 'menucus'
            },
             {
-                label: 'Quiz',
-                icon: 'pi pi-stopwatch',
-                command: () => {
-                  this.router.navigate(['quiz']);
-              },
-              styleClass: 'menucus'
-            },
-            {
               label: 'Nivel Básico',
               icon: 'pi pi-angle-right',
-              styleClass: 'menucus',
+              styleClass: 'menucu',
               items: [
                   {
                       label: 'Nivel Intermediário',
@@ -61,7 +53,15 @@ items: MenuItem[]|undefined;
                     },
                   },
                 ]
-              }
+              },
+              {
+                label: 'Quiz',
+                icon: 'pi pi-stopwatch',
+                command: () => {
+                  this.router.navigate(['quiz']);
+              },
+              styleClass: 'menucus'
+            }
     ]
   }
 

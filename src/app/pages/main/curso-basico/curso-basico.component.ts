@@ -38,6 +38,25 @@ items: MenuItem[]|undefined;
               },
               styleClass: 'menucus'
            },
+           {
+            label: 'Nivel Básico',
+            icon: 'pi pi-angle-right',
+            styleClass: 'menucu',
+            items: [
+                {
+                    label: 'Nivel Intermediário',
+                    command: () => {
+                      this.router.navigate(['curso/intermediario']);
+                  },
+                },
+                {
+                    label: 'Nivel Avançado',
+                    command: () => {
+                      this.router.navigate(['curso/avancado']);
+                  },
+                },
+              ]
+            },
             {
                 label: 'Quiz',
                 icon: 'pi pi-stopwatch',
@@ -45,30 +64,11 @@ items: MenuItem[]|undefined;
                   this.router.navigate(['quiz']);
               },
               styleClass: 'menucus'
-            },
-            {
-              label: 'Nivel Básico',
-              icon: 'pi pi-angle-right',
-              styleClass: 'menucus',
-              items: [
-                  {
-                      label: 'Nivel Intermediário',
-                      command: () => {
-                        this.router.navigate(['curso/intermediario']);
-                    },
-                  },
-                  {
-                      label: 'Nivel Avançado',
-                      command: () => {
-                        this.router.navigate(['curso/avancado']);
-                    },
-                  },
-                ]
-              }
+            }
     ]
   }
 
-  
+
 
   forum() {
     this.router.navigate(['forum']);

@@ -11,21 +11,27 @@ body{
     background:  #73328d;
 }
 
+.tela{
+  height: 100vh;
+  width: 98vw;
+}
+
 /*::selection{
     color: #000000;
     background:  #ebc9f8;
 } */
 
-.start_btn{
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-              0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+// .start_btn{
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+//               0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
 
 .info_box,
 .quiz_box,
+.start_btn,
 .result_box{
     position: absolute;
     top: 50%;
@@ -59,7 +65,7 @@ body{
   font-size: 3em;
   text-align:center;
   margin-top: -10px;
-  margin-left: 440px;
+  margin-left: 31rem;
 }
 
 header {
@@ -202,6 +208,7 @@ margin-top: 20px;
 
 
 .quiz_box{ /* DIV base do quiz */
+  margin-top: 5rem;
     width: 550px;
     background: #fff;
     border-radius: 5px;

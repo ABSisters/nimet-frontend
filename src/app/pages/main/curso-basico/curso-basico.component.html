@@ -1,66 +1,71 @@
-<div class="card full-screen-card" >
+<div class="card full-screen-card">
   <p-menubar [model]="items" [style]="{ 'background-color': '#8355974d',
   color: '#4F1964', borderColor: '#73328d',
-  display: 'flex', width: '1410px'}" /> <!-- position: 'fixed' -->
-
+  display: 'flex', width: '1525px', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
 <app-menu></app-menu>
+
 </div>
 
+<div class="curso">
 
+  <div *ngIf="user.curso === Curso.INFORMATICA">
+    <div class="title"> INFORMÁTICA - <a class="estilo">BÁSICO</a></div>
 
-<div *ngIf="user.curso === Curso.INFORMATICA">
-  <div class="title"> INFORMÁTICA - <a class="estilo">BÁSICO</a></div>
+    <div class="info">
+      <h2>Sobre o Nível Básico</h2>
+      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
+      seu aprendizado no campo da tecnologia da informação.
+      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
+      As principais matérias abordadas no nível básico são:<br><br>
 
-  <div class="info">
-    <h2>Sobre o Nível Básico</h2>
-    O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
-    seu aprendizado no campo da tecnologia da informação.
-    Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
-    As principais matérias abordadas no nível básico são:<br><br>
+      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
+        entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
 
-    <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-      entendimento e a construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
+        computadores, incluindo hardware e software.<br></li>
 
-    <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
-      computadores, incluindo hardware e software.<br></li>
+      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
+        computador. Inclui sintaxe e semântica das linguagens.<br></li>
 
-    <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-      computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
+        funcionamento da internet.</li>
 
-    <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
-      funcionamento da internet.</li>
+    </div>
+    <div class="col-12 tela">
 
-  </div>
-
-<div class="col-12 tela">
-
-    <br>
 
     </div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
         <p-panel header="Lógica de Programação:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-                <div class="row">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=kpSINeZ_78TCUDSU&amp;list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=kpSINeZ_78TCUDSU&amp;list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=3nVeCcI-mW4xBGUy&amp;list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
-                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=3nVeCcI-mW4xBGUy&amp;list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=7ueFxqXk_RJub9mh&amp;list=PLucm8g_ezqNp_ubuH4XraJRwvUJogsyiF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=7ueFxqXk_RJub9mh&amp;list=PLucm8g_ezqNp_ubuH4XraJRwvUJogsyiF"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -72,58 +77,77 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Sistemas Computacionais:" [toggleable]="true"  styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-                <div class="row">
+        <p-panel header="Sistemas Computacionais:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=Xf-iHJD-b57yqkwT&amp;list=PLMeBuk6RhqM0zMAxjtNTKLN5qn6qjoXV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=Xf-iHJD-b57yqkwT&amp;list=PLMeBuk6RhqM0zMAxjtNTKLN5qn6qjoXV4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=O0dhK66LJD6l3g6W&amp;list=PLBw9d_OueVJTEpM8sOKJ7S8jleQPCSQs3" title="YouTube video player"
-                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=O0dhK66LJD6l3g6W&amp;list=PLBw9d_OueVJTEpM8sOKJ7S8jleQPCSQs3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=YUa5GQqVEpcJexZY&amp;list=PL866_LrQxNVipiEgWtJMK5Fcgc6IBfVvc" title="YouTube video player"
-                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=YUa5GQqVEpcJexZY&amp;list=PL866_LrQxNVipiEgWtJMK5Fcgc6IBfVvc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
 
-    <div class="painel-3" >
+    <div class="painel-3">
       <div class="card flex justify-content-center">
         <p-panel header="Linguagem de Programação:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-              <div class="row">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=178ydj9AIRULR8JX&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=178ydj9AIRULR8JX&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=w8fS7Fdnob5Lj3WL&amp;list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=w8fS7Fdnob5Lj3WL&amp;list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=zNHh37NPH_vLDxOu&amp;list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=zNHh37NPH_vLDxOu&amp;list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
@@ -132,28 +156,37 @@
     <div class="painel-4">
       <div class="card flex justify-content-center">
         <p-panel header="Rede de Computadores e Internet:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px'}">
-             <div class="row">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=JnDRvByN9ephi283&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=JnDRvByN9ephi283&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=zGi7Y0l71WWeRPMi&amp;list=PLvHXLbw-JSPfKp65psX5C9tyNLHHC4uoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=zGi7Y0l71WWeRPMi&amp;list=PLvHXLbw-JSPfKp65psX5C9tyNLHHC4uoR"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=YX3ALlyEZ1G7mdKe&amp;list=PLF9vK2NfbRJtROPfTFQcJcB47STXDfYeX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=YX3ALlyEZ1G7mdKe&amp;list=PLF9vK2NfbRJtROPfTFQcJcB47STXDfYeX"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
@@ -185,128 +218,164 @@
 
       <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
         funcionamento da internet.</li>
-      </div>
+    </div>
 
-      <br>
+    <div class="col-12 tela"></div>
 
-      <div class="painel">
-        <div class="card flex justify-content-center background">
-          <p-panel header="Matéria 1" [toggleable]="true" styleClass="custom-panel">
-            <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
+    <div class="painel">
+      <div class="card flex justify-content-center background">
+        <p-panel header="Mecânica - Frente A:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
-            </p-scrollPanel>
-          </p-panel>
-        </div>
-      </div>
-
-
-      <div class="painel-2">
-        <div class="card flex justify-content-center">
-          <p-panel header="Sistemas Computacionais:" [toggleable]="true"  styleClass="custom-panel">
-            <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
           </p-scrollPanel>
-          </p-panel>
-        </div>
+        </p-panel>
       </div>
+    </div>
 
 
-      <div class="painel-3" >
-        <div class="card flex justify-content-center">
-          <p-panel header="Linguagem de Programação:" [toggleable]="true" styleClass="custom-panel">
-            <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
+    <div class="painel-2">
+      <div class="card flex justify-content-center">
+        <p-panel header="Mecânica - Frente B:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
-          </p-scrollPanel>
-          </p-panel>
-        </div>
-      </div>
-
-
-      <div class="painel-4">
-        <div class="card flex justify-content-center">
-          <p-panel header="Rede de Computadores e Internet:" [toggleable]="true" styleClass="custom-panel">
-            <p-scrollPanel [style]="{ width: '100%', height: '150px'}">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="video">
-                    <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
           </p-scrollPanel>
-          </p-panel>
-        </div>
+        </p-panel>
       </div>
+    </div>
+
+
+    <div class="painel-3">
+      <div class="card flex justify-content-center">
+        <p-panel header="Mecânica - Frente C:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </p-scrollPanel>
+        </p-panel>
+      </div>
+    </div>
+
+
+    <div class="painel-4">
+      <div class="card flex justify-content-center">
+        <p-panel header="Mecânica - Frente D:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="video">
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </p-scrollPanel>
+        </p-panel>
+      </div>
+    </div>
 
   </div>
 
@@ -315,7 +384,7 @@
 
 
   <div *ngIf="user.curso === Curso.ELETRONICA">
-    <div class="title"> ELETRONICA -  <a class="estilo">BÁSICO </a></div>
+    <div class="title"> ELETRONICA - <a class="estilo">BÁSICO </a></div>
 
     <div class="info">
       <h2>Sobre o Nível Básico</h2>
@@ -339,29 +408,38 @@
 
     </div>
 
-    <br>
+    <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Matéria 1:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-                <div class="row">
+        <p-panel header="Eletrônica - Frente A:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -373,59 +451,77 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Matéria 2:" [toggleable]="true"  styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-             <div class="row">
+        <p-panel header="Eletrônica - Frente B:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
 
-    <div class="painel-3" >
+    <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Matéria 3:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px' }">
-              <div class="row">
+        <p-panel header="Eletrônica - Frente C:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
@@ -433,36 +529,42 @@
 
     <div class="painel-4">
       <div class="card flex justify-content-center">
-        <p-panel header="matéria 4:" [toggleable]="true" styleClass="custom-panel">
-          <p-scrollPanel [style]="{ width: '100%', height: '150px'}">
-             <div class="row">
+        <p-panel header="Eletrônica - Frente D:" [toggleable]="true" styleClass="custom-panel">
+          <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=knKr6BLeQrUAoLXi&amp;list=PLEAQjGRLyR4vMyJHv1TNfJR1fNJ408OpC"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=nqfP1eANZiTdM45C&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/embed/videoseries?si=uUZmaw15SBTtVwSX&amp;list=PLEpBerdY1nQvMz5WVfNA6xsQRE8BA9aEU"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </p-scrollPanel>
+          </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
   </div>
 
-
-
-
-
+</div>
