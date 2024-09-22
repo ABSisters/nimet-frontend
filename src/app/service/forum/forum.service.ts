@@ -61,7 +61,7 @@ export class ForumService {
     )
   }
 
-  getTags(tag: Tags): Observable<PerguntaResponse>{
+  getTags(tag: String): Observable<PerguntaResponse[]>{
     return this.httpClient.get(env.baseApiUrl + '/' + urlConfig.perguntaTag + '/'  + tag).pipe(
       map((res:any) => res)
     )

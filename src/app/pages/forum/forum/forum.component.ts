@@ -7,6 +7,7 @@ import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { UsuarioResponse } from '../../../model/response/usuarioResponse';
+import { Tags } from '../../../model/enum/Tags';
 
 
 interface Tag {
@@ -24,7 +25,7 @@ export class ForumComponent implements OnInit {
 
   tags!: Tag[];
 
-  selectedCities!: Tag[];
+  selectedTag!: Tag[];
 
   perguntasForum!: PerguntaResponse[];
 
@@ -64,7 +65,7 @@ export class ForumComponent implements OnInit {
           { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' }
         ];
         break;
-        case 'ELETRONICA':
+      case 'ELETRONICA':
         this.tags = [
           { name: 'ELETRONICA', code: 'ELETRONICA' },
           { name: 'EXEMPLO', code: 'EXEMPLO' },
@@ -88,9 +89,35 @@ export class ForumComponent implements OnInit {
       error: (error) => {
         console.error('Erro ao carregar perguntas do curso:', error);
         this.message.add({ severity: 'error', summary: 'Erro', detail: 'Nenhum dos campos pode estar vazio' });
-
       }
     })
+  }
+
+  limitarSelecao(event: any) {
+    if (this.selectedTag.length > 1) {
+      this.selectedTag = [event.value]; // Manter apenas a última tag selecionada
+      this.selectedTag = [event.value.pop()];
+      // this.message.add({ severity: 'error', summary: 'Erro', detail: 'Só é possivel realizar a pequisa com uma tag' });
+    }else {
+      this.selectedTag = event.value;
+    }
+
+    this.pesquisarTags();
+  }
+  pesquisarTags() {
+    if (this.selectedTag && this.selectedTag.length === 1) {
+      const selectedTag = this.selectedTag[0];
+      this.forumService.getTags(selectedTag.code).subscribe({
+        next: (perguntas: PerguntaResponse[]) => {
+          localStorage.setItem('perguntasCurso', JSON.stringify(perguntas));
+          this.perguntasForum = perguntas;
+        },
+        error: (error) => {
+          console.error('Erro ao carregar perguntas da tag:', error);
+          this.message.add({ severity: 'error', summary: 'Erro', detail: 'Erro ao filtrar pela tag' });
+        }
+      });
+    }
   }
 
   registrarPergunta(pergunta: PerguntaResponse) {

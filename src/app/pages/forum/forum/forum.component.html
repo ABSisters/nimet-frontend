@@ -12,8 +12,10 @@
       <div class="d-flex justify-content-between linha">
         <div class="card flex justify-content-center"
           [style]="{color: '#2a1261', top:'2px', width:'80px', borderRadius: 'var(--border-radius)'}">
-          <p-multiSelect class="custom-multiselect" [options]="tags" [(ngModel)]="selectedCities" optionLabel="name"
-            placeholder="TAGS"></p-multiSelect>
+          <!-- <p-dropdown class="custom-dropdown" [options]="tags" [(ngModel)]="selectedTag"
+          optionLabel="name" placeholder="TAGS" (onChange)="pesquisarTags()"></p-dropdown> -->
+          <p-multiSelect class="custom-multiselect" [options]="tags" [(ngModel)]="selectedTag" optionLabel="name"
+            placeholder="TAGS" (onChange)="limitarSelecao($event)"></p-multiSelect>
         </div>
 
         <div class="adicionar-button">
