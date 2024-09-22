@@ -10,27 +10,31 @@
     <p style="font-size: 1.8em;">Já tem uma conta?<a style="cursor: pointer;" (click)="login()"> <span> Login</span></a></p>
 
     <form [formGroup]="cadastroForm">
-      <div class="conteiner p-5">
+      <div class="conteiner">
 
         <!-- first column -->
         <div class="mx-2">
           <div class="input-box">
             <label for="nome" class="form-label">Nome</label>
-            <input id="nome" formControlName="nome" class="password" type="nome" name="firstname"
+            <input id="nome" formControlName="nome"class="form-control" type="nome" name="firstname"
               placeholder="Digite seu nome" required />
           </div>
 
           <div class="input-box">
             <label for="Username" class="form-label">Username</label>
-            <input id="Username" formControlName="username" class="password" type="Username" name="Username"
+            <input id="Username" formControlName="username" class="form-control" type="Username" name="Username"
               placeholder="Digite seu nome de usuário" required />
-
           </div>
 
           <div class="input-box">
-            <label for="icondisplay" class="form-label">Data de nascimento</label>
-            <p-calendar formControlName="dataNascimento" inputStyleClass="password" [iconDisplay]="'input'"
-              inputId="icondisplay" dateFormat="dd/mm/yy" [showIcon]="true"></p-calendar>
+            <label for="curso"  class="form-label">Curso</label>
+            <input id="curso" formControlName="curso" type="curso" name="confirmcourse" list="cursos"
+              placeholder="Selecione seu curso" class="form-control" required />
+            <datalist id="cursos">
+              <option value="INFORMATICA"></option>
+              <option value="MECANICA"></option>
+              <option value="ELETRONICA"></option>
+            </datalist>
           </div>
         </div>
 
@@ -39,7 +43,7 @@
           <div class="input-box">
             <label for="email" class="form-label">Email</label>
             <input id="email" formControlName="email" type="email" name="email" placeholder="Digite seu email"
-            class="password" required />
+            class="form-control"required />
           </div>
 
           <div class="password-container">
@@ -64,7 +68,6 @@
           <div class="input-box">
             <label for="confirmPassword" class="form-label">Confirmação de Senha</label>
             <p-password [toggleMask]="true" inputStyleClass="password" [feedback]="false" placeholder="Confirme sua senha" formControlName="confirm_password"></p-password>
-
             <div class="error-container" *ngIf="f['password'].invalid && (f['password'].dirty || f['password'].touched)">
               <small class="text-danger" *ngIf="f['password'].errors?.['senhaForte']">Senha inválida.</small>
             </div>
@@ -74,18 +77,6 @@
           </div>
         </div>
       </div>
-
-      <div class="input-box">
-        <label for="confirmcourse" id="confirmcourse" class="form-label">Curso</label><br /><br />
-        <input id="confirmcourse" formControlName="curso" type="curso" name="confirmcourse" list="cursos"
-          placeholder="Selecione seu curso" class="form-control" required />
-        <datalist id="cursos">
-          <option value="INFORMATICA"></option>
-          <option value="MECANICA"></option>
-          <option value="ELETRONICA"></option>
-        </datalist>
-      </div>
-
       <button class="button" (click)="montarRequest()">Cadastrar</button>
     </form>
   </div>

@@ -12,8 +12,10 @@
       <div class="d-flex justify-content-between linha">
         <div class="card flex justify-content-center"
           [style]="{color: '#2a1261', top:'2px', width:'80px', borderRadius: 'var(--border-radius)'}">
-          <p-multiSelect class="custom-multiselect" [options]="cities" [(ngModel)]="selectedCities" optionLabel="name"
-            placeholder="TAGS"></p-multiSelect>
+          <!-- <p-dropdown class="custom-dropdown" [options]="tags" [(ngModel)]="selectedTag"
+          optionLabel="name" placeholder="TAGS" (onChange)="pesquisarTags()"></p-dropdown> -->
+          <p-multiSelect class="custom-multiselect" [options]="tags" [(ngModel)]="selectedTag" optionLabel="name"
+            placeholder="TAGS" (onChange)="limitarSelecao($event)"></p-multiSelect>
         </div>
 
         <div class="adicionar-button">
@@ -31,7 +33,10 @@
 
         <div *ngFor="let pergunta of perguntasForum" class="pergunta-item">
           <div class="status-condicao">
-            <i class="pi pi-check" style="font-size: 3rem"></i>
+            <!-- <i class="pi pi-check" style="font-size: 3rem"></i> -->
+
+            <i *ngIf="pergunta.status" class="pi pi-check green"></i>
+            <i *ngIf="!pergunta.status" class="pi pi-times red"></i>
           </div>
           <div class="input-box-a">
             <input class="caixa-texto" required [(ngModel)]="pergunta.titulo"

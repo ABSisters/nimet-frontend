@@ -9,7 +9,7 @@
 }
 
 .gradient-background {
-  background: linear-gradient(to bottom, #ffffff,  #73328d);
+  background: linear-gradient(to bottom, #e1d6e5,  #73328d);
   height: 220vh; /* Altura de 100% da viewport */
 }
 
@@ -37,6 +37,14 @@
   top: -10px;
 }
 
+.fm{ /* tira o fundo dos botões do menu */
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: x-large;
+  position: relative;
+}
+
 .font-medium-a{ /* tira o fundo dos botões do menu */
   background-color: transparent !important;
   border: none !important;
@@ -45,18 +53,21 @@
   padding: 10px;
 }
 
-.font-medium:hover {
+.font-medium:hover,
+.fm:hover {
   background-color: #f5d6fe !important;
   border-radius: 10px;
- /*padding-inline-start: 30px;
+  /*padding-inline-start: 30px;
   padding-right: 30px;
   padding-left: 30px;*/
-  // padding-inline: 50px;
+  /* padding-inline: 50px; */
 }
 
-.font-medium:active {
+.font-medium:active,
+.fm:active {
   background-color: transparent !important;
 }
+
 
 /* ------------- LISTA ------------------------------------------------- */
 

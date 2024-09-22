@@ -10,6 +10,41 @@
   justify-content: center;
 }
 
+.opcao {
+  position: absolute; /* Coloca o botão no canto superior direito */
+  top: 1rem; /* Ajuste a distância do topo conforme necessário */
+  right: 10px; /* Ajuste a distância da direita conforme necessário */
+
+  // border-radius: 5px;
+  color:#4F1964;
+  border: none;
+  background-color: rgba(223, 203, 233, 0.1);
+  // height: 1.5rem;
+  width: 4rem;
+  margin-right: 3rem;
+  margin-top: 0.8rem;
+  font-size: 40px;
+}
+
+.opcoes {
+  position: absolute; /* Para empilhar os botões */
+  top: 6rem; /* Ajuste para a posição vertical dos botões */
+  right: 10px; /* Alinhamento à direita */
+  display: flex;
+  flex-direction: column; /* Coloca os botões um em cima do outro */
+  border: none;
+}
+
+.opcoes button {
+  margin: 5px 0; /* Espaçamento entre os botões */
+  border-radius: 5px;
+  background-color:#4F1964;
+  height: 1.8rem;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+  color: #ffffffbe;
+}
+
 /* ---------------- USERNAME - DATA - HORARIO ------------------------------------- */
 
 .estilo-nome{

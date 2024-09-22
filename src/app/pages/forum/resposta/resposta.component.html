@@ -3,6 +3,15 @@
 <!---------------------------------------------------------------------------------------------------------->
 <p-toast></p-toast>
 <div class="tela">
+
+  <button class="opcao" (click)="toggleOptions()">....</button>
+
+  <div *ngIf="showOptions" class="opcoes">
+    <button (click)="fecharPergunta()" >Fechar Pergunta</button>
+    <button (click)="deletarPergunta()">Deletar Pergunta</button>
+
+  </div>
+
   <header d-flex justify-content-center>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
     <h4 class="cor-titulo-descricao">{{ pergunta.titulo }}<br></h4>
@@ -30,10 +39,10 @@
         <span class="estilo-palavra">
           <h1 class="cor">Respostas</h1>
         </span>
-        <textarea rows="2" [(ngModel)]="resposta.resposta" class="adicionar" placeholder="Insira sua resposta"></textarea>
+        <textarea rows="2" [(ngModel)]="resposta.resposta" class="adicionar" placeholder="Insira sua resposta"  [disabled]="!pergunta.status"></textarea>
         <div class="postar-button">
             <div class="input-box">
-              <button class="button-a" (click)="adicionarResposta()">Postar</button>
+              <button class="button-a" (click)="adicionarResposta()"  [disabled]="!pergunta.status">Postar</button>
             </div>
           </div>
       </div>
