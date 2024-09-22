@@ -1,0 +1,5 @@
+export enum Curso {
+  ELETRONICA = 'ELETRONICA',
+  INFORMATICA = 'INFORMATICA',
+  MECANICA = 'MECANICA',
+}

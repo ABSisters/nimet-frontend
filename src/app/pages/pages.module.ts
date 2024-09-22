@@ -1,16 +1,23 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, forwardRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
-import {PrimengModule} from '../../assets/shared/primeng.module'
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button';
-import {FormsModule} from '@angular/forms';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
 import { EmailComponent } from './email/email.component';
-import { MainComponent } from './main/main.component';
+import { SharedModule } from '../shared/shared.module';
+import { ToastModule } from 'primeng/toast';
+import { FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
+import { ChartModule } from 'primeng/chart';
+import { PerfilComponent } from './perfil/perfil.component';
+import { MenuComponent } from './menu/menu.component';
+import { CursoIntermediarioComponent } from './main/curso-intermediario/curso-intermediario.component';
+import { CursoAvancadoComponent } from './main/curso-avancado/curso-avancado.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ForumComponent } from './forum/forum/forum.component';
+import { AdicionarPerguntaComponent } from './forum/adicionar-pergunta/adicionar-pergunta.component';
+import { RespostaComponent } from './forum/resposta/resposta.component';
+import { SenhaComponent } from './senha/senha.component';
+import { CursoBasicoComponent } from './main/curso-basico/curso-basico.component';
+
 
 
 @NgModule({
@@ -18,19 +25,38 @@ import { MainComponent } from './main/main.component';
     LoginComponent,
     CadastroComponent,
     EmailComponent,
-    MainComponent
+    PerfilComponent,
+    CursoBasicoComponent,
+    CursoIntermediarioComponent,
+    CursoAvancadoComponent,
+    MenuComponent,
+    QuizComponent,
+    ForumComponent,
+    AdicionarPerguntaComponent,
+    RespostaComponent,
+    ForumComponent,
+    SenhaComponent
 
   ],
   imports: [
     CommonModule,
-    PrimengModule,
     ReactiveFormsModule,
-    MatInputModule,
-    MatFormFieldModule,
     FormsModule,
-    MatButtonModule,
-    MatDatepickerModule,
-    MatInputModule,
-  ]
+    SharedModule,
+    ToastModule,
+    ChartModule
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    exports: [
+      MenuComponent
+    ],
+    // providers: [
+    //   {
+    //     provide: NG_VALUE_ACCESSOR,
+    //     useExisting: forwardRef(() => MyInputField),
+    //     multi: true,
+    //   }
+    // ]
+
 })
 export class PagesModule { }

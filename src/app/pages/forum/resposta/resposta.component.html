@@ -1,0 +1,68 @@
+<app-menu></app-menu>
+
+<!---------------------------------------------------------------------------------------------------------->
+<p-toast></p-toast>
+<div class="tela">
+
+  <button class="opcao" (click)="toggleOptions()">....</button>
+
+  <div *ngIf="showOptions" class="opcoes">
+    <button (click)="fecharPergunta()" >Fechar Pergunta</button>
+    <button (click)="deletarPergunta()">Deletar Pergunta</button>
+
+  </div>
+
+  <header d-flex justify-content-center>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+    <h4 class="cor-titulo-descricao">{{ pergunta.titulo }}<br></h4>
+  </header>
+
+  <div class="d-flex justify-content-around">
+    <p class="estilo-nome"> Por: {{ pergunta.usuario.nome }}</p>
+    <p class="estilo-data ">{{ pergunta.dataCriado|date:'dd/MM/yyyy - HH:mm'}}</p>
+  </div>
+
+  <hr class="custom-hr">
+
+  <div class="conteiner">
+    <div class="caixa-b">
+      <h2>{{ pergunta.detalhes }}</h2>
+     <!-- <p class="cor" style="font-weight: 400px;">#{{pergunta.tags[0]}}</p> -->
+     <div *ngFor="let tag of pergunta.tags" class="cor">#{{ tag }}</div>
+    </div>
+  </div>
+
+  <div class="conteiner">
+    <div class="borda-adicionar-respostas">
+
+      <div class="input-box">
+        <span class="estilo-palavra">
+          <h1 class="cor">Respostas</h1>
+        </span>
+        <textarea rows="2" [(ngModel)]="resposta.resposta" class="adicionar" placeholder="Insira sua resposta"  [disabled]="!pergunta.status"></textarea>
+        <div class="postar-button">
+            <div class="input-box">
+              <button class="button-a" (click)="adicionarResposta()"  [disabled]="!pergunta.status">Postar</button>
+            </div>
+          </div>
+      </div>
+
+      <div *ngFor="let resposta of retornoRespostas">
+        <br>
+        <div class="d-flex justify-content-between informacoes-usuario">
+          <p style="font-size: 1em;"> {{ resposta.usuario.nome }}</p>
+          <p> {{ resposta.dataCriado | date : 'dd/MM/yyyy - HH:mm'}}</p>
+        </div>
+        <textarea [(ngModel)]="resposta.resposta" disabled class="forum">{{ resposta.usuario.nome }}</textarea>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- <div class="deletar-button">
+    <div class="input-box">
+      <button class="button-b">Deletar</button>
+    </div>
+  </div> -->

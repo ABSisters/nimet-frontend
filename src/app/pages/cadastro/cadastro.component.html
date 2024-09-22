@@ -1,95 +1,85 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+<p-toast></p-toast>
 <div class="tela">
-   <div class="roxo"></div>
+  <div class="roxo"></div>
 
-    <div class="cadastro">
+  <div class="cadastro">
+    <header>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />CRIE SUA
+      CONTA NO <span>NIMET</span>
+    </header>
+    <p style="font-size: 1.8em;">Já tem uma conta?<a style="cursor: pointer;" (click)="login()"> <span> Login</span></a></p>
 
-      <header><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">CRIE SUA CONTA NO <b><span>NIMET</span></b></header>
-      <p>Já tem uma conta?<a style="cursor: pointer;" (click)="login()"><span>Login</span></a></p>
+    <form [formGroup]="cadastroForm">
+      <div class="conteiner">
 
-      <body>
-
-        <form [formGroup]="cadastroForm">
-
-        <div class="conteiner p-5">
-
-
-                  <div class="mx-2">
-                      <div class="input-box">
-                          <label for="nome" class="form-label">Nome</label>
-                          <input id="nome"  formControlName="nome" class="form-control" type="nome" name="firstname"
-                          placeholder="ABS SISTERS" required>
-                      </div>
-
-                      <div class="input-box">
-                          <label for="Username" class="form-label">Username</label>
-                          <input id="Username" formControlName="username" class="form-control" type="Username" name="Username"
-                          placeholder="@abs_sisters" required>
-                      </div>
-
-
-                      <div class="input-box">
-                        <label for="confirmage" class="form-label">Idade</label>
-                        <input id="confirmage" formControlName="dataNascimento" class="form-control" type="idade" name="confirmage"
-                        placeholder="18" required>
-                      </div>
-
-                        <!-- <mat-form-field class="input-box">
-                          <label for="dataNascimento" class="form-label">Data nascimento</label>
-                          <input class="form-control" matInput [matDatepicker]="picker">
-                          <mat-datepicker-toggle matIconSuffix [for]="picker">
-                          </mat-datepicker-toggle>
-                          <mat-datepicker #picker></mat-datepicker>
-                        </mat-form-field> -->
-
-
-
-
-                  </div>
-
-
-                  <div class="mx-2">
-                  <div class="input-box">
-                    <label for="email" class="form-label">Email</label>
-                    <input id="email" formControlName="email" class="form-control"  type="email" name="email"
-                    placeholder="Digite seu email"  class="form-control" required>
-                </div>
-
-                <div class="input-box">
-                  <label for="password" class="form-label">Senha</label>
-                  <input id="password"formControlName="senha"  type="password" name="password"
-                  placeholder="Absisters123!" class="form-control" required>
-              </div>
-
-              <div class="input-box">
-                <label for="confirmPassword" class="form-label">Confirme sua Senha</label>
-                <input id="confirmPassword"  type="password" name="confirmPassword"
-                placeholder="Absisters123!" class="form-control" required>
-            </div>
+        <!-- first column -->
+        <div class="mx-2">
+          <div class="input-box">
+            <label for="nome" class="form-label">Nome</label>
+            <input id="nome" formControlName="nome"class="form-control" type="nome" name="firstname"
+              placeholder="Digite seu nome" required />
           </div>
 
-        </div>
+          <div class="input-box">
+            <label for="Username" class="form-label">Username</label>
+            <input id="Username" formControlName="username" class="form-control" type="Username" name="Username"
+              placeholder="Digite seu nome de usuário" required />
+          </div>
 
           <div class="input-box">
-            <label for="confirmcourse" id="confirmcourse" class="form-label">Curso</label>
-            <input id="confirmcourse" formControlName="curso" type="curso" name="confirmcourse" list="cursos"
-             placeholder="Selecione seu curso" class="form-control"   required>
+            <label for="curso"  class="form-label">Curso</label>
+            <input id="curso" formControlName="curso" type="curso" name="confirmcourse" list="cursos"
+              placeholder="Selecione seu curso" class="form-control" required />
             <datalist id="cursos">
               <option value="INFORMATICA"></option>
               <option value="MECANICA"></option>
               <option value="ELETRONICA"></option>
-          </datalist>
+            </datalist>
+          </div>
         </div>
-        </form>
-        <button mat-button class="button" (click)="cadastrar()"><span>Cadastrar</span></button>
-     </body>
+
+        <!-- second column -->
+        <div class="mx-2">
+          <div class="input-box">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" formControlName="email" type="email" name="email" placeholder="Digite seu email"
+            class="form-control"required />
+          </div>
+
+          <div class="password-container">
+            <div class="input-box">
+              <label for="password" class="form-label">Senha</label>
+              <p-password formControlName="password" [toggleMask]="true" inputStyleClass="password" weakLabel="Fraco"
+                mediumLabel="Simples" strongLabel="Dentro dos parâmetros" placeholder="Crie uma senha">
+                <ng-template pTemplate="header">
+                  <h6>Requisitos</h6>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                  <ul class="pl-2 ml-2 mt-0" style="line-height: 1.6">
+                    <li>Deve conter caracteres especiais, minúsculos, maiúsculos e números</li>
+                    <li>Mínimo de 8 caracteres</li>
+                  </ul>
+                </ng-template>
+              </p-password>
+            </div>
+          </div>
+
+
+          <div class="input-box">
+            <label for="confirmPassword" class="form-label">Confirmação de Senha</label>
+            <p-password [toggleMask]="true" inputStyleClass="password" [feedback]="false" placeholder="Confirme sua senha" formControlName="confirm_password"></p-password>
+            <div class="error-container" *ngIf="f['password'].invalid && (f['password'].dirty || f['password'].touched)">
+              <small class="text-danger" *ngIf="f['password'].errors?.['senhaForte']">Senha inválida.</small>
+            </div>
+            <div *ngIf="f['confirm_password'].invalid && (f['confirm_password'].dirty || f['confirm_password'])">
+              <small class="text-danger" *ngIf="f['confirm_password'].errors?.['not_matching']">As senhas não coincidem.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button" (click)="montarRequest()">Cadastrar</button>
+    </form>
   </div>
 </div>
 
-
-
 <img src="../../../assets/images/cadastro-semfundo.png" alt="imagem ilustrativa do login" class="image" />
-
-

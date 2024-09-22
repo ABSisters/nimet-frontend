@@ -1,0 +1,56 @@
+<div class="tela-forum">
+<app-menu></app-menu>
+<p-toast></p-toast>
+  <header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+    <h5 class="cor-nome">FÓRUM - {{user.curso}} </h5>
+  </header>
+
+  <div class="forum">
+    <div class="borda-forum">
+
+      <div class="d-flex justify-content-between linha">
+        <div class="card flex justify-content-center"
+          [style]="{color: '#2a1261', top:'2px', width:'80px', borderRadius: 'var(--border-radius)'}">
+          <!-- <p-dropdown class="custom-dropdown" [options]="tags" [(ngModel)]="selectedTag"
+          optionLabel="name" placeholder="TAGS" (onChange)="pesquisarTags()"></p-dropdown> -->
+          <p-multiSelect class="custom-multiselect" [options]="tags" [(ngModel)]="selectedTag" optionLabel="name"
+            placeholder="TAGS" (onChange)="limitarSelecao($event)"></p-multiSelect>
+        </div>
+
+        <div class="adicionar-button">
+          <button class="button-a" (click)="adicionar()">Adicionar Pergunta</button>
+        </div>
+      </div>
+
+      <div class="conteiner-a">
+        <div class="header-row">
+          <div class="status">Status</div>
+          <div class="pergunta">Pergunta</div>
+          <div class="postar">Postado Por:</div>
+        </div>
+        <hr class="custom-hr">
+
+        <div *ngFor="let pergunta of perguntasForum" class="pergunta-item">
+          <div class="status-condicao">
+            <!-- <i class="pi pi-check" style="font-size: 3rem"></i> -->
+
+            <i *ngIf="pergunta.status" class="pi pi-check green"></i>
+            <i *ngIf="!pergunta.status" class="pi pi-times red"></i>
+          </div>
+          <div class="input-box-a">
+            <input class="caixa-texto" required [(ngModel)]="pergunta.titulo"
+            readonly (click)="registrarPergunta(pergunta)"/>
+          </div>
+          <div class="dados-usuario">
+            <p>  {{pergunta.usuario.nome }}</p>
+            {{ pergunta.dataCriado| date : 'dd/MM/yyyy - HH:mm'}}
+          </div>
+          <hr class="custom-hr">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

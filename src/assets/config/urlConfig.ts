@@ -1,5 +1,31 @@
 export const urlConfig = {
-  cadastrarUsuario : 'api/usuarios/cadastrar',
-  verificarEmail: 'api/email/verificacao',
-  logar: 'api/usuarios/logar'
+  cadastrarUsuario : 'usuarios/cadastrar',
+  verificarEmail: 'email/verificacao',
+
+  // usuarios
+  logar: 'usuarios/logar',
+  alterarPerfil: 'usuarios/mudar',
+  alterarSenha: 'usuarios/mudar/senha',
+  deletar: 'usuarios/deletar',
+  denunciar: 'usuarios/denunciar',
+
+  // perguntas
+  adicionarPergunta: 'perguntas/adicionar',
+  perguntasCurso: 'perguntas/curso',
+  perguntasUsuario:'perguntas/usuario',
+  pergunta: 'perguntas',
+  perguntaDeletar: 'perguntas/deletar',
+  perguntaFechar: 'perguntas/fechar',
+  perguntaTag: 'perguntas/tag',
+
+  // respostas
+  adicionarResposta: 'respostas/adicionar',
+  getRespostasUsuario: 'respostas/usuario',
+  getRespostas: 'respostas/perguntas',
+  respostasDeletar: 'respostas/deletar',
+
+  // quiz
+  responderQuiz: 'quiz/responder',
+  resultadoQuiz: 'quiz/usuario'
+
 }

@@ -1,0 +1,148 @@
+<app-menu></app-menu>
+<div class="tela">
+  <header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
+    <h5 class="cor-nome">QUIZ - NIMET</h5>
+  </header>
+  <!-- <h3 class="texto">Com base no seu aprendizado, escolha o nivel que você deseja jogar!</h3> -->
+
+  <!---<hr class="custom-hr">--->
+
+  <div class="start_btn"><button (click)="showWarningPopup()">Iniciar Quiz</button></div>
+
+  <!-- <div class="button_container1">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Básico</button></div>
+</div> -->
+  <!--
+<div class="button_container2">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Intermediário</button></div>
+</div>
+
+<div class="button_container3">
+<div class="start_btn"><button (click)="showWarningPopup()">Nivel Avançado</button></div>
+</div> -->
+
+
+  <div class="info_box" [ngClass]="showWarning ? 'activeInfo':''">
+
+    <div class="info-title"><span>Informações Importantes!</span></div>
+
+    <div class="info-list">
+
+      <div class="info">1. As questões <span>não possuem tempo</span>, faça-as com calma.</div>
+
+      <div class="info">2. Depois de Selecionar sua resposta, ela <span>não poderá ser mudada</span>.</div>
+
+      <div class="info">3. Não saia do Quiz antes de finaliza-lo.</div>
+
+      <div class="info">4. Todas as questões estão associadas ao que você aprendeu.</div>
+
+    </div>
+
+    <div class="buttons">
+
+      <button class="quit">Voltar</button>
+
+      <button class="restart" (click)="startQuiz()">Continar</button>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="quiz_box" [ngClass]="isQuizStarted? 'activeQuiz':''">
+
+    <header>
+
+      <div class="title"> {{user.curso}} QUIZ - ?? </div>
+
+      <div class="timer">
+
+        <!--<div class="time_left_txt">Time Off</div>-->
+
+        <div class="timer_sec"><!--{{remainingTime}}-->NIMET</div>
+        <!-- Se desejar por o tempo novamente colocar: {{remainingTime}}-->
+
+      </div>
+
+      <div class="time_line" style="width: 550px;"></div>
+
+    </header>
+
+
+    <section *ngIf="isQuizStarted">
+
+      <div class="que_text"><span>{{currentQuestionNo+1}}. {{questionsList[currentQuestionNo].question}} </span></div>
+
+      <div class="bolinha"></div>
+
+      <div class="option_list">
+
+        <div class="option" [ngClass]="{'disabled': isOptionSelected(questionsList[currentQuestionNo].options),
+
+                                            'correct':option.isSelected && option.isCorrect,
+
+                                            'incorrect':option.isSelected  && !option.isCorrect}"
+          (click)="selectOption(option)" *ngFor="let option of questionsList[currentQuestionNo].options">
+
+          <span>{{option.answer}}</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+
+      <div class="total_que"><span>
+
+          <p>{{currentQuestionNo+1}}</p> de <p>{{questionsList.length}}</p> Questões
+
+        </span></div>
+
+      <button *ngIf="currentQuestionNo+1 == questionsList.length" class="next_btn show"
+        (click)="finish()">Finalizar</button>
+
+      <button *ngIf="currentQuestionNo+1 !== questionsList.length" class="next_btn show"
+        (click)="nextQuestion()">Avançar</button>
+
+    </footer>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="result_box" [ngClass]="isQuizEnded?'activeResult':''">
+
+    <div class="icon">
+
+      <i class="fas fa-crown"></i>
+
+    </div>
+
+    <div class="complete_text">{{user.nome}}, você completou o Quiz! </div>
+
+    <div class="score_text">
+
+      <span>Parabéns 🎉! você acertou <p>{{correctAnswerCount}}</p> de <p>{{questionsList.length}}</p></span>
+
+    </div>
+
+    <div class="buttons">
+
+      <button class="restart">Refazer o Quiz</button>
+
+      <button class="quit" (click)="start()">Sair do Quiz</button>
+
+    </div>
+
+  </div>
+</div>

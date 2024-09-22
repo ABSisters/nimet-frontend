@@ -1,71 +1,81 @@
-.tela{
+.tela {
   display: flex;
-  width: 100vw; /* Ocupa 100% da largura do viewport */
-  height: 100vh; /* Ocupa 100% da altura do viewport */
+  width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(to bottom, #73328d, #c185de);
 }
 
+.form-label {
+  font-size: 1rem !important; /* Força a aplicação do tamanho da fonte */
+}
 
-
-.cadastro{
+.cadastro {
   flex: 5;
   background-color: rgb(255, 255, 255);
   border-radius: 30px 0px 0px 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.roxo{
-  flex:1;
+.roxo {
+  flex: 1.2;
 }
 
-span{
-  color: #4F1964; /* cor da palavra NIMET*/
+span {
+  color: #4F1964;
+  font-weight: 500;
+  /* cor da palavra NIMET*/
 }
 
-header{
-  font-family: 'Roboto', sans-serif; /* tipo da letra do titulo */
+header {
+  font-family: 'Roboto', sans-serif;
   font-size: 3em;
   font-weight: 300;
-  color:rgb(90, 90, 90)
+  color: rgb(90, 90, 90)
 }
 
 .image {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-106.5%, -50%); /* Centralizando a imagem horizontalmente e verticalmente */
-  width: 55rem;
+  transform: translate(-99.2%, -50%);
+  width: 60rem;
 }
 
 
-.conteiner{
+.conteiner {
   display: flex;
 }
 
 
 input {
-  flex: 2; /* Define a largura flexível para que ocupem todo o espaço disponível */
-  margin-right: 40px; /* Adiciona espaçamento entre as caixas de texto */
+  flex: 2;
+  margin-right: 40px;
   border-radius: 5px;
   border: 1px solid #000000;
   width: 230px;
 }
 
-#confirmcourse{
-  width: 230px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -90%);
+
+.error-container {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: flex-start;
 }
+
+
+.input-box .text-danger {
+  margin-top: 0.25rem;
+  color: #dc3545;
+}
+
 
 .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .input-box input:hover {
@@ -91,15 +101,13 @@ input {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
-  margin-top: 1rem;
   width: 14rem;
   height: 2rem;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -700%);
+  margin-top: 2rem;
+  margin-left: 9rem;
 }
 
-button span{
+button span {
   color: white;
 }
+
