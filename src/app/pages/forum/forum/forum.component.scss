@@ -2,7 +2,7 @@
   background-color: white;
   padding: 20px;
   margin: 20px;
-  width: 97%;
+  width: 97.5%;
   height: 80%;
   overflow-y: scroll;
   border: 2px;
@@ -56,6 +56,7 @@ header {
 
 .borda-forum {
   border-width: 3px;
+  border-radius: 8px;
   border-style: solid;
   border-color: hsl(283, 48%, 37%);
   background-color: #d19bec40;
@@ -111,17 +112,33 @@ header {
   color: #4F1964;
 }
 
-.status-condicao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #23903c;
+// .status-condicao {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #23903c;
+//   background-color: #ffffffbe;
+//   border-radius: 80px;
+//   padding: 15px;
+//   margin-top: 10px;
+//   height: 70%;
+//   width: 70%;
+// }
+
+.green {
+  color: green;
   background: #d4edda;
   border-radius: 80px;
-  padding: 5px;
-  margin-top: 10px;
-  height: 70%;
-  width: 70%;
+  padding: 15px;
+  font-size: 3rem;
+}
+
+.red {
+  color: red;
+  background-color: #ce9595; /* Se você quiser o fundo vermelho claro */
+  border-radius: 80px;
+  padding: 15px;
+  font-size: 3rem;
 }
 
 .dados-usuario {

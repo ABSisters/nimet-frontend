@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
@@ -20,6 +20,12 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
+import { Router } from '@angular/router';
+import { ToolbarModule } from 'primeng/toolbar';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelModule } from 'primeng/panel';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 @NgModule({
   declarations: [],
@@ -44,7 +50,11 @@ import { InputTextModule } from 'primeng/inputtext';
     PanelMenuModule,
     IconFieldModule,
     InputIconModule,
-    InputTextModule
+    InputTextModule,
+    ToolbarModule,
+    SplitButtonModule,
+    MenubarModule,
+    PanelModule
   ],
   exports: [
     CommonModule,
@@ -68,9 +78,12 @@ import { InputTextModule } from 'primeng/inputtext';
     PanelMenuModule,
     IconFieldModule,
     InputIconModule,
-    InputTextModule
-
-
+    InputTextModule,
+    ToolbarModule,
+    SplitButtonModule,
+    MenubarModule,
+    PanelModule,
+    ScrollPanelModule
   ]
 })
 export class SharedModule {

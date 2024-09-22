@@ -10,8 +10,8 @@ import { UsuarioResponse } from '../../model/response/usuarioResponse';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit{
+  user!: UsuarioResponse
   showWarning: boolean = false;
-
   isQuizStarted: boolean = false;
   isQuizEnded: boolean = false;
   questionsList: any[]= [];
@@ -28,6 +28,7 @@ export class QuizComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    this.user = this.usuarioService.getUsuario();
     this.loadQuestions();
     this.usuario = this.usuarioService.getUsuario();
 
@@ -91,4 +92,15 @@ export class QuizComponent implements OnInit{
    // })
    //)
   //}
+
+  display: boolean = false;
+
+  showDialog() {
+    this.display = true;
+  }
+
+  closeDialog() {
+    this.display = false;
+  }
+
 }

@@ -1,0 +1,189 @@
+.tela{
+  width: 99vw;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.curso{
+  width: 99vw;
+  height: 300vh;
+}
+
+.title{
+  font-size:3rem;
+  margin-bottom: 1rem;
+  margin-top: 90px;
+  margin-left: -20px;
+  color:#4f1964;
+  text-align: center;
+}
+
+.estilo{
+  border-width: 2.4px;   /* Largura da borda */
+  border-style: solid; /* Estilo da borda */
+  border-color: #73328d;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+  width: 39px;
+  border-radius: 10px;
+}
+
+.chart{
+  height: 89vh;
+  width: 80vw;
+  border: 2px solid #4f1964;
+  margin-bottom: 2rem;
+}
+
+.info{
+  height: 44vh;
+  width: 80vw;
+  background-color: rgba(131, 85, 151, 0.3);
+  padding: 1rem;
+  margin-left: 125px;
+  margin-top: 20px;
+}
+
+span{
+  color: #4f1964;
+}
+
+.btn{
+  border-radius: 15px;
+  background-color: #4F1964;
+  color: white;
+  padding: 10px;
+  height: 3rem;
+  width: 10.5rem;
+  align-items: center;
+  margin-top: -990px;
+}
+
+
+.painel{
+  margin-top: -1120px;
+  width: 1300px;
+  margin-left: 6.7rem;
+}
+
+.painel-2{
+  margin-top: 50px;
+  width: 1300px;
+  margin-left: 6.7rem;
+}
+
+.painel-3{
+  margin-top: 50px;
+  width: 1300px;
+  margin-left: 6.7rem;
+}
+
+.painel-4{
+  margin-top: 50px;
+  width: 1300px;
+  margin-left: 6.7rem;
+  margin-bottom: 2rem;
+}
+
+
+app-menu{
+  margin-top: -80px;
+  margin-left: 10px;
+}
+
+
+
+.p-menubar {
+  display: flex;
+  flex-direction: column; /* Altera a direção para vertical */
+  margin-left: 50px;
+}
+
+.p-menubar .p-menuitem-link {
+  height: 60px; /* Defina a altura desejada */
+  line-height: 60px; /* Centraliza o texto verticalmente */
+}
+
+.p-menubar .p-menuitem {
+  padding: 15px; /* Define o espaçamento interno */
+}
+
+.intermediate-item{
+  margin-left: 190px;
+}
+
+
+::ng-deep .ui-menu,.ui-menu .ui-menu-child{
+  background:#ccadd8 0 0 repeat-x !important;
+  color: white !important; /* Cor do texto do cabeçalho */
+}
+::ng-deep .ui-menu .ui-menuitem .ui-menuitem-link:hover{
+  background-color: #ccadd8;
+  color: white !important; /* Cor do texto do cabeçalho */
+}
+::ng-deep .ui-menu .ui-menuitem .ui-state-active{
+  background-color: #ccadd8;
+  color: white !important; /* Cor do texto do cabeçalho */
+}
+::ng-deep .ui-menu .ui-menuitem.ui-menuitem-active>.ui-menuitem-link,
+.ui-menu .ui-menuitem .ui-menuitem-link:hover{
+  background-color:#ccadd8;
+   color: white !important; /* Cor do texto do cabeçalho */
+}
+::ng-deep .menucus{
+  display: flex;
+ margin-left: 15rem !important;
+ margin-top: 20px;
+ border-radius: 15px;
+ background-color: #ccadd8;
+ color: white;
+}
+::ng-deep .menucu{
+ margin-left: 15rem !important;
+ margin-top: 20px;
+ border-radius: 15px;
+ background-color: #ccadd8;
+ color: white;
+}
+
+::ng-deep .menucus2{
+  margin-left: 50rem !important;
+ }
+
+
+
+
+/* Estilizando o cabeçalho (header) do p-panel */
+::ng-deep .p-panel.custom-panel .p-panel-header {
+  background-color: #73328d !important; /* Cor de fundo do cabeçalho */
+  color: white !important; /* Cor do texto do cabeçalho */
+  padding: 15px; /* Ajuste de padding se necessário */
+  border-radius: 15px;
+}
+
+/* Estilizando o conteúdo do p-panel */
+::ng-deep .p-panel.custom-panel .p-panel-content {
+  background-color: #8355974d !important; /* Cor de fundo do conteúdo */
+  color: #2a1261 !important; /* Cor do texto */
+  padding: 15px; /* Ajuste de padding */
+}
+
+/* Se precisar estilizar a borda do painel */
+::ng-deep .p-panel.custom-panel {
+  border: 1px solid #73328d !important; /* Cor da borda */
+  border-radius: 15px;
+}
+
+/* Estilizando o botão de expandir/recolher (toggle) */
+::ng-deep .p-panel.custom-panel .p-panel-header .p-panel-icons .p-panel-titlebar-toggler {
+  color: #8355974d !important; /* Cor do ícone de expandir/recolher */
+}
+
+/* Estilizando o ícone do botão de expandir/recolher (toggle) */
+::ng-deep .p-panel.custom-panel .p-panel-header .p-panel-icons .p-panel-titlebar-toggler .pi {
+  color: #8355974d !important; /* Cor do ícone */
+}

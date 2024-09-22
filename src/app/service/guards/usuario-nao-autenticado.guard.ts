@@ -11,7 +11,7 @@ export class UsuarioNaoAutenticadoGuard implements CanActivate {
 
   canActivate(): boolean {
     if (this.cadastroService.logado) {
-      this.router.navigate(['main/info/basic']);
+      this.router.navigate(['curso/basico']);
       return false;
     }
     return true;

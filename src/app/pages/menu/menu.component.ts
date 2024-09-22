@@ -49,7 +49,7 @@ export class MenuComponent implements OnInit {
   }
 
   curso(){
-    this.router.navigate(['main/info/basic'])
+    this.router.navigate(['curso/basico'])
   }
 //   curso(curso: Curso) {
 //     const cursoString = getCursoString(curso);

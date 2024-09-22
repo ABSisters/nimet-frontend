@@ -43,7 +43,6 @@ initForm(){
       nome:[null, [Validators.required]],
       username:[null, [Validators.required]],
       email:[null, Validators.compose([Validators.required, Validators.email])],
-      dataNascimento: [null, [Validators.required]],
       password: [null,  Validators.compose([Validators.required, criarSenhaForte()])],
       confirm_password: [null,  Validators.compose([Validators.required, criarSenhaForte()])], // Aqui usamos o método diretamente
       curso:[null, [Validators.required]],
@@ -59,7 +58,6 @@ montarRequest(){
   this.request.nome = (form.nome == null || (form.nome) == 0 ? null : (form.nome));
   this.request.username = (form.username == null || (form.username) == 0 ? null : (form.username));
   this.request.email = (form.email == null || (form.email) == 0 ? null : (form.email));
-  this.request.dataNascimento = (form.dataNascimento == null || (form.dataNascimento == '')? null : (form.dataNascimento));
   this.request.curso = (form.curso == null || (form.curso == '')? null : (form.curso));
   this.request.senha = (form.password == null || (form.password == '')? null : (form.password));
 

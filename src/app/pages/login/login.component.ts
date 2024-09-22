@@ -52,9 +52,9 @@ logar(){
   this.service.logar(this.loginForm.value).subscribe({
     next: (usuario) => {
       if(usuario && usuario.usuarioId != null){
-        this.userService.user = usuario;
-        console.log(this.userService.user);
-        this.routeador.navigate(['/main/info/basic']);
+        // this.userService.user = usuario;
+        this.userService.setUsuario(usuario);
+        this.routeador.navigate(['/curso/basico']);
       }
     },
     error: (erro) => {
