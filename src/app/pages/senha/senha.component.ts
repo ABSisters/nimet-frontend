@@ -25,7 +25,7 @@ export class SenhaComponent implements OnInit{
 
   ngOnInit() {
     this.user = this.userService.getUsuario();
-    this.userSenha = { usuarioId: '', senhaAtual: '', senhanova: '' }; // Inicializa com valores padrão
+    this.userSenha = { usuarioId: '', senhaAtual: '', senhaNova: '' }; // Inicializa com valores padrão
 
   }
 

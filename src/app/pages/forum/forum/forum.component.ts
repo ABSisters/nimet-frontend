@@ -52,24 +52,39 @@ export class ForumComponent implements OnInit {
     switch (curso) {
       case 'MECANICA':
         this.tags = [
-          { name: 'CONHECIMENTOS_BASICOS', code: 'CONHECIMENTOS_BASICOS' },
-          { name: 'FISICA', code: 'FISICA' },
-          { name: 'MECANICA_AVANCADA', code: 'MECANICA_AVANCADA' }
+          { name: 'MECANICA_GERAL', code: 'MECANICA_GERAL' },
+          { name: 'DESENHO_TECNICO', code: 'DESENHO_TECNICO' },
+          { name: 'MATERIAIS_E_PROCESSOS_DE_FABRICACAO', code: 'MATERIAIS_E_PROCESSOS_DE_FABRICACAO' },
+          { name: 'MACANICA_DOS_MATERIAIS', code: 'MACANICA_DOS_MATERIAIS' },
+          { name: 'AUTOMACAO_INDUSTRIAL', code: 'AUTOMACAO_INDUSTRIAL' },
+          { name: 'CONTROLE_DE_QUALIDADE', code: 'CONTROLE_DE_QUALIDADE' },
+          { name: 'DINAMICA_DOS_SISTEMAS', code: 'DINAMICA_DOS_SISTEMAS' },
+          { name: 'TERMODINAMICA_AVANCADA', code: 'TERMODINAMICA_AVANCADA' },
         ];
         break;
       case 'INFORMATICA':
         this.tags = [
-          { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
+          { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' },
+          { name: 'LINGUAGEM_DE_PROGRAMACAO', code: 'LINGUAGEM_DE_PROGRAMACAO' },
           { name: 'REDES_DE_COMPUTADORES_E_INTERNET', code: 'REDES_DE_COMPUTADORES_E_INTERNET' },
-          { name: 'APLICACOES_PARA_WEB', code: 'APLICACOES_PARA_WEB' },
-          { name: 'SISTEMAS_COMPUTACIONAIS', code: 'SISTEMAS_COMPUTACIONAIS' }
+          { name: 'LOGICA_DE_PROGRAMACAO', code: 'LOGICA_DE_PROGRAMACAO' },
+          { name: 'APLICACAO_WEB', code: 'APLICACAO_WEB' },
+          { name: 'BANCO_DE_DADOS', code: 'BANCO_DE_DADOS' },
+          { name: 'SEGURANCA_DA_INFORMACAO', code: 'SEGURANCA_DA_INFORMACAO' },
+          { name: 'DESENVOLVIMENTO_DE_SISTEMAS', code: 'DESENVOLVIMENTO_DE_SISTEMAS' },
         ];
         break;
       case 'ELETRONICA':
         this.tags = [
-          { name: 'ELETRONICA', code: 'ELETRONICA' },
-          { name: 'EXEMPLO', code: 'EXEMPLO' },
-          { name: 'EXEMPLO', code: 'EXEMPLO' }
+          { name: 'FUNDAMENTOS_DA_ELETRONICA', code: 'FUNDAMENTOS_DA_ELETRONICA' },
+          { name: 'DESENHO_DE_CIRCUITOS', code: 'DESENHO_DE_CIRCUITOS' },
+          { name: 'COMPONENTES_ELETRONICOS', code: 'COMPONENTES_ELETRONICOS' },
+          { name: 'ELETRONICA_ANALOGICA', code: 'ELETRONICA_ANALOGICA' },
+          { name: 'MICROCONTROLADORES', code: 'MICROCONTROLADORES' },
+          { name: 'SISTEMAS_DIGITAIS', code: 'SISTEMAS_DIGITAIS' },
+          { name: 'ELETRONICA_ANALOGICA_AVANCADA', code: 'ELETRONICA_ANALOGICA_AVANCADA' },
+          { name: 'SISTEMAS_DIGITAIS_AVANCADOS', code: 'SISTEMAS_DIGITAIS_AVANCADOS' },
+          { name: 'INSTRUMENTACAO_ELETRONICA_AVANCADA', code: 'INSTRUMENTACAO_ELETRONICA_AVANCADA' },
         ];
         break;
       default:
