@@ -19,7 +19,6 @@ import { Router } from '@angular/router';
 export class RespostaComponent implements OnInit{
 
   showOptions: boolean = false;
-  perguntaId: string = 'idDaPergunta'; // Defina o ID da pergunta conforme necessário
 
   toggleOptions() {
     this.showOptions = !this.showOptions;
@@ -71,7 +70,7 @@ export class RespostaComponent implements OnInit{
   }
 
   fecharPergunta(){
-    this.forumService.fecharPergunta(this.perguntaId, this.resposta.usuarioId).subscribe({
+    this.forumService.fecharPergunta(this.resposta.perguntaId, this.resposta.usuarioId).subscribe({
       next: (result) =>{
         this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Pergunta fechada com sucesso' })
         console.log(result);
@@ -85,7 +84,7 @@ export class RespostaComponent implements OnInit{
   }
 
   deletarPergunta(){
-    this.forumService.deletarPergunta(this.perguntaId, this.resposta.usuarioId).subscribe({
+    this.forumService.deletarPergunta(this.resposta.perguntaId, this.resposta.usuarioId).subscribe({
       next: (result) =>{
         this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Pergunta deletada com sucesso' })
         console.log(result);

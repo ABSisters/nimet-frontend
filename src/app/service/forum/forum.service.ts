@@ -68,14 +68,16 @@ export class ForumService {
   }
 
   fecharPergunta(perguntaId: String, usuarioId: String): Observable<PerguntaResponse> {
-    return this.httpClient.put(`${env.baseApiUrl}/${urlConfig.perguntaFechar}/${perguntaId}/${usuarioId}`, {}).pipe(
+    console.log(env.baseApiUrl +'/' + urlConfig.perguntaFechar +'/'+ perguntaId + '?usuarioId=' + usuarioId)
+    return this.httpClient.put(env.baseApiUrl +'/' + urlConfig.perguntaFechar +'/'+ perguntaId + '?usuarioId=' + usuarioId, {}).pipe(
         map((res: any) => res)
-    );
+      );
 }
 
 
   deletarPergunta(perguntaId: String, usuarioId: String): Observable<any>{
-    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.perguntaDeletar + '/' + perguntaId + '/' + usuarioId + this.httpOptions).pipe(
+    console.log(env.baseApiUrl + '/' + urlConfig.perguntaDeletar + '/' + perguntaId + '?usuarioId=' + usuarioId)
+    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.perguntaDeletar + '/' + perguntaId + '?usuarioId=' + usuarioId + this.httpOptions).pipe(
       map((res:any) => res)
     )
   }
