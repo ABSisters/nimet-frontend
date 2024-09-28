@@ -46,9 +46,11 @@
             class="form-control"required />
           </div>
 
+         
           <div class="password-container">
             <div class="input-box">
               <label for="password" class="form-label">Senha</label>
+              <input type="text" pInputText pTooltip="Escreva uma senha de apenas 8 caracteres e não esqueça de colocar um caractere especial" tooltipPosition="bottom" placeholder="Right"> <!--Tooltip  - FERRAMENTA DE DICA -->
               <p-password formControlName="password" [toggleMask]="true" inputStyleClass="password" weakLabel="Fraco"
                 mediumLabel="Simples" strongLabel="Dentro dos parâmetros" placeholder="Crie uma senha">
                 <ng-template pTemplate="header">
@@ -63,6 +65,7 @@
               </p-password>
             </div>
           </div>
+
 
 
           <div class="input-box">

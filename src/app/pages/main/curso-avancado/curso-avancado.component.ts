@@ -36,7 +36,7 @@ items: MenuItem[]|undefined;
               styleClass: 'menucus'
            },
             {
-              label: 'Nivel Básico',
+              label: 'Nivel Avançado',
               icon: 'pi pi-angle-right',
               styleClass: 'menucu',
               items: [

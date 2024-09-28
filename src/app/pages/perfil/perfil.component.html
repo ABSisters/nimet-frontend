@@ -49,7 +49,6 @@
         <h5>Senha</h5>
       </header>
       <!-- <button class="button" (click)="alterarSenha(user)" >Alterar Senha</button> -->
-      <br>
       <button class="button"
         (click)="senha()">Alterar Senha</button>
     </div>
@@ -69,6 +68,9 @@
     <br>
 
     <div class="input-box">
+      <header>
+        <h5>Alterar/Editar</h5>
+      </header>
       <button class="button" *ngIf="edit" (click)="allowEdit()">Editar campos do perfil</button>
       <button class="button" *ngIf="!edit" (click)="alterarPerfil(user)">Salvar alterações</button>
     </div>
@@ -82,7 +84,25 @@
 
     <div class="excluir-button">
       <div class="input-box">
-        <button class="button-excluir" (click)="excluirPerfil(user)">Excluir Perfil</button>
+
+
+
+<div class="card flex justify-content-center gap-2" class="button-excluir">
+  <p-toast />
+  <p-confirmPopup #confirmPopupRef [style]="{padding: '30px'}">
+      <ng-template pTemplate="headless" let-message let-test>
+          <div class="border-round p-3">
+              <span>{{ message.message }}</span>
+              <div class="flex align-items-center gap-2 mt-3">
+                  <p-button (onClick)="accept()" label="Voltar" size="small" [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '10rem', height: '2rem', left:'-10px'}"/>
+                  <p-button (click)="excluirPerfil(user)" label="Excluir" [outlined]="true" size="small" [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '10rem', height: '2rem', left:'10px'}"/>
+              </div>
+          </div>
+      </ng-template>
+  </p-confirmPopup>
+<p-button class="custom-button" [style]="{'background-color': '#4F1964', borderColor: '#4F1964', color: '#ffffff', borderRadius: '20px', width: '10rem', height: '2.5rem', top:'8px'}" (onClick)="confirm($event)" label="Excluir Perfil" />
+</div>
+        <!-- <button class="button-excluir" (click)="excluirPerfil(user)">Excluir Perfil</button> -->
       </div>
     </div>
 
@@ -297,3 +317,6 @@
       </div>
 
     </div>
+
+
+   

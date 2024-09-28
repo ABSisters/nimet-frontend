@@ -133,7 +133,7 @@ header {
 /* ----------------------- BOTÃO DE POSTAR ----------------------------------------- */
 
 .postar-button{
-  margin-top: -16px; /* Altura do botão */
+  margin-top: 14px; /* Altura do botão */
   margin-left: 1370px;
 }
 
@@ -144,9 +144,31 @@ header {
   width: 10rem;
   height: 2.5rem;
   margin-left: 0.1rem;
-  margin-top: 20px;
+  margin-top: 13px;
   font-size: 1.5em;
 }
+
+
+
+/* ------------------------------------- BOTÃO DE VOLTAR ------------------------------------------- */
+
+
+.button-voltar {
+  margin-left: 1110px;
+  margin-top: -34px;
+}
+
+.button-c {
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: white;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5em;
+  margin-top: -19px;
+}
+
+
 
 
 /* ------------------------------------- DIV DAS TAGS ------------------------------------------- */

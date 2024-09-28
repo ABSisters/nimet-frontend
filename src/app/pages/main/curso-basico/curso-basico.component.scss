@@ -12,14 +12,23 @@
   height: 300vh;
 }
 
+// .title{
+//   font-size:3rem;
+//   margin-bottom: 1rem;
+//   margin-top: 40px;
+//   color:#4f1964;
+//   text-align: center;
+// }
+
 .title{
-  font-size:3rem;
+  font-size:4rem;
   margin-bottom: 1rem;
-  margin-top: 90px;
-  margin-left: -20px;
+  margin-left: 220px;
+  margin-top: -130px;
   color:#4f1964;
   text-align: center;
 }
+
 
 .estilo{
   border-width: 2.4px;   /* Largura da borda */
@@ -39,13 +48,22 @@
   margin-bottom: 2rem;
 }
 
+// .info{
+//   height: 44vh;
+//   width: 80vw;
+//   background-color: rgba(131, 85, 151, 0.3);
+//   padding: 1rem;
+//   margin-left: 125px;
+//   margin-top: 20px;
+// }
+
 .info{
   height: 44vh;
   width: 80vw;
   background-color: rgba(131, 85, 151, 0.3);
   padding: 1rem;
   margin-left: 125px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 span{
@@ -91,30 +109,30 @@ span{
 
 
 app-menu{
-  margin-top: -80px;
+  margin-top: -130px;
   margin-left: 10px;
+  border: none; /* Remove bordas */
 }
 
 
+// .p-menubar {
+//   display: flex;
+//   flex-direction: column; /* Altera a direção para vertical */
+//   margin-left: 50px;
+// }
 
-.p-menubar {
-  display: flex;
-  flex-direction: column; /* Altera a direção para vertical */
-  margin-left: 50px;
-}
+// .p-menubar .p-menuitem-link {
+//   height: 60px; /* Defina a altura desejada */
+//   line-height: 60px; /* Centraliza o texto verticalmente */
+// }
 
-.p-menubar .p-menuitem-link {
-  height: 60px; /* Defina a altura desejada */
-  line-height: 60px; /* Centraliza o texto verticalmente */
-}
+// .p-menubar .p-menuitem {
+//   padding: 15px; /* Define o espaçamento interno */
+// }
 
-.p-menubar .p-menuitem {
-  padding: 15px; /* Define o espaçamento interno */
-}
-
-.intermediate-item{
-  margin-left: 190px;
-}
+// .intermediate-item{
+//   margin-left: 190px;
+// }
 
 
 ::ng-deep .ui-menu,.ui-menu .ui-menu-child{
@@ -124,31 +142,54 @@ app-menu{
 ::ng-deep .ui-menu .ui-menuitem .ui-menuitem-link:hover{
   background-color: #ccadd8;
   color: white !important; /* Cor do texto do cabeçalho */
+  position: fixed;
 }
 ::ng-deep .ui-menu .ui-menuitem .ui-state-active{
   background-color: #ccadd8;
   color: white !important; /* Cor do texto do cabeçalho */
 }
+
 ::ng-deep .ui-menu .ui-menuitem.ui-menuitem-active>.ui-menuitem-link,
 .ui-menu .ui-menuitem .ui-menuitem-link:hover{
   background-color:#ccadd8;
    color: white !important; /* Cor do texto do cabeçalho */
 }
-::ng-deep .menucus{
+
+
+::ng-deep .menucus{ /* BOTÕES SOMENTE COM UMA OPÇÃO DE NAVEGAÇÃO, FÓRUM, QUIZ*/
   display: flex;
  margin-left: 15rem !important;
  margin-top: 20px;
  border-radius: 15px;
- background-color: #ccadd8;
+ background-color: #4F1964;
  color: white;
 }
-::ng-deep .menucu{
+
+::ng-deep .menucus .p-menuitem-text {
+  color: white !important; /* Garante que o texto dos itens de menu também seja branco */
+}
+
+::ng-deep .menucus .p-menuitem-icon {
+  color: white !important; /* Cor dos ícones */
+}
+
+
+::ng-deep .menucu{ /* BOTÃO COM NAVEGAÇÃO PARA OUTROS NIVEIS*/
  margin-left: 15rem !important;
  margin-top: 20px;
  border-radius: 15px;
- background-color: #ccadd8;
+ background-color: #4F1964;
  color: white;
 }
+
+::ng-deep .menucu .p-menuitem-text {
+  color: white !important; /* Garante que o texto dos itens de menu também seja branco */
+}
+
+::ng-deep .menucu .p-menuitem-icon {
+  color: white !important; /* Cor dos ícones */
+}
+
 
 ::ng-deep .menucus2{
   margin-left: 50rem !important;
@@ -178,12 +219,58 @@ app-menu{
   border-radius: 15px;
 }
 
+::ng-deep .p-panel.custom-panel {
+  border: 1px solid #73328d !important; /* Cor da borda */
+  border-radius: 15px;
+}
+
 /* Estilizando o botão de expandir/recolher (toggle) */
 ::ng-deep .p-panel.custom-panel .p-panel-header .p-panel-icons .p-panel-titlebar-toggler {
-  color: #8355974d !important; /* Cor do ícone de expandir/recolher */
+  color: white !important; /* Cor do ícone de expandir/recolher */
 }
 
 /* Estilizando o ícone do botão de expandir/recolher (toggle) */
 ::ng-deep .p-panel.custom-panel .p-panel-header .p-panel-icons .p-panel-titlebar-toggler .pi {
-  color: #8355974d !important; /* Cor do ícone */
+  color: white !important; /* Cor do ícone */
 }
+
+
+
+// .logo {
+//   margin-bottom: 40rem;
+//   width: 290px;
+//   margin-top: 120px;
+//   padding: -150px;
+//   fill: none;
+// }
+
+.logo {
+  margin-bottom: 40rem;
+  width: 290px;
+  margin-top: 170px;
+  padding: -150px;
+  fill: none;
+}
+
+
+
+// p-footer {
+//   color:#4F1964; /* Cor do texto no rodapé */
+//   padding: 20px; /* Espaçamento interno do rodapé */
+//   text-align: center; /* Centraliza o texto */
+//   font-size: 14px; /* Tamanho da fonte */
+ 
+//   width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+//   bottom: 0; /* Posiciona o rodapé na parte inferior */
+// }
+
+.footer {
+  background-color: #8355974d;
+  color: #4F1964; 
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px 0;
+}
+
+
+

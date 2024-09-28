@@ -6,29 +6,30 @@
   <app-menu></app-menu>
 </div>
 
+
 <div class="curso">
 
 
   <div *ngIf="user.curso === Curso.INFORMATICA">
 
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> INFORMÁTICA - <a class="estilo">AVANÇADO</a></div>
 
     <div class="info">
       <h2>Sobre o Nível Avançado</h2>
-      O <span><b>nível avançado</b></span> de informática é destinado a estudantes que já possuem uma compreensão
-      aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da
-      informática.
-      Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas.
-      As principais matérias são:<br><br>
+      A Informática no <span><b>nível Avançado</b></span> aprofunda os conhecimentos adquiridos nas fases anteriores, exigindo maior domínio técnico e capacidade de resolução de problemas complexos.
+      Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Spring</b></span><br></li>
 
-      <li><span><b>Segurança da Informação:</b></span> Estudo de práticas e tecnologias para proteger sistemas de
-        informação contra ameaças e ataques cibernéticos.<br></li>
+      <li><span><b>Procedure</b></span><br></li>
 
-      <li><span><b>Desenvolvimento de Sistemas:</b></span> Aplicação de técnicas e ferramentas avançadas para o
-        desenvolvimento de sistemas complexos e de grande escala.</li>
+      <li><span><b>Matriz</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
@@ -36,37 +37,29 @@
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Lógica de Programação:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Spring::" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <li><span><b>Spring:</b></span>
+              <span><b>Spring</b></span> é um framework avançado para o desenvolvimento de aplicações em Java.
+              Ele facilita a criação de sistemas robustos e escaláveis, oferecendo várias ferramentas que ajudam no gerenciamento de dependências e na implementação de funcionalidades complexas, como segurança e acesso a dados.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=kpSINeZ_78TCUDSU&amp;list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
+                    src=" https://www.youtube.com/watch?v=YY_hf0FOIcU"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=3nVeCcI-mW4xBGUy&amp;list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=7ueFxqXk_RJub9mh&amp;list=PLucm8g_ezqNp_ubuH4XraJRwvUJogsyiF"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+          
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -75,25 +68,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Segurança da Informação:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Procedures:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Procedures:</b></span>
+              <span><b>Procedures (ou procedimentos armazenados)</b></span> são blocos de código SQL que ficam salvos dentro do banco de dados e podem ser executados sempre que necessário.
+              Elas ajudam a automatizar e otimizar tarefas repetitivas no banco, melhorando o desempenho das consultas e operações.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/Z1xLrsV30fc" title="Informática concursos - O que é: Malware? Vírus e seus tipos. Professor Danilo Vilanova #oPior" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=8fEx1NyrsUU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/KvPtIl-Gz2E?list=PLHz_AreHm4dlaTyjolzCFC6IjLzO8O0XV" title="Curso de Segurança da Informação - @CursoemVideo - Módulo 0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/Gfh2bxe3hGU" title="AULA SEGURANÇA DA INFORMAÇÃO (aprenda o essencial em 35 Minutos)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+          
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -104,23 +101,28 @@
       <div class="card flex justify-content-center">
         <p-panel header="Desenvolvimento de Sistemas:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Matrizes:</b></span>
+              <span><b>Matrizes</b></span> são estruturas de dados que organizam informações em formato de tabelas, com linhas e colunas.
+              Elas são muito usadas na lógica de programação para armazenar e manipular grandes volumes de dados de forma estruturada e eficiente.
+
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/fpgX6CC7x7A?list=PLaR76scNrIIh2leVbHUFBPYCGTQfTbNU5" title="Análise e Desenvolvimento de Sistemas - Aula 01 - Introdução e Panorama Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=XKDSNSJvlxM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/vvThhk2btO8?list=PLY-9oEzuBhdfzxLxLeTr56YG8Vqu-Y0dl" title="Aprenda a programar - #01 Introdução" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/zXxLneM6vJo?list=PLVdldt4po_5h3kKFQF02uBkDQ94CazVoz" title="O que vem por ai! Módulo 54 - Programação de Sistemas I/ Programação de Sistemas II" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+      
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -133,44 +135,54 @@
 
   <div *ngIf="user.curso === Curso.MECANICA">
 
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> MECANICA - <a class="estilo">AVANÇADO</a></div>
 
     <div class="info">
       <h2>Sobre o Nível Avançado</h2>
-      O <span><b>nível avançado</b></span> em mecânica é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da mecânica.
-      Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas.
-      As principais matérias são:<br><br>
+      A mecânica no <span><b>nível Avançado</b></span> aprofunda os conhecimentos adquiridos nas fases anteriores, desafiando os alunos a aplicar conceitos complexos em situações práticas e teóricas.
+      Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Mecânica dos Materiais:</b></span> Estudo detalhado das propriedades dos materiais e seu comportamento sob diferentes cargas, fundamental para a análise e projeto de estruturas e componentes mecânicos.<br></li>
+      <li><span><b>Flambagem de Materiais</b></span><br></li>
 
-      <li><span><b>Dinâmica dos Sistemas:</b></span> Análise do movimento e das forças atuantes em sistemas mecânicos, incluindo o estudo de vibrações e impactos, que é crucial para o design de máquinas e equipamentos.<br></li>
+      <li><span><b>Estruturas Mecânicas</b></span><br></li>
 
-      <li><span><b>Termodinâmica Avançada:</b></span> Exploração dos princípios da termodinâmica e suas aplicações em ciclos termodinâmicos, essencial para o desenvolvimento de motores e sistemas de refrigeração.<br></li>
+      <li><span><b>Uniões de Elementos de Máquinas</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Mecânica dos Materiais:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Flambagem de Materiais:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Flambagem de Materiais:</b></span>
+              A <span><b>Flambagem de Materiais</b></span> estuda o comportamento de estruturas quando submetidas a compressão. Esse fenômeno é crucial para a análise de colunas e vigas, pois pode levar à falha estrutural.
+              Compreender as condições que levam à flambagem é fundamental para projetar estruturas seguras e eficientes.
+=
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/V1Gv2_13pn0?list=PL92zIL5bZDE2zHDzhAtOKCYyNwxbN6TLW" title="Resistência dos Materiais | Apresentação do Curso | Aula 00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=DifEOiStFok"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/tlch32tFYag?list=PLqfYxAulG9EPDWyRBXxqgTTisbY3qrrt8" title="Lição 1 - Apresentação Mecânica dos Materiais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/PtWY9ekpFmw?list=PL92zIL5bZDE3DXmMW_DCkcdyOp26vUIjg" title="Aula 00 -  Apresentação do curso de Ciência dos Materiais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+          
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -179,25 +191,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Dinâmica dos Sistemas:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Estruturas mecânicas:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Estruturas Mecânicas:</b></span>
+              O estudo <span><b>Estruturas mecânicas</b></span> abrange a análise e o design de componentes que suportam cargas, como pontes e edifícios.
+              Essa disciplina envolve o uso de métodos de cálculo para garantir que as estruturas possam resistir a forças externas, assegurando sua estabilidade e funcionalidade.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/x4GhXt7yvks?list=PLHtj55JNGdtmqJUZud-Vsdc68Q4Ez21By" title="Aula 1 - Sistema de Referência Inercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=eEwctQP_e_M"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/NA_HhPreJck?list=PLAXJOlqQMeQcaV_Fqlup4G71-foNX9AxP" title="Dinâmica de Sistemas - Exercício 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/XNpnhTt3VHA" title="Dinâmica - Introdução ao curso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+    
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -206,25 +222,29 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Termodinâmica Avançada:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Uniões de Elementos de Máquinas:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Uniões de Elementos de Máquinas:</b></span>
+              As <span><b>Uniões de Elementos de Máquinas</b></span> referem-se aos métodos e técnicas utilizados para conectar diferentes componentes mecânicos, como soldagem, parafusos e encaixes.
+              O entendimento dessas uniões é vital para garantir a integridade e a eficiência dos sistemas mecânicos, influenciando diretamente o desempenho das máquinas.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/zKQvKAQQGQg?list=PLYybSKvMpOjUMuGCDUEeZ0UV6tIjPe8sW" title="Físico-Química Avançada (Termodinâmica) - Aula 01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=5Cn7D3_kHOM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/0xWw2Fe4U0M?list=PLtPxkqPnvKZPjrJgzATsHLQ6wSo2RnaJQ" title="Apresentação da Disciplina //// Termodinâmica Aplicada I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/XmEw-1xYGTw?list=PLNfWNKz4iEr-nbf3fH3DcHVvGsqAcZin_" title="Termodinâmica - Aula 01 (Energia Interna)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+            
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -238,45 +258,54 @@
 
   <div *ngIf="user.curso === Curso.ELETRONICA">
 
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> ELETRONICA - <a class="estilo">AVANÇADO</a></div>
 
 
     <div class="info">
       <h2>Sobre o Nível Avançado</h2>
-      O <span><b>nível avançado</b></span> em eletrônica é destinado a estudantes que já possuem uma compreensão aprofundada dos conceitos intermediários e desejam se especializar ainda mais em áreas específicas e complexas da eletrônica.
-      Este nível aborda tópicos avançados que são essenciais para o desenvolvimento de soluções inovadoras e robustas.
-      As principais matérias são:<br><br>
+      A Eletrônica no <span><b>nível Avançado</b></span> exige uma compreensão profunda dos conceitos aprendidos nos níveis iniciais, levando os alunos a enfrentar desafios mais complexos na análise e no desenvolvimento de sistemas eletrônicos.
+      Aqui estão três das principais matérias em que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Eletrônica Analógica Avançada:</b></span> Estudo aprofundado de circuitos analógicos, incluindo amplificadores, filtros e osciladores, permitindo a análise e o projeto de sistemas eletrônicos complexos.<br></li>
+      <li><span><b>Circuito em Série e em Paralelo</b></span><br></li>
 
-      <li><span><b>Sistemas Digitais Avançados:</b></span> Análise e projeto de circuitos digitais, incluindo lógica sequencial e combinatória, além do uso de dispositivos programáveis como FPGAs e microcontroladores.<br></li>
+      <li><span><b>Circuitos Retificados</b></span><br></li>
 
-      <li><span><b>Instrumentação Eletrônica Avançada:</b></span> Aplicação de técnicas de medição e teste em circuitos eletrônicos, utilizando equipamentos sofisticados para diagnósticos e análise de desempenho.</li>
+      <li><span><b>Arquitetura Geral de Computadores</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Eletrônica Analógica Avançada:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Circuito em Série e em Paralelo:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Circuito em Série e em Paralelo:</b></span>
+              A matéria de<span><b>Circuito em Série e em Paralelo</b></span> ensina como os componentes elétricos são organizados e como a corrente elétrica se comporta em cada configuração.
+              Essa base é fundamental para projetar e entender circuitos mais complexos.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/JL0ssM8slBk?list=PLcmY1TJKwx9e-t5tITvzysH2Z0B8VmIvx" title="Eletrônica Aplicada - Aula 07 - O transistor FET operando com chave" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=TgE6YzDMndo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/snLCgz7W22Y?list=PLFfpdsnO_HS_lNsDRa5Z8wfAw_PyCv-5p" title="Aula 1 - Semicondutores e Semicondutor Intrínseco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/0UX11WbhD8w?list=PL5EXlP-zSJC6m5vAhcuv-yxb4SXMVK0-h" title="(E.A - 001) - Conceitos de Tensão, Corrente e Resistência Elétrica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+       
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -285,25 +314,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Sistemas Digitais Avançados:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Circuitos Retificados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Circuitos Retificados:</b></span>
+              <span><b>Circuitos Retificados</b></span> são utilizados para converter corrente alternada (AC) em corrente contínua (DC).
+              Essa conversão é crucial para o funcionamento de muitos dispositivos eletrônicos, e os alunos aprendem a projetar e analisar esses circuitos com retificadores e diodos.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/s6cxcPbyn_Q?list=PLfdR3_dt2rbevmCEGWqoZU_dfp2yq1InJ" title="O que é um sistema digital? (Eletrônica Digital - 00)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=JEAqK4WEOcI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/RHoxgNLVohk" title="PCS3115 - Sistemas Digitais I - Tecnologias CMOS (1) - Portas Lógicas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/6azg4l_YKoM" title="Sistemas Digitais - O que é um bit?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+           
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -312,28 +345,45 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Instrumentação Eletrônica Avançada:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Arquitetura Geral de Computadores:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Arquitetura Geral de Computadores:</b></span>
+              A <span><b>Arquitetura Geral de Computadores</b></span> envolve o estudo dos componentes principais de um computador, como o processador, a memória e os sistemas de entrada e saída.
+              Compreender como essas partes trabalham juntas é essencial para o desenvolvimento de sistemas computacionais eficientes.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/v8dMDD0WgCk" title="Curso Instrumentação Eletrônica - Multímetro - Aula 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=WVoWDABaXLk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/6vs0ijmAUyY?list=PL3W9ukL2xFyh1JQww_5GCzgeirGljds_F" title="Instrumentação Industrial - (Aula 01)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/fHHGEHrR7es?list=PLI-A7AA2TwhUIs4DKFjtnRD7YEY4Sdutn" title="Introdução a Amplificadores Operacionais e Parâmetros de Controle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+       
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
-  </div>
+  </div><br><br>
+
+
+  <!-- <p-footer>
+    <div class="content">
+      <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+    </div>
+  </p-footer> -->
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+    </div>
+</footer>

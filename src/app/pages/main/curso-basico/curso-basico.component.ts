@@ -21,6 +21,7 @@ export class CursoBasicoComponent {
 
   public Curso = Curso;
 items: MenuItem[]|undefined;
+style: any;
 
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
