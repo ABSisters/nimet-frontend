@@ -58,10 +58,10 @@
 // }
 
 .info{
-  height: 44vh;
   width: 80vw;
   background-color: rgba(131, 85, 151, 0.3);
-  padding: 1rem;
+  padding: 2rem;
+  text-align: justify;
   margin-left: 125px;
   margin-top: 100px;
 }
@@ -83,7 +83,7 @@ span{
 
 
 .painel{
-  margin-top: 10%;
+  margin-top: 5%;
   width: 1300px;
   margin-left: 6.7rem;
 }
@@ -264,7 +264,7 @@ app-menu{
 
 .footer {
   background-color: #8355974d;
-  color: #4F1964; 
+  color: #4F1964;
   text-align: center;
   margin-top: 30px;
   padding: 30px 0;

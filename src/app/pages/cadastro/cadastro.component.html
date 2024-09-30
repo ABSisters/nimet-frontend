@@ -42,16 +42,33 @@
         <div class="mx-2">
           <div class="input-box">
             <label for="email" class="form-label">Email</label>
-            <input id="email" formControlName="email" type="email" name="email" placeholder="Digite seu email"
+            <input id="email"  type="text" pInputText formControlName="email" type="email" name="email" placeholder="Digite seu email"
             class="form-control"required />
           </div>
 
-         
+
           <div class="password-container">
             <div class="input-box">
               <label for="password" class="form-label">Senha</label>
-              <input type="text" pInputText pTooltip="Escreva uma senha de apenas 8 caracteres e não esqueça de colocar um caractere especial" tooltipPosition="bottom" placeholder="Right"> <!--Tooltip  - FERRAMENTA DE DICA -->
-              <p-password formControlName="password" [toggleMask]="true" inputStyleClass="password" weakLabel="Fraco"
+              <!-- <input type="text" pInputText pTooltip="Escreva uma senha de apenas 8 caracteres e não esqueça de colocar um caractere especial" tooltipPosition="bottom" placeholder="Right"> Tooltip  - FERRAMENTA DE DICA -->
+              <p-password formControlName="password" [toggleMask]="true" [feedback]="false" inputStyleClass="password"
+               placeholder="Crie uma senha" pTooltip="Escreva uma senha de apenas 8 caracteres e não esqueça de colocar um caractere especial" tooltipPosition="bottom"></p-password>
+
+               <!-- <p-password formControlName="password"
+               pTooltip="Senha com mínimo de 8 caracteres (caracteres especiais, minúsculos, maiúsculos e números)"
+               [toggleMask]="true"
+               inputStyleClass="password"
+               weakLabel="Fraco"
+               mediumLabel="Simples"
+               strongLabel="Dentro dos parâmetros"
+               [meter]="customPasswordStrength(cadastroForm.get('password')!.value || '')"
+               placeholder="Crie uma senha"> -->
+           <!-- </p-password> -->
+
+
+
+
+              <!-- <p-password formControlName="password" [toggleMask]="true" inputStyleClass="password" weakLabel="Fraco"
                 mediumLabel="Simples" strongLabel="Dentro dos parâmetros" placeholder="Crie uma senha">
                 <ng-template pTemplate="header">
                   <h6>Requisitos</h6>
@@ -62,7 +79,7 @@
                     <li>Mínimo de 8 caracteres</li>
                   </ul>
                 </ng-template>
-              </p-password>
+              </p-password> -->
             </div>
           </div>
 

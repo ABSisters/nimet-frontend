@@ -3,7 +3,7 @@ import { Curso } from "../enum/curso";
 import { UsuarioResponse } from "./usuarioResponse";
 
 export class PerguntaResponse{
-  perguntaId !: String ;
+  perguntaId !: string ;
   curso !: Curso;
   usuario!: UsuarioResponse;
   titulo !: String;

@@ -9,6 +9,7 @@ import { MessageService } from 'primeng/api';
 import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
 import { UsuarioService } from '../../service/usuario/usuario.service';
 import { UsuarioResponse } from '../../model/response/usuarioResponse';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 
 @Component({
@@ -29,7 +30,8 @@ constructor (
  private userService: UsuarioService,
  private message: MessageService,
  private fb: FormBuilder,
- private routeador: Router
+ private routeador: Router,
+ private ngxLoader: NgxUiLoaderService,
 ){}
 
 
@@ -49,18 +51,20 @@ initForm(){
 }
 
 logar(){
+  this.ngxLoader.start();
   this.service.logar(this.loginForm.value).subscribe({
     next: (usuario) => {
       if(usuario && usuario.usuarioId != null){
         // this.userService.user = usuario;
         this.userService.setUsuario(usuario);
         this.routeador.navigate(['/curso/basico']);
+        this.ngxLoader.stop();
       }
     },
     error: (erro) => {
       this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel fazer o login' })
       console.log("A requisição não teve sucesso", JSON.stringify(erro));
-      console.log(erro);
+      this.ngxLoader.stop();
     }
   })
 }

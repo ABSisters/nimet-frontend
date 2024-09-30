@@ -1,5 +1,5 @@
 export class RepostaPostRequest{
-  usuarioId: String = '';
-  perguntaId: String = '';
-  resposta: String = '';
+  usuarioId: string = '';
+  perguntaId: string = '';
+  resposta: string = '';
 }

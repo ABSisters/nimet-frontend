@@ -1,4 +1,6 @@
 <app-menu></app-menu>
+<p-toast></p-toast>
+
 <div class="tela">
   <header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
@@ -8,19 +10,12 @@
 
   <!---<hr class="custom-hr">--->
 
-  <div class="start_btn"><button (click)="showWarningPopup()">Iniciar Quiz</button></div>
+  <div class="start_btn">
+    <button (click)="carregarQuestoes(Nivel.BASICO)">Básico</button>
+    <button (click)="carregarQuestoes(Nivel.INTERMEDIARIO)">Intermediário</button>
+    <button (click)="carregarQuestoes(Nivel.AVANCADO)">Avançado</button>
 
-  <!-- <div class="button_container1">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Básico</button></div>
-</div> -->
-  <!--
-<div class="button_container2">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Intermediário</button></div>
-</div>
-
-<div class="button_container3">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Avançado</button></div>
-</div> -->
+  </div>
 
 
   <div class="info_box" [ngClass]="showWarning ? 'activeInfo':''">
@@ -67,7 +62,7 @@
 
       </div>
 
-      <div class="time_line" style="width: 550px;"></div>
+      <div class="time_line" style="width: 650px;"></div>
 
     </header>
 
@@ -138,7 +133,7 @@
 
     <div class="buttons">
 
-      <button class="restart">Refazer o Quiz</button>
+      <!-- <button class="restart">Refazer o Quiz</button> -->
 
       <button class="quit" (click)="start()">Sair do Quiz</button>
 

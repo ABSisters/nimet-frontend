@@ -156,6 +156,9 @@ export class ForumComponent implements OnInit {
     this.routes.navigate(['/adicionar-pergunta'])
   }
 
+  home(){
+    this.routes.navigate(['/curso/basico'])
+  }
 
 
 

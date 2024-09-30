@@ -2,10 +2,10 @@ import { PerguntaResponse } from "./perguntaResponse";
 import { UsuarioResponse } from "./usuarioResponse";
 
 export class RespostaResponse{
- respostaId!: String;
+ respostaId!: string;
  usuario!: UsuarioResponse;
  pergunta!: PerguntaResponse;
- resposta!: String;
+ resposta!: string;
  dataCriado!: Date;
 
 }
