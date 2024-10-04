@@ -102,7 +102,7 @@ export class ForumService {
   }
 
   deletarResposta(respostaId: String, usuarioId: String): Observable<any>{
-    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.respostasDeletar + '/' + respostaId + '/' + usuarioId + this.httpOptions).pipe(
+    return this.httpClient.delete(env.baseApiUrl + '/' + urlConfig.respostasDeletar + '/' + respostaId + '?usuarioId=' + usuarioId).pipe(
       map((res:any) => res)
     )
   }

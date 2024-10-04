@@ -26,6 +26,9 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { ConfirmPopup, ConfirmPopupModule } from 'primeng/confirmpopup';
+import { TooltipModule } from 'primeng/tooltip';
+
 
 @NgModule({
   declarations: [],
@@ -54,7 +57,10 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     ToolbarModule,
     SplitButtonModule,
     MenubarModule,
-    PanelModule
+    PanelModule,
+    ConfirmPopupModule,
+    TooltipModule
+ 
   ],
   exports: [
     CommonModule,
@@ -83,7 +89,10 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     SplitButtonModule,
     MenubarModule,
     PanelModule,
-    ScrollPanelModule
+    ScrollPanelModule,
+    ConfirmPopup,
+    ConfirmPopupModule,
+    TooltipModule
   ]
 })
 export class SharedModule {

@@ -6,65 +6,62 @@
   <app-menu></app-menu>
 </div>
 
+<br><br>
+
+
 <div class="curso">
 
 
   <div *ngIf="user.curso === Curso.INFORMATICA">
+
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> INFORMÁTICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      O <span><b>nível intermediário</b></span> de informática é destinado a estudantes que já possuem uma compreensão
-      básica dos conceitos fundamentais e desejam aprofundar seus conhecimentos e habilidades técnicas.
-      Este nível cobre áreas mais complexas e práticas, preparando os alunos para enfrentar desafios mais avançados. As
-      principais matérias são:<br><br>
+      A Informática no <span><b>nível Intermediário</b></span> expande os conceitos aprendidos no nível básico, proporcionando uma compreensão mais profunda e o desenvolvimento de habilidades mais avançadas.
+      Aqui estão três das principais matérias em que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Lógica de Programação:</b></span> É a base para a escrita de programas de computador. Ela envolve o
-        entendimento, construção de algoritmos que resolvem problemas específicos.<br></li>
+      <li><span><b>Java Orientado a Objeto</b></span><br></li>
 
-      <li><span><b>Aplicações Web:</b></span> Introdução ao desenvolvimento de aplicações web, cobrindo tanto o
-        front-end (parte visual) quanto o back-end (parte funcional).<br></li>
+      <li><span><b>Comandos de Banco de Dados</b></span><br></li>
 
-      <li><span><b>Banco de Dados:</b></span> Estudo de sistemas de gerenciamento de banco de dados (SGBD) e suas
-        aplicações em armazenar, consultar e gerenciar dados.</li>
+      <li><span><b>Operadores Lógicos</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Lógica de Programação:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Java Orientado a Objeto:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Java orientado a Objeto:</b></span>
+              a <span><b>Programação Orientada a Objetos em Java (POO)</b></span> é um conceito central, onde os programas são organizados em objetos que interagem entre si.
+              Isso torna o código mais modular, reutilizável e fácil de manter.
+              <br></li>
+
+              <!-- VIDEO -->
+
+<!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=kpSINeZ_78TCUDSU&amp;list=PLqJK4Oyr5WSglLpxRZM5cAnmMdgsio-Zy"
+                    src=" https://www.youtube.com/watch?v=ucYr2vdZ5Qc"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=3nVeCcI-mW4xBGUy&amp;list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=7ueFxqXk_RJub9mh&amp;list=PLucm8g_ezqNp_ubuH4XraJRwvUJogsyiF"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -73,25 +70,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Aplicações Web:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Comandos de Banco de Dados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Comandos de Banco de Dados:</b></span>
+              os <span><b>Comandos de Banco de Dados</b></span>  são usados para gerenciar e manipular informações.
+              Por meio de linguagens como SQL, é possível criar, alterar e consultar dados armazenados, o que é essencial para qualquer aplicação que utilize bases de dados.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/oXnVDHhPKtY?list=PLxI8Can9yAHdNDD3Fe05jYh2RZRb1STy7" title="Desenvolvimento Web - História da Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=wW3eve4vTMc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/UJ3Z1ryCYQg" title="Tipos de Aplicações Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/01bCZPpSQxY" title="Como iniciar em Desenvolvimento Web? O que estudar?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -100,25 +101,29 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Banco de Dados:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Operadores Lógicos:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Operadores Lógicos:</b></span>
+              os <span><b>Operadores Lógicos</b></span> são fundamentais para a lógica de programação, pois permitem a criação de condições e tomadas de decisão nos algoritmos.
+              Eles ajudam a controlar o fluxo do programa e a determinar qual ação será tomada em diferentes cenários.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/Ofktsne-utM?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r" title="Curso MySQL #01 - O que é um Banco de Dados?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=wW3eve4vTMc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/Q_KTYFgvu1s?list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD" title="Modelagem de Dados - Conceitos de Bancos de Dados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/qzIo43NtJI4?list=PLWd_VnthxxLcX9LFVyYZfv8oVSExDOHEs" title="Curso rápido MySQL #01 - Apresentação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -130,21 +135,27 @@
 
 
   <div *ngIf="user.curso === Curso.MECANICA">
+
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> MECANICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
 
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      O <span><b>nível intermediário</b></span>  em mecânica é destinado a estudantes que já possuem uma compreensão básica dos conceitos fundamentais e desejam aprofundar seus conhecimentos e habilidades técnicas.
-      Este nível cobre áreas mais complexas e práticas, preparando os alunos para enfrentar desafios mais avançados. As
-      principais matérias são:<br><br>
+      A mecânica no <span><b>nível Intermediário</b></span> aprofunda os conceitos aprendidos na fase básica, preparando os alunos para desafios mais complexos na criação e manutenção de sistemas mecânicos.
+      Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Mecânica dos Materiais:</b></span> Estudo dos comportamentos dos materiais sob diferentes tipos de carga e condições, permitindo que os alunos analisem e projetem estruturas e componentes mecânicos com segurança.<br></li>
+      <li><span><b>Sistemas Estaticamente Endeterminados</b></span><br></li>
 
-      <li><span><b>Automação Industrial:</b></span> Introdução aos conceitos de automação em ambientes industriais, cobrindo sistemas de controle e programação de máquinas, que são cada vez mais relevantes no setor mecânico.<br></li>
+      <li><span><b>Equilíbrio de Esforços</b></span><br></li>
 
-      <li><span><b>Controle de Qualidade:</b></span> Abordagem dos métodos e técnicas de controle de qualidade em processos de fabricação, focando na garantia da qualidade dos produtos e na eficiência dos processos.</li>
+      <li><span><b>Molas e Engrenagens</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
@@ -152,25 +163,30 @@
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Mecânica dos Materiais:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Sistemas Estaticamente Endeterminados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Sistemas Estaticamente Endeterminados:</b></span>
+              os <span><b>Sistemas Estaticamente Endeterminados</b></span> são estruturas que não podem ser analisadas apenas por métodos de equilíbrio.
+              Essa disciplina envolve o uso de técnicas avançadas para determinar as reações e forças internas em estruturas complexas, o que é fundamental para garantir a segurança e estabilidade de edificações e máquinas.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=iiaQzXO8q2sOjqFV&amp;list=PL92zIL5bZDE3DXmMW_DCkcdyOp26vUIjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=-ZEwOjSKomc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=dX1kZNb69PYNbVA_&amp;list=PL92zIL5bZDE2zHDzhAtOKCYyNwxbN6TLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=DKffeTYvEyyAuBXN&amp;list=PL98UvcVyOCgbMjOqpbb-K-FgVipsyTjcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -179,25 +195,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Automação Industrial:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Equilíbrio de Esforços:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Equilíbrio de Esforços:</b></span>
+              o <span><b>Equilíbrio de Esforços</b></span>  é uma parte crucial da mecânica, onde se analisa as forças que atuam em uma estrutura ou corpo.
+              Compreender como as forças se equilibram é essencial para projetar sistemas que suportem cargas sem falhas, garantindo a eficiência e a segurança das construções e equipamentos.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=PfwE2-m__0NSNWqC&amp;list=PLWlUxb0h94bXJojCpmuN0eYDeyKZdKSAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=F2naiMS1qDA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=b3TpLr0EdxDwCvRm&amp;list=PL9Q7wXUcss37yi8sYd10ExPtXC9m_u6D8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/vRwL1A33kN0?si=FtgWdHfrTC6STuhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -206,25 +226,29 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Controle de Qualidade:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Molas e engrenagens:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Molas e Engrenagens:</b></span>
+              o estudo de <span><b>Molas e Engrenagens</b></span>  foca nos elementos de máquina que armazenam e transmitem energia.
+              Essa matéria abrange o funcionamento, as propriedades e as aplicações desses componentes em diversos sistemas mecânicos, como suspensão de veículos e transmissões, sendo vital para o design de máquinas eficientes.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=cqPXlklC1-iF1KiR&amp;list=PLVl0ZvYudaCq0XMz7wGYxT4SgSm3L5QaH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=khtOlnBwHTo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/VkQpTD3AYBE?si=NRAbhQsnfiV74yyH&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=csHa_vq46fgJEPdk&amp;start=4&amp;list=PL-BD2HCXdztI8brLI8jGSWaVwuGt9wHox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -235,45 +259,55 @@
 
 
   <div *ngIf="user.curso === Curso.ELETRONICA">
+
+    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+
     <div class="title"> ELETRONICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      O <span><b>nível intermediário</b></span> em eletrônica é destinado a estudantes que já possuem uma compreensão básica dos conceitos fundamentais e desejam aprofundar seus conhecimentos e habilidades técnicas.
-      Este nível cobre áreas mais complexas e práticas, preparando os alunos para enfrentar desafios mais avançados. As
-      principais matérias são:<br><br>
+      A Eletrônica no <span><b>nível Intermediário</b></span> aprofunda os conhecimentos adquiridos no nível básico, desafiando os alunos a aplicar conceitos mais complexos e práticos em eletrônica.
+      Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Eletrônica Analógica:</b></span> Introdução aos princípios e componentes da eletrônica analógica, como amplificadores e filtros, permitindo que os alunos projetem e analisem circuitos analógicos.<br></li>
+      <li><span><b>Sistema Alternado</b></span><br></li>
 
-      <li><span><b>Microcontroladores:</b></span> Estudo dos microcontroladores e suas aplicações, incluindo programação e integração em sistemas eletrônicos, uma habilidade essencial para o desenvolvimento de projetos modernos.<br></li>
+      <li><span><b>Semicondutores</b></span><br></li>
 
-      <li><span><b>Sistemas Digitais:</b></span> Abordagem dos conceitos de lógica digital e circuitos digitais, incluindo a análise e projeto de circuitos combinatórios e sequenciais, fundamentais para a eletrônica contemporânea.</li>
+      <li><span><b>Memórias de Microprocessadores</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Eletrônica Analógica:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Sistema Alternado:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Sistema Alternado:</b></span>
+              o <span><b>Sistema Alternado</b></span> estuda a corrente alternada (AC), que é amplamente usada nas redes elétricas.
+              Alunos aprendem a trabalhar com esse tipo de corrente, analisando circuitos e entendendo como aplicar AC em sistemas eletrônicos e de potência.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=jIbQ1uvgsW9HBkyi&amp;start=4&amp;list=PLFfpdsnO_HS_lNsDRa5Z8wfAw_PyCv-5p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=SsUj6h8NoR8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=Ji2yV-ssbf-MmT3v&amp;start=4&amp;list=PLZ1EOUonjCmKLJej2aqHzIsK7jgVTr10n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=Z0wdbNZoDXWU-5wu&amp;start=4&amp;list=PL0Jof3jcXYRMQf5L_DkY4iTKfeqmvxTzH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -282,25 +316,29 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Microcontroladores:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Semicondutores:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Semicondutores:</b></span>
+              os <span><b>Semicondutores</b></span> são materiais essenciais na construção de dispositivos eletrônicos, como transistores e diodos.
+              Eles são a base da eletrônica moderna, e entender seu funcionamento é crucial para o desenvolvimento de circuitos integrados e componentes.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=Xhrv1W6r6AOFmO-Z&amp;start=4&amp;list=PLZ8dBTV2_5HQ-LrS9r1dP30h8n9sh04gh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src=" https://www.youtube.com/watch?v=sksilUt1uUg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/wiM6_4IC_4o?si=QfQy_4gZTEZw2AnY&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/o1AZRFeBpfs?si=xxaLpAWxcgaBoVHe&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -309,29 +347,44 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Sistemas Digitais:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Memórias de Microprocessadores:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Memórias de Microprocessadores:</b></span>
+              as <span><b>Memórias de Microprocessadores</b></span> envolve o entendimento de como os dados são armazenados e acessados nos sistemas computacionais.
+              Compreender as diferentes tecnologias de memória, como RAM e ROM, é essencial para a programação e o design de sistemas embarcados e computadores.
+              <br></li>
+
+              <!-- VIDEO -->
+
+              <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/r3HhoxMRv4U?si=YIi09KVBwLCsvlBx&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="400" height="285"
+                    src="https://www.youtube.com/watch?v=Yj_RHnNihk0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/s6cxcPbyn_Q?si=djq2Io2E15xjQKSD&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/gD7BuGomg1I?si=phvni3ctrGoOfnau&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
-  </div>
+  </div><br><br>
 
+ <!-- <p-footer>
+    <div class="content">
+      <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+    </div>
+  </p-footer> -->
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+    </div>
+</footer>

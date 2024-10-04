@@ -1,4 +1,4 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, Injectable, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { criarSenhaForte } from '../../validators/password';
@@ -6,6 +6,7 @@ import { MessageService } from 'primeng/api';
 import { ConfirmPasswordService } from '../../validators/confirm-password.service';
 import { UsuarioRequest } from '../../model/request/usuarioRequest';
 import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-cadastro',
@@ -25,7 +26,9 @@ constructor (
  private message: MessageService,
  private fb: FormBuilder,
  private routeador: Router,
- private request: UsuarioRequest
+ private request: UsuarioRequest,
+ private ngxLoader: NgxUiLoaderService,
+
 ){}
 
 // tirar o request do constructor e testar para ver se vai dar erro
@@ -65,15 +68,17 @@ montarRequest(){
 }
 
 cadastrar(){
+  this.ngxLoader.start();
   this.service.cadastrar(this.request).subscribe({
     next: (result) => {
       console.log("A requisição foi um sucesso!" + result);
       this.routeador.navigate(['email'])
+      this.ngxLoader.stop();
     },
     error: (erro) => {
       this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel fazer o cadastro' })
       console.log(erro);
-      console.log(this.request)
+      this.ngxLoader.stop();
     }
   })
 }
@@ -82,6 +87,52 @@ login(){
   this.routeador.navigate([''])
 }
 
+// @Input() strongLabel: string = 'Strong';
 
+// /[A-Z]+/[a-z]+/.test(value);
+// const temValoresNumericos = /[0-9]+/.test(value);
+// const temCaracterEspecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(value);
+//     /**
+//      * Whether to show the strength indicator or not.
+//      * @group Props
+//      */
 
+customPasswordStrength(value: string) {
+  let strength = { weakLabel: false, mediumLabel: false, strongLabel: false };
+
+  if (!value) {
+    return strength; // Retorne um objeto padrão se a senha não estiver definida
+  }
+
+  // Critérios para uma senha forte
+  const temCaracteresMaiusculos = /[A-Z]+/.test(value);
+  const temCaracteresMinusculos = /[a-z]+/.test(value);
+  const temValoresNumericos = /[0-9]+/.test(value);
+  const temCaracterEspecial = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(value);
+  const temMinimoOitoCaracteres = value.length >= 8;
+
+  // Verificação de força
+  if (
+    temCaracteresMaiusculos &&
+    temCaracteresMinusculos &&
+    temValoresNumericos &&
+    temCaracterEspecial &&
+    temMinimoOitoCaracteres
+  ) {
+    strength.strongLabel = true;
+  } else if (value.length >= 6) {
+    strength.mediumLabel = true;
+  } else {
+    strength.weakLabel = true;
+  }
+  console.log('Verificando força da senha:', value);
+  console.log('Caracteres maiúsculos:', temCaracteresMaiusculos);
+  console.log('Caracteres minúsculos:', temCaracteresMinusculos);
+  console.log('Valores numéricos:', temValoresNumericos);
+  console.log('Caracter especial:', temCaracterEspecial);
+  console.log('Mínimo de 8 caracteres:', temMinimoOitoCaracteres);
+
+  return strength;
 }
+
+  }

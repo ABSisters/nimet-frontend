@@ -1,16 +1,27 @@
+import { QuizService } from './../../service/quiz/quiz.service';
+import { QuestaoResponse } from './../../model/response/questaoResponse';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
 import { UsuarioService } from '../../service/usuario/usuario.service';
 import { UsuarioResponse } from '../../model/response/usuarioResponse';
+import { MessageService } from 'primeng/api';
+import { QuizPostRequest } from '../../model/request/quizPostRequest';
+import { Nivel } from '../../model/enum/nivel';
+import { QuizResponse } from '../../model/response/quizResponse';
 
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.scss']
+  styleUrls: ['./quiz.component.scss'],
+  providers: [MessageService]
+
 })
 export class QuizComponent implements OnInit{
-  user!: UsuarioResponse
+  questoes!: QuestaoResponse[];
+  quiz!: QuizPostRequest;
+  quizResponse!: QuizResponse;
+  user!: UsuarioResponse;
   showWarning: boolean = false;
   isQuizStarted: boolean = false;
   isQuizEnded: boolean = false;
@@ -24,21 +35,24 @@ export class QuizComponent implements OnInit{
   correctAnswerCount: number = 0;
   usuario!: UsuarioResponse;
 
-  constructor(private http: HttpClient, private usuarioService:UsuarioService) {
-  }
+  public Nivel = Nivel;
+
+
+  constructor(private http: HttpClient, private usuarioService:UsuarioService,
+  private quizService: QuizService,  private message: MessageService,) { }
 
   ngOnInit(): void {
     this.user = this.usuarioService.getUsuario();
-    this.loadQuestions();
+    // this.loadQuestions();
     this.usuario = this.usuarioService.getUsuario();
 
   }
-  loadQuestions() {
-    this.http.get("assets/questions.json").subscribe((res:any)=>{
-      debugger;
-      this.questionsList = res;
-    })
-  }
+  // loadQuestions() {
+  //   this.http.get("assets/questions.json").subscribe((res:any)=>{
+  //     debugger;
+  //     this.questionsList = res;
+  //   })
+  // }
   nextQuestion() {
     if(this.currentQuestionNo < this.questionsList.length-1) {
       this.currentQuestionNo ++;
@@ -101,6 +115,34 @@ export class QuizComponent implements OnInit{
 
   closeDialog() {
     this.display = false;
+  }
+
+  carregarQuestoes(nivel: Nivel){
+    this.quizService.getQuestoesQuiz(this.user.curso, nivel).subscribe({
+      next: (questions) => {
+        this.questionsList = questions
+        this.quiz.nivel = nivel;
+        this.quiz.curso = this.user.curso;
+      },
+      error: (erro) => {
+        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel carregar as perguntas do quiz' })
+        console.log("A requisição não teve sucesso", JSON.stringify(erro));
+      }
+    })
+  }
+
+  responder(){
+    this.quiz.usuarioId = this.user.usuarioId;
+    this.quiz.acertos = (this.currentQuestionNo+1);
+    this.quiz.erros = (this.questionsList.length - (this.currentQuestionNo+1));
+    this.quizService.responder(this.quiz).subscribe({
+      next: (result) => {
+        this.quizResponse = result;
+      },
+      error: (erro) => {
+        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi sllvar o resultado do quiz' })
+      }
+    })
   }
 
 }

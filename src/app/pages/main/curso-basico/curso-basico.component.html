@@ -2,30 +2,41 @@
   <p-menubar [model]="items" [style]="{ 'background-color': '#8355974d',
   color: '#4F1964', borderColor: '#73328d',
   display: 'flex', width: '100%', height: '17vh', padding:'4rem'}" /> <!-- position: 'fixed' -->
-<app-menu></app-menu>
+  <app-menu></app-menu>
 
 </div>
+
+
 
 <div class="curso">
 
   <div *ngIf="user.curso === Curso.INFORMATICA">
-    <div class="title"> INFORMÁTICA - <a class="estilo">BÁSICO</a></div>
 
+    <div class="col-5 text-center ">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 250px; height: auto; border-radius: 50px;" />
+    </div>
+
+    <div class="col text-center">
+      <div class="title"> INFORMÁTICA - <a class="estilo">BÁSICO</a></div>
+    </div>
+
+    <br><br><br>
     <div class="info">
       <h2>Sobre o Nível Básico</h2>
-      O <span><b>nível básico</b></span> de informática é fundamental principalmente para estudantes que estão iniciando
-      seu aprendizado no campo da tecnologia da informação.
-      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em informática.
-      As principais matérias abordadas no nível básico são:<br><br>
+      A Informática no <span><b>nível básico</b></span> envolve o aprendizado de conceitos fundamentais que são a base
+      para o desenvolvimento de sistemas e programas.
+      Aqui estão três das principais matérias que os alunos possuem mais dificuldades:
+      <br><br>
 
-      <li><span><b>Sistemas Computacionais:</b></span> Esta matéria aborda a estrutura e o funcionamento dos
-        computadores, incluindo hardware e software.<br></li>
+      <li><span><b>Java</b></span><br></li>
 
-      <li><span><b>Linguagem de Programação:</b></span> Estudo das linguagens usadas para escrever programas de
-        computador. Inclui sintaxe e semântica das linguagens.<br></li>
+      <li><span><b>Banco de dados</b></span><br></li>
 
-      <li><span><b>Rede de Computadores e Internet:</b></span> Introdução aos conceitos de redes de computadores e ao
-        funcionamento da internet.</li>
+      <li><span><b>Lógica de programação</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
 
     </div>
     <div class="col-12 tela">
@@ -33,78 +44,70 @@
 
     </div>
 
+
     <div class="painel">
       <div class="card flex justify-content-center">
-        <p-panel header="Sistemas Computacionais:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Java Básico:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Java Básico:</b></span>
+              As <span><b>Sintaxe básica</b></span> são as regras que determinam como escrever o código.<br>
+              Já os <span><b>Getters e Setters</b></span> são métodos usados para acessar e modificar os dados de uma
+              classe de forma segura.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=Xf-iHJD-b57yqkwT&amp;list=PLMeBuk6RhqM0zMAxjtNTKLN5qn6qjoXV4"
+                    src=" https://www.youtube.com/watch?v=FHQjZuZECCI"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=O0dhK66LJD6l3g6W&amp;list=PLBw9d_OueVJTEpM8sOKJ7S8jleQPCSQs3"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=YUa5GQqVEpcJexZY&amp;list=PL866_LrQxNVipiEgWtJMK5Fcgc6IBfVvc"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+            </div> -->
+
           </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
 
+
+
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Linguagem de Programação:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Banco de Dados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+            <li><span><b>Banco de Dados:</b></span>
+              A <span><b>Modelagem de Banco de Dados</b></span> consiste em criar uma estrutura que represente os dados
+              e suas relações.
+              Isso permite armazenar, buscar e manipular grandes volumes de informações de maneira estruturada e
+              otimizada.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=178ydj9AIRULR8JX&amp;list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"
+                    src="https://www.youtube.com/watch?v=5V3_0jxU4rU"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=w8fS7Fdnob5Lj3WL&amp;list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                  encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=zNHh37NPH_vLDxOu&amp;list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -113,37 +116,31 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Rede de Computadores e Internet:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Lógica:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px'}">
+            <li><span><b>Lógica:</b></span>
+              <span><b>Um fluxograma</b></span> é uma ferramenta gráfica usada para representar o fluxo de uma solução,
+              mostrando o passo a passo de forma visual.
+              Ele é muito útil para entender a sequência lógica de processos antes de escrever o código.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
             <div class="row">
               <div class="col-md-4">
                 <div class="video">
                   <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=JnDRvByN9ephi283&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                    src="https://www.youtube.com/watch?v=AK0GKtEGOLw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=zGi7Y0l71WWeRPMi&amp;list=PLvHXLbw-JSPfKp65psX5C9tyNLHHC4uoR"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/videoseries?si=YX3ALlyEZ1G7mdKe&amp;list=PLF9vK2NfbRJtROPfTFQcJcB47STXDfYeX"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
+
+            </div> -->
+
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -156,19 +153,29 @@
 
 
   <div *ngIf="user.curso === Curso.MECANICA">
+
+
+    <div class="col-5 text-center ">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 250px; height: auto; border-radius: 50px;" />
+    </div>
+
     <div class="title"> MECANICA - <a class="estilo">BÁSICO</a></div>
 
     <div class="info">
-      <h2>Sobre o Nível Básico</h2>
-      O <span><b>nível básico</b></span> em mecânica é fundamental para estudantes que estão iniciando seu aprendizado nesta área.
-      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em mecânica. 
-      As principais matérias abordadas no nível básico são:<br><br>
+      A Mecânica no <span><b>nível básico</b></span> envolve o aprendizado de conceitos fundamentais que são a base para
+      entender o funcionamento de máquinas e sistemas mecânicos.
+      Aqui estão três das principais matérias em que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Mecânica Geral</b></span> Introduz os princípios fundamentais da mecânica, como leis do movimento, forças e equilíbrio, essenciais para a compreensão do comportamento de sistemas mecânicos.<br></li>
+      <li><span><b>Resistência de Materiais</b></span><br></li>
 
-      <li><span><b>Desenho Técnico:</b></span> Os alunos aprendem a interpretar e criar desenhos técnicos, que são vitais para a comunicação de ideias e projetos na engenharia mecânica.<br></li>
+      <li><span><b>Mecânica Técnica</b></span><br></li>
 
-      <li><span><b>Materiais e Processos de Fabricação:</b></span> Estudo dos diferentes materiais utilizados na mecânica e os processos de fabricação, incluindo técnicas de usinagem, soldagem e montagem, que são cruciais para a produção de peças e componentes.<br></li>
+      <li><span><b> Elementos de Máquina</b></span> </li>
+
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
 
     </div>
 
@@ -176,29 +183,33 @@
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Mecânica Geral:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Resistência de Materiais:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285"
-                    src="https://www.youtube.com/embed/B-wJPnt6W3c?list=PLc91aY2V2t-BdkC56P0Mq_C5M1XuH0EeT"
-                    title="Mecânica Geral - Aula 01 - Introdução e Revisão de Vetores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/QMq9cJMSnMc?list=PLxI8Can9yAHe7Jf955wLUQ2rG9DNA1hkX" title="Mecânica Geral - Referencial inercial, força centrífuga e força de Coriolis - Parte 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/wsSMvecdH7M?list=PLqB8WEz2ao3gnW7y3Tf8LGz4xxEC4hUmW" title="AULA 1 - VETORES (MECÂNICA GERAL)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Resistência de Materiais:</b></span>
+              a <span><b>Resistência de Materiais</b></span> estuda como diferentes materiais se comportam sob a ação de
+              forças.
+              Entender como eles se deformam ou resistem às tensões é essencial para o design de peças seguras e
+              eficientes em qualquer projeto mecânico.
+
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src="https://www.youtube.com/watch?v=AzGvObQOht4"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -207,25 +218,31 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Desenho Técnico:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Mecânica Técnica:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/gBoZZ33Lips?list=PL8e8sIdSsWv_M8VpQahd1oaOkKReAHZSC" title="Desenho técnico - Padronização, materiais e tipos de linhas | Aula 01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/OXatpPhPrtw" title="Desenho Técnico Mecânico: Tudo o que você precisa saber | SENAI Play" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/oY2tZwqnlVI" title="APRENDA LEITURA E INTERPRETAÇÃO DE DESENHO TÉCNICO MECÂNICO FÁCIL E RÁPIDO!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Mecânica Técnica:</b></span>
+              a <span><b>Mecânica Técnica</b></span> ifoca nas leis do movimento e no comportamento das forças, ajudando
+              a entender como sistemas mecânicos funcionam.
+              Esse conhecimento é fundamental para projetar e analisar o desempenho de máquinas e estruturas.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src=" https://www.youtube.com/watch?v=5D07mXxPXBg"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -234,25 +251,32 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Materiais e Processos de Fabricação:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Elementos de Máquina:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/2P04oNGkkGA?list=PLxI8Can9yAHehQ1_ohulH3GaY62t1zYCz" title="Materiais e Processos de Fabricação para Engenharia de Produção - Materiais para Engenharia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/LK_PVcRsYyg?list=PLj82FY2PcASWWLs0gOlJnbwocWe33WyXj" title="PROCESSOS DE FABRICAÇÃO MECÂNICA: uma introdução" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/iI8kSpzO6DE?list=PLzSIt-N3z8RJ6cRt4zayW5-F_nswT2wcZ" title="CADA APLICAÇÃO, UM MATERIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Elementos de máquina:</b></span>
+              a disciplina de <span><b> Elementos de Máquina</b></span> trata dos componentes que formam uma máquina,
+              como engrenagens, eixos e rolamentos.
+              Saber como projetar e utilizar esses elementos é essencial para o desenvolvimento de equipamentos
+              funcionais e confiáveis.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src=" https://www.youtube.com/watch?v=7Ymal4UcTNU"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -265,47 +289,62 @@
 
 
   <div *ngIf="user.curso === Curso.ELETRONICA">
+
+
+    <div class="col-5 text-center ">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 250px; height: auto; border-radius: 50px;" />
+    </div>
+
     <div class="title"> ELETRONICA - <a class="estilo">BÁSICO </a></div>
 
     <div class="info">
       <h2>Sobre o Nível Básico</h2>
-      O <span><b>nível básico</b></span> em eletrônica é fundamental para estudantes que estão iniciando seu aprendizado nesta área.
-      Este nível cobre os conceitos essenciais que formam a base para estudos mais avançados em eletrônica.
-      As principais matérias abordadas no nível básico são:<br><br>
+      A Eletrônica no <span><b>nível básico</b></span> é uma disciplina fundamental que introduz os conceitos essenciais
+      para compreender circuitos elétricos e componentes eletrônicos.
+      Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
+      <br><br>
 
-      <li><span><b>Fundamentos da Eletrônica:</b></span> Introduz os princípios básicos da eletricidade e eletrônica, incluindo circuitos, componentes eletrônicos e suas funções.<br></li>
+      <li><span><b>Circuito Elétrico</b></span><br></li>
 
-      <li><span><b>Desenho de Circuitos:</b></span> Os alunos aprendem a interpretar e criar esquemas elétricos e diagramas de circuitos, habilidades essenciais para o desenvolvimento e análise de projetos eletrônicos.<br></li>
+      <li><span><b>Eletrônica Aplicada</b></span><br></li>
 
-      <li><span><b>Componentes Eletrônicos:</b></span> Estudo detalhado de componentes como resistores, capacitores, diodos e transistores, permitindo que os alunos compreendam como cada um contribui para o funcionamento dos circuitos.<br></li>
+      <li><span><b>Microprocessadores</b></span> </li>
 
+      <br>
+      Estudaremos elas mais profundamente, nos paineis abaixo!
     </div>
 
     <div class="col-12 tela"></div>
 
     <div class="painel">
       <div class="card flex justify-content-center background">
-        <p-panel header="Fundamentos da Eletrônica:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Circuito Elétrico" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=CLpZcxydj-2CtVb5&amp;start=4&amp;list=PLkVNyzWF0Xv11A_fPgTP3l9V-lifGrD9F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=sjxFLq8cZSp9OT5b&amp;start=4&amp;list=PLl7t7pWHtGoWMuyCn-PNvBdapeRZjrVc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=2mjlw8j6kN2iSEnG&amp;start=4&amp;list=PLZ8dBTV2_5HQpKzBt3nJex3Mbk7hmhFHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Circuito Elétrico:</b></span>
+              o <span><b>Estudo de Circuitos Elétricos</b></span> é essencial para compreender como a eletricidade flui
+              em diferentes componentes.
+              Os alunos aprendem a analisar e projetar circuitos simples, utilizando conceitos como tensão, corrente e
+              resistência, que são a base para qualquer aplicação eletrônica.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src=" https://www.youtube.com/watch?v=XKDSNSJvlxM"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -314,25 +353,33 @@
 
     <div class="painel-2">
       <div class="card flex justify-content-center">
-        <p-panel header="Desenho de Circuitos:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Eletrônica Aplicada:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=LdKc0rgGN2P7WWwI&amp;start=4&amp;list=PLZWejvfw_3Tk8cBbJ0FjAYv8pFi5JNqZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=39cB_0lQ0DUSsnay&amp;start=4&amp;list=PLwy660Fi67dzYEtc3pShqintrxfpi2VAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/59QDBHEAcf4?si=eo-erhVpqmWya6OT&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Eletrônica Aplicada:</b></span>
+              a <span><b>Eletrônica Aplicada</b></span> foca na utilização de componentes eletrônicos em projetos
+              práticos.
+              Os alunos aprendem a trabalhar com dispositivos como resistores, capacitores, diodos e transistores,
+              explorando como integrá-los em circuitos para resolver problemas reais e desenvolver soluções
+              tecnológicas.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src=" https://www.youtube.com/watch?v=0BosSTan8bI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
@@ -341,30 +388,42 @@
 
     <div class="painel-3">
       <div class="card flex justify-content-center">
-        <p-panel header="Componentes Eletrônicos:" [toggleable]="true" styleClass="custom-panel">
+        <p-panel header="Elementos de Máquina:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=f18ul6zzGGE9fhzk&amp;start=4&amp;list=PLMkieMdctLhXRJndcm9Tl-k2orF4li7Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/videoseries?si=f18ul6zzGGE9fhzk&amp;start=4&amp;list=PLMkieMdctLhXRJndcm9Tl-k2orF4li7Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="video">
-                  <iframe width="400" height="285" src="https://www.youtube.com/embed/C54Cp819Ebc?si=8hlCiuBLRyB5e5IG&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <li><span><b>Elementos de Máquina:</b></span>
+              o <span><b> Estudo de Microprocessadores</b></span> introduz os alunos ao coração dos sistemas
+              computacionais.
+              Eles aprendem sobre a arquitetura dos microprocessadores, como programá-los e utilizá-los em aplicações, o
+              que é fundamental para o desenvolvimento de dispositivos inteligentes e sistemas embarcados.
+              <br>
+            </li>
+
+            <!-- VIDEO -->
+
+            <!--
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="video">
+                <iframe width="400" height="285"
+                  src="https://www.youtube.com/watch?v=sHL4NbV9BYA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
+
+          </div> -->
           </p-scrollPanel>
         </p-panel>
       </div>
     </div>
 
-  </div>
+  </div><br><br>
 
 </div>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+  </div>
+</footer>
