@@ -28,7 +28,7 @@ import { PanelModule } from 'primeng/panel';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { ConfirmPopup, ConfirmPopupModule } from 'primeng/confirmpopup';
 import { TooltipModule } from 'primeng/tooltip';
-
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [],
@@ -59,8 +59,9 @@ import { TooltipModule } from 'primeng/tooltip';
     MenubarModule,
     PanelModule,
     ConfirmPopupModule,
-    TooltipModule
- 
+    TooltipModule,
+    DialogModule
+
   ],
   exports: [
     CommonModule,
@@ -92,7 +93,8 @@ import { TooltipModule } from 'primeng/tooltip';
     ScrollPanelModule,
     ConfirmPopup,
     ConfirmPopupModule,
-    TooltipModule
+    TooltipModule,
+    DialogModule 
   ]
 })
 export class SharedModule {
