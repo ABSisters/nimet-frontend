@@ -16,7 +16,10 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   providers: [MessageService]
 })
 export class AdicionarPerguntaComponent implements OnInit {
-
+  home() {
+    throw new Error('Method not implemented.');
+    }
+    
   perguntaForm!: FormGroup;
 
   user!: UsuarioResponse;

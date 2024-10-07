@@ -1,27 +1,40 @@
 import { routes } from './../../../app.routes';
 import { PerguntaResponse } from './../../../model/response/perguntaResponse';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ForumService } from '../../../service/forum/forum.service';
 import { UsuarioService } from '../../../service/usuario/usuario.service';
 import { RepostaPostRequest } from '../../../model/request/respostaPostRequest';
 import { RespostaResponse } from '../../../model/response/respostaResponse';
-import { MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
 import { DenunciaPostRequest } from '../../../model/request/denunciaPostRequest';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
-
+import { ConfirmPopup } from 'primeng/confirmpopup';
 
 @Component({
   selector: 'app-resposta',
   templateUrl: './resposta.component.html',
   styleUrls: ['./resposta.component.scss'],
-  providers: [MessageService]
+  providers: [ConfirmationService, MessageService]
 })
 export class RespostaComponent implements OnInit{
+  messageService: any;
+  showDialog() {
+    throw new Error('Method not implemented.');
+  }
 
   showOptions: boolean = false;
   denuncia!: DenunciaPostRequest;
+
+  categories: string[] = [
+    'Conteúdo ofensivo',
+    'Spam',
+    'Violência',
+    'Fake News'
+  ];
+category: string|undefined;
+visible: any;
 
   toggleOptions() {
     this.showOptions = !this.showOptions;
@@ -38,7 +51,7 @@ export class RespostaComponent implements OnInit{
 
   constructor(private forumService: ForumService, private userService: UsuarioService,
     private message: MessageService,  private routes: Router,
-    private ngxLoader: NgxUiLoaderService, // Injete o serviço de loader
+    private ngxLoader: NgxUiLoaderService, private confirmationService: ConfirmationService// Injete o serviço de loader
   ){}
     pergunta!: PerguntaResponse;
     resposta: RepostaPostRequest = new RepostaPostRequest;
@@ -161,4 +174,32 @@ export class RespostaComponent implements OnInit{
 
   }
 
+
+  @ViewChild(ConfirmPopup) confirmPopup!: ConfirmPopup;
+
+  accept() {
+      this.confirmPopup.accept();
+  }
+
+  reject() {
+      this.confirmPopup.reject();
+  }
+
+  confirm(event: Event) {
+      this.confirmationService.confirm({
+          target: event.target as EventTarget,
+          message: 'Qual seria o motivo para denunciar?',
+          accept: () => {
+              this.messageService.add({ severity: 'info', summary: 'Confirmed', detail: 'You have accepted', life: 3000 });
+          },
+          reject: () => {
+              this.messageService.add({ severity: 'error', summary: 'Rejected', detail: 'You have rejected', life: 3000 });
+          }
+      });
+    }
+
+
+    voltar(){
+      this.routes.navigate(['forum']);
+    }
 }
