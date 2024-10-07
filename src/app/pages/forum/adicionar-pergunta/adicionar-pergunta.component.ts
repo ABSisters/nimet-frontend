@@ -16,6 +16,9 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
   providers: [MessageService]
 })
 export class AdicionarPerguntaComponent implements OnInit {
+  home() {
+    throw new Error('Method not implemented.');
+    }
 
   perguntaForm!: FormGroup;
 
@@ -57,7 +60,7 @@ export class AdicionarPerguntaComponent implements OnInit {
            'MECANICA_GERAL' ,
            'DESENHO_TECNICO',
            'MATERIAIS_E_PROCESSOS_DE_FABRICACAO',
-           'MACANICA_DOS_MATERIAIS',
+           'MECANICA_DOS_MATERIAIS',
            'AUTOMACAO_INDUSTRIAL',
            'CONTROLE_DE_QUALIDADE',
            'DINAMICA_DOS_SISTEMAS',
@@ -101,7 +104,7 @@ export class AdicionarPerguntaComponent implements OnInit {
     private message: MessageService,
     private fb: FormBuilder,
     private router: Router,
-    private ngxLoader: NgxUiLoaderService, // Injete o serviço de loader
+    private ngxLoader: NgxUiLoaderService,
 
   ) {}
 

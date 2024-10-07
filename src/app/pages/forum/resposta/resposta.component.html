@@ -3,21 +3,79 @@
 <!---------------------------------------------------------------------------------------------------------->
 <p-toast></p-toast>
 <div class="tela">
+<!-- <div class="tela" [ngClass]="{'desfocado': showDenuncia}"> -->
   <button class="opcao pi pi-ellipsis-h" (click)="toggleOptions()"></button>
 
   <div *ngIf="showOptions" class="opcoes">
     <button (click)="fecharPergunta()">Fechar</button>
     <button (click)="deletarPergunta()">Deletar</button>
-    <button (click)="denunciar()">Denunciar</button>
-
-    <!-- captar do pop-ip as infos de motivo e conteudo -->
-    <!-- <button (click)="denunciar(motivo, conteudo)">Deletar Pergunta</button> -->
-
+    <button (click)="show()">Denunciar</button>
   </div>
-  
+
+  <p-dialog header="Deseja fazer uma denúncia?" [(visible)]="showDenuncia" [style]="{ width: '25rem', color:'#4F1964' }" >
+    <span class="p-text-secondary block mb-5" >Selecione o motivo </span>
+    <br>
+    <div class="flex align-items-center gap-3 mb-3">
+
+      <div *ngFor="let category of categories" class="field-checkbox">
+        <p-radioButton [inputId]="category" [value]="category"  [(ngModel)]="denuncia.motivo" [style]="{top:'-5px'}"></p-radioButton>
+        <label [for]="category" class="ml-2">{{ category }}</label>
+      </div>
+    </div>
+    <div class="flex align-items-center gap-3 mb-5">
+        <label for="email" class="font-semibold w-6rem">Conteúdo:</label>
+        <br>
+        <!-- <input pInputText id="conteudo" class="flex-auto" autocomplete="off"  /> -->
+          <input pInputText id="conteudo" class="flex-auto" autocomplete="off" [(ngModel)]="denuncia.conteudo" />
+
+    </div>
+    <div class="flex justify-content-between gap-2">
+        <p-button label="Voltar" [outlined]="true" size="small" [outlined]="true" size="small" [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '5rem', height: '2rem', left:'05px'}" (onClick)="visible = false" />
+        <p-button label="Denunciar"  size="small" (onClick)="denunciar(denuncia.motivo,denuncia.conteudo)"  [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '7rem', height: '2rem', left:'30px'}"/>
+    </div>
+</p-dialog>
+  <!-- <div *ngIf="showOptions" class="opcoes">
+    <button (click)="fecharPergunta()">Fechar</button>
+    <button (click)="deletarPergunta()">Deletar</button>
+
+    <div class="opcoes" class="card flex justify-content-center gap-2">
+      <p-toast />
+      <p-confirmPopup #confirmPopupRef [dismissableMask]="false" [style]="{padding: '30px','top': '50%', 'left': '50%', 'transform': 'translate(-50%, -50%)'}">
+          <ng-template pTemplate="headless" let-message let-test>
+              <div class="border-round p-3">
+                  <span>{{ message.message }}</span>
+                  <div class="flex align-items-center gap-2 mt-3">
+
+                    <div *ngFor="let category of categories" class="field-checkbox">
+                      <p-radioButton [inputId]="category" [value]="category" formControlName="tags" [style]="{top:'-10px'}"></p-radioButton>
+                      <label [for]="category" class="ml-2">{{ category }}</label>
+                    </div>
+
+                    <br>
+
+                    <div class="flex align-items-center gap-3 mb-5">
+                      <label for="email" class="font-semibold w-6rem">Outro:</label>
+                      <input pInputText id="email" class="flex-auto" autocomplete="off" />
+                  </div>
+
+
+                      <p-button (onClick)="accept()" label="Denunciar" size="small" [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '10rem', height: '2rem', left:'-10px'}"/>
+                      <p-button (onClick)="reject()" label="Voltar" [outlined]="true" size="small" [outlined]="true" size="small" [style]="{'background-color': '#ccadd8', borderColor: '#4F1964', color: '#4F1964', borderRadius: '20px', width: '10rem', height: '2rem', left:'10px'}"/>
+                  </div>
+              </div>
+          </ng-template>
+      </p-confirmPopup>
+    <p-button  [style]="{'background-color': '#4F1964', color: '#ffffffbe', borderRadius: '5px', width: '10rem', height: '1.5rem'}" (onClick)="confirm($event)">Denunciar</p-button>
+    </div>
+
+    captar do pop-ip as infos de motivo e conteudo
+    <button (click)="denunciar(motivo, conteudo)">Deletar Pergunta</button>
+
+  </div> -->
+
 
   <div class="button-voltar">
-    <button class="button-c pi pi-arrow-left "></button>
+    <button class="button-c pi pi-arrow-left" (click)="voltar()"></button>
   </div>
 
   <header d-flex justify-content-center>
