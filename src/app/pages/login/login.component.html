@@ -15,10 +15,10 @@
       <div class="mb-4">
         <label for="senha" class="form-label">Senha</label>
         <br />
-        <p-password formControlName="password" [toggleMask]="true" [feedback]="false" required></p-password>
-        <div *ngIf="f['password'].invalid && (f['password'].dirty || f['password'].touched)">
-          <small class="text-danger" *ngIf="f['password'].errors?.['required']">Senha é obrigatória.</small>
-          <small class="text-danger" *ngIf="f['password'].errors?.['senhaForte']">Senha inválida.</small>
+        <p-password formControlName="senha" [toggleMask]="true" [feedback]="false" required></p-password>
+        <div *ngIf="f['senha'].invalid && (f['senha'].dirty || f['senha'].touched)">
+          <small class="text-danger" *ngIf="f['senha'].errors?.['required']">Senha é obrigatória.</small>
+          <small class="text-danger" *ngIf="f['senha'].errors?.['senhaForte']">Senha inválida.</small>
         </div>
       </div>
       <button type="button" class="button" style="color: aliceblue" (click)="logar()">Entrar</button>

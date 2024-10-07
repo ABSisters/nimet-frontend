@@ -3,11 +3,12 @@
   <div class="roxo"></div>
 
   <div class="cadastro">
+    <button pTooltip="Já fez o cadastro, mas precisa receber o token no email novamente? Clique aqui"  tooltipPosition="bottom" class="token pi pi-send"> Reenviar token</button>
     <header>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />CRIE SUA
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400,600&display=swap" />CRIE SUA
       CONTA NO <span>NIMET</span>
     </header>
-    <p style="font-size: 1.8em;">Já tem uma conta?<a style="cursor: pointer;" (click)="login()"> <span> Login</span></a></p>
+    <p style="font-size: 1.7em;">Já tem uma conta?<a style="cursor: pointer;" (click)="login()"> <span> Login</span></a></p>
 
     <form [formGroup]="cadastroForm">
       <div class="conteiner">
@@ -97,7 +98,7 @@
           </div>
         </div>
       </div>
-      <button class="button" (click)="montarRequest()">Cadastrar</button>
+      <button class="button pi pi-user" (click)="montarRequest()"> Cadastrar</button>
     </form>
   </div>
 </div>

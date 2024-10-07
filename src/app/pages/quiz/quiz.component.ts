@@ -19,7 +19,7 @@ import { QuizResponse } from '../../model/response/quizResponse';
 })
 export class QuizComponent implements OnInit{
   questoes!: QuestaoResponse[];
-  quiz!: QuizPostRequest;
+  quiz: any = {}; // Inicializa o objeto `quiz` como um objeto vazio
   quizResponse!: QuizResponse;
   user!: UsuarioResponse;
   showWarning: boolean = false;
@@ -29,7 +29,6 @@ export class QuizComponent implements OnInit{
   currentQuestionNo: number = 0;
 
   //remainingTime:number = 10;
-
   //timer = interval(1000);
   subscription: Subscription [] = [];
   correctAnswerCount: number = 0;
@@ -78,11 +77,12 @@ export class QuizComponent implements OnInit{
   }
 
   selectOption(option: any) {
-    if(option.isCorrect) {
-      this.correctAnswerCount ++;
+    if (option.correta) {
+      this.correctAnswerCount++;
     }
     option.isSelected = true;
   }
+
   isOptionSelected(options: any) {
     const selectionCount = options.filter((m:any)=>m.isSelected == true).length;
     if(selectionCount == 0) {
@@ -120,9 +120,11 @@ export class QuizComponent implements OnInit{
   carregarQuestoes(nivel: Nivel){
     this.quizService.getQuestoesQuiz(this.user.curso, nivel).subscribe({
       next: (questions) => {
+        console.log(questions)
         this.questionsList = questions
         this.quiz.nivel = nivel;
         this.quiz.curso = this.user.curso;
+        this.showWarning = true;
       },
       error: (erro) => {
         this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel carregar as perguntas do quiz' })
@@ -133,14 +135,15 @@ export class QuizComponent implements OnInit{
 
   responder(){
     this.quiz.usuarioId = this.user.usuarioId;
-    this.quiz.acertos = (this.currentQuestionNo+1);
-    this.quiz.erros = (this.questionsList.length - (this.currentQuestionNo+1));
+    this.quiz.acertos = this.correctAnswerCount;
+    this.quiz.erros = this.questionsList.length - this.correctAnswerCount;
     this.quizService.responder(this.quiz).subscribe({
       next: (result) => {
         this.quizResponse = result;
+        this.finish();
       },
       error: (erro) => {
-        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi sllvar o resultado do quiz' })
+        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi salvar o resultado do quiz' })
       }
     })
   }

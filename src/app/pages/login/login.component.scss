@@ -2,6 +2,7 @@
   width: 100vw; /* Ocupa 100% da largura do viewport */
   height: 100vh; /* Ocupa 100% da altura do viewport */
   display: flex;
+  background-color: white !important;
 }
 
 #card {
@@ -67,8 +68,9 @@
   box-shadow: none;
 }
 
-span{
+span {
   color: #4F1964;
+  font-weight: 500;
 }
 
 .form-label {

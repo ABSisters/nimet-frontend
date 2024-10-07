@@ -42,7 +42,7 @@
             <!-- <i class="pi pi-check" style="font-size: 3rem"></i> -->
 
             <i *ngIf="pergunta.status" class="pi pi-check green"></i>
-            <i *ngIf="!pergunta.status" class="pi pi-times red"></i>
+            <i *ngIf="!pergunta.status" class="pi pi-lock red"></i>
           </div>
           <div class="input-box-a">
             <input class="caixa-texto" required [(ngModel)]="pergunta.titulo" readonly
