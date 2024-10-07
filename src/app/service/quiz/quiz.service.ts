@@ -8,6 +8,7 @@ import { Curso } from '../../model/enum/curso';
 import { QuizPostRequest } from '../../model/request/quizPostRequest';
 import { QuizResponse } from '../../model/response/quizResponse';
 import { QuestaoResponse } from '../../model/response/questaoResponse';
+import { Nivel } from '../../model/enum/nivel';
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +23,8 @@ export class QuizService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getQuestoesQuiz(curso: Curso, nivel: String): Observable<QuestaoResponse[]>{
-    return this.httpClient.get(env.baseApiUrl + '/curso/'+ curso  +'/nivel/'+ nivel ).pipe(
+  getQuestoesQuiz(curso: Curso, nivel: Nivel): Observable<QuestaoResponse[]>{
+    return this.httpClient.get(env.baseApiUrl + '/questoes/curso/'+ curso  +'/nivel/'+ nivel ).pipe(
       map((res:any) => res)
     )
   }

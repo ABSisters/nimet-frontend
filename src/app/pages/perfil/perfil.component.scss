@@ -111,69 +111,95 @@ button span {
 .titulo-resultado{
   color: #4F1964;
   font-size: 1.2em;
-  margin-left: -70px;
-  margin-top: -90px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 
-.resultado-quiz{
-  margin-right: 200px;
-  margin-left: 340px;
-
-}
-
-.borda-resultado-quiz {
+.resultado-quiz {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color: #73328d;
   border-radius: 7px;
   background-color: #d19bec40;
-  padding: 97px; /* Tamanho da caixa */
-  margin: 20px;
   width: 850px; /* Comprimento da borda */
   height: 200px;/* Tamanho da caixa */
+  overflow-y:scroll;
+  overflow-x: hidden;
   position: absolute;
-  top: 70px; /* ajuste conforme necessário */
+  top: 95px; /* ajuste conforme necessário */
+  right: 163px;
+  // margin-left: 240px;
+
+
 }
+.resultado-row {
+  display:flex; /* Alinha os itens lado a lado */
+  flex-direction: row;
+  margin-bottom: 80px; /* Espaço entre as linhas */
+}
+
+.borda-resultado-quiz {
+
+}
+
 
 
 .conteiner-resultado-quiz-esquerda{
-  margin-left: 365px;
+  margin-top: -70px;
+  margin-left: 1rem;
 }
+
+.conteiner-resultado-quiz-direita{
+  margin-top: -70px;
+  margin-left: 2rem;
+}
+
+
+// .conteiner-resultado-esquerda{
+//   background-color:white;
+//   padding: 60px; /* Tamanho da caixa */
+//   margin: 20px;
+//   border-width: 2px;   /* Largura da borda */
+//   border-style: solid; /* Estilo da borda */
+//   border-color:  #73328d;
+//   border-radius: 10px;
+//   width: 390px; /* Comprimento da borda */
+//   height: 130px;/* Tamanho da caixa */
+//   position: absolute;
+//   top: 130px; /* ajuste conforme necessário */
+//   justify-content: center; /* centraliza horizontalmente */
+//   align-items: center; /* centraliza verticalmente */
+// }
 
 .conteiner-resultado-esquerda{
   background-color:white;
   padding: 60px; /* Tamanho da caixa */
-  margin: 20px;
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color:  #73328d;
   border-radius: 10px;
   width: 390px; /* Comprimento da borda */
-  height: 100px;/* Tamanho da caixa */
-  position: absolute;
-  top: 130px; /* ajuste conforme necessário */
+  height: 130px;/* Tamanho da caixa */
+  position: relative;
+  top: 70px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
-}
-
-
-.conteiner-resultado-quiz-direita{
-  margin-left: 773px;
 }
 
 .conteiner-resultado-direita{
   background-color: white;
   padding: 60px; /* Tamanho da caixa */
-  margin: 20px;
   border-radius: 10px;
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   border-color:  #73328d;
   width: 390px; /* Comprimento da borda */
-  height: 100px;/* Tamanho da caixa */
-  position: absolute;
-  top: 130px; /* ajuste conforme necessário */
+  height: 130px;/* Tamanho da caixa */
+  position: relative;
+  top: 70px; /* ajuste conforme necessário */
   justify-content: center; /* centraliza horizontalmente */
   align-items: center; /* centraliza verticalmente */
 }
@@ -233,7 +259,7 @@ button span {
   border-width: 2px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
   width: 370px; /* Comprimento da borda */
-  height: 30px;/* Tamanho da caixa de texto*/
+  height: 18px;/* Tamanho da caixa de texto*/
   position: absolute;
   top: -13px;
   margin-right: 200px;
@@ -262,7 +288,7 @@ button span {
 
 /* --------------------- DIV'S DE PERGUNTAS DO FORÚM ---------------------------------------- */
 
-.titulo-perguntas{
+.perguntas{
   color: #4F1964;
   font-size: 1.2em;
 }
@@ -363,7 +389,7 @@ w
 
 .caixa-respostas-forum-emcima{ /* OBS: A CAIXA, É A CAIXA DE TEXTO, ONDE DA PRA ESCREVER*/
   background-color: #73328d;
-  padding: 10px; /* Tamanho da caixa */
+  padding: 3px; /* Tamanho da caixa */
   margin: 20px;
   border-radius: 5px;
   border-width: 2px;   /* Largura da borda */
@@ -379,23 +405,44 @@ w
 }
 
 
+.empty-column {
+  /* Estilos para a coluna vazia */
+  background-color: #f0f0f0; /* Cor de fundo opcional */
+  border: 1px dashed #ccc; /* Borda opcional para indicar que está vazia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Para garantir que tenha a mesma altura */
+}
+
 /* ------------------------ BOTÕES DE EXCLUIR PERFIL --------------------------------------------  */
 
 .excluir-button{
-  //margin-top: -775px; /* Altura do botão */
-  margin-right: 100px;
-  margin-left: 700px;
+  margin-left: 65rem;
+  margin-top: -60px;
 }
 
-.button-excluir{
-  border-radius: 20px;
-  background-color: #4F1964;
-  color: white;
-  width: 10rem;
-  height: 2rem;
-  margin-left: 0.1rem;
-  margin-top: -10px;
+::ng-deep .p-button .button-excluir{
+  border-radius: 20px !important;
+  background-color: #4F1964 !important;
+  color: white !important;
+  width: 10rem !important;
+  height: 2rem !important;
+  margin-left: 0.1rem !important;
+  margin-top: -10px !important;
 }
+
+
+// .custom-button .p-button {
+//   background-color: #ff0000; /* Cor de fundo personalizada */
+//   border-color: #ff0000; /* Cor da borda personalizada */
+//   color: #ffffff; /* Cor do texto */
+// }
+
+// .custom-button .p-button:hover {
+//   background-color: #cc0000; /* Cor de fundo ao passar o mouse */
+//   border-color: #cc0000; /* Cor da borda ao passar o mouse */
+// }
 
 
 /* -----------------------------------------------------------------------------  */
@@ -434,13 +481,15 @@ h2{
 .acertos{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  margin-top: -20px;
+  margin-top: -25px;
   margin-left: 10px;
+  color: green;
 }
 
 .erros{
   font-family: 'Roboto', sans-serif;
   margin-left: 135px;
+  color: red;
 }
 
 nav{
@@ -461,7 +510,7 @@ nav{
 .data-resultado-quiz{
   color: #4F1964;
   font-size: 14px;
-  margin-top: -36px;
+  margin-top: -30px;
   margin-left: -55px;
 }
 
@@ -519,25 +568,25 @@ nav{
 
 .caixa-num-acertos{
   flex: 2em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   margin-left: 20px;
   margin-top: 48px;
-  width: 35px;
+  width: 30px;
+  height: 20px;
+  text-align: center;
   padding: 2px;
 }
 
 .caixa-num-erros{
   flex: 2em;
-  /* Define a largura flexível para que ocupem todo o espaço disponível */
   margin-right: 15px;
-  /* Adiciona espaçamento entre as caixas de texto */
   border-radius: 5px;
   margin-left: 20px;
   margin-top: -5px;
-  width: 35px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
   padding: 2px;
 }
 
@@ -634,4 +683,10 @@ nav{
 }
 
 
-
+.footer {
+  background-color: #8355974d;
+  color: #4F1964;
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px 0;
+}

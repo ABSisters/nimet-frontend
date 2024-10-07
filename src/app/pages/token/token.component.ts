@@ -4,23 +4,22 @@ import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { CadastroService } from '../../service/usuario/cadastro/cadastro.service';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
+import { RemandarEmailRequest } from '../../model/request/remandarEmailRequest';
 
 @Component({
-  selector: 'app-email',
-  templateUrl: './email.component.html',
-  styleUrls: ['./email.component.scss'],
+  selector: 'app-token',
+  templateUrl: './token.component.html',
+  styleUrls: ['./token.component.scss'],
   providers: [MessageService]
 })
-
-export class EmailComponent implements OnInit {
-
+export class TokenComponent implements OnInit {
   constructor (private service: CadastroService,
     private message: MessageService,
     private routeador: Router,
     private ngxLoader: NgxUiLoaderService,
   ) {}
 
-  token!:String;
+  usuario!:RemandarEmailRequest;
 
   ngOnInit(): void {
   }
@@ -28,15 +27,14 @@ export class EmailComponent implements OnInit {
 
   verificar(){
     this.ngxLoader.start();
-    this.service.verficarEmail(this.token).subscribe({
+    this.service.reenviarToken(this.usuario).subscribe({
       next: (result) => {
-        this.message.add({severity:'sucess', summary: 'Sucess', detail: 'Validação feita com sucesso' })
-        this.routeador.navigate(['']);
-        console.log("A requisição foi um sucesso!" + this.token );
+        this.message.add({severity:'sucess', summary: 'Sucess', detail: 'Token reenviado com sucesso' })
+        this.routeador.navigate(['/email']);
         this.ngxLoader.stop();
       },
       error: (erro) => {
-        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel fazer a validação' })
+        this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel reenviar o token' })
         console.log("A requisição não teve sucesso", JSON.stringify(erro));
         this.ngxLoader.stop();
       }
@@ -45,3 +43,4 @@ export class EmailComponent implements OnInit {
 
 
 }
+

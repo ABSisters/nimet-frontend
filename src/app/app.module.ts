@@ -10,41 +10,41 @@ import { ChartModule } from 'primeng/chart';
 import { MenuComponent } from './pages/menu/menu.component';
 import { CadastroService } from './service/usuario/cadastro/cadastro.service';
 import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+import { RouterModule } from '@angular/router';
 // import { CriptHttpInterceptorTsComponent } from './interceptor/cript-http.interceptor.ts/cript-http.interceptor.ts.component';
 
 
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
-
-  "bgsColor": "#3d3434",
-  "bgsOpacity": 0.5,
-  "bgsPosition": "bottom-right",
-  "bgsSize": 60,
-  "bgsType": "ball-spin-clockwise",
-  "blur": 5,
-  "delay": 0,
-  "fastFadeOut": true,
-  "fgsColor": "#4f1964",
-  "fgsPosition": "center-center",
-  "fgsSize": 60,
-  "fgsType": "double-bounce",
-  "gap": 24,
-  "logoPosition": "center-center",
-  "logoSize": 120,
-  "logoUrl": "",
-  "masterLoaderId": "master",
-  "overlayBorderRadius": "0",
-  "overlayColor": "rgba(40, 40, 40, 0.8)",
-  "pbColor": "red",
-  "pbDirection": "ltr",
-  "pbThickness": 3,
-  "hasProgressBar": true,
-  "text": "",
-  "textColor": "#FFFFFF",
-  "textPosition": "center-center",
-  "maxTime": -1,
-  "minTime": 300
-}
+    "bgsColor": "#e6d9ec",
+    "bgsOpacity": 0.5,
+    "bgsPosition": "bottom-right",
+    "bgsSize": 60,
+    "bgsType": "ball-spin-clockwise",
+    "blur": 5,
+    "delay": 0,
+    "fastFadeOut": true,
+    "fgsColor": "#4f1964",
+    "fgsPosition": "center-center",
+    "fgsSize": 60,
+    "fgsType": "double-bounce",
+    "gap": 24,
+    "logoPosition": "center-center",
+    "logoSize": 120,
+    "logoUrl": "",
+    "masterLoaderId": "master",
+    "overlayBorderRadius": "0",
+    "overlayColor": "rgba(79,25,100,0.26)",
+    "pbColor": "red",
+    "pbDirection": "ltr",
+    "pbThickness": 3,
+    "hasProgressBar": true,
+    "text": "",
+    "textColor": "#FFFFFF",
+    "textPosition": "center-center",
+    "maxTime": -1,
+    "minTime": 300
+  }
 
 
 @NgModule({
@@ -57,6 +57,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     PagesModule,
     HttpClientModule,
     BrowserModule,
+    RouterModule,
     BrowserAnimationsModule,
     ChartModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),

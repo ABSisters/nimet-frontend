@@ -1,4 +1,6 @@
 <app-menu></app-menu>
+<p-toast></p-toast>
+
 <div class="tela">
   <header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
@@ -9,19 +11,12 @@
   <h4 style="color: red;">A página ainda está em construção, então as perguntas ainda não possuem conteúdo</h4>
   <!---<hr class="custom-hr">--->
 
-  <div class="start_btn"><button (click)="showWarningPopup()">Iniciar Quiz</button></div>
+  <div class="start_btn">
+    <button (click)="carregarQuestoes(Nivel.BASICO)">Básico</button>
+    <button (click)="carregarQuestoes(Nivel.INTERMEDIARIO)">Intermediário</button>
+    <button (click)="carregarQuestoes(Nivel.AVANCADO)">Avançado</button>
 
-  <!-- <div class="button_container1">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Básico</button></div>
-</div> -->
-  <!--
-<div class="button_container2">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Intermediário</button></div>
-</div>
-
-<div class="button_container3">
-<div class="start_btn"><button (click)="showWarningPopup()">Nivel Avançado</button></div>
-</div> -->
+  </div>
 
   <div class="info_box" [ngClass]="showWarning ? 'activeInfo':''">
 
@@ -56,7 +51,7 @@
 
     <header>
 
-      <div class="title"> {{user.curso}} QUIZ - ?? </div>
+      <div class="title"> {{user.curso}} QUIZ - {{quiz.nivel}} </div>
 
       <div class="timer">
 
@@ -67,32 +62,30 @@
 
       </div>
 
-      <div class="time_line" style="width: 550px;"></div>
+      <div class="time_line" style="width: 650px;"></div>
 
     </header>
 
 
     <section *ngIf="isQuizStarted">
-
-      <div class="que_text"><span>{{currentQuestionNo+1}}. {{questionsList[currentQuestionNo].question}} </span></div>
+      <!-- Exibe a pergunta atual -->
+      <div class="que_text">
+        <span>{{ currentQuestionNo + 1 }}. {{ questionsList[currentQuestionNo]?.questao }}</span>
+      </div>
 
       <div class="bolinha"></div>
 
+      <!-- Exibe as opções da pergunta atual -->
       <div class="option_list">
-
-        <div class="option" [ngClass]="{'disabled': isOptionSelected(questionsList[currentQuestionNo].options),
-
-                                            'correct':option.isSelected && option.isCorrect,
-
-                                            'incorrect':option.isSelected  && !option.isCorrect}"
-          (click)="selectOption(option)" *ngFor="let option of questionsList[currentQuestionNo].options">
-
-          <span>{{option.answer}}</span>
-
+        <div class="option"
+             [ngClass]="{'disabled': isOptionSelected(questionsList[currentQuestionNo]?.opcoes),
+                         'correct': option.isSelected && option.correta,
+                         'incorrect': option.isSelected && !option.correta}"
+             (click)="selectOption(option)"
+             *ngFor="let option of questionsList[currentQuestionNo]?.opcoes">
+          <span>{{ option.opcao }}</span>
         </div>
-
       </div>
-
     </section>
 
 
@@ -105,7 +98,7 @@
         </span></div>
 
       <button *ngIf="currentQuestionNo+1 == questionsList.length" class="next_btn show"
-        (click)="finish()">Finalizar</button>
+        (click)="responder()">Finalizar</button>
 
       <button *ngIf="currentQuestionNo+1 !== questionsList.length" class="next_btn show"
         (click)="nextQuestion()">Avançar</button>
@@ -138,7 +131,7 @@
 
     <div class="buttons">
 
-      <button class="restart">Refazer o Quiz</button>
+      <!-- <button class="restart">Refazer o Quiz</button> -->
 
       <button class="quit" (click)="start()">Sair do Quiz</button>
 

@@ -57,6 +57,7 @@
 .fm:hover {
   background-color: #f5d6fe !important;
   border-radius: 10px;
+
   /*padding-inline-start: 30px;
   padding-right: 30px;
   padding-left: 30px;*/
@@ -87,8 +88,22 @@ i{
   margin-left: -8%;
   position: relative;
   top: -10px;
+  color: #73328d;
 }
 
 p{ /* Iconi do nome do curso */
   font-size: x-large;
 }
+
+
+.logo {
+  margin-bottom: 10rem;
+  width: 100px;
+  height: -60px;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding: -150px;
+
+}
+
+

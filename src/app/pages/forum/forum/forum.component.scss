@@ -3,7 +3,7 @@
   padding: 20px;
   margin: 20px;
   width: 97.5%;
-  height: 80%;
+  height: 82%;
   overflow-y: scroll;
   border: 2px;
 }
@@ -27,7 +27,7 @@
 }
 
 .tela-forum {
-  height: 130vh;
+  height: 140vh;
   width: 99.2vw;
   background-color: rgba(209, 155, 236, 0.1);
 }
@@ -112,18 +112,17 @@ header {
   color: #4F1964;
 }
 
-// .status-condicao {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #23903c;
-//   background-color: #ffffffbe;
-//   border-radius: 80px;
-//   padding: 15px;
-//   margin-top: 10px;
-//   height: 70%;
-//   width: 70%;
-// }
+.status-condicao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffbe;
+  border-radius: 80px;
+  padding: 15px;
+  margin-top: 10px;
+  height: 70%;
+  width: 70%;
+}
 
 .green {
   color: green;
@@ -179,3 +178,28 @@ header {
   padding: 10px;
   margin-top: 5px;
 }
+
+
+
+.button-voltar {
+  margin-left: 1290px;
+  margin-top: -15px;
+}
+
+.button-c {
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: white;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #8355974d;
+  color: #4F1964;
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px 0;
+}
+

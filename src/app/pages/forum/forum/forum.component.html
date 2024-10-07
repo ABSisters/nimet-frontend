@@ -1,6 +1,12 @@
 <div class="tela-forum">
-<app-menu></app-menu>
-<p-toast></p-toast>
+  <app-menu></app-menu>
+
+
+  <div class="button-voltar">
+    <button class="button-c pi pi-home" (click)="home()"> </button>
+  </div>
+
+  <p-toast></p-toast>
   <header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
     <h5 class="cor-nome">FÓRUM - {{user.curso}} </h5>
@@ -36,14 +42,14 @@
             <!-- <i class="pi pi-check" style="font-size: 3rem"></i> -->
 
             <i *ngIf="pergunta.status" class="pi pi-check green"></i>
-            <i *ngIf="!pergunta.status" class="pi pi-times red"></i>
+            <i *ngIf="!pergunta.status" class="pi pi-lock red"></i>
           </div>
           <div class="input-box-a">
-            <input class="caixa-texto" required [(ngModel)]="pergunta.titulo"
-            readonly (click)="registrarPergunta(pergunta)"/>
+            <input class="caixa-texto" required [(ngModel)]="pergunta.titulo" readonly
+              (click)="registrarPergunta(pergunta)" />
           </div>
           <div class="dados-usuario">
-            <p>  {{pergunta.usuario.nome }}</p>
+            <p> {{pergunta.usuario.nome }}</p>
             {{ pergunta.dataCriado| date : 'dd/MM/yyyy - HH:mm'}}
           </div>
           <hr class="custom-hr">
@@ -52,5 +58,10 @@
     </div>
   </div>
 
+  <!-- <footer class="footer">
+    <div class="footer-content">
+      <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+    </div>
+  </footer> -->
 
 </div>
