@@ -15,6 +15,7 @@ import { QuizService } from '../../service/quiz/quiz.service';
 // import {questions} from '../../../assets/'
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmPopup } from 'primeng/confirmpopup';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-perfil',
@@ -40,7 +41,9 @@ export class PerfilComponent implements OnInit {
     private routes: Router,
     private confirmationService: ConfirmationService,
     private messageService: MessageService,
-    private cadastroService: CadastroService
+    private cadastroService: CadastroService,
+    private ngxLoader: NgxUiLoaderService,
+
   ) { }
 
   ngOnInit(): void {
@@ -65,16 +68,19 @@ export class PerfilComponent implements OnInit {
   }
 
   alterarPerfil(user: UsuarioResponse) {
+    this.ngxLoader.start();
     this.userService.alterarPerfil(user).subscribe({
       next: (usuario) => {
         console.log(usuario);
         this.message.add({ severity: 'sucess', summary: 'Sucess', detail: 'Perfil alterado com sucesso' })
         this.edit = true;
         this.userService.setUsuario(usuario);
+        this.ngxLoader.stop();
       },
       error: (erro) => {
         console.log(erro);
         this.message.add({ severity: 'error', summary: 'Erro', detail: 'Não foi possivel apagar este perfil' })
+        this.ngxLoader.stop();
       }
     })
   }
