@@ -26,6 +26,16 @@
   font-size: 40px;
 }
 
+p-dialog {
+  position: relative;
+  z-index: 1000; /* Certifica-se de que o diálogo fique acima do fundo desfocado */
+}
+
+.desfocado {
+  filter: blur(5px);
+  pointer-events: none; /* Impede a interação com os elementos enquanto o fundo está desfocado */
+}
+
 .opcoes {
   position: absolute; /* Para empilhar os botões */
   top: 6rem; /* Ajuste para a posição vertical dos botões */

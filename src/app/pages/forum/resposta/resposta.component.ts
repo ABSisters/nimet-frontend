@@ -18,13 +18,11 @@ import { ConfirmPopup } from 'primeng/confirmpopup';
   styleUrls: ['./resposta.component.scss'],
   providers: [ConfirmationService, MessageService]
 })
-export class RespostaComponent implements OnInit{
+export class RespostaComponent implements OnInit
+{
   messageService: any;
-  showDialog() {
-    throw new Error('Method not implemented.');
-  }
-
   showOptions: boolean = false;
+  showDenuncia: boolean = false;
   denuncia!: DenunciaPostRequest;
 
   categories: string[] = [
@@ -63,6 +61,11 @@ visible: any;
     this.pergunta = this.forumService.perguntaSelecionada;
     this.resposta.perguntaId = this.pergunta.perguntaId
     this.getRespostas(this.pergunta); // deixar mocado por enquanto...
+    this.denuncia = {
+      conteudo: '',
+      motivo: '',
+      usuarioId: ''
+  };
 
   }
 
@@ -111,6 +114,7 @@ visible: any;
         // this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Pergunta fechada com sucesso' })
         console.log(result);
         this.pergunta = result;
+        this.routes.navigate(['/forum'])
         this.ngxLoader.stop();
 
       },
@@ -155,14 +159,15 @@ visible: any;
     })
   }
 
-  denunciar(){
+  denunciar(motivo: string, conteudo: string){
     this.ngxLoader.start();
     this.denuncia.usuarioId = this.resposta.usuarioId;
-    // this.denuncia.conteudo = conteudo;
-    // this.denuncia.motivo = motivo;
+    this.denuncia.conteudo = conteudo;
+    this.denuncia.motivo = motivo;
     this.userService.denunciar(this.denuncia).subscribe({
       next: (result) =>{
         this.message.add({ severity: 'sucess', summary: 'Sucesso', detail: 'Denúncia feita com sucesso' })
+        this.showDenuncia = false;
         this.ngxLoader.stop();
       },
       error:(erro) => {
@@ -171,9 +176,12 @@ visible: any;
       }
     })
 
-
   }
 
+
+  show(){
+    this.showDenuncia = true;
+  }
 
   @ViewChild(ConfirmPopup) confirmPopup!: ConfirmPopup;
 

@@ -13,14 +13,12 @@
   height: 300vh;
 }
 
-// .title{
-//   font-size:3rem;
-//   margin-bottom: 1rem;
-//   margin-top: 90px;
-//   margin-left: -20px;
-//   color:#4f1964;
-//   text-align: center;
-// }
+
+.video{
+  margin-top: 1rem;
+  margin-left: 25rem;
+}
+
 
 .title{
   font-size:4rem;
@@ -119,29 +117,6 @@ app-menu{
 }
 
 
-
-// .p-menubar {
-//   display: flex;
-//   flex-direction: column; /* Altera a direção para vertical */
-//   margin-left: 50px;
-// }
-
-// .p-menubar .p-menuitem-link {
-//   height: 60px; /* Defina a altura desejada */
-//   line-height: 60px; /* Centraliza o texto verticalmente */
-// }
-
-// .p-menubar .p-menuitem {
-//   padding: 15px; /* Define o espaçamento interno */
-// }
-
-// .intermediate-item{
-//   margin-left: 190px;
-// }
-
-
-
-
 ::ng-deep .menucus{ /* BOTÕES SOMENTE COM UMA OPÇÃO DE NAVEGAÇÃO, FÓRUM, QUIZ*/
   display: flex;
   margin-left: 15rem !important;
@@ -182,13 +157,6 @@ app-menu{
    color: white !important; /* Garante que o texto dos itens de menu também seja branco */
  }
 
- // ::ng-deep .menucu .p-menuitem-text:hover {
- //   width: 100%; /* O link ocupa 100% da largura do item de menu */
- //   height: 100%; /* O link ocupa 100% da altura do item de menu */
- //   text-align: center; /* Centraliza o texto */
- //   padding: 10px; /* Ajusta o espaçamento interno do botão */
- //   background-color: #4F1964;
- // }
 
  ::ng-deep .menucu .p-menuitem-icon {
    color: white !important; /* Cor dos ícones */
@@ -246,11 +214,6 @@ app-menu{
 }
 
 
- // ::ng-deep .menucus2{
- //   margin-left: 50rem !important;
- //  }
-
-
 
 
 
@@ -290,12 +253,6 @@ app-menu{
   color: white !important; /* Cor do ícone */
 }
 
-// .logo {
-//   margin-bottom: 40rem;
-//   width: 290px;
-//   margin-top: 120px;
-// }
-
 
 .logo {
   margin-bottom: 40rem;
@@ -307,23 +264,11 @@ app-menu{
 }
 
 
-
-// p-footer {
-//   background-color: #8355974d;/* Cor de fundo do rodapé */
-//   color:#4F1964; /* Cor do texto no rodapé */
-//   padding: 20px; /* Espaçamento interno do rodapé */
-//   text-align: center; /* Centraliza o texto */
-//   font-size: 14px; /* Tamanho da fonte */
-//   position: fixed; /* Fixa o rodapé na parte inferior da página */
-//   width: 100%; /* Faz o rodapé ocupar toda a largura da página */
-//   bottom: 0; /* Posiciona o rodapé na parte inferior */
-// }
-
 .footer {
   background-color: #8355974d;
   color: #4F1964;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10rem;
   padding: 30px 0;
   position: absolute;
   width: 99.2vw;
