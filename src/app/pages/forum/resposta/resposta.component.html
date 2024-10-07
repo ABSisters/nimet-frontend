@@ -3,21 +3,21 @@
 <!---------------------------------------------------------------------------------------------------------->
 <p-toast></p-toast>
 <div class="tela">
-  <button class="opcao" (click)="toggleOptions()">....</button>
+  <button class="opcao pi pi-ellipsis-h" (click)="toggleOptions()"></button>
 
   <div *ngIf="showOptions" class="opcoes">
     <button (click)="fecharPergunta()">Fechar</button>
     <button (click)="deletarPergunta()">Deletar</button>
     <button (click)="denunciar()">Denunciar</button>
 
-
     <!-- captar do pop-ip as infos de motivo e conteudo -->
     <!-- <button (click)="denunciar(motivo, conteudo)">Deletar Pergunta</button> -->
 
   </div>
+  
 
   <div class="button-voltar">
-    <button class="button-c">Voltar</button>
+    <button class="button-c pi pi-arrow-left "></button>
   </div>
 
   <header d-flex justify-content-center>

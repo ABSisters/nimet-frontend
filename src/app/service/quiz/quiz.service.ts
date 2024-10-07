@@ -24,7 +24,7 @@ export class QuizService {
   constructor(private httpClient:HttpClient) { }
 
   getQuestoesQuiz(curso: Curso, nivel: Nivel): Observable<QuestaoResponse[]>{
-    return this.httpClient.get(env.baseApiUrl + '/curso/'+ curso  +'/nivel/'+ nivel ).pipe(
+    return this.httpClient.get(env.baseApiUrl + '/questoes/curso/'+ curso  +'/nivel/'+ nivel ).pipe(
       map((res:any) => res)
     )
   }

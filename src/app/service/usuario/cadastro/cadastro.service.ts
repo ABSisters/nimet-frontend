@@ -7,6 +7,7 @@ import { urlConfig } from '../../../../assets/config/urlConfig';
 import { LoginRequest } from '../../../model/request/loginRequest';
 import { UsuarioRequest } from '../../../model/request/usuarioRequest';
 import { UsuarioResponse } from '../../../model/response/usuarioResponse';
+import { RemandarEmailRequest } from '../../../model/request/remandarEmailRequest';
 
 @Injectable({
   providedIn: 'root'
@@ -22,13 +23,14 @@ export class CadastroService {
   constructor(private httpClient: HttpClient, private router: Router) { }
 
   cadastrar(request: UsuarioRequest): Observable<UsuarioResponse> {
+    console.log(request);
     return this.httpClient.post(env.baseApiUrl + '/' + urlConfig.cadastrarUsuario, request).pipe(
       map((res: any) => res)
     )
   }
 
   logar(request: LoginRequest): Observable<UsuarioResponse> {
-    return this.httpClient.post<any>(env.baseApiUrl + '/' + urlConfig.logar + '?login=' + request.login + '&senha=' + request.password, null).pipe(
+    return this.httpClient.post<any>(env.baseApiUrl + '/' + urlConfig.logar, request).pipe(
       map((res: UsuarioResponse) => {
         localStorage.setItem('usuario', JSON.stringify(res));
         localStorage.setItem('logado', btoa(JSON.stringify("Usuario logado")));
@@ -39,6 +41,12 @@ export class CadastroService {
 
   verficarEmail(token: String): Observable<any> {
     return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.verificarEmail + '?token=' + token, this.httpOptions).pipe(
+      map((res: any) => res)
+    )
+  }
+
+  reenviarToken(token: RemandarEmailRequest): Observable<any> {
+    return this.httpClient.put(env.baseApiUrl + '/' + urlConfig.reenviarToken,token).pipe(
       map((res: any) => res)
     )
   }

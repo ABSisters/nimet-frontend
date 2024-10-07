@@ -1,6 +1,6 @@
 .tela {
   display: flex;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background-image: linear-gradient(to bottom, #73328d, #c185de);
 }
@@ -10,13 +10,14 @@
 }
 
 .cadastro {
-  flex: 5;
+  flex: 6;
   background-color: rgb(255, 255, 255);
   border-radius: 30px 0px 0px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0px;
 }
 
 .roxo {
@@ -26,10 +27,10 @@
 span {
   color: #4F1964;
   font-weight: 500;
-  /* cor da palavra NIMET*/
 }
 
 header {
+  margin-top: -4rem;
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
   font-weight: 300;
@@ -39,14 +40,16 @@ header {
 .image {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-99.2%, -50%);
+  transform: translate(-24%, -50%);
+  // left: 50%;
+  // transform: translate(-98.5%, -50%);
   width: 60rem;
 }
 
 
 .conteiner {
   display: flex;
+  margin-top: 10px;
 }
 
 
@@ -101,10 +104,23 @@ input {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
-  width: 14rem;
+  width: 12rem;
   height: 2rem;
-  margin-top: 2rem;
-  margin-left: 9rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  font-size: larger;
+}
+
+.token{
+  border-radius: 20px;
+  color: #4F1964;
+  border: none;
+  font-size: large;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 65rem;
+  margin-bottom: 5rem;
+  margin-top: -2rem;
 }
 
 button span {

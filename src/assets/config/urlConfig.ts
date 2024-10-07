@@ -1,7 +1,7 @@
 export const urlConfig = {
   cadastrarUsuario : 'usuarios/cadastrar',
   verificarEmail: 'email/verificacao',
-
+  reenviarToken: 'email/token',
   // usuarios
   logar: 'usuarios/logar',
   alterarPerfil: 'usuarios/mudar',

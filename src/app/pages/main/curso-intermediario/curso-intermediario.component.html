@@ -6,22 +6,23 @@
   <app-menu></app-menu>
 </div>
 
-<br><br>
-
-
 <div class="curso">
 
 
   <div *ngIf="user.curso === Curso.INFORMATICA">
 
-    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+    <div style="margin-left:9rem">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 200px; height: auto; border-radius: 50px;" />
+    </div>
 
     <div class="title"> INFORMÁTICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      A Informática no <span><b>nível Intermediário</b></span> expande os conceitos aprendidos no nível básico, proporcionando uma compreensão mais profunda e o desenvolvimento de habilidades mais avançadas.
+      A Informática no <span><b>nível Intermediário</b></span> expande os conceitos aprendidos no nível básico,
+      proporcionando uma compreensão mais profunda e o desenvolvimento de habilidades mais avançadas.
       Aqui estão três das principais matérias em que os alunos geralmente encontram mais dificuldades:
       <br><br>
 
@@ -42,13 +43,15 @@
         <p-panel header="Java Orientado a Objeto:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Java orientado a Objeto:</b></span>
-              a <span><b>Programação Orientada a Objetos em Java (POO)</b></span> é um conceito central, onde os programas são organizados em objetos que interagem entre si.
+              a <span><b>Programação Orientada a Objetos em Java (POO)</b></span> é um conceito central, onde os
+              programas são organizados em objetos que interagem entre si.
               Isso torna o código mais modular, reutilizável e fácil de manter.
-              <br></li>
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-<!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -73,13 +76,15 @@
         <p-panel header="Comandos de Banco de Dados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Comandos de Banco de Dados:</b></span>
-              os <span><b>Comandos de Banco de Dados</b></span>  são usados para gerenciar e manipular informações.
-              Por meio de linguagens como SQL, é possível criar, alterar e consultar dados armazenados, o que é essencial para qualquer aplicação que utilize bases de dados.
-              <br></li>
+              os <span><b>Comandos de Banco de Dados</b></span> são usados para gerenciar e manipular informações.
+              Por meio de linguagens como SQL, é possível criar, alterar e consultar dados armazenados, o que é
+              essencial para qualquer aplicação que utilize bases de dados.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -104,13 +109,15 @@
         <p-panel header="Operadores Lógicos:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Operadores Lógicos:</b></span>
-              os <span><b>Operadores Lógicos</b></span> são fundamentais para a lógica de programação, pois permitem a criação de condições e tomadas de decisão nos algoritmos.
+              os <span><b>Operadores Lógicos</b></span> são fundamentais para a lógica de programação, pois permitem a
+              criação de condições e tomadas de decisão nos algoritmos.
               Eles ajudam a controlar o fluxo do programa e a determinar qual ação será tomada em diferentes cenários.
-              <br></li>
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -136,7 +143,10 @@
 
   <div *ngIf="user.curso === Curso.MECANICA">
 
-    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+    <div style="margin-left:12rem">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 200px; height: auto; border-radius: 50px;" />
+    </div>
 
     <div class="title"> MECANICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
@@ -144,7 +154,8 @@
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      A mecânica no <span><b>nível Intermediário</b></span> aprofunda os conceitos aprendidos na fase básica, preparando os alunos para desafios mais complexos na criação e manutenção de sistemas mecânicos.
+      A mecânica no <span><b>nível Intermediário</b></span> aprofunda os conceitos aprendidos na fase básica, preparando
+      os alunos para desafios mais complexos na criação e manutenção de sistemas mecânicos.
       Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
       <br><br>
 
@@ -166,13 +177,17 @@
         <p-panel header="Sistemas Estaticamente Endeterminados:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Sistemas Estaticamente Endeterminados:</b></span>
-              os <span><b>Sistemas Estaticamente Endeterminados</b></span> são estruturas que não podem ser analisadas apenas por métodos de equilíbrio.
-              Essa disciplina envolve o uso de técnicas avançadas para determinar as reações e forças internas em estruturas complexas, o que é fundamental para garantir a segurança e estabilidade de edificações e máquinas.
-              <br></li>
+              os <span><b>Sistemas Estaticamente Endeterminados</b></span> são estruturas que não podem ser analisadas
+              apenas por métodos de equilíbrio.
+              Essa disciplina envolve o uso de técnicas avançadas para determinar as reações e forças internas em
+              estruturas complexas, o que é fundamental para garantir a segurança e estabilidade de edificações e
+              máquinas.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -198,13 +213,16 @@
         <p-panel header="Equilíbrio de Esforços:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Equilíbrio de Esforços:</b></span>
-              o <span><b>Equilíbrio de Esforços</b></span>  é uma parte crucial da mecânica, onde se analisa as forças que atuam em uma estrutura ou corpo.
-              Compreender como as forças se equilibram é essencial para projetar sistemas que suportem cargas sem falhas, garantindo a eficiência e a segurança das construções e equipamentos.
-              <br></li>
+              o <span><b>Equilíbrio de Esforços</b></span> é uma parte crucial da mecânica, onde se analisa as forças
+              que atuam em uma estrutura ou corpo.
+              Compreender como as forças se equilibram é essencial para projetar sistemas que suportem cargas sem
+              falhas, garantindo a eficiência e a segurança das construções e equipamentos.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -229,13 +247,17 @@
         <p-panel header="Molas e engrenagens:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Molas e Engrenagens:</b></span>
-              o estudo de <span><b>Molas e Engrenagens</b></span>  foca nos elementos de máquina que armazenam e transmitem energia.
-              Essa matéria abrange o funcionamento, as propriedades e as aplicações desses componentes em diversos sistemas mecânicos, como suspensão de veículos e transmissões, sendo vital para o design de máquinas eficientes.
-              <br></li>
+              o estudo de <span><b>Molas e Engrenagens</b></span> foca nos elementos de máquina que armazenam e
+              transmitem energia.
+              Essa matéria abrange o funcionamento, as propriedades e as aplicações desses componentes em diversos
+              sistemas mecânicos, como suspensão de veículos e transmissões, sendo vital para o design de máquinas
+              eficientes.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -260,14 +282,18 @@
 
   <div *ngIf="user.curso === Curso.ELETRONICA">
 
-    <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3" style="width: 250px; height: auto; border-radius: 50px"/>
+    <div style="margin-left:10rem">
+      <img src="../../../assets/images/logo-nimet.svg" alt="imagem ilustrativa do login" id="img" class="logo mb-3"
+        style="width: 200px; height: auto; border-radius: 50px;" />
+    </div>
 
     <div class="title"> ELETRONICA - <a class="estilo">INTERMEDIÁRIO</a></div>
 
 
     <div class="info">
       <h2>Sobre o Nível Intermediário</h2>
-      A Eletrônica no <span><b>nível Intermediário</b></span> aprofunda os conhecimentos adquiridos no nível básico, desafiando os alunos a aplicar conceitos mais complexos e práticos em eletrônica.
+      A Eletrônica no <span><b>nível Intermediário</b></span> aprofunda os conhecimentos adquiridos no nível básico,
+      desafiando os alunos a aplicar conceitos mais complexos e práticos em eletrônica.
       Aqui estão três das principais matérias que os alunos geralmente encontram mais dificuldades:
       <br><br>
 
@@ -288,13 +314,16 @@
         <p-panel header="Sistema Alternado:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Sistema Alternado:</b></span>
-              o <span><b>Sistema Alternado</b></span> estuda a corrente alternada (AC), que é amplamente usada nas redes elétricas.
-              Alunos aprendem a trabalhar com esse tipo de corrente, analisando circuitos e entendendo como aplicar AC em sistemas eletrônicos e de potência.
-              <br></li>
+              o <span><b>Sistema Alternado</b></span> estuda a corrente alternada (AC), que é amplamente usada nas redes
+              elétricas.
+              Alunos aprendem a trabalhar com esse tipo de corrente, analisando circuitos e entendendo como aplicar AC
+              em sistemas eletrônicos e de potência.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -319,13 +348,16 @@
         <p-panel header="Semicondutores:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Semicondutores:</b></span>
-              os <span><b>Semicondutores</b></span> são materiais essenciais na construção de dispositivos eletrônicos, como transistores e diodos.
-              Eles são a base da eletrônica moderna, e entender seu funcionamento é crucial para o desenvolvimento de circuitos integrados e componentes.
-              <br></li>
+              os <span><b>Semicondutores</b></span> são materiais essenciais na construção de dispositivos eletrônicos,
+              como transistores e diodos.
+              Eles são a base da eletrônica moderna, e entender seu funcionamento é crucial para o desenvolvimento de
+              circuitos integrados e componentes.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -350,13 +382,16 @@
         <p-panel header="Memórias de Microprocessadores:" [toggleable]="true" styleClass="custom-panel">
           <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
             <li><span><b>Memórias de Microprocessadores:</b></span>
-              as <span><b>Memórias de Microprocessadores</b></span> envolve o entendimento de como os dados são armazenados e acessados nos sistemas computacionais.
-              Compreender as diferentes tecnologias de memória, como RAM e ROM, é essencial para a programação e o design de sistemas embarcados e computadores.
-              <br></li>
+              as <span><b>Memórias de Microprocessadores</b></span> envolve o entendimento de como os dados são
+              armazenados e acessados nos sistemas computacionais.
+              Compreender as diferentes tecnologias de memória, como RAM e ROM, é essencial para a programação e o
+              design de sistemas embarcados e computadores.
+              <br>
+            </li>
 
-              <!-- VIDEO -->
+            <!-- VIDEO -->
 
-              <!--
+            <!--
 
             <div class="row">
               <div class="col-md-4">
@@ -377,14 +412,9 @@
 
   </div><br><br>
 
- <!-- <p-footer>
-    <div class="content">
-      <p>© 2024 - Todos os direitos reservados - ABSisters</p>
-    </div>
-  </p-footer> -->
-
+</div>
   <footer class="footer">
     <div class="footer-content">
-        <p>© 2024 - Todos os direitos reservados - ABSisters</p>
+      <p>© 2024 - Todos os direitos reservados - ABSisters</p>
     </div>
-</footer>
+  </footer>

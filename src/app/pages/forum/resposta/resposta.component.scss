@@ -12,7 +12,7 @@
 
 .opcao {
   position: absolute; /* Coloca o botão no canto superior direito */
-  top: 4.1rem; /* Ajuste a distância do topo conforme necessário */
+  top: 5.5rem; /* Ajuste a distância do topo conforme necessário */
   right: 10px; /* Ajuste a distância da direita conforme necessário */
 
   // border-radius: 5px;
@@ -166,6 +166,13 @@ header {
   color: #000000be;
 }
 
+.adicionar:disabled {
+  background-color: #d1cece6d; /* Cor cinza para o fundo */
+  color: #a9a9a9; /* Cor do texto cinza mais escuro, opcional */
+  cursor: not-allowed; /* Muda o cursor para indicar que o elemento está desabilitado */
+}
+
+
 
 /* ------------------------ NOME DO USUARIO DATA DE CRIAÇÃO DO COMENTÁRIO -------------------------------------------------------------------------------- */
 
@@ -256,7 +263,7 @@ textarea.adicionar:focus {
 
 
 .button-voltar {
-  margin-left: 1250px;
+  margin-left: 87rem;
   margin-top: 1px;
 }
 
@@ -264,7 +271,7 @@ textarea.adicionar:focus {
   border-radius: 20px;
   background-color: #4F1964;
   color: white;
-  width: 10rem;
+  width: 5rem;
   height: 2.5rem;
   font-size: 1.5em;
 }

@@ -17,6 +17,7 @@ import { AdicionarPerguntaComponent } from './forum/adicionar-pergunta/adicionar
 import { RespostaComponent } from './forum/resposta/resposta.component';
 import { SenhaComponent } from './senha/senha.component';
 import { CursoBasicoComponent } from './main/curso-basico/curso-basico.component';
+import { TokenComponent } from './token/token.component';
 
 
 
@@ -35,7 +36,8 @@ import { CursoBasicoComponent } from './main/curso-basico/curso-basico.component
     AdicionarPerguntaComponent,
     RespostaComponent,
     ForumComponent,
-    SenhaComponent
+    SenhaComponent,
+    TokenComponent
 
   ],
   imports: [

@@ -45,7 +45,7 @@ initForm(){
   this.loginForm = this.fb.group(
     {
       login: ['',Validators.compose([Validators.required, Validators.email])],
-      password: ['', Validators.compose([Validators.required,Validators.minLength(8), criarSenhaForte()])],
+      senha: ['', Validators.compose([Validators.required,Validators.minLength(8), criarSenhaForte()])],
     }
   );
 }
@@ -59,6 +59,7 @@ logar(){
         this.userService.setUsuario(usuario);
         this.routeador.navigate(['/curso/basico']);
         this.ngxLoader.stop();
+        console.log(this.loginForm.value)
       }
     },
     error: (erro) => {

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white !important;
 }
 
 .curso{
@@ -30,16 +31,19 @@
   text-align: center;
 }
 
+
 .estilo{
   border-width: 2.4px;   /* Largura da borda */
   border-style: solid; /* Estilo da borda */
-  border-color: #73328d;
+  border-color: #73328d ;
+  color: #73328d !important;
   padding-left: 15px;
   padding-right: 15px;
   margin: 10px;
   width: 39px;
   border-radius: 10px;
 }
+
 
 .chart{
   height: 89vh;

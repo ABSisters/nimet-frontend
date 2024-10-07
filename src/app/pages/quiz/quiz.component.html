@@ -51,7 +51,7 @@
 
     <header>
 
-      <div class="title"> {{user.curso}} QUIZ - ?? </div>
+      <div class="title"> {{user.curso}} QUIZ - {{quiz.nivel}} </div>
 
       <div class="timer">
 
@@ -68,26 +68,24 @@
 
 
     <section *ngIf="isQuizStarted">
-
-      <div class="que_text"><span>{{currentQuestionNo+1}}. {{questionsList[currentQuestionNo].question}} </span></div>
+      <!-- Exibe a pergunta atual -->
+      <div class="que_text">
+        <span>{{ currentQuestionNo + 1 }}. {{ questionsList[currentQuestionNo]?.questao }}</span>
+      </div>
 
       <div class="bolinha"></div>
 
+      <!-- Exibe as opções da pergunta atual -->
       <div class="option_list">
-
-        <div class="option" [ngClass]="{'disabled': isOptionSelected(questionsList[currentQuestionNo].options),
-
-                                            'correct':option.isSelected && option.isCorrect,
-
-                                            'incorrect':option.isSelected  && !option.isCorrect}"
-          (click)="selectOption(option)" *ngFor="let option of questionsList[currentQuestionNo].options">
-
-          <span>{{option.answer}}</span>
-
+        <div class="option"
+             [ngClass]="{'disabled': isOptionSelected(questionsList[currentQuestionNo]?.opcoes),
+                         'correct': option.isSelected && option.correta,
+                         'incorrect': option.isSelected && !option.correta}"
+             (click)="selectOption(option)"
+             *ngFor="let option of questionsList[currentQuestionNo]?.opcoes">
+          <span>{{ option.opcao }}</span>
         </div>
-
       </div>
-
     </section>
 
 
@@ -100,7 +98,7 @@
         </span></div>
 
       <button *ngIf="currentQuestionNo+1 == questionsList.length" class="next_btn show"
-        (click)="finish()">Finalizar</button>
+        (click)="responder()">Finalizar</button>
 
       <button *ngIf="currentQuestionNo+1 !== questionsList.length" class="next_btn show"
         (click)="nextQuestion()">Avançar</button>

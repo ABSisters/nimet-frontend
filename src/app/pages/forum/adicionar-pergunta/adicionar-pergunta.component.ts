@@ -145,6 +145,7 @@ export class AdicionarPerguntaComponent implements OnInit {
       next: (result) => {
         this.message.add({severity: 'success', summary: 'Sucesso', detail: 'Pergunta postada com sucesso' })
         this.ngxLoader.stop();
+        this.router.navigate(['forum'])
       },
       error: (erro) => {
         this.message.add({severity:'error', summary: 'Erro', detail: 'Não foi possivel inserir a pergunta' })

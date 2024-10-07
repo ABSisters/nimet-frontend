@@ -1,0 +1,154 @@
+.tela {
+  display: flex;
+  width: 100vw;
+  /* Ocupa 100% da largura do viewport */
+  height: 100vh;
+  /* Ocupa 100% da altura do viewport */
+  background-image: linear-gradient(to bottom, #913cb3, #d19bec, #eccffa);
+}
+
+body {
+  background-color: #d19bec40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 670px;
+  margin-top: 120px;
+  padding: 50px;
+  border-radius: 4%;
+  border-color: #4F1964;
+}
+
+.conteiner {
+  display: flex;
+}
+
+.card {
+  flex: 5;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 0px 0px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roxo {
+  flex: 1.2;
+}
+
+span {
+  color: #4F1964;
+  /* cor da palavra NIMET*/
+}
+
+
+header {
+  font-weight: 400px;
+  font-size: 1.5em;
+  font-weight: 300px;
+}
+
+h3 {
+  position: absolute;
+  top: 105px;
+  left: 1140px;
+  transform: translate(-106.5%, -50%);
+  /* Centralizando o titulo horizontalmente e verticalmente */
+  width: 60rem;
+}
+
+
+.texto {
+  /* tipo da letra do testo de explicação */
+  font-size: 1.5em;
+  font-weight: 100px;
+  margin-left: 10px;
+  color: rgb(42, 41, 41);
+  display: flex;
+  text-align: center;
+}
+
+.chapeu{
+  margin-left: 5em;
+  margin-top: -36px;
+}
+
+/*
+.cadeado{
+  margin-left: 270px;
+  margin-top: -20px;
+  color:#4F1964
+}*/
+
+
+ /* ------------------- CAIXA DE TEXTO ----------------------------------------------------------- */
+
+
+input {
+  flex: 2;
+  /* Define a largura flexível para que ocupem todo o espaço disponível */
+  margin-right: 50px;
+  /* Adiciona espaçamento entre as caixas de texto */
+  margin-left: 100px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 370px;
+  height: 500px;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #3e37c0;
+}
+
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+
+ /* -------------- BOTÃO DE CONFIRMAÇÃO ------------------------------------------------------------- */
+
+
+.button {
+  border-radius: 20px;
+  background-color: #4F1964;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 11rem;
+  width: 14rem;
+  height: 2rem;
+  align-items: center;
+}
+
+button span {
+  color: white;
+}
+
+
+/* -------------- IMAGEM ------------------------------------------------------------- */
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-106.5%, -50%);
+  /* Centralizando a imagem horizontalmente e verticalmente */
+  width: 55rem;
+}
